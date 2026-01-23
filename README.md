@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.jpg" alt="Banner" width="600">
+</p>
+
 <h1 align="center">
   NanoBanana Trending Prompts
 </h1>
