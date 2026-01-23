@@ -31,6 +31,8 @@ A curated collection of **trending AI image prompts** from X/Twitter. These prom
 
 <sub>**Note:** Raw data may contain ads or low-quality content. I'm continuously filtering and curating. If you spot issues, please <a href="https://github.com/jau123/nanobanana-trending-prompts/issues">open an issue</a>.</sub>
 
+<sub>**Heads up:** Since prompts are ranked by engagement, you'll notice a fair amount of attractive women in the results — and this is *after* I've already filtered out quite a bit.</sub>
+
 ---
 
 ## Stats
