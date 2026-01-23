@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>1,000 curated AI image prompts from X/Twitter, ranked by engagement</strong><br>
-  <sub>Works with NanoBanana, GPT-4o Image, Midjourney, and more</sub>
+  <sub>Works with NanoBanana Pro, GPT Image 1.5, Midjourney, and more</sub>
 </p>
 
 <p align="center">
