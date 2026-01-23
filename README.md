@@ -16,7 +16,7 @@
 <p align="center">
   <a href="#browse-prompts">Browse Prompts</a> •
   <a href="prompts/top_1000.json">Download JSON</a> •
-  <a href="https://meigen.ai">Generate Images</a>
+  <a href="https://meigen.ai">🖼️ View in Gallery</a>
 </p>
 
 ---
