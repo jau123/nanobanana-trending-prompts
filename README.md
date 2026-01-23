@@ -27,7 +27,7 @@
 
 ## What is this?
 
-A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the Gallery.
+A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the [Gallery](https://meigen.ai).
 
 | Browse | Data |
 |--------|------|
