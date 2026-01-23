@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://meigen.ai"><img src="https://img.shields.io/badge/Generate-MeiGen.ai-blue?style=flat-square" alt="MeiGen.ai"></a>
+  <a href="https://meigen.ai"><img src="https://img.shields.io/badge/Website-meigen.ai-blue?style=flat-square" alt="Website"></a>
   <a href="prompts/top_1000.json"><img src="https://img.shields.io/badge/Prompts-1,000-green?style=flat-square" alt="1000 Prompts"></a>
   <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
 </p>
