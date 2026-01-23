@@ -918,7 +918,7 @@
       "https://images.meigen.ai/tweets/2011994819124752631/3.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-16"
   },
   {
@@ -5560,7 +5560,7 @@
       "https://images.meigen.ai/tweets/2011645375460057533/1.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-15"
   },
   {
@@ -5865,7 +5865,7 @@
       "https://images.meigen.ai/tweets/2011708873418424581/3.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-15"
   },
   {
@@ -6722,7 +6722,7 @@
       "https://images.meigen.ai/tweets/2012353813425144239/3.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-17"
   },
   {
@@ -6946,7 +6946,7 @@
       "https://images.meigen.ai/tweets/2010681413562155183/3.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-12"
   },
   {
@@ -7365,7 +7365,7 @@
       "https://images.meigen.ai/tweets/2012780826715619644/1.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-18"
   },
   {
@@ -8709,7 +8709,7 @@
       "https://images.meigen.ai/tweets/2011334627290726746/3.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-14"
   },
   {
@@ -15018,7 +15018,7 @@
       "https://images.meigen.ai/tweets/2012894412276473967/0.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-18"
   },
   {
@@ -15721,7 +15721,7 @@
       "https://images.meigen.ai/tweets/2012770119051817399/1.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-18"
   },
   {
@@ -16659,7 +16659,7 @@
       "https://images.meigen.ai/tweets/2010249174227530017/1.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-11"
   },
   {
@@ -18392,7 +18392,7 @@
       "https://images.meigen.ai/tweets/2011729859572351448/1.jpg"
     ],
     "model": "gptimage",
-    "categories": null,
+    "categories": [],
     "date": "2026-01-15"
   },
   {
