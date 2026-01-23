@@ -1,0 +1,7 @@
+# 项目内部文件，不公开
+CLAUDE.md
+GITHUB_PROMPTS_REPO.md
+update-github-prompts.py
+
+# 系统文件
+.DS_Store
