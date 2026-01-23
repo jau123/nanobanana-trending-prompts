@@ -1,22 +1,49 @@
-# 🍌 NanoBanana Trending Prompts
+<h1 align="center">
+  NanoBanana Trending Prompts
+</h1>
 
-> **1000+ curated trending NanoBanana Pro prompts** from X/Twitter, ranked by engagement.
+<p align="center">
+  <strong>1,000 curated AI image prompts from X/Twitter, ranked by engagement</strong><br>
+  <sub>Works with NanoBanana, GPT-4o Image, Midjourney, and more</sub>
+</p>
 
-**Want to generate images with these prompts?** 👉 **[Try MeiGen.ai](https://meigen.ai)** - One-click generation, no prompt engineering required.
+<p align="center">
+  <a href="https://meigen.ai"><img src="https://img.shields.io/badge/Generate-MeiGen.ai-blue?style=flat-square" alt="MeiGen.ai"></a>
+  <a href="prompts/top_1000.json"><img src="https://img.shields.io/badge/Prompts-1,000-green?style=flat-square" alt="1000 Prompts"></a>
+  <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
+</p>
+
+<p align="center">
+  <a href="#browse-prompts">Browse Prompts</a> •
+  <a href="prompts/top_1000.json">Download JSON</a> •
+  <a href="https://meigen.ai">Generate Images</a>
+</p>
 
 ---
 
-## 📊 Stats
+## What is this?
 
-| Total Prompts | Nanobanana | Gptimage |
-|---------------|------------|----------|
-| **1,000** | 942 | 58 |
+A curated collection of **trending AI image prompts** from X/Twitter. These prompts have been proven to generate high-quality images and are ranked by likes and engagement.
 
-**Categories:** JSON (524), Photograph (384), Girl (273), Other (194), 3D (127)
+| Browse | Data |
+|--------|------|
+| [All Prompts](#browse-prompts) | [top_1000.json](prompts/top_1000.json) |
+
+<sub>**Note:** Raw data may contain ads or low-quality content. I'm continuously filtering and curating. If you spot issues, please <a href="https://github.com/jau123/nanobanana-trending-prompts/issues">open an issue</a>.</sub>
 
 ---
 
-## 🔥 All 1000 Prompts
+## Stats
+
+| Total | NanoBanana | GPT Image |
+|-------|------------|-----------|
+| 1,000 | 942 | 58 |
+
+**Top Categories:** JSON (524), Photograph (384), Girl (273), Other (194), 3D (127)
+
+---
+
+<h2 id="browse-prompts">Browse Prompts</h2>
 
 <!-- PROMPTS_START -->
 
