@@ -36528,11 +36528,9 @@ Download the complete dataset: [`prompts/top_1000.json`](prompts/top_1000.json)
 
 ---
 
-## 📅 Updates
+## 📅 Last Updated
 
-Updated **weekly** with trending prompts from X/Twitter.
-
-Last updated: **January 23, 2026**
+**January 23, 2026**
 
 ---
 
