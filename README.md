@@ -15,6 +15,7 @@
   <a href="https://meigen.ai"><img src="https://img.shields.io/badge/Website-meigen.ai-blue?style=flat-square" alt="Website"></a>
   <a href="prompts/prompts.json"><img src="https://img.shields.io/badge/Prompts-1,051-green?style=flat-square" alt="1051 Prompts"></a>
   <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square" alt="CC BY 4.0"></a>
 </p>
 
 <p align="center">
