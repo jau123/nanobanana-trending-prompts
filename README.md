@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://meigen.ai"><img src="https://img.shields.io/badge/Website-meigen.ai-blue?style=flat-square" alt="Website"></a>
+  <a href="https://www.meigen.ai"><img src="https://img.shields.io/badge/Website-www.meigen.ai-blue?style=flat-square" alt="Website"></a>
   <a href="prompts/prompts.json"><img src="https://img.shields.io/badge/Prompts-1,051-green?style=flat-square" alt="1051 Prompts"></a>
   <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square" alt="CC BY 4.0"></a>
@@ -21,14 +21,14 @@
 <p align="center">
   <a href="#browse-prompts">Browse Prompts</a> •
   <a href="prompts/prompts.json">Download JSON</a> •
-  <a href="https://meigen.ai">🖼️ View in Gallery</a>
+  <a href="https://www.meigen.ai">🖼️ View in Gallery</a>
 </p>
 
 ---
 
 ## What is this?
 
-A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the [Gallery](https://meigen.ai).
+A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the [Gallery](https://www.meigen.ai).
 
 | Browse | Data |
 |--------|------|
