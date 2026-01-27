@@ -7,62 +7,62 @@
 </h1>
 
 <p align="center">
-  <strong>1,000+ curated AI image prompts from X/Twitter, ranked by engagement</strong><br>
-  <sub>Works with NanoBanana Pro, GPT Image 1.5, and more</sub>
+  <strong>1,000+ 精选 AI 图像提示词，来自 X/Twitter，按热度排名</strong><br>
+  <sub>适用于 NanoBanana Pro、GPT Image 1.5 等模型</sub>
 </p>
 
 <p align="center">
-  <a href="https://www.meigen.ai"><img src="https://img.shields.io/badge/Website-www.meigen.ai-blue?style=flat-square" alt="Website"></a>
-  <a href="prompts/prompts.json"><img src="https://img.shields.io/badge/Prompts-1,051-green?style=flat-square" alt="1051 Prompts"></a>
-  <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square" alt="CC BY 4.0"></a>
+  <a href="https://www.meigen.ai"><img src="https://img.shields.io/badge/网站-www.meigen.ai-blue?style=flat-square" alt="Website"></a>
+  <a href="prompts/prompts.json"><img src="https://img.shields.io/badge/提示词-1,051-green?style=flat-square" alt="1051 Prompts"></a>
+  <a href="#data-formats"><img src="https://img.shields.io/badge/格式-JSON-orange?style=flat-square" alt="JSON"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/许可证-CC%20BY%204.0-lightgrey?style=flat-square" alt="CC BY 4.0"></a>
 </p>
 
 <p align="center">
-  <a href="#browse-prompts">Browse Prompts</a> •
-  <a href="prompts/prompts.json">Download JSON</a> •
-  <a href="https://www.meigen.ai">🖼️ View in Gallery</a>
+  <a href="#browse-prompts">浏览提示词</a> •
+  <a href="prompts/prompts.json">下载 JSON</a> •
+  <a href="https://www.meigen.ai">🖼️ 在线画廊</a>
 </p>
 
 <p align="center">
-  <strong>English</strong> | <a href="README.zh-CN.md">中文</a>
+  <a href="README.md">English</a> | <strong>中文</strong>
 </p>
 
 ---
 
-## What is this?
+## 这是什么？
 
-A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the [Gallery](https://www.meigen.ai).
+精选的 **AI 图像热门提示词** 合集，来源于 X。这些提示词已被验证能生成高质量图像，仅按点赞数排名。如需更智能的排序和筛选，请访问[在线画廊](https://www.meigen.ai)。
 
-| Browse | Data |
-|--------|------|
-| [All Prompts](#browse-prompts) | [prompts.json](prompts/prompts.json) |
+| 浏览 | 数据 |
+|------|------|
+| [全部提示词](#browse-prompts) | [prompts.json](prompts/prompts.json) |
 
-<sub>**Note:** Raw data may contain ads or low-quality content. I'm continuously filtering and curating. If you spot issues, please <a href="https://github.com/jau123/nanobanana-trending-prompts/issues">open an issue</a>.</sub>
+<sub>**注意：** 原始数据可能包含广告或低质量内容。我正在持续筛选和整理。如发现问题，请<a href="https://github.com/jau123/nanobanana-trending-prompts/issues">提交 Issue</a>。</sub>
 
-<sub>**Heads up:** Since prompts are ranked by engagement, you'll notice a fair amount of attractive women in the results — and this is *after* I've already filtered out quite a bit.</sub>
+<sub>**提醒：** 由于提示词按热度排名，结果中会有不少美女图片——这还是我过滤掉很多之后的结果。</sub>
 
 ---
 
-## Stats
+## 统计
 
-| Total | NanoBanana | GPT Image |
-|-------|------------|-----------|
+| 总计 | NanoBanana | GPT Image |
+|------|------------|-----------|
 | 1,051 | 869 | 182 |
 
-**Top Categories:** JSON (525), Photograph (385), Girl (296), Other (201), App (155)
+**热门分类：** JSON (525), Photograph (385), Girl (296), Other (201), App (155)
 
 ---
 
-## Changelog
+## 更新日志
 
-| Date | Changes |
-|------|---------|
-| 2026-01-26 | Added 51 new prompts, improved 78 existing entries. |
+| 日期 | 变更 |
+|------|------|
+| 2026-01-26 | 新增 51 条提示词，优化 78 条现有内容。 |
 
 ---
 
-<h2 id="browse-prompts">Browse Prompts</h2>
+<h2 id="browse-prompts">浏览提示词</h2>
 
 <!-- PROMPTS_START -->
 
