@@ -50,8 +50,6 @@ A curated collection of **trending AI image prompts** from X. These prompts have
 |-------|------------|-----------|
 | 1,051 | 869 | 182 |
 
-**Top Categories:** JSON (525), Photograph (385), Girl (296), Other (201), App (155)
-
 ---
 
 ## Changelog
