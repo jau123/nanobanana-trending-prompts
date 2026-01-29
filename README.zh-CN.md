@@ -21,6 +21,7 @@
 <p align="center">
   <a href="#browse-prompts">浏览提示词</a> •
   <a href="prompts/prompts.json">下载 JSON</a> •
+  <a href="prompts/system-prompt-zh.md">系统提示词</a> •
   <a href="https://www.meigen.ai">🖼️ 在线画廊</a>
 </p>
 

@@ -21,6 +21,7 @@
 <p align="center">
   <a href="#browse-prompts">Browse Prompts</a> •
   <a href="prompts/prompts.json">Download JSON</a> •
+  <a href="prompts/system-prompt-en.md">System Prompt</a> •
   <a href="https://www.meigen.ai">🖼️ View in Gallery</a>
 </p>
 
