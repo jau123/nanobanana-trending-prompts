@@ -19,10 +19,9 @@
 </p>
 
 <p align="center">
-  <a href="#browse-prompts">Browse Prompts</a> •
+  <a href="https://www.meigen.ai">🖼️ View in Gallery</a> •
   <a href="prompts/prompts.json">Download JSON</a> •
-  <a href="prompts/system-prompt-en.md">System Prompt</a> •
-  <a href="https://www.meigen.ai">🖼️ View in Gallery</a>
+  <a href="prompts/system-prompt-en.md">System Prompt</a>
 </p>
 
 <p align="center">
@@ -35,9 +34,17 @@
 
 A curated collection of **trending AI image prompts** from X. These prompts have been proven to generate high-quality images and are ranked by likes only. For smarter sorting and filtering, check out the [Gallery](https://www.meigen.ai).
 
+We also provide a [System Prompt](prompts/system-prompt-en.md) designed to transform simple inputs into detailed image descriptions following NanoBanana best practices. You can use it in n8n, Gemini, GPTs, or any tool that accepts a system prompt. It follows these principles:
+
+1. **Replace adjectives with quantified parameters** — "90mm, f/1.8" instead of "professional looking"
+2. **Replace feeling words with pro terminology** — "Kodak Vision3 500T" instead of "cinematic vibe"
+3. **Negative constraints are still effective** — telling the model what NOT to do matters
+4. **Multi-sensory descriptions are necessary** — texture, temperature, even smell
+5. **Group by content type** — structure prompts based on scene type
+
 | Browse | Data |
 |--------|------|
-| [All Prompts](#browse-prompts) | [prompts.json](prompts/prompts.json) |
+| [Gallery](https://www.meigen.ai) | [prompts.json](prompts/prompts.json) |
 
 <sub>**Note:** Raw data may contain ads or low-quality content. I'm continuously filtering and curating. If you spot issues, please <a href="https://github.com/jau123/nanobanana-trending-prompts/issues">open an issue</a>.</sub>
 

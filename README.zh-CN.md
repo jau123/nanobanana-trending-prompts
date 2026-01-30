@@ -19,10 +19,9 @@
 </p>
 
 <p align="center">
-  <a href="#browse-prompts">浏览提示词</a> •
+  <a href="https://www.meigen.ai">🖼️ 在线画廊</a> •
   <a href="prompts/prompts.json">下载 JSON</a> •
-  <a href="prompts/system-prompt-zh.md">系统提示词</a> •
-  <a href="https://www.meigen.ai">🖼️ 在线画廊</a>
+  <a href="prompts/system-prompt-zh.md">系统提示词</a>
 </p>
 
 <p align="center">
@@ -35,9 +34,17 @@
 
 精选的 **AI 图像热门提示词** 合集，来源于 X。这些提示词已被验证能生成高质量图像，仅按点赞数排名。如需更智能的排序和筛选，请访问[在线画廊](https://www.meigen.ai)。
 
+我们还提供了一个[系统提示词](prompts/system-prompt-zh.md)，专门用于将简单的输入转化为符合 NanoBanana 最佳实践的详细画面描述。你可以在 n8n、Gemini、GPTs 或任何支持 System Prompt 的工具中使用。它遵循以下方法：
+
+1. **用量化数字替代形容词** —— "90mm镜头、f/1.8" 而非 "专业感"
+2. **用专业术语替代感觉词** —— "Kodak Vision3 500T" 而非 "电影感"
+3. **负向约束仍然有效** —— 告诉模型"不要做什么"很重要
+4. **多感官描述是必要的** —— 质感、温度、甚至气味
+5. **按内容类型分组** —— 根据场景类型组织提示词结构
+
 | 浏览 | 数据 |
 |------|------|
-| [全部提示词](#browse-prompts) | [prompts.json](prompts/prompts.json) |
+| [在线画廊](https://www.meigen.ai) | [prompts.json](prompts/prompts.json) |
 
 <sub>**注意：** 原始数据可能包含广告或低质量内容。我正在持续筛选和整理。如发现问题，请<a href="https://github.com/jau123/nanobanana-trending-prompts/issues">提交 Issue</a>。</sub>
 
