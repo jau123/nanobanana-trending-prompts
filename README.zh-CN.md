@@ -112,7 +112,16 @@
     "technical_modifiers": [
       "Ultra Photorealistic",
       "Unreal Engine 5 render style",
-      "Subsurface 
+      "Subsurface scattering",
+      "Volumetric lighting",
+      "Ray tracing",
+      "Fine art portrait",
+      "Detailed texture",
+      "Raw photo"
+    ],
+    "mood": "Intimate, serene, chilly, ethereal, captivating."
+  }
+}
 ```
 
 </details>
@@ -159,7 +168,17 @@ FRAME 7:
 is an extreme close-up focusing on a specific detail of the label, edge, texture or material behavior.
 
 FRAME 8:
-The product in an unexpected yet aesthetically strong setting that feel
+The product in an unexpected yet aesthetically strong setting that feels bold, editorial and visually striking.
+Unexpected but highly stylized setting. Studio-based, and designer-driven. Bold composition that elevates the brand.
+
+FRAME 9:
+Wide composition showing the product in use, placed within a refined designer setup. Clean props, controlled styling, cohesive with the rest of the series.
+
+CAMERA & STYLE:
+Ultra high-quality studio imagery with a real camera look. Different camera angles and framings across frames. Controlled depth of field, precise lighting, accurate materials and reflections. Lighting logic, color palette, mood and visual language must remain consistent across all nine panels as one cohesive series.
+
+OUTPUT:
+A clean 3×3 grid with no borders, no text, no captions and no watermarks.
 ```
 
 </details>
@@ -285,7 +304,8 @@ Crea una imagen en 31.7785° N, 35.2296° E, el 3 de abril del año 33, a las 15
     "text",
     "logo"
   ],
-  "assembled_prompt": "Ultra-realistic winter portrait of a young woman, platinum blonde long straight hair, fair porcelain skin, soft natural freckles, high detail skin texture, light pink blush, glossy lips, expressive light-colored eyes looking directly into the camera, standing, slightly leaning forward, fitted black long-sleeve bodysuit, white furry leg warmers, white boots, minimalist winter fashion, outdoors, snowy forest, pine trees, snow
+  "assembled_prompt": "Ultra-realistic winter portrait of a young woman, platinum blonde long straight hair, fair porcelain skin, soft natural freckles, high detail skin texture, light pink blush, glossy lips, expressive light-colored eyes looking directly into the camera, standing, slightly leaning forward, fitted black long-sleeve bodysuit, white furry leg warmers, white boots, minimalist winter fashion, outdoors, snowy forest, pine trees, snow-covered ground, bright natural daylight, soft shadows, crisp winter atmosphere, 35mm lens, f/2.2, shallow depth of field, photorealistic, lifestyle fashion photography, ultra-detailed, sharp focus, 8k resolution"
+}
 ```
 
 </details>
@@ -320,7 +340,18 @@ Crea una imagen en 31.7785° N, 35.2296° E, el 3 de abril del año 33, a las 15
       "id": 3,
       "title": "Close-up: Adjusting Goggles",
       "prompt_text": "Close-up portrait, luxury ski influencer on balcony. Strict face reference lock. Adjusting large mirrored ski goggles with both hands, elbows up, dynamic fashion pose. White outfit details visible. Style: iPhone 16 Pro photo, harsh winter sun, crisp highlights on goggles, high contrast.",
-      "negative_prompt": "cinema, studio 
+      "negative_prompt": "cinema, studio light, soft diffused, DSLR, film grain, 3D, CGI, smooth skin, warm lighting, low contrast, blurry, distorted, artificial AI look",
+      "aspect_ratio": "4:5"
+    },
+    {
+      "id": 4,
+      "title": "Full Body: Sitting",
+      "prompt_text": "Full-body photo, luxury ski influencer sitting on snow-covered bench on chalet balcony. Strict face reference lock. Relaxed posture, looking off-camera candidly. White outfit, Moon Boots visible. Style: iPhone 16 Pro photo, direct winter sun causing sharp shadows, bright snow glare.",
+      "negative_prompt": "cinema, studio light, soft diffused, DSLR, film grain, 3D, CGI, smooth skin, warm lighting, low contrast, blurry, distorted, artificial AI look",
+      "aspect_ratio": "9:16"
+    }
+  ]
+}
 ```
 
 </details>
@@ -745,7 +776,89 @@ Output:
     },
     "subject": {
       "person": "one adult woman",
-      "ethnicity": "fair-skinned European l
+      "ethnicity": "fair-skinned European look",
+      "skin": {
+        "tone": "light warm-fair beige with a golden indoor cast",
+        "finish": "natural, slight sheen on shoulders and legs, visible pores/real texture"
+      },
+      "face": {
+        "structure": "soft pretty features, small nose, full lips, delicate jawline",
+        "expression": "calm, slightly dreamy/relaxed, eyes looking down to her right (not at camera)",
+        "makeup": "minimal glam: even skin, subtle blush, natural brows, soft lip tint (not bold)"
+      },
+      "hair": {
+        "color": "light blonde",
+        "length": "shoulder-length to slightly longer",
+        "style": "straight with a loose natural fall, center/soft-middle part, a few face-framing strands"
+      },
+      "body": {
+        "type": "slim-curvy hourglass (fit waist, rounded hips, very full bust but still natural)",
+        "waist": "tight and visibly cinched from seated twist and posture",
+        "legs": "long, smooth, slightly glossy highlights from warm light",
+        "chest": "very full and more prominent than before, lifted cleavage from posture and fabric tension, realistic weight and shape (not cartoonish)"
+      },
+      "grooming_details": {
+        "armpits": "visible because both arms are raised; smooth/clean look",
+        "fingernails": "short-to-medium length, glossy pale pink/nude manicure",
+        "toenails": "classic French tip pedicure (clean white tips, natural pink base, glossy finish)",
+        "accessory": "thin delicate anklet on the left ankle"
+      }
+    },
+    "outfit": {
+      "top": {
+        "type": "deep-plunge sleeveless halter-style bodysuit or draped knit top",
+        "color": "silver-grey / cool grey",
+        "material": "soft drapey fabric that catches warm light, slight sheen",
+        "fit_rules": [
+          "very deep V neckline",
+          "open sides / low armholes that reveal side torso",
+          "no bra lines visible",
+          "fabric tension/creases where it pulls at the waist and chest (realistic stretch, slightly stronger tension due to fuller bust)"
+        ]
+      },
+      "bottom": {
+        "type": "very short denim shorts (light blue wash)",
+        "fit": "snug on hips, subtle wrinkles at the lap/waist from sitting"
+      },
+      "feet": "barefoot on the couch cushions (natural toe spread, relaxed), French tip pedicure visible when toes catch the warm light"
+    },
+    "pose": {
+      "exact_pose_match": [
+        "sitting on the beige sofa",
+        "one leg folded under her (tucked), the other knee raised high toward her chest",
+        "raised knee is closest to camera, creating a strong thigh line and depth",
+        "both arms lifted behind her head, hands interlaced or resting in hair",
+        "elbows out wide, shoulders open, armpits naturally visible",
+        "torso slightly twisted, emphasizing waist curve",
+        "head turned down and to her right, relaxed neck line"
+      ],
+      "micro_motion": [
+        "a tiny arch in the back from the arms-behind-head stretch",
+        "subtle compression of thigh and hip against the cushion",
+        "loose strands of blonde hair resting near cheeks"
+      ]
+    },
+    "camera_composition": {
+      "framing": "vertical 9:16, subject low-mid frame with lots of negative space above",
+      "angle": "slightly low/straight-on from the front (as if a friend shot it while seated/standing nearby)",
+      "distance": "about 2–3 meters",
+      "focus": "sharp on her face + front thigh, background slightly softer but still readable",
+      "realism_notes": [
+        "not perfectly symmetrical",
+        "slight handheld tilt",
+        "iPhone-style HDR but restrained (no crunchy oversharpening)"
+      ]
+    },
+    "negative_prompt": [
+      "no cartoon/anime look",
+      "no CGI/plastic skin",
+      "no excessive symmetry or studio perfection",
+      "no extra fingers/limb glitches",
+      "no heavy beauty filter",
+      "no explicit nudity or pornographic framing"
+    ]
+  }
+}
 ```
 
 </details>
@@ -809,7 +922,35 @@ Output:
     {
       "location": "High-End Bathroom",
       "environment": "Large backlit mirror, white marble vanity, white walls, orchid plant.",
-      "p
+      "pose": "Standing facing the mirror, one hand applying product to face.",
+      "action": "Applying skincare.",
+      "props": ["Cotton pad", "Skincare bottle", "Lit Diptyque candle", "Whole coconut", "Glass jars"]
+    },
+    {
+      "location": "Minimalist Wellness Space",
+      "environment": "Textured beige walls with curved arches, stone water fountain, eucalyptus in a vase.",
+      "pose": "Full-body stretch, arms extended overhead, head tilted back, eyes closed.",
+      "action": "Stretching.",
+      "props": ["Stone water feature", "Large perfume bottle", "Eucalyptus vase"]
+    },
+    {
+      "location": "Bright Café Corner",
+      "environment": "Round white marble table, cane chair, large window overlooking a street.",
+      "pose": "Sitting at the table, smiling while eating, holding a fork.",
+      "action": "Eating avocado toast.",
+      "props": ["Avocado toast on plate", "Purple smoothie in glass", "Fork", "Assouline book", "Notebooks", "Small flowers"]
+    }
+  ],
+  "camera_and_technical": {
+    "type": "DSLR Photography",
+    "style": "Editorial lifestyle",
+    "lens": "Prime lens (e.g., 50mm or 85mm f/1.4)",
+    "focus": "Sharp focus on the subject in each frame.",
+    "depth_of_field": "Shallow, creating a soft, creamy bokeh in the background.",
+    "resolution": "Ultra-high resolution, photorealistic textures.",
+    "composition": "Four-panel grid collage."
+  }
+}
 ```
 
 </details>
@@ -869,7 +1010,10 @@ Output:
     },
     "technical_specs": {
       "lighting": "Harsh midday sunlight, strong contrast, deep natural shadows, bright specular highlights",
-      "camera_setting
+      "camera_settings": "50–85mm lens look, shallow depth of field, high dynamic range (HDR)",
+      "color_grading": "Realistic, true-to-life skin tones"
+    },
+    "full_prompt_string": "Ultra-realistic cinematic lifestyle photography, 8K, hyper-detailed, photorealistic, An attractive woman aged 20, Slavic appearance. A naturally beautiful, well-balanced face with realistic proportions, no artificial perfection. Large expressive green-hazel eyes, calm confident gaze toward the camera. Naturally full lips, soft and unexaggerated. Light, natural daytime makeup emphasizing her features without looking heavy. Her skin is sun-kissed and wet, highly realistic with visible pores, subtle micro-imperfections, fine highlights, and water and oil droplets catching the sunlight. No plastic or overly smooth texture. Long wet hair, slightly messy after swimming, with a few strands sticking naturally to her cheek and forehead. She is lying on her stomach on a bright blue-and-white striped beach towel. The pose feels relaxed and spontaneous, like a real vacation moment: legs gently bent at the knees and lifted upward, feet together; a natural back line, slim waist, realistic body anatomy without exaggeration. She wears a small classic black bikini top with thin straps and a deep plunge — minimalistic, clean design, naturally fitting the body. One arm is extended forward as she takes a selfie — part of her arm and the edge of a small smartphone are visible in frame, reinforcing a casual iPhone-style shot. In her other hand, she holds a fresh coconut with a straw and a subtle ADORE logo; water droplets run down the shell. Environment: a luxurious rooftop pool atop a high-rise building in Los Angeles. Bright sunny day, clear blue sky with no clouds, turquoise pool water. Lush tropical greenery (banana palms, monstera plants), white sun loungers and umbrellas. Modern downtown LA skyscrapers in the background with a slight atmospheric haze on the horizon.
 ```
 
 </details>
@@ -1131,7 +1275,70 @@ The stickers are scattered naturally across the sheet (knolling layout) with eve
         "syrup": "Thin syrup drizzle frozen mid-air"
       },
       "motion_effects": {
-        "particles": "Su
+        "particles": "Subtle floating crumbs and nut dust"
+      },
+      "background": {
+        "color": "Warm beige",
+        "gradient": "Very soft tonal gradient"
+      }
+    }, "module_3_baklava_syrup_pour_drama": {
+      "scene_description": "Cinematic syrup pour over baklava stack",
+      "baklava": {
+        "type": "Thick stacked baklava slices",
+        "texture": "Highly detailed crispy layers"
+      },
+      "additional_elements": {
+        "syrup": {
+          "state": "Thick golden syrup pouring from above",
+          "motion": "Frozen in elegant flowing strands"
+        },
+        "nuts": [
+          "Whole pistachio kernels",
+          "Crushed pistachio fragments"
+        ]
+      },
+      "motion_effects": {
+        "splashes": "Micro syrup splashes on impact points",
+        "particles": "Floating nut fragments"
+      },
+      "background": {
+        "color": "Dark chocolate brown",
+        "tone": "High contrast, luxury feel"
+      }
+    }, "module_4_modern_baklava_floating_composition": {
+      "scene_description": "Modern deconstructed baklava composition in mid-air",
+      "elements": {
+        "phyllo": "Crispy golden phyllo sheets floating separately",
+        "nuts": "Pistachio layers suspended between sheets",
+        "syrup": "Glossy syrup threads connecting elements"
+      },
+      "motion_effects": {
+        "flakes": "Ultra-fine pastry flakes suspended",
+        "drops": "Minimal syrup droplets"
+      },
+      "background": {
+        "color": "Muted olive green",
+        "texture": "Smooth, seamless"
+      }
+    }
+  },
+  "negative_prompt": [
+    "text",
+    "logos",
+    "branding",
+    "hands",
+    "people",
+    "utensils",
+    "plates",
+    "tables",
+    "cartoon style",
+    "excessive syrup pooling",
+    "burnt pastry",
+    "overexposure",
+    "artificial glow",
+    "low detail textures"
+  ]
+}
 ```
 
 </details>
@@ -1208,7 +1415,11 @@ Image Quality
 Extremely noisy. Heavily blurred. Raw smartphone look. Not cinematic. Not editorial. Not polished.
 Negative Prompt
 anime, illustration, painting, stylized,
-studi
+studio lighting, beauty lighting, soft portrait,
+sharp focus, clean face, perfect anatomy, smooth skin,
+fashion editorial, posed portrait, cinematic grading, film still,
+tripod shot, professional photography,
+identity match, face copy, real person replication
 ```
 
 </details>
@@ -1273,7 +1484,7 @@ Lighting & Quality:
 Soft natural light, studio-clean clarity on product side, photorealistic, ultra-high resolution, professional fashion photography.
 
 Negative Prompt:
-Cluttered
+Cluttered layout, oversized text, flashy logos, mannequins, people on left side, harsh lighting, low resolution, cartoon style.
 ```
 
 </details>
@@ -1357,6 +1568,63 @@ Cluttered
       "tone": "warm fair",
       "texture": "real skin texture, slight sheen, no blur"
     },
+
+    "hair": {
+      "color": "dark blonde",
+      "style": "loose, slightly messy",
+      "details": "a few strands stuck to lips and cheek"
+    },
+
+    "face": {
+      "expression": "neutral with soft half-smirk",
+      "eyes": "focused on phone screen",
+      "makeup": "minimal, glossy lips catching light"
+    },
+
+    "outfit": {
+      "top": {
+        "type": "tight cropped tank top",
+        "color": "soft grey",
+        "fit": "hugging chest naturally, no bra",
+        "details": "fabric stretched slightly, fine rib texture visible"
+      },
+      "bottom": {
+        "type": "ultra-short micro biker shorts",
+        "length": "barely covering upper thighs",
+        "material": "thin matte spandex",
+        "fit": "painted-on tight, amplified by mirror repetition",
+        "details": [
+          "fabric tension visible at hips",
+          "slight ride-up at inner thighs",
+          "clean, logo-free"
+        ]
+      },
+      "shoes": {
+        "type": "clean white sneakers",
+        "reflection": "duplicated multiple times in mirrors"
+      }
+    },
+
+    "pose": {
+      "stance": "standing close to mirror",
+      "hips": "shifted strongly to one side",
+      "legs": "one knee bent inward",
+      "upper_body": "shoulders relaxed, torso angled",
+      "arms": {
+        "phone_hand": "holding phone low",
+        "free_hand": "resting lightly on upper thigh"
+      },
+      "movement": "still moment that feels like a pause, not a pose"
+    }
+  },
+
+  "mood_keywords": [
+    "mirror multiplication",
+    "late night tension",
+    "quiet confidence",
+    "timeline stopper"
+  ]
+}
 ```
 
 </details>
@@ -1509,7 +1777,43 @@ A photorealistic image of a cloud in the sky, uniquely shaped like all the conti
       "Vanilla Cake – soft, fluffy sponge cake layered with white cream filling",
       "Macaron – creamy filling between almond meringue shells",
       "Raspberries – juicy, fresh raspberries",
-      "Chocolate
+      "Chocolate Bar – chunks of smooth milk chocolate",
+      "Raspberry Cream – soft sponge cake layered with creamy, fruity raspberry cream"
+    ]
+  },
+
+  "module_2_image_2_style": {
+    "scene_description": "Rolled Syrian dessert presented vertically with syrup pouring from above, placed in a warm, rustic kitchen environment.",
+    "background": {
+      "environment": "traditional kitchen",
+      "elements": [
+        "warm lantern light",
+        "wooden surfaces",
+        "brass and copper utensils"
+      ],
+      "lighting": "warm ambient lighting with soft highlights"
+    },
+    "main_subjects": [
+      "rolled white dessert dough",
+      "cream filling spilling out",
+      "golden syrup stream"
+    ],
+    "visible_ingredients": [
+      "white cheese dough",
+      "cream filling",
+      "pistachios",
+      "sugar syrup"
+    ],
+    "motion_elements": [
+      "syrup dripping vertically",
+      "pistachio crumbs falling"
+    ],
+    "text_labels": [
+      "White Cheese Dough – soft outer layer made from cheese and semolina",
+      "Cream Filling – creamy filling inside the roll",
+      "Pistachios – crushed pistachios sprinkled over and inside the rolls"
+    ]
+  }
 ```
 
 </details>
@@ -1607,7 +1911,14 @@ HIGHSCHOOL GAL
 Below in smaller italic serif font, quotation style:
 “You put the ‘over’ in ‘lover,’ put the ‘ex’ in ‘next’
 Ain’t no ‘I’ in ‘trouble,’ just the ‘U’ since we met”
-Text appears ink-printed, slightly imperfect edges, n
+Text appears ink-printed, slightly imperfect edges, natural spacing, no digital sharpness.
+OVERALL LOOK:
+Real printed photograph
+Magazine / yearbook archive
+Soft shine, subtle glare
+Paper texture + ink warmth
+Not digital, not glossy poster
+Looks physically touchable
 ```
 
 </details>
@@ -1637,7 +1948,11 @@ Text Details: Clearly visible text on the bottom panel: "[Number] likes", userna
  1. (Grip): head and arms are physically popping out OVER the top and side thin borders. hands are realistically gripping the outer edges of the thin side borders, appearing to hold the frame firmly.
 2. (Kiss): Her body is leaning forward towards the camera, creating a strong sense of depth. Her head remains securely framed WITHIN the top thin white border. Only her right hand, raised near her mouth in a blowing-kiss gesture, physically extends forward and breaks OUT of the thin side frame boundary. Her left hand realistically grips the side edge.
 3. (Resting): She is looking directly at the camera with a gentle smile. Her head and shoulders physically pop out OVER the top thin white border. Crucially, her hands are realistically resting comfortably on top of the thicker bottom white UI panel, appearing to lean casually on the frame edge.
-4. (Dynamic Frame): Her upper body and head remain secure WITHIN the boundaries of the white frame. However, both of her arms are fully extended outward dynamically, breaking past the thin borders up to her elbows, reaching straight toward the camera le
+4. (Dynamic Frame): Her upper body and head remain secure WITHIN the boundaries of the white frame. However, both of her arms are fully extended outward dynamically, breaking past the thin borders up to her elbows, reaching straight toward the camera lens. She forms a distinct “L” shape with both hands, as if framing a scene. Due to perspective, her hands are positioned significantly closer to the camera than her face, showing strong spatial depth.
+
+Subject Dimensionality & Texture: The subject must look like a solid, three-dimensional figure, not flat. Emphasize the detailed texture of the [Specific Fabric Name from outfit description], the contours of the face, and realistic hair details. She should have distinct depth separating her from the flat [Background Color] background.
+
+Lighting & Shadows: Professional studio lighting creating soft, realistic drop shadows cast by the physical frame and, crucially, by the [popping-out elements, e.g., hands/head/arms] onto the solid flat [Background Color] background, enhancing the dramatic depth and illusion. High definition, commercial photography.
 ```
 
 </details>
@@ -1947,7 +2262,17 @@ All text must automatically match the background contrast (white or black).
     },
     "camera_settings": {
       "lens": "50mm portrait lens.",
-      "aperture": "f/2.8 for sl
+      "aperture": "f/2.8 for slight background separation while keeping the subject sharp.",
+      "shutter_speed": "1/250s.",
+      "iso": "100.",
+      "perspective": "Eye-level shot capturing the subject and the estate background."
+    },
+    "technical_specs": {
+      "quality": "Ultra-photorealistic, 8k resolution, raw photo style, highly detailed textures (lace, stone, hair), masterpiece, cinematic composition.",
+      "engine": "Unreal Engine 5 render style or high-end DSLR photography."
+    }
+  }
+}
 ```
 
 </details>
@@ -2031,7 +2356,461 @@ A high-end editorial photo of a [PRODUCT] placed flat on a [TEXTURED SURFACE], c
       "category": "Person",
       "location": {
         "relative_position": "Center",
-        "bounding_box_
+        "bounding_box_percentage": {
+          "x": 0.30,
+          "y": 0.05,
+          "width": 0.40,
+          "height": 0.85
+        }
+      },
+      "dimensions_relative": "Large",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Standing, body angled slightly right, head tilted left, right hand raised near face, left leg crossed over right leg",
+      "material": "Organic (Skin)",
+      "surface_properties": {
+        "texture": "Skin",
+        "reflectivity": "Low",
+        "micro_details": "Light goatee/facial hair, neutral but confident expression",
+        "wear_state": "N/A"
+      },
+      "color_details": {
+        "base_color_hex": "#5C3A2A",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Natural skin tones"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Self-shadows on neck and left side of face",
+        "highlight_zones": "Forehead, right cheek, nose bridge",
+        "translucency": "None"
+      },
+      "relationships": [
+        {
+          "type": "wearing",
+          "target_object_id": "obj_002"
+        },
+        {
+          "type": "wearing",
+          "target_object_id": "obj_003"
+        },
+        {
+          "type": "wearing",
+          "target_object_id": "obj_004"
+        },
+        {
+          "type": "wearing",
+          "target_object_id": "obj_005"
+        },
+        {
+          "type": "wearing",
+          "target_object_id": "obj_006"
+        },
+        {
+          "type": "interacting_with",
+          "target_object_id": "obj_007"
+        },
+        {
+          "type": "standing_on",
+          "target_object_id": "obj_011"
+        }
+      ]
+    },
+    {
+      "id": "obj_002",
+      "label": "Bucket Hat",
+      "category": "Apparel",
+      "location": {
+        "relative_position": "Top-Center (On head)",
+        "bounding_box_percentage": {
+          "x": 0.45,
+          "y": 0.05,
+          "width": 0.10,
+          "height": 0.08
+        }
+      },
+      "dimensions_relative": "Small",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Worn on head, brim pulled slightly down",
+      "material": "Denim/Canvas",
+      "surface_properties": {
+        "texture": "Woven fabric",
+        "reflectivity": "Low",
+        "micro_details": "Visible white contrast stitching around the brim and crown",
+        "wear_state": "New"
+      },
+      "color_details": {
+        "base_color_hex": "#003399",
+        "secondary_colors": [
+          "#FFFFFF"
+        ],
+        "gradient_or_pattern": "Solid blue with white stitching lines"
+      }
+    },
+    {
+      "id": "obj_003",
+      "label": "Fleece Jacket",
+      "category": "Apparel",
+      "location": {
+        "relative_position": "Upper Body",
+        "bounding_box_percentage": {
+          "x": 0.30,
+          "y": 0.12,
+          "width": 0.35,
+          "height": 0.40
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Worn open, sleeves rolled slightly or pushed up",
+      "material": "Sherpa Fleece / Synthetic Blend",
+      "surface_properties": {
+        "texture": "High pile, fuzzy, nubby texture on outer shell",
+        "reflectivity": "Low (Matte)",
+        "micro_details": "Silver snap button visible on collar, smooth fabric lining visible at cuffs",
+        "wear_state": "New"
+      },
+      "color_details": {
+        "base_color_hex": "#0044CC",
+        "secondary_colors": [
+          "#002266"
+        ],
+        "gradient_or_pattern": "Solid vivid blue"
+      }
+    },
+    {
+      "id": "obj_004",
+      "label": "T-Shirt",
+      "category": "Apparel",
+      "location": {
+        "relative_position": "Chest/Torso (Under jacket)",
+        "bounding_box_percentage": {
+          "x": 0.40,
+          "y": 0.20,
+          "width": 0.20,
+          "height": 0.30
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Worn on torso",
+      "material": "Cotton jersey",
+      "surface_properties": {
+        "texture": "Smooth fabric",
+        "reflectivity": "Low",
+        "micro_details": "Large graphic print on chest",
+        "wear_state": "New"
+      },
+      "color_details": {
+        "base_color_hex": "#0044CC",
+        "secondary_colors": [
+          "#FFFFFF"
+        ],
+        "gradient_or_pattern": "Large white outline of Adidas Trefoil logo on chest"
+      },
+      "text_content": {
+        "raw_text": "adidas (implied by logo shape)",
+        "font_style": "Logo symbol",
+        "font_weight": "Bold",
+        "text_case": "N/A",
+        "alignment": "Center",
+        "color_hex": "#FFFFFF"
+      }
+    },
+    {
+      "id": "obj_005",
+      "label": "Jeans",
+      "category": "Apparel",
+      "location": {
+        "relative_position": "Lower Body",
+        "bounding_box_percentage": {
+          "x": 0.40,
+          "y": 0.45,
+          "width": 0.20,
+          "height": 0.40
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Worn on legs, relaxed fit",
+      "material": "Denim",
+      "surface_properties": {
+        "texture": "Woven denim",
+        "reflectivity": "Low",
+        "micro_details": "Heavy white contrast stitching along seams and pockets. Cuffs are rolled up exposing lighter reverse side of denim.",
+        "wear_state": "New"
+      },
+      "color_details": {
+        "base_color_hex": "#2A3B55",
+        "secondary_colors": [
+          "#FFFFFF",
+          "#667788"
+        ],
+        "gradient_or_pattern": "Dark wash indigo"
+      }
+    },
+    {
+      "id": "obj_006",
+      "label": "Sneakers",
+      "category": "Footwear",
+      "location": {
+        "relative_position": "Bottom-Center",
+        "bounding_box_percentage": {
+          "x": 0.35,
+          "y": 0.85,
+          "width": 0.25,
+          "height": 0.10
+        }
+      },
+      "dimensions_relative": "Small",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Right foot planted, left foot on toe/mid-step. Classic Adidas Superstar silhouette.",
+      "material": "Leather/Rubber",
+      "surface_properties": {
+        "texture": "Smooth leather upper, textured rubber shell toe",
+        "reflectivity": "Medium (Leather sheen)",
+        "micro_details": "Three stripes visible (white on white), shell toe pattern",
+        "wear_state": "Pristine/Clean"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "All white"
+      }
+    },
+    {
+      "id": "obj_007",
+      "label": "Graphic - Mic Drop Lines",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Upper Left (Hanging from hand)",
+        "bounding_box_percentage": {
+          "x": 0.38,
+          "y": 0.12,
+          "width": 0.05,
+          "height": 0.25
+        }
+      },
+      "dimensions_relative": "Small",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Vertical",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Flat color",
+        "reflectivity": "None",
+        "micro_details": "Three thick vertical white lines representing motion or cable"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Solid"
+      },
+      "relationships": [
+        {
+          "type": "originating_from",
+          "target_object_id": "obj_001"
+        }
+      ]
+    },
+    {
+      "id": "obj_008",
+      "label": "Graphic - Microphone",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Mid Left (Below hand)",
+        "bounding_box_percentage": {
+          "x": 0.38,
+          "y": 0.35,
+          "width": 0.05,
+          "height": 0.05
+        }
+      },
+      "dimensions_relative": "Small",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Angled downwards",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Hand-drawn line art style",
+        "reflectivity": "None",
+        "micro_details": "Outline of a dynamic vocal microphone"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Outline only"
+      }
+    },
+    {
+      "id": "obj_009",
+      "label": "Graphic - Boombox",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Center Right",
+        "bounding_box_percentage": {
+          "x": 0.65,
+          "y": 0.30,
+          "width": 0.15,
+          "height": 0.20
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Isometric view",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Hand-drawn line art style",
+        "reflectivity": "None",
+        "micro_details": "Speaker grille mesh pattern, handle, buttons, cassette deck outline"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Outline only"
+      },
+      "relationships": [
+        {
+          "type": "emitting",
+          "target_object_id": "obj_013"
+        }
+      ]
+    },
+    {
+      "id": "obj_010",
+      "label": "Graphic - Adidas Trefoil Logo",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Bottom Right",
+        "bounding_box_percentage": {
+          "x": 0.65,
+          "y": 0.65,
+          "width": 0.15,
+          "height": 0.15
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Flat",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Flat color",
+        "reflectivity": "None",
+        "micro_details": "Classic 3-leaf shape with horizontal stripes"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Solid"
+      }
+    },
+    {
+      "id": "obj_011",
+      "label": "Graphic - Cracked Floor",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Bottom Center (Under feet)",
+        "bounding_box_percentage": {
+          "x": 0.25,
+          "y": 0.85,
+          "width": 0.50,
+          "height": 0.15
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Flat perspective on ground",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Line art",
+        "reflectivity": "None",
+        "micro_details": "Jagged lines radiating outward from the subject's stance like shattered glass"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Line art"
+      }
+    },
+    {
+      "id": "obj_012",
+      "label": "Graphic - Liquid Shapes",
+      "category": "Illustration/Background Element",
+      "location": {
+        "relative_position": "Behind Subject",
+        "bounding_box_percentage": {
+          "x": 0.10,
+          "y": 0.10,
+          "width": 0.80,
+          "height": 0.80
+        }
+      },
+      "dimensions_relative": "Large",
+      "distance_from_camera": "Behind Subject",
+      "pose_orientation": "Fluid, amorphous",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Flat color",
+        "reflectivity": "None",
+        "micro_details": "Blobs and splashes extending to the left and right, wrapping slightly around the subject"
+      },
+      "color_details": {
+        "base_color_hex": "#5CAFF0",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Slightly darker/more saturated than background blue"
+      }
+    },
+    {
+      "id": "obj_013",
+      "label": "Graphic - Sound/Motion Lines",
+      "category": "Illustration/Overlay",
+      "location": {
+        "relative_position": "Around Head and Boombox",
+        "bounding_box_percentage": {
+          "x": 0.60,
+          "y": 0.05,
+          "width": 0.25,
+          "height": 0.40
+        }
+      },
+      "dimensions_relative": "Small",
+      "distance_from_camera": "Zero (Overlay)",
+      "pose_orientation": "Radiating",
+      "material": "Digital Vector",
+      "surface_properties": {
+        "texture": "Line art",
+        "reflectivity": "None",
+        "micro_details": "Short strokes indicating sound or movement above the hat and next to the boombox"
+      },
+      "color_details": {
+        "base_color_hex": "#FFFFFF",
+        "secondary_colors": [],
+        "gradient_or_pattern": "Solid"
+      }
+    }
+  ],
+  "background_details": {
+    "texture": "Digital Flat Color",
+    "patterns": "None (Solid Color)",
+    "lighting_behavior": "Even illumination, no gradient visible",
+    "additional_elements": [
+      "Vector liquid shapes (obj_012) act as a secondary background layer"
+    ]
+  },
+  "foreground_elements": {
+    "particles": "None",
+    "artifacts": "White vector doodles (mic, boombox, cracks) act as foreground overlays"
+  },
+  "reconstruction_notes": {
+    "mandatory_elements_for_recreation": [
+      "Male model in full blue Adidas outfit",
+      "Fleece texture on jacket",
+      "White contrast stitching on jeans and hat",
+      "Hand-drawn white doodle overlays (Mic, Boombox, Trefoil)",
+      "Cracked floor effect under feet",
+      "Monochromatic blue palette with white accents",
+      "Dynamic 'cool' pose"
+    ],
+    "sensitivity_factors": "The blend between the realistic photo and the flat vector graphics must be sharp. The blue tones of the clothing must coordinate with but distinguish from the background blue.",
+    "ambiguities": "The exact specific model of the Adidas jacket is not identifiable by name but defined by texture (sherpa/fleece) and color."
+  }
+}
 ```
 
 </details>
@@ -2228,7 +3007,38 @@ ultra-high resolution, professional photoshoot, cinematic lighting, flawless ski
         "material": "Tufted red faux leather seat",
         "base": "Tarnished bronze or gold metal pedestal with footrest"
       },
-      
+      "props_and_background": {
+        "primary_prop": "Slot machine",
+        "prop_details": "Illuminated marquee reading 'TRIPLE JACKPOT GEMS', glowing buttons, glass screen reflections",
+        "atmosphere": "Smoky, crowded, dimly lit background with bokeh lights from other machines"
+      }
+    },
+    "photography_technical": {
+      "camera_simulation": "Early 2000s Digital Compact Camera (e.g., Sony Cybershot or Canon PowerShot)",
+      "lighting_style": {
+        "type": "Direct On-Camera Flash",
+        "characteristics": [
+          "Harsh shadows directly behind the subject",
+          "High contrast",
+          "Overexposed specular highlights on skin and fabric",
+          "Vignetted corners"
+        ]
+      },
+      "composition": {
+        "angle": "Extreme low angle (Worm's-eye view)",
+        "focus": "Sharp focus on subject, slight blur on background",
+        "framing": "Full body shot emphasizing long legs and platform shoes"
+      },
+      "post_processing": {
+        "filters": "Vintage digicam aesthetic",
+        "grain": "ISO 800 digital noise",
+        "saturation": "High saturation, slightly blown-out whites"
+      }
+    },
+    "compiled_prompts": {
+      "main_prompt": "Low angle worm's-eye view shot, direct flash photography. A young woman sitting on a red tufted leather casino stool. She is wearing a fitted black satin mini slip dress with sparkling rhinestone spaghetti straps and chunky black platform block heels with ankle buckles. To her left is a large glowing slot machine with neon text 'TRIPLE JACKPOT GEMS'. The floor is a gaudy retro casino carpet with teal and orange swirls. Background is a dimly lit gambling floor. Aesthetic is Y2K party photography, candid snapshot, harsh flash lighting, hard shadows, high contrast, digital noise, 2000s digicam style, ultra-realistic texture on skin and fabric.",
+     }
+   }
 ```
 
 </details>
@@ -2282,7 +3092,8 @@ ultra-high resolution, professional photoshoot, cinematic lighting, flawless ski
     ],
     "sharpness": "Low perceived sharpness, distinct details stretched and indistinct"
   },
-  "full_prompt_text": "A heavily distorted, low-fidelity surveillance-style image depicts the Subject standing behind a cramped retail checkout counter inside a cluttered shop, captured from a high-mounted camera angled steeply downward in a top-down CCTV perspective. The image quality is intentionally degraded, with strong motion blur, digital smearing, compression artifacts, heavy noise, sc
+  "full_prompt_text": "A heavily distorted, low-fidelity surveillance-style image depicts the Subject standing behind a cramped retail checkout counter inside a cluttered shop, captured from a high-mounted camera angled steeply downward in a top-down CCTV perspective. The image quality is intentionally degraded, with strong motion blur, digital smearing, compression artifacts, heavy noise, scan lines, and subtle fisheye distortion warping the frame edges, making fine details indistinct and stretched. The Subject is centered from mid-torso upward, looking up toward the camera with the head tilted back; facial features are largely obscured by blur and artifacts, though dark oversized sunglasses dominate the face, reflecting ambient light, and the mouth appears open with the tongue faintly visible. One hand is raised toward the camera with the middle finger extended, clearly readable in silhouette but softened and ghosted by motion and low clarity, conveying a relaxed yet defiant posture. The foreground checkout counter is cluttered with papers and a white shopping bag with red rope handles, while the background shelves are densely packed with small items, souvenirs, and figurines that blend into abstract shapes due to low resolution and noise. Harsh, flat fluorescent lighting produces blown highlights, dull shadows, uneven color reproduction, and a cool green-blue color cast with visible banding and reduced dynamic range. Despite an effectively deep depth of field, perceived sharpness remains low, reinforcing a raw, gritty, confrontational mood that emphasizes the authenticity of an unpolished, unenhanced surveillance feed in a vertical 4:5 aspect ratio"
+}
 ```
 
 </details>
@@ -2429,7 +3240,23 @@ ultra-high resolution, professional photoshoot, cinematic lighting, flawless ski
   },
   "environment_and_lighting": {
     "background": {
-      "element": "Turquoise pool 
+      "element": "Turquoise pool water",
+      "physics": "Refraction, light-play on pool floor, subtle ripples, realistic movement"
+    },
+    "lighting_design": {
+      "source": "Single-direction natural sunlight",
+      "color_temp": "Warm sun-lit tones",
+      "exposure": "Slightly underexposed (lowered exposure)",
+      "shadows": "Physically accurate contact shadows on collarbones and chest"
+    }
+  },
+  "technical_parameters": {
+    "optics": "50mm–85mm focal length equivalent, realistic photographic perspective",
+    "depth_of_field": "Shallow, organic bokeh, natural fall-off",
+    "resolution_quality": "16k Hyper-Realistic",
+    "aspect_ratio": "3:4"
+  }
+}
 ```
 
 </details>
@@ -2644,7 +3471,103 @@ Create a high-quality 3D avatar of the person in the uploaded image with a cheer
       "id": "obj_002",
       "label": "Eyes (pair)",
       "category": "Facial feature",
-      "location": 
+      "location": "Upper-center",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Gray-green irises with dark limbal ring",
+        "texture": "Wet/glossy cornea, visible eyelashes",
+        "material": "Biological",
+        "state": "Open, neutral expression",
+        "dimensions_relative": "Medium"
+      },
+      "micro_details": [
+        "Tiny specular highlights on each cornea",
+        "Sparse lower lashes, fuller upper lashes",
+        "Slight shadow under lower lids"
+      ],
+      "pose_or_orientation": "Facing camera",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Pink bubble",
+      "category": "Object (gum)",
+      "location": "Lower-center",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Pastel pink",
+        "texture": "Smooth, slightly translucent",
+        "material": "Gum",
+        "state": "Inflated/intact",
+        "dimensions_relative": "Large relative to mouth"
+      },
+      "micro_details": [
+        "Two bright specular reflections on sphere",
+        "Seamless edge against lips"
+      ],
+      "pose_or_orientation": "Centered over mouth",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Stickers (assorted)",
+      "category": "Adhesive stickers",
+      "location": "Entire face and neck, concentrated forehead and cheeks",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Multicolor: magenta, yellow, blue, white",
+        "texture": "Paper/plastic with glossy varnish, torn edges",
+        "material": "Paper/plastic adhesive",
+        "state": "Layered, partially torn, some wrinkled",
+        "dimensions_relative": "Varied small-to-medium"
+      },
+      "micro_details": [
+        "Large 'POP ME' magenta sticker on forehead",
+        "Partial torn sticker fragments near nasolabial fold",
+        "Small rectangular stickers with tiny printed text",
+        "Edges lifting, adhesive shine around perimeters"
+      ],
+      "pose_or_orientation": "Affixed flat or slightly peeled",
+      "text_content": "Multiple small logos and words (e.g., 'POP ME')"
+    },
+    {
+      "id": "obj_005",
+      "label": "Hair strands",
+      "category": "Hair",
+      "location": "Left and right edges framing face",
+      "prominence": "Background/foreground overlap",
+      "visual_attributes": {
+        "color": "Light brown",
+        "texture": "Fine, slightly wet",
+        "material": "Hair",
+        "state": "Loose strands",
+        "dimensions_relative": "Thin relative to face"
+      },
+      "micro_details": [
+        "Individual strands crossing forehead edges",
+        "Slight adhesive sheen on some strands"
+      ],
+      "pose_or_orientation": "Hanging down"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      {
+        "text": "POP ME",
+        "location": "Forehead",
+        "font_style": "Bold/Decorative",
+        "legibility": "Clear"
+      }
+    ]
+  },
+  "semantic_relationships": [
+    "Stickers are affixed to Face",
+    "Bubble covers mouth, partially obscuring lips",
+    "Adhesive residue creates glossy highlights on skin",
+    "Hair strands frame and partly overlay stickers"
+  ]
+}
 ```
 
 </details>
@@ -2824,7 +3747,43 @@ Ultra-sharp focus, premium 3D render quality, cinematic depth, luxury branding a
       "wardrobe_and_props": {
         "female": "pink dress with colorful cherry pattern, simple fit, slightly moving in sea breeze, natural minimal makeup, long wavy hair",
         "male": "blue denim jeans and a plain white t-shirt, slightly wrinkled, no logos",
-        "props": "t
+        "props": "two simits in their hands, a simple tote/backpack nearby, no branding"
+      },
+
+      "micro_action": "they break pieces of simit, share a bite, laugh softly; the wind lifts the dress hem slightly; crumbs fall naturally onto their hands",
+
+      "environment_details": {
+        "location": "Moda coast, Istanbul",
+        "background": "sea horizon, gentle waves, a few distant people walking softly out of focus, seagulls in the sky, sunlit railing and rocks",
+        "ground_details": "worn stone or concrete edge, small everyday clutter (a bottle cap or leaf), but clean and believable, no staged props"
+      },
+
+      "lighting": "bright sunny daylight with soft sky fill; controlled highlights; subtle halation on sunlit edges; deep but detailed shadows under chins and clothing folds",
+
+      "composition": "eye-level medium shot, slightly off-center, imperfect framing like real street photography; faces sharp; background gently receding; no perfect symmetry",
+
+      "mood": "warm, simple, human—an everyday Istanbul love scene"
+    },
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "posed romance poster look",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh shapes",
+      "overly clean staged scene",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "painterly"
+    ]
+  }
+}
 ```
 
 </details>
@@ -2876,7 +3835,20 @@ Ultra-sharp focus, premium 3D render quality, cinematic depth, luxury branding a
     "background": "Solid vibrant red studio backdrop, with subtle surface texture, minor imperfections, and realistic light fall-off.",
     "props": "None visible other than the small stem in mouth"
   },
-  "lig
+  "lighting": {
+    "type": "Studio lighting",
+    "quality": "Soft but directional, creating realistic highlights, deep shadows, and accurate volume.",
+    "shadows": "Subtle soft shadows behind the subject, anchored to the floor, showing accurate density and color bleeding.",
+    "highlights": "Specular highlights on the leather dress, lips, eyes, and jewelry, showing light source reflections."
+  },
+  "technical_details": {
+    "camera_angle": "Eye level",
+    "shot_size": "Medium shot (thighs up)",
+    "style": "High-fashion editorial, glossy magazine aesthetic, with ultra-high detail and fidelity.",
+    "resolution": "8k, RAW file quality, with natural film grain, sharp focus, and photorealistic rendering.",
+    "color_palette": "Monochromatic red theme with skin tone contrast, realistic color rendering and gradients."
+  }
+}
 ```
 
 </details>
@@ -3042,7 +4014,58 @@ Ultra-sharp focus, premium 3D render quality, cinematic depth, luxury branding a
       },
       "base_contents": {
         "type": "Smoothie",
-        "color": "Soft pink with
+        "color": "Soft pink with purple undertones",
+        "texture": "Thick and smooth"
+      },
+      "toppings": {
+        "granola": "Golden-brown oat clusters",
+        "seeds": "Small black seeds scattered",
+        "fruits": [
+          "Strawberries (halved)",
+          "Raspberries (whole)",
+          "Blackberries (whole)"
+        ]
+      },
+      "motion_effects": {
+        "ingredients": "Granola flakes, seeds, and berries floating gently"
+      },
+      "background": {
+        "color": "Pastel lavender",
+        "gradient": "Subtle, soft gradient"
+      }
+    },
+
+    "module_3_cereal_milk_honey_splash": {
+      "scene_description": "Dynamic cereal stack with milk splash and honey drizzle",
+      "bowl": {
+        "color": "Blue ceramic bowl",
+        "finish": "Glossy",
+        "position": "Centered, resting visually but surrounded by motion"
+      },
+      "contents": {
+        "cereal": "Golden cornflakes stacked vertically",
+        "milk": "White milk splashing and dripping over flakes",
+        "fruits": [
+          "Raspberries",
+          "Blueberries"
+        ]
+      },
+      "additional_elements": {
+        "honey": {
+          "source": "Wooden honey dipper",
+          "state": "Honey dripping mid-air"
+        }
+      },
+      "motion_effects": {
+        "splashes": "Milk splashes frozen in dramatic arcs",
+        "particles": "Floating flakes and droplets"
+      },
+      "background": {
+        "color": "Deep blue",
+        "tone": "High contrast"
+      }
+    },
+}
 ```
 
 </details>
@@ -3140,7 +4163,15 @@ Ultra-sharp focus, premium 3D render quality, cinematic depth, luxury branding a
   "camera_settings": {
     "composition": {
       "shot_type": "three-quarter portrait",
-      "angle": "eye-leve
+      "angle": "eye-level"
+    },
+    "optics": {
+      "lens": "85mm prime",
+      "aperture": "f/2.8",
+      "focus": "sharp focus on subject",
+      "depth_of_field": "shallow bokeh background"
+    }
+  }
 ```
 
 </details>
@@ -3221,7 +4252,17 @@ Use the uploaded photo as the main face referenc. Preserve the exact facial stru
     },
     "camera_details": {
       "shot_type": "Medium shot (thigh-up)",
-      "angle": "Eye
+      "angle": "Eye-level",
+      "lens": "85mm prime lens for flattering portrait compression",
+      "aperture": "f/2.8 for slight depth of field separation from the wall",
+      "focus": "Sharp focus on the subject and dress texture"
+    },
+    "technical_specifications": {
+      "quality": "Ultra Photorealistic, 8k resolution, highly detailed",
+      "texture_quality": "High fidelity fabric textures, realistic skin pores, detailed stone masonry",
+      "engine": "Unreal Engine 5 render style or high-end photography" Ratio 3.4
+    }
+  }
 ```
 
 </details>
@@ -3274,7 +4315,11 @@ Use the uploaded photo as the main face referenc. Preserve the exact facial stru
       "index": "5/5",
       "prompt": "two hands splitting a classic New York-style cheesecake slice, ultra-creamy interior slowly separating, crumbly biscuit base breaking apart, subtle cream stretch, soft studio warm light, cinematic high-detail dessert photography",
       "category": "creamy separation",
-      "lighting": "soft 
+      "lighting": "soft warm studio light",
+      "detail_level": "ultra-detailed"
+    }
+  ]
+}
 ```
 
 </details>
@@ -3330,7 +4375,7 @@ A handcrafted felt miniature illustration of [Celebrity] reimagined as a soft wo
 
 ```
 Transform this image [Upload Your Image] into a 64K DSLR shot resolution of A creative urban street portrait featuring a young man (same face as the uploaded image) sitting on a curb in a quiet city street, paired with a stylized cartoon illustration of himself placed beside him. The real-life subject (same face as the uploaded image) is seated casually on a concrete sidewalk edge, resting his head on one hand in a bored, contemplative pose. He looks slightly￼ upward with a neutral, introspective expression, conveying a sense of quiet thoughtfulness and urban solitude. He wears a muted maroon cable-knit sweater with a relaxed fit, dark loose-fitting denim jeans with subtle stitched details near the cuffs, and worn brown leather boots. Accessories include layered silver chain dog tag with the name "[Add Text]" written on it, rings on his fingers, black-framed glasses, and a light-coloured baseball cap with bold embroidered lettering on￼ the front. His hair is short, dark hair, a well-groomed beard texture and character. Next to him on the sidewalk sits a small cartoon version (same face as the uploaded image) of himself, matching his outfit and pose exactly—same sweater, jeans, boots, cap, glasses, and facial expression. The illustrated character has clean outlines, warm muted colors, and a soft shaded, hand-drawn animation style, creating a playful contrast between realism and illustration. The cartoon figure is￼ proportionally smaller, emphasizing a companion-like or inner-self concept. The background features textured cobblestone pavement, a curb edge, and a building facade with muted yellow walls and green-tiled brickwork near a window. The color palette is earthy and subdued, with natural daylight providing soft, even lighting and realistic shadows. The overall composition blends street photography, fashion portraiture, and mixed-media digital art, evoking themes of identity,￼ self-reflection, and creativity.
-Style & Mood Keywords: Urban street photography, casu
+Style & Mood Keywords: Urban street photography, casual fashion portrait, mixed media art, real and cartoon character duo, introspective mood, muted earthy tones, soft natural light, realistic textures, creative storytelling, high-resolution detail, cinematic realism. Octane render & Unreal Engine
 ```
 
 </details>
@@ -3417,7 +4462,37 @@ Aesthetic 1970s-inspired fashion portrait of a stylish young woman sitting on ou
     "background_elements": {
       "details": "blurred city lights, bokeh effect, historic buildings in shadow",
       "depth": "shallow depth of field to isolate subject"
-   
+    }
+  },
+  "lighting_and_atmosphere": {
+    "lighting_setup": {
+      "primary_source": "warm golden street lamps",
+      "ambient": "soft city glow",
+      "accents": "rim lighting highlighting hair and shoulder profile",
+      "shadows": "soft, cinematic contrast"
+    },
+    "color_palette": {
+      "tones": ["silver", "gold", "deep midnight blue", "crimson red"],
+      "temperature": "warm vs cool contrast"
+    }
+  },
+  "technical_specifications": {
+    "photography_style": "fashion editorial, cinematic glamour",
+    "camera_settings": {
+      "focal_length": "85mm portrait lens",
+      "aperture": "f/1.8",
+      "iso": "400",
+      "shutter_speed": "1/125"
+    },
+    "render_quality": [
+      "8k resolution",
+      "unreal engine 5 style",
+      "octane render",
+      "ray tracing",
+      "sharp focus on eyes"
+    ]
+  }
+}
 ```
 
 </details>
@@ -3804,7 +4879,71 @@ Ultra-photorealistic rendering, sharp focus, high material realism, subtle highl
     "primary_action": "soda being poured into a transparent plastic cup",
     "motion": "liquid splash frozen mid-air",
     "liquid_behavior": [
- 
+      "visible carbonation bubbles",
+      "splash droplets",
+      "overflow splash effect"
+    ]
+  },
+  "beverage": {
+    "type": "cola",
+    "cup": {
+      "material": "transparent plastic",
+      "filled_with": "dark carbonated soda with ice",
+      "logo": "Pepsi logo clearly visible"
+    },
+    "bottle": {
+      "material": "plastic",
+      "label": "Pepsi branding visible",
+      "condition": "condensation droplets on bottle surface",
+      "held_by": "human hand entering frame from top right"
+    }
+  },
+  "secondary_objects": [
+    {
+      "object": "book",
+      "position": "left side of phone",
+      "color": "light beige cover",
+      "state": "closed"
+    },
+    {
+      "object": "pen",
+      "position": "near book on table",
+      "color": "black",
+      "orientation": "diagonal"
+    }
+  ],
+  "effects": {
+    "surreal_elements": [
+      "subject emerging from phone screen",
+      "physical interaction between digital and real space"
+    ],
+    "particles": [
+      "liquid droplets",
+      "snow particles in winter scene variant"
+    ],
+    "glass_effects": [
+      "cracked screen shards",
+      "reflections on broken glass"
+    ]
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "warm brown",
+      "black",
+      "deep cola brown",
+      "blue and red branding accents"
+    ],
+    "contrast": "high contrast between warm table tones and cool screen elements"
+  },
+  "post_processing": {
+    "sharpness": "ultra-sharp",
+    "clarity": "high micro-detail",
+    "noise": "none",
+    "dynamic_range": "high"
+  },
+  "mood": "playful, surreal, visually striking",
+  "realism_level": "high realism with intentional AI-edited surreal effect"
+}
 ```
 
 </details>
@@ -3999,7 +5138,8 @@ Ultra-photorealistic rendering, sharp focus, high material realism, subtle highl
     "No artificial filters or stylization",
     "Maintain natural proportions and lighting"
   ],
-  "output_goal": "Create a playful, ultra-realist
+  "output_goal": "Create a playful, ultra-realistic mirror selfie portrait of a young woman in a messy kitchen, laughing naturally with flour on her face, perfectly matching the reference photo in pose, expression, and identity."
+}
 ```
 
 </details>
@@ -4075,7 +5215,10 @@ View from under a plane of completely transparent plexiglass. We are looking str
     },
     "technical_specs": {
       "lighting": "Harsh midday sunlight, strong contrast, deep natural shadows, bright specular highlights",
-      "camera_settings": "
+      "camera_settings": "50–85mm lens look, shallow depth of field, high dynamic range (HDR)",
+      "color_grading": "Realistic, true-to-life skin tones"
+    },
+    "full_prompt_string": "Ultra-realistic cinematic lifestyle photography, 8K, hyper-detailed, photorealistic, An attractive woman aged 20, Slavic appearance. A naturally beautiful, well-balanced face with realistic proportions, no artificial perfection. Large expressive green-hazel eyes, calm confident gaze toward the camera. Naturally full lips, soft and unexaggerated. Light, natural daytime makeup emphasizing her features without looking heavy. Her skin is sun-kissed and wet, highly realistic with visible pores, subtle micro-imperfections, fine highlights, and water and oil droplets catching the sunlight. No plastic or overly smooth texture. Long wet hair, slightly messy after swimming, with a few strands sticking naturally to her cheek and forehead. She is lying on her stomach on a bright blue-and-white striped beach towel. The pose feels relaxed and spontaneous, like a real vacation moment: legs gently bent at the knees and lifted upward, feet together; a natural back line, slim waist, realistic body anatomy without exaggeration. She wears a small classic black bikini top with thin straps and a deep plunge — minimalistic, clean design, naturally fitting the body. One arm is extended forward as she takes a selfie — part of her arm and the edge of a small smartphone are visible in frame, reinforcing a casual iPhone-style shot. In her other hand, she holds a fresh coconut with a straw and a subtle ADORE logo; water droplets run down the shell. Environment: a luxurious rooftop pool atop a high-rise building in Los Angeles. Bright sunny day, clear blue sky with no clouds, turquoise pool water. Lush tropical greenery (banana palms, monstera plants), white sun loungers and umbrellas. Modern downtown LA skyscrapers in the background with a slight atmospheric haze on the horizon.
 ```
 
 </details>
@@ -4207,7 +5350,68 @@ Output:
       "meat": "chunked grilled meat with char marks and uneven texture",
       "garnish": "small green herb leaves attached to meat",
       "floating_items": [
-  
+        "round cucumber slices",
+        "thin onion rings"
+      ],
+      "sauce": {
+        "container": "small white ramekin",
+        "action": "thick orange sauce splashing upward from bowl"
+      },
+      "particles": "tiny spice or crumb particles scattered in air"
+    },
+    "lighting": {
+      "type": "dramatic directional lighting",
+      "highlights": "strong sheen on meat surface",
+      "contrast": "deep shadows"
+    },
+    "background": {
+      "color": "solid deep red",
+      "texture": "soft grain with floating particles"
+    }
+  },
+
+  "module_3_image_3_style": {
+    "subject": "four sushi rolls",
+    "composition": {
+      "orientation": "floating cluster",
+      "spacing": "uneven depth, some closer, some blurred behind",
+      "motion": "sesame seeds and herbs suspended"
+    },
+    "visible_elements": {
+      "sushi_structure": {
+        "outer_layer": "white rice",
+        "inner_layer": "dark seaweed",
+        "fillings": [
+          "orange fish slice",
+          "green avocado"
+        ]
+      },
+      "toppings": [
+        "toasted sesame seeds",
+        "brown crunchy coating",
+        "finely chopped green herbs"
+      ],
+      "particles": [
+        "sesame seeds",
+        "small green herb pieces"
+      ]
+    },
+    "lighting": {
+      "type": "soft but crisp studio lighting",
+      "focus": "front sushi pieces sharp, rear slightly blurred"
+    },
+    "background": {
+      "color": "dark blue-grey",
+      "depth": "clean bokeh-free backdrop with floating particles"
+    }
+  },
+  "post_processing": {
+    "clarity": "ultra-sharp",
+    "noise": "minimal",
+    "color_balance": "rich but natural",
+    "ai_signature": "clean AI-edited look without exaggeration"
+  }
+}
 ```
 
 </details>
@@ -4237,7 +5441,10 @@ Output:
     "midground": "woman centered against modern silver Aston Martin DB5 convertible (James Bond iconic car) with chrome details and license plate 'BMT 216A' visible",
     "background": "large step-and-repeat backdrop with bold Union Jack flag design in red, white, and blue stripes and prominent oversized lettering (partial 'G' visible, likely part of Bond film logo), glamorous movie premiere setting"
   },
-  "lighting_and_atmosphere": "
+  "lighting_and_atmosphere": "bright professional event flash and ambient lighting with warm highlights on skin, hair, and black fabric creating luxurious sheen, subtle shadows enhancing dress texture and jewelry sparkle, high-contrast glamorous red carpet vibe with elegant sophisticated energy, photorealistic detail",
+  "technical_quality": "highly detailed, sharp focus on face, crystal strap embellishments, velvet fabric texture, and car chrome reflections, 8k resolution, realistic skin glow and hair strands, professional red carpet photography style with natural depth of field softly blurring distant backdrop",
+  "negative_prompt_suggestions": "blurry, deformed, extra limbs, harsh overexposed flash, underexposed shadows, low quality, cartoon, anime, text watermark, extra people in focus, modern car, daytime outdoor light, casual clothing"
+}
 ```
 
 </details>
@@ -4273,7 +5480,12 @@ PHASE 3: PHYSICAL BRANDING (TEXTURE)
 On the Merch: The hanging apparel must feature High-Quality Physical Branding. Use "Chenille Patches", "Embroidered Logos", or "Screen Print" running down the sleeve or on the back. It must look like a real, expensive garment.
 On the Products: Ensure the stacked core products have the correct [BRAND NAME] logo visible.
 PHASE 4: PHOTOGRAPHY & LIGHTING
-Lighting: Soft, directional window light from the side. Creates realistic, soft shadows on the rack and rich highlights on the
+Lighting: Soft, directional window light from the side. Creates realistic, soft shadows on the rack and rich highlights on the textures.
+Lens: 50mm or 85mm. Sharp focus on the merch, slight fall-off in the background.
+PHASE 5: UI OVERLAY (THE "DROP" LAYOUT)
+Left Side Alignment:
+Large, clean White Logo of [BRAND NAME] floating in the negative space on the left.
+Under the logo, small white text with the brand's official slogan.
 ```
 
 </details>
@@ -4402,7 +5614,23 @@ A high-contrast ink noir portrait of [SUBJECT], illustrated entirely with expres
   },
   "ColorAndTone": {
     "ColorPalette": "Natural skin tones with soft, modern colors",
-    "Contrast
+    "Contrast": "Balanced contrast, smooth tonal transitions"
+  },
+  "NegativePrompt": [
+    "cartoon human",
+    "uncanny valley",
+    "harsh lighting",
+    "oversaturated colors",
+    "blurry faces",
+    "low detail",
+    "messy composition"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -4477,7 +5705,37 @@ A high-contrast ink noir portrait of [SUBJECT], illustrated entirely with expres
     "architecture": {
       "primary_element": "Wide marble staircase",
       "material": "Polished white Calacatta marble with gold veining",
-      "backdrop": "Ornate balustrades, 
+      "backdrop": "Ornate balustrades, distant vaulted ceilings"
+    },
+    "atmosphere": {
+      "vibe": "Dreamy, luxurious, and timeless",
+      "depth": "Extreme shallow depth of field (bokeh background)"
+    }
+  },
+  "lighting_and_color": {
+    "lighting_scheme": {
+      "primary_source": "Cinematic soft-box simulation",
+      "secondary_source": "Warm ambient glow from palace chandeliers",
+      "effects": "Subtle bloom, ethereal light rays, volumetric golden hour glow"
+    },
+    "color_palette": {
+      "dominants": ["Powder blue", "Creamy white", "Soft gold"],
+      "accents": ["Warm skin tones", "Deep amber highlights"]
+    }
+  },
+  "technical_rendering": {
+    "camera_settings": {
+      "lens": "85mm prime lens simulation",
+      "aperture": "f/1.2 for creamy bokeh",
+      "sensor": "Full-frame digital cinema camera"
+    },
+    "image_fidelity": {
+      "texture_mapping": "High-fidelity fabric weave and marble grain",
+      "post_processing": "Subtle film grain, HDR, color graded for fairytale cinema",
+      "anti_aliasing": "Ultra-sharp edges on subject, smooth gradients in background"
+    }
+  }
+}
 ```
 
 </details>
@@ -4563,7 +5821,8 @@ Transform the original photo into a dramatic, photorealistic, ultra-detailed set
       "aesthetic": "Y2K vintage digital camera vibe, paparazzi style, candid celebrity snapshot, slight film grain, high saturation."
     }
   },
-  "full_prompt_string": "Low angle flash photography of a young woman resembling Charli D'Amelio sitting on a red casino stool. She is wearing a black mini dress with rhinestone straps and black platform block heels. She is next to a slot machine that says 'TRIPLE JACKPOT GEMS'. Retro 
+  "full_prompt_string": "Low angle flash photography of a young woman resembling Charli D'Amelio sitting on a red casino stool. She is wearing a black mini dress with rhinestone straps and black platform block heels. She is next to a slot machine that says 'TRIPLE JACKPOT GEMS'. Retro casino carpet floor. Direct flash, harsh shadows, 2000s digicam aesthetic, glamorous but gritty."
+}
 ```
 
 </details>
@@ -4661,7 +5920,48 @@ Transform the original photo into a dramatic, photorealistic, ultra-detailed set
     "effect": "forced perspective",
     "subject_scale": "the woman appears extremely giant",
     "buildings_scale": "buildings appear much smaller, reaching no higher than her knees",
-    "dominance": "the
+    "dominance": "the subject visually dominates the entire scene",
+    "realism": "inspiring scale while remaining physically believable"
+  },
+  "environment": {
+    "location": "real urban intersection",
+    "elements": [
+      "pedestrian crosswalk",
+      "road markings",
+      "traffic signs",
+      "cars",
+      "bicycles",
+      "pedestrians at realistic human scale"
+    ],
+    "setting": "ground-level urban environment"
+  },
+  "lighting": {
+    "type": "natural daylight",
+    "conditions": "clear or lightly cloudy sky",
+    "shadows": "soft and realistic",
+    "restrictions": "no fantasy or dramatic lighting"
+  },
+  "product_rules": {
+    "usage": "use the uploaded Canon product exactly as provided",
+    "distortion": "none",
+    "logo": "unchanged",
+    "appearance": "natural reflections and realistic highlights only"
+  },
+  "camera_quality": {
+    "realism": "maximum photorealism",
+    "depth": "clear separation of foreground, subject, and background",
+    "artifacts": "none"
+  },
+  "constraints": [
+    "No AI-art look",
+    "No plastic or sculpted skin",
+    "No distortion of face or body",
+    "No extra limbs or incorrect anatomy",
+    "No text or watermarks",
+    "No visible selfie camera device"
+  ],
+  "output_goal": "Create a hyper-realistic cinematic selfie image of a woman using her exact reference identity, captured from an extreme top-down perspective in a real urban crosswalk, with forced perspective scale, natural daylight, and a Canon camera product prominently held toward the lens."
+}
 ```
 
 </details>
@@ -4954,7 +6254,31 @@ Use my uploaded face image as the ONLY facial and identity reference. No other f
     "perspective": "authentic candid",
     "framing": "medium-wide",
     "visibility": "upper body and part of table visible",
-    "composition": "subject slightly smaller in frame, minor 
+    "composition": "subject slightly smaller in frame, minor imbalance"
+  },
+  "lighting": {
+    "type": "harsh and imperfect",
+    "sources": ["rooftop café lights", "city street lights"],
+    "effects": ["uneven exposure", "blown highlights", "deep shadows", "imperfect white balance"]
+  },
+  "focus_and_quality": {
+    "focus": "slightly more on subject",
+    "background_blur": "soft blur due to low light and camera limitations",
+    "restrictions": ["not portrait mode blur", "not artificial bokeh"],
+    "artifacts": ["visible digital noise", "grain", "slight motion blur", "imperfect focus accuracy", "limited dynamic range"]
+  },
+  "background": {
+    "location": "Jakarta rooftop café",
+    "elements": ["tables", "railing", "other people casually visible", "distant Jakarta buildings", "city lights"]
+  },
+  "objects": {
+    "table_items": ["iPhone 17 Pro Max", "part of a woman's handbag"],
+    "accessories": {
+      "wrist": "latest Apple Watch, naturally visible"
+    }
+  },
+  "overall_feeling": ["normal", "intimate", "quiet", "authentic", "slightly messy", "realistic", "non-aesthetic", "non-cinematic", "not staged", "not AI-looking", "taken by her boyfriend"]
+}
 ```
 
 </details>
@@ -5230,7 +6554,21 @@ Create a high-quality stylized 3D render of a clear, translucent glass skeleton 
  "grain": "none",
  "noise": "none",
  "motion_blur": "none"
- }
+ },
+
+ "negative_prompts": [
+ "glass case",
+ "display box",
+ "museum enclosure",
+ "transparent cube",
+ "protective casing",
+ "reflections on glass",
+ "labels or plaques",
+ "text overlays",
+ "busy background",
+ "cinematic blur"
+ ]
+}
 ```
 
 </details>
@@ -5418,7 +6756,37 @@ A miniature isometric architectural diorama of [LANDMARK NAME], accurately refle
     "background_elements": {
       "details": "blurred city lights, bokeh effect, historic buildings in shadow",
       "depth": "shallow depth of field to isolate subject"
-   
+    }
+  },
+  "lighting_and_atmosphere": {
+    "lighting_setup": {
+      "primary_source": "warm golden street lamps",
+      "ambient": "soft city glow",
+      "accents": "rim lighting highlighting hair and shoulder profile",
+      "shadows": "soft, cinematic contrast"
+    },
+    "color_palette": {
+      "tones": ["silver", "gold", "deep midnight blue", "crimson red"],
+      "temperature": "warm vs cool contrast"
+    }
+  },
+  "technical_specifications": {
+    "photography_style": "fashion editorial, cinematic glamour",
+    "camera_settings": {
+      "focal_length": "85mm portrait lens",
+      "aperture": "f/1.8",
+      "iso": "400",
+      "shutter_speed": "1/125"
+    },
+    "render_quality": [
+      "8k resolution",
+      "unreal engine 5 style",
+      "octane render",
+      "ray tracing",
+      "sharp focus on eyes"
+    ]
+  }
+}
 ```
 
 </details>
@@ -5495,7 +6863,35 @@ A miniature isometric architectural diorama of [LANDMARK NAME], accurately refle
 },
 "technical_details": {
 "camera_style": "professional studio photography",
-"lens_eff
+"lens_effect": "slight compression typical of portrait lens",
+"estimated_focal_length": "85mm equivalent",
+"image_sharpness": "high",
+"noise": "minimal",
+"dynamic_range": "controlled highlights with deep shadows"
+},
+"artistic_style": {
+"genre": "cinematic portrait",
+"influences": ["cyberpunk", "neo-noir", "editorial fashion"],
+"visual_aesthetic": "bold, modern, high-impact",
+"post_processing": {
+"skin_retouching": "subtle, realistic",
+"color_enhancement": "strong split-toning blue/red",
+"clarity": "enhanced micro-contrast"
+}
+},
+"overall_impression": {
+"tone": "powerful and enigmatic",
+"intended_use": "editorial, album cover, cinematic poster, AI style reference",
+"style_recreation_keywords": [
+"cinematic neon portrait",
+"blue and red split lighting",
+"black background",
+"intense direct gaze",
+"cyberpunk color grading",
+"high-contrast studio lighting"
+]
+}
+}
 ```
 
 </details>
@@ -5555,7 +6951,146 @@ A miniature isometric architectural diorama of [LANDMARK NAME], accurately refle
       "doner": {
         "type": "Perfectly wrapped dürüm (wrap) cross-section",
         "arrangement": "Single dürüm cut in half, floating vertically",
-        
+        "surface": "Lightly toasted lavash bread with golden char marks"
+      },
+      "accent_elements": {
+        "filling": "Layered döner meat, lettuce, tomatoes, onions visible in cross-section",
+        "sauce": "White garlic yogurt sauce drizzling elegantly",
+        "vegetables": "Fresh red tomato slices, crisp lettuce, purple onion rings"
+      },
+      "motion_effects": {
+        "particles": "Subtle floating spice particles and herb fragments",
+        "drops": "Sauce droplets frozen mid-fall"
+      },
+      "background": {
+        "color": "Warm terracotta orange",
+        "gradient": "Very soft tonal gradient"
+      }
+    },
+
+    "module_3_doner_sauce_pour_drama": {
+      "scene_description": "Cinematic sauce pour over döner meat pile",
+      "doner": {
+        "type": "Mountain of freshly sliced döner meat",
+        "texture": "Highly detailed crispy edges and tender interior"
+      },
+      "additional_elements": {
+        "sauces": {
+          "white_sauce": {
+            "state": "Thick creamy garlic yogurt sauce pouring from above",
+            "motion": "Frozen in elegant flowing ribbon"
+          },
+          "red_sauce": {
+            "state": "Spicy red chili sauce drizzling alongside",
+            "motion": "Thin crimson streams intertwining with white sauce"
+          }
+        },
+        "vegetables": [
+          "Sliced tomatoes",
+          "Chopped lettuce",
+          "Thinly sliced onions",
+          "Fresh parsley sprigs"
+        ]
+      },
+      "motion_effects": {
+        "splashes": "Micro sauce splashes on meat surface",
+        "particles": "Floating spice particles and herb fragments",
+        "steam": "Subtle heat vapor rising from meat"
+      },
+      "background": {
+        "color": "Dark charcoal black",
+        "tone": "High contrast, premium street food aesthetic"
+      }
+    },
+
+    "module_4_modern_doner_deconstructed_composition": {
+      "scene_description": "Modern deconstructed döner composition in mid-air",
+      "elements": {
+        "bread": "Pieces of toasted lavash bread floating separately",
+        "meat": "Individual döner slices suspended at different angles",
+        "vegetables": "Tomato slices, lettuce leaves, onion rings floating between layers",
+        "sauces": "Glossy sauce ribbons connecting elements artistically"
+      },
+      "motion_effects": {
+        "particles": "Ultra-fine spice dust suspended in air",
+        "drops": "Scattered sauce droplets frozen in motion",
+        "steam": "Minimal heat waves rising from meat"
+      },
+      "background": {
+        "color": "Muted sage green",
+        "texture": "Smooth, seamless"
+      }
+    },
+
+    "module_5_rotating_doner_spit_close_up": {
+      "scene_description": "Extreme close-up of döner meat on vertical spit with knife slice frozen in time",
+      "doner_spit": {
+        "type": "Vertical döner tower on rotating spit",
+        "texture": "Layers of seasoned meat with charred outer crust",
+        "detail": "Visible spices, fat marbling, and grill marks"
+      },
+      "action_elements": {
+        "knife": "Large döner knife mid-slice through meat",
+        "meat_slice": "Fresh slice falling away from spit",
+        "shavings": "Meat shavings and crispy bits floating"
+      },
+      "motion_effects": {
+        "particles": "Charred bits and seasoning particles in air",
+        "steam": "Heat vapor wisps rising from fresh cut"
+      },
+      "background": {
+        "color": "Rich golden amber",
+        "texture": "Smooth gradient"
+      }
+    },
+
+    "module_6_doner_plate_overhead_explosion": {
+      "scene_description": "Overhead shot of döner plate with ingredients exploding upward",
+      "composition": {
+        "base": "Thin lavash bread pieces on bottom",
+        "center": "Pile of döner meat slices",
+        "explosion": "All ingredients bursting upward in circular pattern"
+      },
+      "flying_elements": [
+        "Döner meat slices spiraling",
+        "French fries launching upward",
+        "Grilled peppers and tomatoes",
+        "Fresh parsley and sumac",
+        "Sauce droplets spraying",
+        "Lemon wedges"
+      ],
+      "motion_effects": {
+        "height_variation": "Elements at different heights creating depth",
+        "rotation": "Some elements rotating while airborne"
+      },
+      "background": {
+        "color": "Deep burgundy red",
+        "style": "Vignette effect focusing on center"
+      }
+    }
+
+  },
+  "negative_prompt": [
+    "text",
+    "logos",
+    "branding",
+    "hands",
+    "people",
+    "utensils beyond döner knife",
+    "full plates visible",
+    "tables",
+    "restaurant interior",
+    "cartoon style",
+    "raw meat",
+    "excessive grease pooling",
+    "burnt or overcooked appearance",
+    "overexposure",
+    "artificial glow",
+    "low detail textures",
+    "unappetizing colors",
+    "plastic-looking food"
+  ]
+}
 ```
 
 </details>
@@ -5624,7 +7159,34 @@ A miniature isometric architectural diorama of [LANDMARK NAME], accurately refle
     }
   },
   "environment_and_lighting": {
-    "setting": "Contemporary arc
+    "setting": "Contemporary architectural background",
+    "lighting_setup": {
+      "primary": "Softbox key light for even skin tones",
+      "secondary": "Subtle rim lighting to define the body curves and hair texture",
+      "ambience": "Clean, sophisticated, high-fashion editorial aesthetic"
+    },
+    "color_palette": [
+      "Ivory",
+      "Warm Gold",
+      "Neutral Skin Tones",
+      "Soft Muted Background"
+    ]
+  },
+  "technical_render_specs": {
+    "camera": {
+      "lens": "85mm prime lens (portrait specialty)",
+      "aperture": "f/2.8 for sharp subject focus and soft background blur",
+      "sensor": "Full-frame CMOS",
+      "shot_type": "Full body / Medium shot"
+    },
+    "resolution_quality": [
+      "8k UHD",
+      "Highly detailed textures",
+      "Ray-traced reflections on metallic surfaces",
+      "Masterpiece quality"
+    ]
+  }
+}
 ```
 
 </details>
@@ -5668,7 +7230,17 @@ A miniature isometric architectural diorama of [LANDMARK NAME], accurately refle
       "6_middle_right": "Lying on back amongst the disco balls, one arm reaching up towards the ceiling/camera.",
       "7_bottom_left": "Upside-down perspective (head at bottom of frame), playful expression, hair cascading down.",
       "8_bottom_center": "Sitting cross-legged (Lotus position), hugging the brown teddy bear tight, pouting slightly.",
-      "9_bottom_right": 
+      "9_bottom_right": "Sitting up, holding the pink retro telephone receiver to ear, looking sideways as if listening to gossip."
+    },
+    "camera_technical_values": {
+      "focal_length": "35mm (Versatile environmental portrait lens).",
+      "aperture": "f/5.6 (Ensures subject and props are in focus).",
+      "shutter_speed": "1/200s (Flash sync to freeze confetti motion).",
+      "iso": "ISO 200.",
+      "lighting": "Hard flash creates a distinct drop shadow behind the subject on the white wall and specular highlights on the disco balls."
+    }
+  },
+  "midjourney_string": "3x3 photo grid collage of a cute Asian girl at a home party, wearing white floral top and
 ```
 
 </details>
@@ -5880,7 +7452,37 @@ Sharp focus, high color saturation, smooth shadows, modern commercial product sh
       "style": "Cinematic editorial lighting",
       "quality": "Bright highlights on crystals, soft sculpting on face",
       "mood": "Luxurious, dramatic, red-carpet glamour",
-      "contrast": "Balanced 
+      "contrast": "Balanced with refined shadows"
+    },
+    "camera_and_quality": {
+      "resolution": "Ultra-HD 8K",
+      "realism": "Hyper-realistic photographic quality",
+      "focus": "Sharp focus on face, hair, and crystal details",
+      "depth_of_field": "Natural, editorial"
+    },
+    "aesthetic": {
+      "theme": "High-glamour evening couture",
+      "vibe": [
+        "Elegant",
+        "Powerful",
+        "Luxury",
+        "Timeless"
+      ]
+    },
+    "negative_prompt": [
+      "face alteration",
+      "beauty morphing",
+      "cartoon",
+      "CGI",
+      "3D render",
+      "plastic skin",
+      "over-retouching",
+      "low detail",
+      "blur",
+      "illustration" Ratio 3.4
+    ]
+  }
+   }
 ```
 
 </details>
@@ -5955,7 +7557,44 @@ Sharp focus, high color saturation, smooth shadows, modern commercial product sh
     "device_spec": {
       "model": "iPhone 16 Pro Max",
       "finish": "Silver / Gray Titanium",
-      "peripheral": "Hot Pin
+      "peripheral": "Hot Pink phone case (High-saturation pop color)"
+    }
+  },
+  "environmental_rig": {
+    "scenography": {
+      "interior_style": "Modern Minimalist",
+      "surfaces": {
+        "floor": "Light wood planks",
+        "rug": "Light grey shag / High-pile texture",
+        "walls": "Neutral matte white"
+      },
+      "props": {
+        "mirror": "Large floor-length mirror with an ornate gold frame"
+      }
+    },
+    "illumination_architecture": {
+      "source_type": "Natural soft indoor daylight",
+      "distribution": "Even / Diffused",
+      "shadow_logic": "Soft-ambient / Zero harsh contrast"
+    }
+  },
+  "technical_logic_node": {
+    "optical_parameters": {
+      "shot_type": "Wide-angle mirror reflection",
+      "perspective": "Eye-level / Slightly tilted downward",
+      "focus_mapping": "Sharp focus on subject and garment textures"
+    },
+    "color_theory": {
+      "base_palette": ["Monochromatic grays", "Metallic silver"],
+      "contrast_element": "Hot pink focal point"
+    },
+    "post_processing_directives": {
+      "resolution": "8K UHD",
+      "denoising": "Off / Film grain retention",
+      "filtering": "Professional editorial grade"
+    }
+  }
+}
 ```
 
 </details>
@@ -6045,7 +7684,9 @@ A high-resolution, close-up editorial-style portrait of a young woman standing a
       "mood": "Serene, stylish, lifestyle-oriented, peaceful, effortlessly fashionable",
       "focus": "Natural anatomy, realistic skin texture, subtle highlights/reflections, photographic depth-of-field (editorial feel)"
     },
-    "full_prompt_text": "A hyper-realistic photograph of a young woman s
+    "full_prompt_text": "A hyper-realistic photograph of a young woman standing outdoors on a wooden deck beside a modern landscaped swimming pool. Lush green plants, small trees, and calm reflective water surround her, with contemporary buildings faintly visible in the distance. She is captured from a slightly rear three-quarter angle, gracefully turning her upper body and head toward the camera, forming a natural S-curve in her posture. One arm is raised above her head, gently holding her hair, while the other arm rests naturally by her side, giving a candid, effortless feel. Face & Identity: Use the uploaded photo as the exact and only reference. Preserve the face 100%: facial structure, bone proportions, eyes, nose, lips, skin texture, and natural asymmetry. No alterations, filters, or stylization. Expression must remain calm, subtly confident, and slightly curious. Hair & Outfit: Dark, straight, silky hair tied in a mid-height ponytail, with loose front strands framing her face. She wears a fitted white backless crop top with short sleeves exposing her shoulders and upper back, paired with loose-fitting black pants sitting comfortably at the waist. Lighting & Mood: Natural soft daylight, likely late afternoon, evenly illuminating skin and clothing. Gentle highlights accentuate cheekbones, shoulder, and back. Soft, diffused lighting ensures no harsh shadows. Colors & Atmosphere: Fresh, natural palette dominated by greens, soft blues, warm wood tones, and neutral clothing colors. The mood is serene, stylish, and lifestyle-oriented. Extra: Focus on natural anatomy, realistic skin texture, and photographic depth-of-field."
+  }
+}
 ```
 
 </details>
@@ -6100,7 +7741,10 @@ A high-resolution, close-up editorial-style portrait of a young woman standing a
       "prompt": "two hands breaking a southern-style buttery biscuit in half, hot steam rising, melted butter pooling inside the cracks, crumbs falling mid-air, warm country kitchen light, cinematic high-detail food action photography",
       "category": "steam & butter",
       "lighting": "warm kitchen light",
-      "detail_level": "u
+      "detail_level": "ultra-detailed"
+    }
+  ]
+}
 ```
 
 </details>
@@ -6376,7 +8020,45 @@ Render in a polished, photorealistic style with fine architectural detail, reali
     "location": "luxury city street at night",
     "city_vibe": "London-inspired",
     "background_elements": [
-      "grand stone building with tall columns
+      "grand stone building with tall columns",
+      "Union Jack flags mounted on building facade",
+      "ornate black metal fencing",
+      "large green hedge wrapped in warm fairy lights",
+      "parked black luxury car resembling Rolls-Royce",
+      "street lamps",
+      "blurred pedestrians and traffic lights in distance"
+    ],
+    "ground": "clean stone pavement"
+  },
+  "lighting": {
+    "time": "night",
+    "sources": [
+      "warm decorative fairy lights",
+      "soft street lighting",
+      "ambient building lights"
+    ],
+    "effect_on_subject": "even illumination on face and outfit",
+    "color_temperature": "warm foreground with cool background highlights"
+  },
+  "camera": {
+    "shot_type": "medium shot",
+    "angle": "eye-level",
+    "focus": "sharp focus on subject",
+    "depth_of_field": "shallow",
+    "background": "cinematic bokeh"
+  },
+  "style": {
+    "aesthetic": "luxury glamour",
+    "mood": "confident, elegant, upscale nightlife",
+    "photography_type": "high-end smartphone or mirrorless camera",
+    "realism_level": "photorealistic",
+    "grain": "very subtle night grain"
+  },
+  "color_palette": {
+    "primary_colors": ["silver", "white", "black"],
+    "accent_colors": ["warm gold lights", "deep night blues"]
+  }
+}
 ```
 
 </details>
@@ -6546,7 +8228,27 @@ Render in a polished, photorealistic style with fine architectural detail, reali
     "type": "soft, uniform overhead lighting",
     "direction": "from above",
     "effect": [
-      "subtle shadows defining facial features and c
+      "subtle shadows defining facial features and clothing folds",
+      "even illumination with no harsh contrast"
+    ]
+  },
+  "camera_settings": {
+    "iso": "150–200",
+    "aperture": "f/1.28",
+    "shutter_speed": "1/200s",
+    "resolution": "high-resolution, ultra-detailed"
+  },
+  "color_grading": {
+    "palette": "neutral, modern tones",
+    "contrast": "soft and balanced",
+    "look": "clean, contemporary"
+  },
+  "mood": {
+    "atmosphere": "minimalist, modern, contemplative",
+    "focus": "strong subject isolation and visual clarity"
+  },
+  "output_goal": "Create a high-resolution, top-down aerial studio portrait of a woman against a soft gray gradient background, with dramatic perspective, minimalist composition, and complete preservation of her facial identity and natural appearance."
+}
 ```
 
 </details>
@@ -6626,7 +8328,24 @@ Render in a polished, photorealistic style with fine architectural detail, reali
       "tag": "CLASSIC_SLAPSTICK_CARTOON",
       "design_rules": {
         "pose_physics": "Elastic squash-and-stretch motion",
-        "facial_expression": "Over-the-
+        "facial_expression": "Over-the-top animated reactions",
+        "ink_weight": "Thick bold cartoon outlines",
+        "energy_level": "High-motion, exaggerated action"
+      }
+    }
+  },
+
+  "final_processing": {
+    "image_finish": {
+      "edge_clarity": "Enhanced line sharpness",
+      "color_tuning": "Vibrant illustration grading"
+    },
+    "layout_rules": {
+      "framing": "Centered character focus",
+      "background_cleanliness": "Noise-free, studio clean"
+    }
+  }
+}
 ```
 
 </details>
@@ -6694,7 +8413,17 @@ Render in a polished, photorealistic style with fine architectural detail, reali
       "atmosphere": "quiet, minimal, artistic indoor ambiance"
     },
     "aesthetic": {
-      "style": "Instagram aesth
+      "style": "Instagram aesthetic portrait set",
+      "features": [
+        "golden hour light",
+        "window shadow patterns",
+        "minimal makeup",
+        "natural expressions",
+        "clean editorial portrait look"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -6758,7 +8487,17 @@ Annotation design requirements:
 
 – High contrast text (dark on light, light on dark)
 
-– Thick
+– Thick, clean connector lines pointing clearly to each ingredient
+
+– No transparency that reduces readability
+
+– Annotations must visually dominate over background without covering ingredients
+
+Background is soft, neutral, and atmospheric, with subtle depth and gentle gradients, inspired by premium food advertising.
+
+Overall style is clean, modern, and appetizing, commercial-ready without technical or schematic feel.
+
+No extra elements, no substitutions, no reinterpretation of ingredients.
 ```
 
 </details>
@@ -6775,7 +8514,14 @@ Annotation design requirements:
 <summary>📋 View Prompt</summary>
 
 ```
-Using the uploaded reference image STRICTLY, preserve the same woman’s face, identity, age, facial structure, skin tone, and natural expression with 100% accuracy. No facial alteration, beautification, or identity change.\n\nGenerate a highly realistic cinematic fashion editorial photoshoot featuring a stylish adult woman leaning casually against a warm beige textured wall. Her body is slightly angled, one shoulder gently resting on the wall, conveying relaxed confidence, elegance, and quiet strength.\n\nOutfit:\nShe wears a loose pastel blue button-down shirt with softly rolled-up sleeves, styled effortlessly. Paired with tailored white relaxed-fit trousers that drape naturally. Footwear consists of clean minimalist white or soft blue-white sneakers, maintaining a modern, understated luxury feel.\n\nPose & Expression:\nShe stands with natural posture — one hand casually placed in her trouser pocket, the other delicately holding a small white daisy flower. Her facial expression is calm, self-assured, and serene, with a soft editorial gaze slightly away from the camera. Emotion feels confident yet gentle.\n\nHair & Makeup:\nHair is neatly styled in a natural, modern look (soft waves, low ponytail, or loose bun). Makeup is minimal and refined — clean skin, subtle blush, neutral lips, no heavy contouring or glow.\n\nLighting & Atmosphere:\nWarm natural sunlight streams from the side, creating soft highlights along her face and clothing, with gentle shadows adding depth to the textured wall. The mood is airy, sunlit, and cinematic.\n\nVisual Style:\nHigh-end fashion editorial aesthetic with realistic skin texture, crisp fabric details, refined neutral color palette, and elegant composition.\n\nCamera & Quality:\nProfessional fashion photography style, shallow depth of field, cinematic framing, ultra-realistic 8K quality, sharp focus on subject with smooth background falloff.\n\nOverall Feel:\nModern, minimal, sun-drenched lifestyle fashion campaign — confident, graceful
+Using the uploaded reference image STRICTLY, preserve the same woman’s face, identity, age, facial structure, skin tone, and natural expression with 100% accuracy. No facial alteration, beautification, or identity change.\n\nGenerate a highly realistic cinematic fashion editorial photoshoot featuring a stylish adult woman leaning casually against a warm beige textured wall. Her body is slightly angled, one shoulder gently resting on the wall, conveying relaxed confidence, elegance, and quiet strength.\n\nOutfit:\nShe wears a loose pastel blue button-down shirt with softly rolled-up sleeves, styled effortlessly. Paired with tailored white relaxed-fit trousers that drape naturally. Footwear consists of clean minimalist white or soft blue-white sneakers, maintaining a modern, understated luxury feel.\n\nPose & Expression:\nShe stands with natural posture — one hand casually placed in her trouser pocket, the other delicately holding a small white daisy flower. Her facial expression is calm, self-assured, and serene, with a soft editorial gaze slightly away from the camera. Emotion feels confident yet gentle.\n\nHair & Makeup:\nHair is neatly styled in a natural, modern look (soft waves, low ponytail, or loose bun). Makeup is minimal and refined — clean skin, subtle blush, neutral lips, no heavy contouring or glow.\n\nLighting & Atmosphere:\nWarm natural sunlight streams from the side, creating soft highlights along her face and clothing, with gentle shadows adding depth to the textured wall. The mood is airy, sunlit, and cinematic.\n\nVisual Style:\nHigh-end fashion editorial aesthetic with realistic skin texture, crisp fabric details, refined neutral color palette, and elegant composition.\n\nCamera & Quality:\nProfessional fashion photography style, shallow depth of field, cinematic framing, ultra-realistic 8K quality, sharp focus on subject with smooth background falloff.\n\nOverall Feel:\nModern, minimal, sun-drenched lifestyle fashion campaign — confident, graceful, and timeless.",
+  
+  "style": "cinematic, high-end female fashion editorial",
+  "lighting": "warm natural sunlight with soft shadows",
+  "background": "minimal beige textured wall, sunlit",
+  "quality": "ultra-realistic, 8K, ultra-sharp",
+  "camera": "professional fashion photography, shallow depth of field",
+  "mood": "clean, modern, elegant, confident, relaxed"
 ```
 
 </details>
@@ -7049,7 +8795,18 @@ Using the uploaded reference image STRICTLY, preserve the same woman’s face, i
     },
     {
       "position": "top-right",
-      "content": "Subject 2 leans forward toward the camera, h
+      "content": "Subject 2 leans forward toward the camera, hands on knees, curious expression; Subject 1 enters from the right side very close to camera, tilting her head, one arm arched above her head like a half-heart pose, soft smile."
+    },
+    {
+      "position": "bottom-left",
+      "content": "Piggyback pose — Subject 1 on Subject 2’s back, arms wrapped around shoulders; both laughing big, faces close to camera, dynamic motion vibe."
+    },
+    {
+      "position": "bottom-right",
+      "content": "Subject 2 bends sideways/leans forward with a goofy face; Subject 1 stands behind making playful “claw/horns” hand gestures above Subject 2’s head, slightly pouting for fun."
+    }
+  ]
+}
 ```
 
 </details>
@@ -7143,7 +8900,11 @@ No cartoon style, no flat illustration — pure cinematic realism with sculptura
   },
   "environment": {
     "location": "Modern residential area courtyard.",
-    "elements": "Contemporary white multi-story apartment
+    "elements": "Contemporary white multi-story apartment buildings with balconies.",
+    "condition": "All surfaces naturally covered in fresh snow.",
+    "atmosphere": "True-to-life winter atmosphere, no artificial perfection."
+  }
+}
 ```
 
 </details>
@@ -7216,7 +8977,9 @@ No cartoon style, no flat illustration — pure cinematic realism with sculptura
         "subject": "Soft spotlight focused on the woman",
         "background": "Cool ambient lighting with subtle shadows"
       }
- 
+    }
+  }
+}
 ```
 
 </details>
@@ -7319,7 +9082,22 @@ A hyper-realistic studio photograph of a male athlete mid-air as if running or j
   "camera_details": {
     "camera_type": "professional DSLR / mirrorless simulation",
     "lens": "85mm or macro food lens",
-    "focus
+    "focus": "tack-sharp on bite area",
+    "depth_of_field": "shallow for dramatic bokeh",
+    "resolution": "advertising-grade clarity"
+  },
+  "quality_control": {
+    "food_realism": "hyper-real textures, no plastic look",
+    "bite_accuracy": "natural compression of ingredients",
+    "ai_artifacts": "none",
+    "professional_finish": "commercial food photography quality"
+  },
+  "overall_mood": "mouth-watering, bold, indulgent",
+  "intended_use": {
+    "primary": "viral food post on X",
+    "secondary": "restaurant branding, food editorial, ads"
+  }
+}
 ```
 
 </details>
@@ -7411,7 +9189,56 @@ Neutral fabric background, soft studio lighting, ultra-sharp macro detail, photo
     "pose": "standing beside the car, torso slightly angled, arm extended horizontally, pointing parallel to the sign as if signaling ‘follow that way, follow me’"
   },
   "wardrobe": {
-    "top": "light pastel blue denim sh
+    "top": "light pastel blue denim shirt with visible weave, pink and white embroidery in refined western motifs",
+    "fit": "relaxed yet tailored",
+    "bottom": "light brown pants, soft twill or suede-like texture, tailored with natural creases",
+    "footwear": "warm tan suede cowboy boots, medium contrast, elegant western stitching, slightly worn for authenticity",
+    "accessories": [
+      "silver necklace",
+      "small silver heart-shaped pendant, delicate and understated, resting just below the collarbone"
+    ],
+    "fabric_behavior": "authentic material stiffness and drape, embroidered threads catching light, natural folds and tension"
+  },
+  "vehicle": {
+    "type": "classic Ford Mustang",
+    "color": "lemon yellow",
+    "finish": "glossy paint with realistic reflections and subtle surface imperfections",
+    "positioning": "parked beside the subject at a slight diagonal, iconic profile visible"
+  },
+  "environment": {
+    "location": "open roadside or rural edge",
+    "background_elements": [
+      "roadside sign with clearly legible text: 'My Way'",
+      "open sky",
+      "soft greenery or distant fields"
+    ],
+    "atmosphere": "freedom, direction, invitation, optimistic Americana mood"
+  },
+  "lighting": {
+    "type": "natural daylight",
+    "source": "open sky sunlight",
+    "time_of_day": "late afternoon",
+    "quality": "soft, directional, cinematic",
+    "effects": [
+      "gentle rim light on hair and shoulders",
+      "subtle highlights on silver jewelry",
+      "soft reflections on car paint"
+    ],
+    "shadow_behavior": "clean, soft-edged, physically accurate"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "lemon yellow",
+      "pastel denim blue",
+      "light brown",
+      "warm tan",
+      "soft pink and white embroidery",
+      "natural skin tones",
+      "silver accents"
+    ],
+    "grading_style": "warm cinematic editorial grading with filmic highlight roll-off"
+  }
+}
 ```
 
 </details>
@@ -7554,7 +9381,10 @@ Neutral fabric background, soft studio lighting, ultra-sharp macro detail, photo
   },
   "image_quality": {
     "realism": "Photorealistic",
-    "res
+    "resolution": "Ultra high-definition",
+    "detail_level": "Editorial-grade clarity and texture"
+  }
+}
 ```
 
 </details>
@@ -7619,7 +9449,17 @@ Neutral fabric background, soft studio lighting, ultra-sharp macro detail, photo
     "camera_details": {
       "shot_type": "Medium shot (thigh-up)",
       "angle": "Eye-level",
- 
+      "lens": "85mm prime lens for flattering portrait compression",
+      "aperture": "f/2.8 for slight depth of field separation from the wall",
+      "focus": "Sharp focus on the subject and dress texture"
+    },
+    "technical_specifications": {
+      "quality": "Ultra Photorealistic, 8k resolution, highly detailed",
+      "texture_quality": "High fidelity fabric textures, realistic skin pores, detailed stone masonry",
+      "engine": "Unreal Engine 5 render style or high-end photography"
+    }
+  }
+}
 ```
 
 </details>
@@ -7773,7 +9613,34 @@ Neutral fabric background, soft studio lighting, ultra-sharp macro detail, photo
         }
       ],
       "objects": "ocean horizon line blurred in far background, expansive sand",
-   
+      "state": "bright, sunny, coastal"
+    },
+    "technical_finish": {
+      "film_stock": "Digital Source",
+      "exposure": "brightly exposed (high key)",
+      "grain": "none/digital noise",
+      "tone_curve": "linear neutral",
+      "color_science": "pastel palette (light blues, white sand, pale skin), natural daylight colors"
+    },
+    "constraints": {
+      "avoid": [
+        "snow",
+        "winter clothes",
+        "red nails",
+        "black top",
+        "modest neckline",
+        "heavy shadows"
+      ],
+      "must_include": [
+        "blue nails",
+        "light blue top",
+        "deep cleavage",
+        "beach background",
+        "porcelain doll features"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -7847,7 +9714,42 @@ A marque historian's documentation board for [VEHICLE] — [MODEL / VARIANT / YE
       "wardrobe_and_style": {
         "makeup": "very minimal, natural makeup only",
         "clothing": "simple everyday student clothing in neutral tones (beige, grey, navy, soft brown), slightly wrinkled fabric",
-        "accessories": "backpacks or tote bags, books held naturally in arms
+        "accessories": "backpacks or tote bags, books held naturally in arms — no logos"
+      },
+
+      "micro_action": "they pause briefly while passing each other; their eyes meet; one adjusts the books in their arms; a half-smile forms before words",
+
+      "environment_details": {
+        "location": "Istanbul University main entrance gate",
+        "background": "historic stone gate, worn pavement, passing students softly out of focus, trees and campus walls",
+        "street_elements": "subtle movement of people in the background, light breeze, everyday campus life"
+      },
+
+      "lighting": "soft natural daylight, slightly diffused, no dramatic contrast, realistic skin tones",
+
+      "composition": "eye-level medium shot, slightly off-center framing, faces clearly visible and sharp, background gently receding, no symmetry",
+
+      "mood": "quiet, human, intimate, observational — love as a small moment, not a performance"
+    },
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "over-stylized fashion",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh",
+      "text",
+      "logo",
+      "watermark",
+      "posed romance",
+      "cinematic exaggeration"
+    ]
+  }
+}
 ```
 
 </details>
@@ -8012,7 +9914,17 @@ Ultra realistic professional business portrait based on the attached image. Keep
   },
   "mood_and_atmosphere": {
     "vibe": "Joyful, candid, luxurious, carefree, Italian summer holiday",
-    "emotion": "Happiness, relaxation, playfulness
+    "emotion": "Happiness, relaxation, playfulness"
+  },
+  "technical_camera_details": {
+    "quality": "8k resolution, RAW photo, hyper-realistic, highly detailed texture",
+    "camera_simulation": "DSLR, 85mm portrait lens",
+    "aperture": "f/2.8 (shallow depth of field to blur the background mountains and hotel)",
+    "shutter_speed": "1/500s (to freeze the candid movement)",
+    "iso": "100 (clean, noise-free image)",
+    "color_grading": "Vibrant, natural colors with slightly warm tones, clear whites"
+  }
+}
 ```
 
 </details>
@@ -8279,7 +10191,34 @@ Warm studio lighting with natural highlights, rich colors, realistic shadows, pr
     }
   },
   "environment_and_lighting": {
-    "setting": "High-end minimalist s
+    "setting": "High-end minimalist studio or neutral architectural background",
+    "lighting_setup": {
+      "primary": "Softbox key light for even skin tones",
+      "secondary": "Subtle rim lighting to define the body curves and hair texture",
+      "ambience": "Clean, sophisticated, high-fashion editorial aesthetic"
+    },
+    "color_palette": [
+      "Ivory",
+      "Warm Gold",
+      "Neutral Skin Tones",
+      "Soft Muted Background"
+    ]
+  },
+  "technical_render_specs": {
+    "camera": {
+      "lens": "85mm prime lens (portrait specialty)",
+      "aperture": "f/2.8 for sharp subject focus and soft background blur",
+      "sensor": "Full-frame CMOS",
+      "shot_type": "Full body / Medium shot"
+    },
+    "resolution_quality": [
+      "8k UHD",
+      "Highly detailed textures",
+      "Ray-traced reflections on metallic surfaces",
+      "Masterpiece quality"
+    ]
+  }
+}
 ```
 
 </details>
@@ -8401,7 +10340,7 @@ Lighting: A warm, soft flash light that enhances the glow of the skin and create
 
 Effects: Soft skin glow, slightly saturated colors, a fine glossy effect on the lips and skin, warm golden highlights, and a shallow depth of field (bokeh).
 
-Photography style: Y2K glamour, retro nighttime look, luxurious, sensual, and impeccably digitally edited, inspired by celebrit
+Photography style: Y2K glamour, retro nighttime look, luxurious, sensual, and impeccably digitally edited, inspired by celebrity selfies.
 ```
 
 </details>
@@ -8589,7 +10528,71 @@ Background should be minimal or plain paper texture.
         "main_object": "chocolate-coated ice cream bar on wooden stick",
         "coating": {
           "exploded_view": false,
-          "surface": "milk chocolate coating with embedded nut piece
+          "surface": "milk chocolate coating with embedded nut pieces",
+          "texture": "rough, uneven, crunchy appearance"
+        },
+        "bite_detail": {
+          "location": "top edge",
+          "interior_layers": [
+            "chocolate ice cream",
+            "thin darker chocolate layer"
+          ],
+          "edges": "jagged bite marks"
+        },
+        "stick": {
+          "material": "light wood",
+          "finish": "smooth, rounded end"
+        }
+      },
+      "motion": {
+        "elements": "small chocolate fragments floating in air",
+        "behavior": "scattered outward from the bar"
+      },
+      "background": {
+        "color": "warm brown gradient",
+        "style": "clean studio environment"
+      },
+      "lighting": {
+        "type": "directional studio lighting",
+        "effects": "strong highlights on chocolate bumps, soft shadows"
+      }
+    },
+
+    "module_3": {
+      "identity": "Image 3 – Red Berry Popsicle with Fruits",
+      "subject": {
+        "main_object": "rectangular red popsicle",
+        "surface": {
+          "texture": "frosted, icy crystals visible",
+          "shape": "rounded corners, vertical grooves"
+        },
+        "stick": {
+          "material": "light wooden stick",
+          "visible": true
+        },
+        "surroundings": [
+          "whole strawberries with green tops",
+          "blueberries",
+          "raspberries",
+          "mint leaves",
+          "crushed ice pieces"
+        ]
+      },
+      "color_palette": [
+        "bright red",
+        "deep blue",
+        "fresh green",
+        "clear ice"
+      ],
+      "background": {
+        "composition": "entire frame filled with fruits and ice",
+        "style": "top-down macro food arrangement"
+      },
+      "lighting": {
+        "type": "even bright lighting",
+        "effects": "wet shine on fruit skins, crystalline ice reflections"
+      }
+    },
 ```
 
 </details>
@@ -8641,7 +10644,22 @@ Background should be minimal or plain paper texture.
       },
       "panel_3_bottom_left": {
         "framing": "Full body, seated angle.",
-        "pose": "Sitting on the floor, leani
+        "pose": "Sitting on the floor, leaning torso back, supporting weight with both arms extended behind her. Legs bent, one knee angled higher than the other.",
+        "gaze": "Looking slightly to the side with a cool attitude."
+      },
+      "panel_4_bottom_right": {
+        "framing": "Full body, seated.",
+        "pose": "Sitting with legs bent to the side. Left hand is raised, touching the chin/neck area thoughtfully. Right arm extended back for support.",
+        "gaze": "Direct eye contact, slight smirk."
+      }
+    },
+    "camera_technical_values": {
+      "lens": "50mm to 85mm (Standard portrait lens).",
+      "aperture": "f/8.0 (Deep depth of field, keeping the entire subject sharp against the white background).",
+      "shutter_speed": "1/160s (Studio sync).",
+      "iso": "ISO 100 (Clean, noise-free image).",
+      "lighting_setup": "Softbox lighting. Large diffuse light source from the front to create shadowless, flattering illumination on the face ('Beauty Light').",
+      "contrast": "High contrast between the black outfit and the stark white background."
 ```
 
 </details>
@@ -8730,7 +10748,48 @@ Background should be minimal or plain paper texture.
       "top": {
         "type": "oversized t-shirt",
         "color": "white",
-        "
+        "fabric": "very thin worn cotton",
+        "fit": "loose but stretched by chest and posture",
+        "details": "fabric pulled tight over chest, slightly translucent under light, no bra"
+      },
+      "bottom": {
+        "type": "ultra short sleep shorts",
+        "color": "grey",
+        "fabric": "soft jersey",
+        "fit": "very short, riding up due to arch"
+      }
+    },
+
+    "skin": {
+      "detail": "warm kitchen light glow",
+      "texture": "visible pores, natural shine, zero smoothing"
+    }
+  },
+
+  "environment": {
+    "background": [
+      "kitchen counter",
+      "sink and faucet",
+      "single overhead light on",
+      "dark apartment behind her"
+    ],
+    "lighting": {
+      "type": "single warm ceiling light",
+      "effect": "hard highlights on chest and hips, deep shadows, true iphone exposure"
+    }
+  },
+
+  "photography_rules": {
+    "realism": "very high",
+    "iphone_only_look": true,
+    "no_phone_in_hands": true,
+    "no_male_presence": true,
+    "clean_skin_no_tattoos": true,
+    "instagram_model_aesthetic": true,
+    "thirst_trap_energy": true,
+    "suggestive_not_explicit": true
+  }
+}
 ```
 
 </details>
@@ -8815,7 +10874,27 @@ Pure White (#FFFFFF). A clean sheet of paper.
 ```
 {
   "prompt": "Ultra-realistic professional fashion editorial photograph of Sydney Sweeney, 27-year-old beautiful American actress with long wavy golden blonde hair, fair skin, striking blue eyes, full lips, natural makeup with glossy lips and subtle eyeliner, seductive confident expression looking directly at camera, sitting on the open driver's door sill of a luxurious emerald green convertible sports car (Aston Martin style), vibrant glossy metallic British racing green paint reflecting sunlight, black leather interior visible, car parked on a prestigious elegant Paris street in golden hour late afternoon sunlight, luxurious historic Haussmannian architecture with cream stone buildings, arched windows, wrought-iron balconies, luxury boutiques like Louboutin (LOUITLANE storefront signage visible), crowded upscale street with blurred background of expensive cars (black SUVs, white sedans, silver convertibles), fashionable pedestrians in suits and dresses walking by, warm golden sunlight casting soft shadows and highlights, cinematic depth of field, shallow focus on subject with creamy bokeh background, Sydney Sweeney wearing tight form-fitting emerald green mini dress with deep plunging V-neckline showing deep cleavage, sleeveless, bodycon silhouette hugging curves, high hem above mid-thigh, sitting with legs crossed elegantly, one hand resting on car door, green pointed-toe stiletto high heels matching dress color, delicate gold earrings, glamorous sophisticated sexy vibe, high fashion luxury lifestyle editorial, shot on Canon EOS R5, 85mm lens at f/1.8, sharp details, vibrant rich colors, photorealistic skin texture, natural skin pores and subtle freckles, 8k resolution, masterpiece, best quality",
-  "negative_prompt": "deformed, ugly, blurry, low resolution, bad anatomy, extra limbs, mutated hands, poorly drawn face, bad proportions, watermark, text, logo, signature, overexposed, underexposed, cartoon, anime, illustration, painting, sketch, plastic skin, doll-li
+  "negative_prompt": "deformed, ugly, blurry, low resolution, bad anatomy, extra limbs, mutated hands, poorly drawn face, bad proportions, watermark, text, logo, signature, overexposed, underexposed, cartoon, anime, illustration, painting, sketch, plastic skin, doll-like, uncanny valley, extra fingers, fused fingers, missing fingers, long neck, asymmetrical eyes, cross-eyed, cropped, out of frame, jpeg artifacts, compression artifacts",
+  "parameters": {
+    "aspect_ratio": "3:4",
+    "style": "photorealistic fashion photography",
+    "lighting": "golden hour natural sunlight, warm tones, rim lighting, soft shadows",
+    "camera_settings": "85mm prime lens, f/1.8, ISO 100, shallow depth of field",
+    "quality_tags": "masterpiece, best quality, ultra detailed, 8k, highly detailed skin, realistic textures",
+    "seed": null,
+    "steps": 40,
+    "cfg_scale": 7.5
+  },
+  "key_elements_breakdown": {
+    "subject": "Sydney Sweeney lookalike – long wavy blonde hair, blue eyes, seductive gaze, deep cleavage, confident pose",
+    "outfit": "Emerald green deep V-neck mini dress, tight bodycon fit, matching green high heels",
+    "pose": "Seated on open car door, legs crossed, one hand on door, leaning slightly toward camera",
+    "vehicle": "Emerald green luxury convertible supercar, glossy paint, open top, black interior",
+    "location": "Chic Paris street, luxury shopping district, historic buildings, Louboutin storefront, blurred crowd and cars",
+    "time_of_day": "Golden hour sunset, warm golden lighting",
+    "mood": "Luxurious, glamorous, sexy, high-fashion, aspirational wealth"
+  }
+}
 ```
 
 </details>
@@ -9224,7 +11303,28 @@ Close-up black and white portrait of a man use image face reference with messy h
     "outfit_main_piece": {
       "description": "Minimalist_sexy_black_halter-neck_top_with_a_deep_plunging_neckline",
       "material": "soft_elastic_ribbed_fabric_with_a_matte_black_finish",
-      "silhouette": "form-fitting_and_revealing_emphasizing_the_collarbones_a
+      "silhouette": "form-fitting_and_revealing_emphasizing_the_collarbones_and_shoulders",
+      "details": "thin_straps_and_clean_edges"
+    },
+    "accessories": {
+      "necklace": "delicate_ultra-thin_gold_chain_necklace",
+      "watch": "classic_wristwatch_with_a_slim_brown_leather_strap_and_rose_gold_round_dial",
+      "tattoo": "faint_minimalist_fine-line_butterfly_tattoo_visible_on_the_left_shoulder"
+    }
+  },
+  "environment": {
+    "setting": "Atmospheric_Japanese_Izakaya_or_traditional_restaurant_at_night",
+    "lighting": "dim_moody_indoor_lighting_with_warm_amber_hues_and_cool_purple_lens_flare_on_the_face",
+    "background": "blurred_wooden_walls_adorned_with_traditional_Japanese_calligraphy_menu_plaques_and_distant_diners",
+    "atmosphere": "lively_intimate_nightlife_vibe_with_a_sense_of_casual_fun"
+  },
+  "realism_and_rendering": {
+    "style": "candid_social_media_snapshot_photography",
+    "camera": "High-end_smartphone_front_camera_with_slight_wide-angle_distortion_and_shallow_depth_of_field",
+    "image_quality": "hyper-realistic_skin_textures_natural_motion_blur_and_authentic_low-light_grain",
+    "aspect_ratio": "3:4"
+  }
+}
 ```
 
 </details>
@@ -9271,7 +11371,13 @@ Close-up black and white portrait of a man use image face reference with messy h
     },
     "technical_specifications": {
       "quality": "4K, Ultra HD, Photorealistic, Masterpiece.",
-      "lightin
+      "lighting": "Bright natural daylight, high contrast, sun-drenched exposure.",
+      "camera_style": "High-resolution portrait photography, sharp focus on subject, slight depth of field blurring the architectural background.",
+      "aspect_ratio": "Portrait (vertical)."
+    },
+    "full_combined_prompt": "Photorealistic 4K HD portrait of a young woman with honey-blonde hair in a half-up high ponytail, wearing a pale yellow corset dress and a silver heart necklace. She is seated at an outdoor restaurant terrace in Las Vegas, applying lip gloss with a focused expression. In the foreground, a white table with a menu and a brown monogrammed handbag on a bench with green and white striped pillows. The background features a glass railing and the iconic Bellagio Hotel architecture under a bright blue sunny sky. High-end DSLR photography, sharp focus, vibrant colors, natural lighting."
+  }
+}
 ```
 
 </details>
@@ -9355,7 +11461,48 @@ Close-up black and white portrait of a man use image face reference with messy h
 
     "hair": {
       "color": "deep brunette",
-      "length": "l
+      "length": "long",
+      "style": "loose waves",
+      "behavior": "slightly wind-blown, strands glowing in sunlight"
+    },
+
+    "face": {
+      "expression": "caught mid-laugh, confident and playful",
+      "eyes": "looking straight up into the camera above",
+      "makeup": "minimal summer makeup, glossy lips, soft blush",
+      "vibe": "sweet but dangerous"
+    },
+
+    "outfit": {
+      "top": {
+        "type": "bikini-style crop top",
+        "color": "white with muted blue trim",
+        "fit": "tight, naturally stretched over chest, no bra",
+        "fabric_behavior": "visible tension from posture and breathing"
+      },
+      "bottom": {
+        "type": "matching bikini bottom",
+        "color": "white and blue",
+        "fit": "high-cut, hugging hips while seated"
+      }
+    },
+
+    "pose": {
+      "position": "seated confidently in the driver seat",
+      "legs": "angled slightly inward, relaxed",
+      "arms": "one hand resting on thigh, other lightly gripping steering wheel",
+      "shoulders": "slightly forward",
+      "micro_action": "leaning upward toward sunroof as if reacting to something funny"
+    }
+  },
+
+  "post_processing": {
+    "editing": "very light",
+    "color_grading": "warm highlights, neutral shadows",
+    "retouching": "none beyond basic exposure balance",
+    "final_look": "indistinguishable from a real iPhone camera roll photo"
+  }
+}
 ```
 
 </details>
@@ -9430,7 +11577,28 @@ Close-up black and white portrait of a man use image face reference with messy h
   },
   "PhotographyStyle": {
     "Genre": "Theme park lifestyle photography",
- 
+    "CompositionStyle": "Cinematic yet candid",
+    "ImageQuality": "High resolution, crisp detail"
+  },
+  "Mood": {
+    "Tone": "Happy, welcoming, whimsical",
+    "Energy": "Lighthearted, joyful, magical"
+  },
+  "NegativePrompt": [
+    "dark mood",
+    "empty background",
+    "scary characters",
+    "low resolution",
+    "blurry faces",
+    "harsh shadows",
+    "desaturated colors"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -9683,7 +11851,38 @@ Transform the original photo into a dramatic, photorealistic, ultra-detailed set
       "expression": "Relaxed, candid"
     },
     "panel_3_bottom_left": {
-      "subject
+      "subject_likeness": "Resembling Ana De Armas",
+      "hair": "Medium-Short blonde hair, loose",
+      "pose": "Walking forward towards camera, arms relaxed",
+      "action": "Holding drink in left hand",
+      "expression": "Happy, bright smile"
+    },
+    "panel_4_bottom_right": {
+      "subject_likeness": "Resembling Billie Eilish",
+      "hair": "Bleached blonde shag/wolf cut with layers and bangs",
+      "pose": "Deep squat/crouch pose (street style)",
+      "action": "Holding drink with both hands near knees",
+      "expression": "Neutral, cool, looking slightly upward/away"
+    }
+  },
+  "props": {
+    "item": "Iced matcha latte or green smoothie",
+    "details": "Clear plastic takeaway cup with lid and straw, bright green liquid"
+  },
+  "camera_settings": {
+    "camera": "Sony A7R IV or Canon EOS R5",
+    "lens": "35mm (for full body environmental context) or 50mm",
+    "aperture": "f/2.8 to f/4.0 (sharp subject, slightly softened background)",
+    "shutter_speed": "1/250s",
+    "iso": "100",
+    "focus": "Sharp focus on subjects",
+    "color_grading": "Natural colors, slightly desaturated greens, bright whites, true skin tones"
+  },
+  "technical_details": {
+    "resolution": "8k",
+    "quality": "Raw photo quality, hyper-detailed skin texture, realistic fabric weave (ribbed cotton), accurate lighting physics, ray tracing, unreal engine 5 render style"
+  }
+}
 ```
 
 </details>
@@ -9748,7 +11947,24 @@ Transform the original photo into a dramatic, photorealistic, ultra-detailed set
   "camera_settings": {
     "shot_type": "Close-up portrait / Headshot",
     "lens": "85mm or 105mm Macro lens",
-    "aperture": "f/2.8 to f/4.
+    "aperture": "f/2.8 to f/4.0 (keeping the face sharp while softening the hair slightly)",
+    "focus": "Sharp focus on the eyelashes and water droplets on the cheek",
+    "shutter_speed": "1/200s (to freeze the dripping water)"
+  },
+  "technical_details": {
+    "resolution": "8k",
+    "quality_tags": [
+      "Ultra-detailed",
+      "Macro photography",
+      "Subsurface scattering",
+      "Wet skin shader",
+      "Ray tracing",
+      "Unreal Engine 5 render style",
+      "Raw photo quality"
+    ],
+    "mood": "Intimate, cleansing, peaceful, sensory"
+  }
+}
 ```
 
 </details>
@@ -9790,7 +12006,17 @@ Transform the original photo into a dramatic, photorealistic, ultra-detailed set
     },
     "environment_dense_description": {
       "setting": "Bright, modern, minimalist outdoor terrace exterior. Mediterranean aesthetic.",
-      "foreground_elements": "Perched on steep cliffs, the terrace feature hand-painted ceramic details in azure and c
+      "foreground_elements": "Perched on steep cliffs, the terrace feature hand-painted ceramic details in azure and coral tones, blending rustic elegance with luxurious comfort. Furnished with sun loungers, shaded pergolas, and al fresco dining sets, they serve as private sanctuaries for savoring morning espresso or golden-hour aperitivos.",
+      "background_elements": "The view typically unfolds across cascading pastel houses, the shimmering Tyrrhenian Sea, and the dome of Santa Maria Assunta, creating a living postcard of coastal beauty."
+    },
+    "lighting_and_atmosphere": {
+      "light_source": "Soft, diffused natural daylight. No harsh shadows.",
+      "mood": "Confident, casual influencer 'fit check', contemporary, clean, high-end vibe.",
+      "photographic_style": "Mirror selfie taken with a high-quality smartphone camera, slightly wide angle. Sharp focus on the subject and the phone. Realistic color grading, high dynamic range."
+    }
+  },
+  "negative_prompt_strict": "cartoon, painting, 3d render, CGI, anime, low resolution, blurry, grainy, distorted face, bad eyes, extra fingers, deformed hands, awkward pose, messy room, dark lighting, oversaturated colors, watermark, text, signature, cropped, low quality fabric texture."
+}
 ```
 
 </details>
@@ -9982,7 +12208,61 @@ Overall style is futuristic, cyber-inspired, high-detail, and photorealistic.
         "Nearby foliage creating dappled shadows",
         "Clear blue sky visible above"
       ],
-      "compo
+      "composition_balance": {
+        "subject": "Approximately 40% of the frame, centered in the lower half",
+        "architecture": "Approximately 45% of the frame, dominant background",
+        "floral_details": "Approximately 15% of the frame, concentrated on the right and via shadow play"
+      }
+    },
+
+    "lighting": {
+      "type": "Natural sunlight",
+      "effect": [
+        "Soft dappled shadows across face and body",
+        "Warm daylight tones",
+        "Natural depth and texture"
+      ],
+      "restrictions": [
+        "No artificial lighting",
+        "No harsh shadows",
+        "No studio look"
+      ]
+    },
+
+    "camera_and_quality": {
+      "style": "Lifestyle travel photography",
+      "lens": "50–85mm natural optics look",
+      "framing": "Medium-wide portrait capturing subject and architecture",
+      "depth_of_field": "Realistic, not overly shallow",
+      "perspective": "True-to-life, editorial realism",
+      "resolution": "High-resolution photorealism"
+    },
+
+    "aesthetic": {
+      "vibe": [
+        "Mediterranean summer lifestyle",
+        "Greek islands travel editorial",
+        "Sunlit elegance",
+        "Relaxed luxury"
+      ]
+    },
+
+    "negative_prompt": [
+      "face alteration",
+      "CGI",
+      "3D render",
+      "illustration",
+      "cartoon",
+      "plastic skin",
+      "over-smoothing",
+      "artificial glow",
+      "harsh lighting",
+      "blur",
+      "distorted anatomy",
+      "AI artifacts"
+    ]
+  }
+}
 ```
 
 </details>
@@ -10016,7 +12296,7 @@ Make a miniature, full-body, isometric, realistic figurine of [PERSON], wearing 
 <summary>📋 View Prompt</summary>
 
 ```
-{ "composition": { "framing": "vertical portrait orientation", "shot_type": "medium portrait from mid-torso upward", "camera_angle": "eye-level", "subject_position": "centered in frame", "pose": "relaxed frontal stance with slight head tilt", "leading_lines": "stone pathway and walls guiding toward subject", "depth_of_field": "moderate, subject in sharp focus with detailed background" }, "subject": { "type": "human female-presenting subject", "age_appearance": "young adult", "expression": "soft smile, confident and calm", "gaze": "direct eye contact with camera", "skin_tone": "medium with neutral-warm undertones", "facial_features": { "eyes": "dark brown, softly defined", "brows": "neatly shaped, natural density", "lips": "muted rose tone, satin finish", "complexion": "smooth with subtle contour and blush" }, "hair": { "color": "dark brown", "style": "sleek high ponytail", "texture": "smooth, polished" }, "accessories": { "earrings": "small silver hoop earrings" } }, "wardrobe": { "outerwear": { "type": "long coat", "color": "olive green", "material": "wool or wool-blend appearance", "fit": "relaxed tailored fit" }, "scarf": { "color": "charcoal gray", "material": "thick wool or cashmere", "style": "wrapped loosely around neck with fringed ends" }, "top": { "color": "black", "neckline": "high neckline or turtleneck" }, "style_influence": "classic European winter fashion" }, "lighting": { "light_source": "natural daylight", "light_quality": "soft and diffused", "direction": "front-facing with slight overhead diffusion", "effect_on_subject": "even illumination with minimal harsh shadows", "shadow_behavior": "soft shadows under chin and around coat folds" }, "color_palette": { "dominant_colors": ["olive green", "charcoal gray", "stone beige"], "accent_colors": ["muted red berries", "black"], "overall_tone": "cool-neutral with earthy warmth" }, "background": { "environment": "historic urban street", "architecture": { "materials": "stone and brick", "style": "old Europea
+{ "composition": { "framing": "vertical portrait orientation", "shot_type": "medium portrait from mid-torso upward", "camera_angle": "eye-level", "subject_position": "centered in frame", "pose": "relaxed frontal stance with slight head tilt", "leading_lines": "stone pathway and walls guiding toward subject", "depth_of_field": "moderate, subject in sharp focus with detailed background" }, "subject": { "type": "human female-presenting subject", "age_appearance": "young adult", "expression": "soft smile, confident and calm", "gaze": "direct eye contact with camera", "skin_tone": "medium with neutral-warm undertones", "facial_features": { "eyes": "dark brown, softly defined", "brows": "neatly shaped, natural density", "lips": "muted rose tone, satin finish", "complexion": "smooth with subtle contour and blush" }, "hair": { "color": "dark brown", "style": "sleek high ponytail", "texture": "smooth, polished" }, "accessories": { "earrings": "small silver hoop earrings" } }, "wardrobe": { "outerwear": { "type": "long coat", "color": "olive green", "material": "wool or wool-blend appearance", "fit": "relaxed tailored fit" }, "scarf": { "color": "charcoal gray", "material": "thick wool or cashmere", "style": "wrapped loosely around neck with fringed ends" }, "top": { "color": "black", "neckline": "high neckline or turtleneck" }, "style_influence": "classic European winter fashion" }, "lighting": { "light_source": "natural daylight", "light_quality": "soft and diffused", "direction": "front-facing with slight overhead diffusion", "effect_on_subject": "even illumination with minimal harsh shadows", "shadow_behavior": "soft shadows under chin and around coat folds" }, "color_palette": { "dominant_colors": ["olive green", "charcoal gray", "stone beige"], "accent_colors": ["muted red berries", "black"], "overall_tone": "cool-neutral with earthy warmth" }, "background": { "environment": "historic urban street", "architecture": { "materials": "stone and brick", "style": "old European / medieval", "landmark": "large stone castle situated on elevated rock formation" }, "elements": [ "stone walls", "lamppost", "historic buildings", "leafless trees", "paved walkway" ], "seasonal_cue": "late autumn or winter" }, "artistic_style": { "aesthetic": "travel portrait / lifestyle photography", "mood": "timeless, composed, serene", "influences": ["editorial street portrait", "European travel imagery"], "retouching_style": "natural with light skin smoothing" }, "technical_details": { "camera_type_assumption": "smartphone or mirrorless camera", "lens_equivalent": "standard focal length (35–50mm)", "aperture_look": "moderate depth, balanced background clarity", "iso_appearance": "low, clean image", "sharpness": "high across subject and architecture", "contrast": "moderate with preserved highlights and shadows" }, "post_processing": { "color_grading": "neutral-cool with muted saturation", "skin_tone_adjustment": "slight warmth added to subject", "clarity": "mild increase for architectural textures", "vignette": "none or very subtle" }, "overall_impression": { "visual_focus": "subject framed against iconic historic backdrop", "style_recreation_keywords": [ "European street portrait", "classic winter outfit", "historic stone architecture", "natural daylight", "timeless travel aesthetic" ] } }
 ```
 
 </details>
@@ -10099,7 +12379,61 @@ Make a miniature, full-body, isometric, realistic figurine of [PERSON], wearing 
       "vibe": "doll-like, calm, distant",
       "lashes": "long, natural, softly separated",
       "under_eye": "subtle natural shadow for soft tired-cute look",
-    
+      "gaze": "looking directly into mirror/lens"
+    },
+
+    "lips": {
+      "size": "full",
+      "shape": "soft cupid’s bow",
+      "color": "natural pink",
+      "finish": "slightly glossy",
+      "state": "relaxed, faint pout"
+    },
+
+    "skin": {
+      "tone": "very pale porcelain",
+      "undertone": "cool pink",
+      "texture": "real skin with visible pores",
+      "finish": "natural glow, no smoothing",
+      "blush": "soft pink blush across cheeks and nose bridge"
+    },
+
+    "hair": {
+      "color": "deep black",
+      "length": "long",
+      "style": "straight",
+      "bangs": "full blunt bangs just above the eyes",
+      "behavior": "hair framing face symmetrically, strands catching sunlight"
+    },
+
+    "makeup": {
+      "style": "no-makeup makeup",
+      "base": "sheer skin tint",
+      "eyes": "very subtle eyeliner, emphasis on lashes",
+      "cheeks": "natural pink flush",
+      "lips": "clear or soft pink gloss"
+    },
+
+    "outfit": {
+      "visibility": "minimal",
+      "detail": "only hint of bare shoulders or thin strap visible",
+      "color": "dark clothing",
+      "note": "no bra visible, focus remains entirely on face"
+    }
+  },
+
+  "vibe": {
+    "aesthetic": [
+      "pinterest girl",
+      "soft doll face",
+      "car mirror selfie",
+      "candid",
+      "raw photography"
+    ],
+    "mood": "quiet, slightly melancholic confidence",
+    "social_feel": "looks like an accidental golden hour story shot"
+  }
+}
 ```
 
 </details>
@@ -10247,7 +12581,38 @@ Make a miniature, full-body, isometric, realistic figurine of [PERSON], wearing 
   },
 
   "module_2_image_2_style": {
-    "subject": "
+    "subject": "blue and white layered cake slice",
+    "composition": {
+      "orientation": "portrait",
+      "angle": "slightly elevated front angle",
+      "placement": "centered on white decorative plate"
+    },
+    "layers": {
+      "cake_layers": "soft white sponge layers",
+      "filling_layers": "translucent blue jelly layers with sparkle",
+      "top_layer": "smooth pastel blue glaze"
+    },
+    "surface_details": {
+      "drip": "single vertical glossy blue drip down front",
+      "sparkle": "tiny reflective particles embedded in jelly",
+      "top_decor": "glass-like blue spheres"
+    },
+    "garnish": {
+      "top": ["dark glossy cherry with long stem", "three transparent blue spheres", "tiny star-shaped sprinkles"],
+      "plate": ["subtle sugar-like sparkles"]
+    },
+    "background": {
+      "color": "light icy blue",
+      "effect": "soft bokeh dots",
+      "props": ["white ribbon partially visible"]
+    },
+    "lighting": {
+      "key_light": "soft frontal light",
+      "fill": "even illumination",
+      "highlights": "glass reflections on spheres"
+    },
+    "mood": "dreamy, delicate, whimsical, clean"
+  },
 ```
 
 </details>
@@ -10371,7 +12736,62 @@ Hyperreal, cinematic, polished, and aspirational
 "angle": "Low angle shot, looking up at the subject to emphasize height and movement.",
 "lens": "Wide-angle lens, slightly distorting the perspective to enhance the dynamic feel (fisheye influence).",
 "framing": "Full body shot capturing the snowboard and surroundings.",
-"depth_of_field": "Subject in sharp focus, background slightly s
+"depth_of_field": "Subject in sharp focus, background slightly softer but visible."
+},
+"lighting": {
+"type": "Natural overcast daylight.",
+"quality": "Soft, diffuse lighting with no harsh shadows.",
+"tone": "Cool, blue-tinted ambient light typical of snowy environments.",
+"shadows": "Subtle shading on the skin and snow, defining form without high contrast."
+},
+"mood_and_expression": {
+"expression": "Wide, genuine smile with visible teeth, conveying joy and excitement.",
+"mood": "Playful, energetic, adventurous, and confident."
+},
+"style_and_realism": {
+"style": "Photorealistic influencer snapshot.",
+"aesthetic": "High-fidelity social media aesthetic with slight chromatic aberration effects on the edges (motion blur feel).",
+"rendering": "Unreal Engine 5 level detail on skin texture and snow particles."
+},
+"colors_and_tone": {
+"palette": "Dominant cool whites and blues from the snow and sky, contrasted with the stark black of the outfit and gear.",
+"skin_tone": "Natural fair skin tone, reacting realistically to the cool ambient light.",
+"contrast": "Moderate contrast, preserving details in both the bright snow and dark clothing."
+},
+"quality_and_technical_details": {
+"resolution": "8k uhd.",
+"sharpness": "High focus on the face and upper body.",
+"texture_quality": "Detailed fabric textures on the gloves and pants, realistic skin pores, and granular snow texture.",
+"artifacts": "Subtle chromatic aberration/RGB shift on the periphery mimicking a dynamic action camera shot."
+},
+"aspect_ratio_and_output": {
+"ratio": "3:4",
+"orientation": "Portrait"
+},
+"controlnet": {
+"pose_control": "openpose_full",
+"depth_control": "depth_zoe",
+"guidance": 0.85
+},
+"negative_prompt": [
+"warm lighting",
+"sunlight",
+"orange tones",
+"standing straight",
+"pants worn correctly",
+"small chest",
+"flat chest",
+"normalized anatomy",
+"mirror selfie",
+"phone in hand",
+"studio lighting",
+"cartoon",
+"sketch",
+"low resolution",
+"blur",
+"goggles on face"
+]
+}
 ```
 
 </details>
@@ -10777,7 +13197,25 @@ Hyper-realistic 8K cinematic artwork with two vertically stacked computer monito
     }
   },
   "mood": "playful, creative, surreal realism",
-  "aesthetic": "viral social-media illusion photo
+  "aesthetic": "viral social-media illusion photography",
+  "rendering": {
+    "quality": "ultra-photorealistic",
+    "engine": [
+      "Octane Render",
+      "Unreal Engine 5"
+    ],
+    "details": "cinematic realism, high texture fidelity, realistic lighting"
+  },
+  "keywords": [
+    "forced perspective photography",
+    "giant hand illusion",
+    "optical illusion",
+    "surreal street art",
+    "creative urban photography",
+    "playful scale distortion",
+    "viral photo aesthetic"
+  ]
+}
 ```
 
 </details>
@@ -10909,7 +13347,46 @@ https://t.co/ylmtxaqTag
       },
       "surface_and_reflection": {
         "base": "glossy reflective surface",
-        "reflection_quality": "clear mirro
+        "reflection_quality": "clear mirrored reflection with slight ripple distortion"
+      }
+    },
+
+    "module_2_image_2_style": {
+      "subject": {
+        "type": "plastic protein drink bottle",
+        "color": "deep matte blue",
+        "surface_details": "condensation droplets across entire bottle",
+        "label_text_visible": [
+          "milk & yogurt",
+          "mock up",
+          "protein",
+          "SEPARATED SHADOWS"
+        ]
+      },
+      "pose_and_orientation": {
+        "position": "slightly tilted to the right",
+        "angle": "three-quarter view",
+        "motion_feel": "dynamic, leaning into splash"
+      },
+      "liquid_and_motion": {
+        "liquid_color": "white and light beige milk mixture",
+        "texture": "smooth, creamy, fluid",
+        "motion": "swirling splash rising around bottle base and sides"
+      },
+      "floating_elements": {
+        "blueberries": "whole and halved blueberries at different depths",
+        "mint_leaves": "small green leaves with visible veins",
+        "droplets": "milk droplets and spheres suspended mid-air"
+      },
+      "background": {
+        "color_gradient": "dark blue to warm amber",
+        "bokeh": "soft circular light particles scattered throughout"
+      },
+      "surface_and_reflection": {
+        "base": "matte ground with light liquid pooling",
+        "shadow_style": "soft separated shadow under bottle"
+      }
+    },
 ```
 
 </details>
@@ -11003,7 +13480,29 @@ An expedition leader's planning board for [JOURNEY / MISSION] — [DESTINATION /
   "camera": {
     "resolution": "8K",
     "look": "cinematic street photography",
-    "focus": "shar
+    "focus": "sharp on subject and car, background softly blurred"
+  },
+  "color_grading": {
+    "palette": [
+      "silver",
+      "blue accents",
+      "warm urban night tones"
+    ],
+    "contrast": "moderate to high",
+    "saturation": "cinematic but realistic"
+  },
+  "mood": {
+    "atmosphere": "urban, rebellious, stylish",
+    "era_influence": "early 2000s street racing culture"
+  },
+  "constraints": [
+    "No facial alteration",
+    "No distortion of anatomy",
+    "No cartoon or illustration style",
+    "No logos or text errors"
+  ],
+  "output_goal": "Create a hyper-realistic 8K full-body image of a woman, using her exact face from the reference photo, sitting casually on a Nissan Skyline GTR R34 inspired by 2 Fast 2 Furious, set in a cinematic night-time city street with a strong 2000s street racing vibe."
+}
 ```
 
 </details>
@@ -11270,7 +13769,7 @@ Romantic, quiet, slightly lonely, melancholic yet beautiful. Dreamy, cinematic, 
 <summary>📋 View Prompt</summary>
 
 ```
-{ "composition": { "framing": "vertical portrait orientation", "shot_type": "medium shot from waist to head", "camera_angle": "eye-level with slight rightward angle", "subject_position": "center-right of frame", "pose": "three-quarter profile facing left with head turned toward camera", "negative_space": "large dark sky occupying upper half of frame", "depth_of_field": "shallow to moderate, subject sharply in focus, background softly blurred" }, "subject": { "type": "human female-presenting subject", "age_appearance": "young adult", "expression": "soft, calm, slightly inquisitive", "gaze": "direct eye contact with camera", "skin_tone": "fair with warm undertones", "facial_features": { "eyes": "large, dark brown appearance, enhanced contrast", "cheeks": "pronounced rosy blush", "lips": "soft red-pink, matte finish", "nose": "natural shape with subtle highlight" }, "hair": { "color": "dark brown", "style": "messy updo with loose face-framing strands", "texture": "smooth with slight flyaways" } }, "wardrobe": { "outfit_type": "dress with layered blouse", "dress": { "pattern": "plaid", "colors": ["muted pink", "beige", "gray"], "fit": "fitted bodice" }, "blouse": { "color": "off-white", "fabric": "lightweight, semi-sheer", "sleeves": "short puff sleeves with soft ruffled hems" }, "style_influence": "soft vintage / cottagecore aesthetic" }, "lighting": { "primary_light": "on-camera flash", "light_quality": "hard frontal light", "direction": "front-facing, slightly above eye level", "effect_on_subject": "brightly illuminated face and torso with crisp edges", "background_lighting": "ambient city lights and house lights", "shadow_behavior": "minimal facial shadows, slight falloff behind subject" }, "color_palette": { "dominant_colors": ["black", "soft pink", "cream", "warm beige"], "accent_colors": ["warm yellow lights", "cool blue window light"], "overall_tone": "warm subject against cool-dark background" }, "background": { "environment": "outdoor residential area at night
+{ "composition": { "framing": "vertical portrait orientation", "shot_type": "medium shot from waist to head", "camera_angle": "eye-level with slight rightward angle", "subject_position": "center-right of frame", "pose": "three-quarter profile facing left with head turned toward camera", "negative_space": "large dark sky occupying upper half of frame", "depth_of_field": "shallow to moderate, subject sharply in focus, background softly blurred" }, "subject": { "type": "human female-presenting subject", "age_appearance": "young adult", "expression": "soft, calm, slightly inquisitive", "gaze": "direct eye contact with camera", "skin_tone": "fair with warm undertones", "facial_features": { "eyes": "large, dark brown appearance, enhanced contrast", "cheeks": "pronounced rosy blush", "lips": "soft red-pink, matte finish", "nose": "natural shape with subtle highlight" }, "hair": { "color": "dark brown", "style": "messy updo with loose face-framing strands", "texture": "smooth with slight flyaways" } }, "wardrobe": { "outfit_type": "dress with layered blouse", "dress": { "pattern": "plaid", "colors": ["muted pink", "beige", "gray"], "fit": "fitted bodice" }, "blouse": { "color": "off-white", "fabric": "lightweight, semi-sheer", "sleeves": "short puff sleeves with soft ruffled hems" }, "style_influence": "soft vintage / cottagecore aesthetic" }, "lighting": { "primary_light": "on-camera flash", "light_quality": "hard frontal light", "direction": "front-facing, slightly above eye level", "effect_on_subject": "brightly illuminated face and torso with crisp edges", "background_lighting": "ambient city lights and house lights", "shadow_behavior": "minimal facial shadows, slight falloff behind subject" }, "color_palette": { "dominant_colors": ["black", "soft pink", "cream", "warm beige"], "accent_colors": ["warm yellow lights", "cool blue window light"], "overall_tone": "warm subject against cool-dark background" }, "background": { "environment": "outdoor residential area at night", "elements": [ "balcony railing in foreground", "houses and buildings", "windows with warm interior lighting", "dark night sky" ], "setting_mood": "quiet, intimate nighttime atmosphere" }, "artistic_style": { "aesthetic": "soft-glow night portrait", "mood": "romantic, gentle, slightly dreamy", "influences": ["social media portrait photography", "modern cottagecore"], "retouching_style": "beauty-focused with emphasis on skin smoothness and blush" }, "technical_details": { "camera_type_assumption": "smartphone camera", "lens_equivalent": "wide to standard (24–35mm equivalent)", "flash_usage": "enabled", "iso_appearance": "low to moderate with minimal noise", "sharpness": "high on subject, reduced in background", "contrast": "moderate with lifted highlights" }, "post_processing": { "skin_smoothing": "moderate", "color_grading": "warm highlights, neutral shadows", "blush_enhancement": "strong", "eye_enhancement": "subtle brightness and contrast increase", "background_noise_reduction": "applied" }, "overall_impression": { "visual_focus": "subject’s face and expression", "style_recreation_keywords": [ "night flash portrait", "soft cottagecore dress", "warm skin tones", "dark urban background", "romantic modern aesthetic" ] } }
 ```
 
 </details>
@@ -11536,7 +14035,22 @@ A cinematic street portrait of a young woman standing still in a busy urban crow
   },
 
   "composition": {
-    "_hint":
+    "_hint": "Ensure the pointing finger leads the viewer's eye to the top right corner.",
+    "visual_flow": "diagonal_line_from_face_to_top_right_corner",
+    "focal_points": [
+      "character_eyes",
+      "pointing_finger_tip"
+    ],
+    "negative_space": "clear_area_at_top_right_45_degrees"
+  },
+
+  "constraints": {
+    "no_holding_phone_device": true,
+    "finger_must_not_be_cropped_out": true,
+    "ensure_arm_is_natural_length": true
+"3:4"
+  }
+}
 ```
 
 </details>
@@ -11579,7 +14093,13 @@ Style: Hybrid Composition: A highly realistic, three-dimensional studio photogra
 
 Color Palette: High contrast. [INSERT OUTFIT COLOR] outfit against [INSERT BACKGROUND COLOR] backdrop, framed by the dark matte gray UI.
 
-Texture and Mood: Realistic skin and rich fabric texture contrasting with the smooth digital elements of the UI. Intentional inclusion of subtle digital noise/grain to mimic a screen capture. Full body, centered portrait. Ensure the head and feet are fully within the frame before segmentation. Angle: Straight eye-level view, perpendi
+Texture and Mood: Realistic skin and rich fabric texture contrasting with the smooth digital elements of the UI. Intentional inclusion of subtle digital noise/grain to mimic a screen capture. Full body, centered portrait. Ensure the head and feet are fully within the frame before segmentation. Angle: Straight eye-level view, perpendicular to the subject.
+
+Framing Elements: Four overlapping, white browser windows/tabs. The pose is elegant and fluid. The bottom interface elements (e.g., 'Private', 'Done') must be clean and visible. Focal Length: Standard portrait lens (approx. 50mm equivalent) for realistic proportions.
+
+Camera Type: Simulated high-quality smartphone screen capture of a professional photo. Depth of Field: Shallow enough to focus sharply on the subject, allowing the background to be soft. Post Processing: Clean digital segmentation. Contrast adjusted to enhance depth.
+
+Avoid Keywords: Floor shadows, flat lighting, 2D look, inconsistent UI color, bleeding colors, HDR, oversharpened. Location: Simulated E-commerce studio ([INSERT BACKGROUND TYPE]).
 ```
 
 </details>
@@ -11676,7 +14196,45 @@ Texture and Mood: Realistic skin and rich fabric texture contrasting with the sm
     "scene_identity": "blue_water_splash_perfume",
     "environment": {
       "setting": "dark aquatic studio scene",
-      "backg
+      "background": "deep navy to black gradient",
+      "surface": "rippling water with reflective highlights",
+      "motion_elements": [
+        "large upward water splash behind bottle",
+        "floating water droplets suspended mid-air"
+      ],
+      "props": [
+        "lemon slices (yellow flesh visible)",
+        "green citrus slice",
+        "small red berries",
+        "green herb sprigs"
+      ]
+    },
+    "product": {
+      "object_type": "perfume bottle",
+      "material": "opaque glass",
+      "color": "deep midnight blue",
+      "shape": "rectangular with sharp edges",
+      "cap": {
+        "material": "matching dark glass",
+        "shape": "cylindrical"
+      },
+      "text_visible": [
+        "BLEU DE CHANEL",
+        "EAU DE PARFUM"
+      ]
+    },
+    "lighting": {
+      "key_light": "strong directional light from upper front",
+      "rim_light": "cool highlights on water splash",
+      "reflections": "specular highlights on glass and water surface"
+    },
+    "camera": {
+      "angle": "slightly tilted dynamic angle",
+      "focus": "sharp on bottle and splash",
+      "motion_freeze": "high-speed capture look"
+    },
+    "mood": "fresh, energetic, aquatic, luxury fragrance ad"
+  }
 ```
 
 </details>
@@ -11706,7 +14264,10 @@ Texture and Mood: Realistic skin and rich fabric texture contrasting with the sm
     "midground": "woman centered and dominant",
     "background": "modern luxurious indoor room with floor-to-ceiling shimmering metallic gold string curtains partially open revealing soft light, dark goth furniture (table/chair) on right, a big Dali painting all over the wall."
   },
-  "lighting_and_atmosphere": "soft warm indoor ambient lighting with subtle highlights on skin, red knit fabric, and leather harness hardware creat
+  "lighting_and_atmosphere": "soft warm indoor ambient lighting with subtle highlights on skin, red knit fabric, and leather harness hardware creating glossy reflections, gentle shadows enhancing tattoo details and body contours, moody alternative fashion vibe with high contrast between red dress and dark harness, photorealistic detail evoking edgy confidence",
+  "technical_quality": "highly detailed, sharp focus on tattoos (colorful ink and linework), leather hardware buckles, ribbed knit texture, hair strands, and skin details, 8k resolution, realistic material sheen (leather gloss, knit matte), professional alternative fashion photography style with natural depth of field softly blurring background curtains",
+  "negative_prompt_suggestions": "blurry, deformed, extra limbs, harsh flash lighting, overexposed skin, underexposed tattoos, low quality, cartoon, anime, text watermark, extra people, cluttered background, unnatural proportions, visible phone or device"
+}
 ```
 
 </details>
@@ -11758,7 +14319,8 @@ Texture and Mood: Realistic skin and rich fabric texture contrasting with the sm
       "texture": "Fine film grain, realistic skin texture"
     }
   },
-  "generated_prompt": "A hyper-realistic 4k HD black and white portrait of a Georgina Rodríguez with shoulder-length dark messy hair and curtain bangs. She has prominent freckles on her nose and cheeks, full glossy lips slightly parted, and dark eyes looking to the side with winged eyeliner. She is wearing a simple white V-neck camisole. The lighting is direct flash photography style creating a vintage 90s aesthetic with high contrast and a hard shadow against a plain background. The image should feature ultra-detailed skin te
+  "generated_prompt": "A hyper-realistic 4k HD black and white portrait of a Georgina Rodríguez with shoulder-length dark messy hair and curtain bangs. She has prominent freckles on her nose and cheeks, full glossy lips slightly parted, and dark eyes looking to the side with winged eyeliner. She is wearing a simple white V-neck camisole. The lighting is direct flash photography style creating a vintage 90s aesthetic with high contrast and a hard shadow against a plain background. The image should feature ultra-detailed skin texture, fine film grain, and sharp focus, capturing a candid, sultry mood."
+}
 ```
 
 </details>
@@ -11870,7 +14432,38 @@ Ultra-cinematic premium coffee bottle labeled “NOIR BREW”, matte black glass
         "material": "Tufted red faux leather seat",
         "base": "Tarnished bronze or gold metal pedestal with footrest"
       },
-      
+      "props_and_background": {
+        "primary_prop": "Slot machine",
+        "prop_details": "Illuminated marquee reading 'TRIPLE JACKPOT GEMS', glowing buttons, glass screen reflections",
+        "atmosphere": "Smoky, crowded, dimly lit background with bokeh lights from other machines"
+      }
+    },
+    "photography_technical": {
+      "camera_simulation": "Early 2000s Digital Compact Camera (e.g., Sony Cybershot or Canon PowerShot)",
+      "lighting_style": {
+        "type": "Direct On-Camera Flash",
+        "characteristics": [
+          "Harsh shadows directly behind the subject",
+          "High contrast",
+          "Overexposed specular highlights on skin and fabric",
+          "Vignetted corners"
+        ]
+      },
+      "composition": {
+        "angle": "Extreme low angle (Worm's-eye view)",
+        "focus": "Sharp focus on subject, slight blur on background",
+        "framing": "Full body shot emphasizing long legs and platform shoes"
+      },
+      "post_processing": {
+        "filters": "Vintage digicam aesthetic",
+        "grain": "ISO 800 digital noise",
+        "saturation": "High saturation, slightly blown-out whites"
+      }
+    },
+    "compiled_prompts": {
+      "main_prompt": "Low angle worm's-eye view shot, direct flash photography. A young woman sitting on a red tufted leather casino stool. She is wearing a fitted black satin mini slip dress with sparkling rhinestone spaghetti straps and chunky black platform block heels with ankle buckles. To her left is a large glowing slot machine with neon text 'TRIPLE JACKPOT GEMS'. The floor is a gaudy retro casino carpet with teal and orange swirls. Background is a dimly lit gambling floor. Aesthetic is Y2K party photography, candid snapshot, harsh flash lighting, hard shadows, high contrast, digital noise, 2000s digicam style, ultra-realistic texture on skin and fabric.",
+     }
+   }
 ```
 
 </details>
@@ -12099,7 +14692,14 @@ Present a clear, 45° top-down isometric miniature 3D cartoon scene of [STADIUM]
     },
     "camera_technical": {
       "style": "Flash photography aesthetic (popular in influencer/social media culture).",
-      "focus": "Sharp focus on the subject's face and jewelry, with a shallow depth of fiel
+      "focus": "Sharp focus on the subject's face and jewelry, with a shallow depth of field blurring the background patrons and lights.",
+      "quality": "Photorealistic, high resolution, 4k."
+    }
+  },
+  "prompt_construction": {
+    "full_prompt": "A hyper-realistic flash photography portrait of a glamorous young woman with blonde balayage hair sitting in a dimly lit, chic restaurant. She is wearing a black scoop-neck tank top and extensive gold jewelry, including layered necklaces with a pendant, chunky hoop earrings, and thick gold bangles. She holds a glass of red wine near her glossy lips, tilting her head with an alluring expression. Her makeup is dewy and bronzed with winged liner. The background features wooden slat blinds, dark ambience, and warm bokeh string lights. The lighting is direct harsh flash style, highlighting her skin texture and the glass. Shot on a high-end compact digital camera, 35mm lens, high contrast, trending social media aesthetic, 8k resolution."
+  }
+}
 ```
 
 </details>
@@ -12215,7 +14815,17 @@ A hyper-realistic 8k medium shot, captured with a standard lens (e.g., 85mm) at 
   },
   "quality": {
     "realism": "photorealistic",
-    "detail_level": "high detail in textures, la
+    "detail_level": "high detail in textures, landscape, and lighting",
+    "artifacts": "none"
+  },
+  "constraints": [
+    "Do not alter the girl’s face or identity",
+    "No exaggerated or fantasy elements",
+    "Maintain realistic proportions and physics",
+    "No text, logos, or watermarks"
+  ],
+  "output_goal": "Create a cinematic, ultra-realistic image of a girl from the reference photos sitting on the edge of a helicopter in flight above a coastal city at sunset, with golden lighting, wide-angle aerial perspective, and detailed ocean and mountain scenery."
+}
 ```
 
 </details>
@@ -12287,7 +14897,29 @@ A hyper-realistic 8k medium shot, captured with a standard lens (e.g., 85mm) at 
       "pose": "Standing next to male subject, hand touching lapel of coat, other hand holding bag at side. Radiating 'cool girl' aesthetic."
     }
   ],
-  "additional_ele
+  "additional_elements": {
+    "animal": {
+      "breed": "Beagle dog.",
+      "pose": "Sitting obediently on the snow at the man's feet.",
+      "appearance": "Tri-color fur (brown, black, white), wearing a collar and attached to a black leash."
+    }
+  },
+  "lighting_and_mood": {
+    "lighting_type": "Soft, diffuse overcast natural light (winter daylight). No harsh shadows.",
+    "mood": "Chic, minimalist, 'Old Money' aesthetic, quiet luxury, sophisticated, serene, fashionable.",
+    "tonality": "Desaturated slightly with high contrast between the black clothing and white snow."
+  },
+  "technical_details": {
+    "style": "Ultra Photorealistic, High-End Street Style Photography.",
+    "camera_settings": {
+      "lens": "85mm portrait lens.",
+      "aperture": "f/2.8 for slight depth of field separation from the stone background.",
+      "shutter_speed": "Fast enough to freeze falling snowflakes.",
+      "iso": "Low ISO (100) for grain-free clarity."
+    },
+    "quality_modifiers": "8k resolution, highly detailed fabric textures (wool grain, leather sheen, suede texture), sharp focus on eyes/sunglasses, subsurface scattering on skin, cinematic composition, rule of thirds."
+  }
+}
 ```
 
 </details>
@@ -12360,7 +14992,63 @@ A hyper-realistic 8k medium shot, captured with a standard lens (e.g., 85mm) at 
     "packaging_details": {
       "colors": ["black", "green", "yellow"],
       "text_visible": [
-    
+        "SPECIAL DARK",
+        "HERSHEY’S",
+        "SABOR MENTA",
+        "60% DE CACAU",
+        "100 g"
+      ],
+      "surface": "matte-black wrapper with glossy highlights"
+    },
+    "ingredients_visible": [
+      "mint leaves",
+      "embossed Hershey’s chocolate squares"
+    ],
+    "motion_elements": {
+      "liquid": "thick molten chocolate splashes wrapping around the package",
+      "droplets": "small chocolate particles suspended mid-air"
+    },
+    "background": {
+      "color": "deep green gradient",
+      "base_surface": "liquid chocolate pool beneath the package"
+    },
+    "lighting": {
+      "key_light": "warm directional light",
+      "accent_light": "golden highlights on chocolate splashes",
+      "contrast": "high contrast between dark wrapper and green background"
+    }
+  },
+
+  "Module_3_Image_3_Style": {
+    "subject": {
+      "primary_object": "Twix Blueberry Muffin packaged snack",
+      "pose": "slightly tilted, floating above background",
+      "orientation": "front-facing with angled depth"
+    },
+    "packaging_details": {
+      "colors": ["purple", "gold", "white"],
+      "text_visible": ["TWIX", "BLUEBERRY MUFFIN"],
+      "surface": "glossy purple plastic wrapper"
+    },
+    "food_elements": [
+      "blueberry muffin",
+      "sliced muffin revealing purple interior",
+      "whole blueberries"
+    ],
+    "motion_elements": {
+      "liquid": "purple splash forming circular motion behind the product",
+      "particles": "crumbs and droplets suspended in air"
+    },
+    "background": {
+      "color": "turquoise-blue",
+      "texture": "clean gradient with high saturation"
+    },
+    "lighting": {
+      "key_light": "bright neutral studio light",
+      "rim_light": "purple-tinted highlights on splash edges",
+      "detail_visibility": "crumb texture and muffin pores clearly visible"
+    }
+  },
 ```
 
 </details>
@@ -12442,7 +15130,24 @@ A hyper-realistic 8k medium shot, captured with a standard lens (e.g., 85mm) at 
   },
   "PhotographyStyle": {
     "Genre": "Professional studio portrait photography",
-    "CameraLo
+    "CameraLook": "High-end cinematic realism",
+    "ImageQuality": "High resolution, clean and sharp"
+  },
+  "NegativePrompt": [
+    "uncanny valley",
+    "cartoon human",
+    "low-quality 3D",
+    "harsh lighting",
+    "oversaturated colors",
+    "blurry focus",
+    "flat composition"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -12459,7 +15164,7 @@ A hyper-realistic 8k medium shot, captured with a standard lens (e.g., 85mm) at 
 <summary>📋 View Prompt</summary>
 
 ```
-{ "scene_type": "indoor close-up lifestyle selfie", "setting": { "location_type": "indoor public venue", "environment_style": "industrial casual", "materials": ["exposed ceiling beams", "metal framework"], "background_elements": ["ceiling structure", "soft ambient lights"], "background_blur": "minimal blur, shallow depth due to proximity" }, "composition": { "framing": "tight close-up", "orientation": "vertical", "subject_placement": "faces filling majority of frame, cheek-to-cheek", "camera_angle": "slightly above eye-level selfie angle", "pose": "intimate, playful; male hand touching chin, female leaning in", "cropping": "foreheads to upper chest, very tight crop" }, "subjects": [ { "gender_presentation": "female", "age_range": "mid-to-late 20s", "build": "average-slim", "skin_tone": "light to medium", "hair": { "color": "dark brown", "length": "shoulder-length", "style": "loose waves, side-parted" }, "makeup": { "finish": "soft glam", "details": ["defined brows", "subtle eyeliner", "mascara", "warm nude lipstick"] }, "expression": "gentle smile, playful", "eye_direction": "looking directly at camera", "clothing": { "top": "off-shoulder patterned dress", "pattern": "dark base with light abstract dots" } }, { "gender_presentation": "male", "age_range": "mid-to-late 20s", "build": "average", "skin_tone": "light to medium", "hair": { "color": "dark brown", "style": "short, slightly tousled, side-swept" }, "facial_hair": "light stubble beard and mustache", "expression": "neutral to mildly sultry", "eye_direction": "looking directly at camera", "clothing": { "top": "white button-up shirt, partially unbuttoned", "accessories": ["metal wristwatch"] } } ], "interaction": { "relationship_cue": "romantic couple", "physical_contact": "faces touching; male hand posed on chin", "body_language": "close, affectionate, relaxed" }, "lighting": { "type": "ambient artificial lighting", "key_light": "overhead warm lights", "fill": "soft environmental bounce", "shadow_quality": "soft,
+{ "scene_type": "indoor close-up lifestyle selfie", "setting": { "location_type": "indoor public venue", "environment_style": "industrial casual", "materials": ["exposed ceiling beams", "metal framework"], "background_elements": ["ceiling structure", "soft ambient lights"], "background_blur": "minimal blur, shallow depth due to proximity" }, "composition": { "framing": "tight close-up", "orientation": "vertical", "subject_placement": "faces filling majority of frame, cheek-to-cheek", "camera_angle": "slightly above eye-level selfie angle", "pose": "intimate, playful; male hand touching chin, female leaning in", "cropping": "foreheads to upper chest, very tight crop" }, "subjects": [ { "gender_presentation": "female", "age_range": "mid-to-late 20s", "build": "average-slim", "skin_tone": "light to medium", "hair": { "color": "dark brown", "length": "shoulder-length", "style": "loose waves, side-parted" }, "makeup": { "finish": "soft glam", "details": ["defined brows", "subtle eyeliner", "mascara", "warm nude lipstick"] }, "expression": "gentle smile, playful", "eye_direction": "looking directly at camera", "clothing": { "top": "off-shoulder patterned dress", "pattern": "dark base with light abstract dots" } }, { "gender_presentation": "male", "age_range": "mid-to-late 20s", "build": "average", "skin_tone": "light to medium", "hair": { "color": "dark brown", "style": "short, slightly tousled, side-swept" }, "facial_hair": "light stubble beard and mustache", "expression": "neutral to mildly sultry", "eye_direction": "looking directly at camera", "clothing": { "top": "white button-up shirt, partially unbuttoned", "accessories": ["metal wristwatch"] } } ], "interaction": { "relationship_cue": "romantic couple", "physical_contact": "faces touching; male hand posed on chin", "body_language": "close, affectionate, relaxed" }, "lighting": { "type": "ambient artificial lighting", "key_light": "overhead warm lights", "fill": "soft environmental bounce", "shadow_quality": "soft, low contrast", "skin_rendering": "warm, slightly textured, natural highlights" }, "color_palette": { "dominant_colors": ["warm beige", "soft browns", "navy", "white"], "accent_colors": ["skin tones", "metallic silver"], "temperature": "warm" }, "technical_characteristics": { "camera_type": "smartphone front-facing camera", "lens_look": "wide-angle selfie distortion", "sharpness": "moderate, softened by low light", "noise_level": "visible fine grain", "dynamic_range": "limited, highlights slightly muted", "white_balance": "warm, indoor-balanced" }, "artistic_style": { "genre": "social media couple selfie", "mood": "intimate, cozy, flirtatious", "editing_style": "warm filter, slight grain, low contrast" }, "typography": null, "overall_aesthetic": "authentic, romantic, casual lifestyle portrait with cozy indoor ambiance" }
 ```
 
 </details>
@@ -12527,7 +15232,57 @@ A cinematic silhouette shot of local fishermen lining the Galata Bridge in Istan
       "top": "Off-shoulder cropped blouse with elastic neckline and puffed half sleeves",
       "bottom": "High-waisted flowy maxi skirt with front slit and drawstring waist",
       "fabric": "Lightweight sheer chiffon / mesh-like material",
-      "style_v
+      "style_vibe": [
+        "Bohemian",
+        "Coastal",
+        "Fairy-core",
+        "Beach goddess"
+      ],
+      "extra_accessories": [
+        "Shell waist chain",
+        "Delicate necklace"
+      ]
+    },
+    "pose_and_scene": {
+      "pose_type": "Handheld selfie",
+      "angle": "High-angle selfie (camera held above, shooting downward)",
+      "perspective": "First-person selfie perspective",
+      "composition": "Face clearly visible with a subtle hint of cleavage",
+      "environment": {
+        "location": "White sand beach",
+        "background": "Bright sparkling turquoise ocean with gentle waves",
+        "sky": "Gradient sunset sky in orange, pink, and soft purple tones",
+        "time": "Golden hour (3–4 PM until sunset), small sun visible near the horizon",
+        "atmosphere": "Bright, cheerful, romantic, elegant, and dreamy"
+      }
+    },
+    "lighting_and_quality": {
+      "lighting": "Golden hour sunlight with rim lighting on the hair",
+      "technique": "Fill-flash used to brighten the face and eliminate shadows (mandatory)",
+      "quality": [
+        "8K resolution",
+        "Ultra photorealistic",
+        "High definition",
+        "Vibrant colors"
+      ]
+    },
+    "camera_settings": {
+      "lens": [
+        "35mm for environmental framing",
+        "85mm for close-up detail"
+      ],
+      "aperture": "f/2.0 – f/2.8 for soft bokeh and sun flares",
+      "shutter_speed": "Fast shutter to freeze ocean water movement",
+      "aspect_ratio": "9:16 vertical",
+      "image_quality": "HD, clean, sharp"
+    },
+    "restrictions": {
+      "face_change": "Do NOT change her face under any circumstances",
+      "identity_preservation": "Facial structure, features, and proportions must remain exactly the same"
+    },
+  
+  }
+}
 ```
 
 </details>
@@ -12556,7 +15311,23 @@ Upload your photo. Hug your cartoon version🫂
     "user_photo": "REPLACE_WITH_USER_FACE_PHOTO_URL_OR_IMAGE_ID",
     "style_reference_image": "REPLACE_WITH_CARTOON_STYLE_REFERENCE_URL_OR_IMAGE_ID"
   },
-  "prompt": "Create a cool, hyper-real, street-style portrait in a real urban street environment at golden hour (natural light, city bokeh, shallow depth of field). Use the provided USER PHOTO to preserve the person’s identity ONLY for the photoreal character.\n\nKEY GOAL: The difference between REAL and CARTOON must be very obvious.\n\nScene & composition:\n- Vertical portrait, waist-up preferred, centered.\n- A photoreal, hyper-real version of the person stands behind.\n- In front: the person’s CARTOON VERSION in a premium 3D animated style strongly matching the STYLE REFERENCE IMAGE.\n- The photoreal person hugs the cartoon from behind: one arm gently around the cartoon’s neck/upper chest in a friendly embrace (not choking), the other hand lightly resting on the cartoon’s shoulder.\n- Both smiling warmly and looking directly into the camera.\n\nPhotoreal person requirements:\n- 100% realistic human: visible skin pores, natural imperfections, realistic hair strands, authentic fabric weave.\n- Realistic streetwear outfit that complements the cartoon’s colors.\n\nCartoon version requirements (MAKE IT MORE CARTOONY):\n- Must look like a stylized animated character, NOT realistic.\n- Exaggerated proportions: slightly larger head, bigger expressive eyes, simplified nose/mouth, softer facial planes.\n- Smooth skin with NO pores, NO real-world micro-textures.\n- Stylized hair: clean clumped curls/strands with animated volume (not individual photoreal strands).\n- Use toon-like material response: soft highlights, clean shading, subtle subsurface glow, crisp edges.\n- Keep clear 
+  "prompt": "Create a cool, hyper-real, street-style portrait in a real urban street environment at golden hour (natural light, city bokeh, shallow depth of field). Use the provided USER PHOTO to preserve the person’s identity ONLY for the photoreal character.\n\nKEY GOAL: The difference between REAL and CARTOON must be very obvious.\n\nScene & composition:\n- Vertical portrait, waist-up preferred, centered.\n- A photoreal, hyper-real version of the person stands behind.\n- In front: the person’s CARTOON VERSION in a premium 3D animated style strongly matching the STYLE REFERENCE IMAGE.\n- The photoreal person hugs the cartoon from behind: one arm gently around the cartoon’s neck/upper chest in a friendly embrace (not choking), the other hand lightly resting on the cartoon’s shoulder.\n- Both smiling warmly and looking directly into the camera.\n\nPhotoreal person requirements:\n- 100% realistic human: visible skin pores, natural imperfections, realistic hair strands, authentic fabric weave.\n- Realistic streetwear outfit that complements the cartoon’s colors.\n\nCartoon version requirements (MAKE IT MORE CARTOONY):\n- Must look like a stylized animated character, NOT realistic.\n- Exaggerated proportions: slightly larger head, bigger expressive eyes, simplified nose/mouth, softer facial planes.\n- Smooth skin with NO pores, NO real-world micro-textures.\n- Stylized hair: clean clumped curls/strands with animated volume (not individual photoreal strands).\n- Use toon-like material response: soft highlights, clean shading, subtle subsurface glow, crisp edges.\n- Keep clear resemblance to the user (overall face shape cues), but do NOT make it realistic.\n- Outfit & accessories should follow the STYLE REFERENCE IMAGE vibe closely (boho/patchwork streetwear, layered handcrafted details, playful colors) with clearly animated fabric detail.\n\nLighting & camera:\n- Photoreal character uses natural golden-hour lighting with realistic shadows.\n- Cartoon character uses matching scene lighting BUT rendered with stylized shading (animated look).\n- 50mm lens look, f/1.8, cinematic grade, sharp focus on both faces.\n\nImportant:\n- Both characters must be in the same frame and clearly different in rendering style.\n- The cartoon must NEVER look photoreal.",
+  "negative_prompt": "cartoon looks realistic, pores on cartoon skin, photoreal cartoon hair, uncanny valley, same rendering style for both, low quality, blur, noise, extra fingers, deformed hands, duplicated limbs, aggressive choking, violence, bruises, blood, text, watermark, logo, caption, frame, heavy artifacts",
+  "params": {
+    "aspect_ratio": "4:5",
+    "quality": "ultra",
+    "stylization_strength": 0.85,
+    "identity_preservation_strength": 0.9,
+    "reference_strength": 0.9,
+    "depth_of_field": "strong",
+    "seed": 12345
+  },
+  "tuning_tips": [
+    "If your cartoon still looks too real: increase stylization_strength to 0.95 and add more 'exaggerated proportions, big eyes, smooth skin, toon shading' phrases.",
+    "If the cartoon stops resembling you: keep the REAL person locked to your user_photo (identity_preservation_strength high), but for the cartoon rely more on the style_reference_image and reduce any face-detail realism cues (remove words like 'highly detailed skin' from cartoon section).",
+    "If your tool supports separate controls per subject: set HIGH identity for photoreal, MEDIUM identity for cartoon, HIGH style for cartoon."
+  ]
+}
 ```
 
 </details>
@@ -12692,7 +15463,68 @@ A hyper-realistic cinematic 3:4 vertical half-body portrait of a young man with 
       "surface": "white metallic finish with condensation droplets",
       "branding": {
         "text_visible": ["THE WHITE EDITION", "Coconut & Berry", "ENERGY DRINK"],
-        "graphics": "bull illustration in gra
+        "graphics": "bull illustration in gray"
+      }
+    },
+    "background": {
+      "color": "sky blue gradient",
+      "lighting": "strong sunlight beams from upper right",
+      "atmosphere": "clean, airy, refreshing"
+    },
+    "surrounding_elements": {
+      "fruits": [
+        {
+          "type": "blueberries",
+          "state": "whole",
+          "texture": "smooth, reflective skin"
+        },
+        {
+          "type": "coconut",
+          "state": "broken slices",
+          "texture": "white flesh with dark brown shell"
+        }
+
+      "ice": {
+        "form": "transparent ice cubes",
+        "detail": "sharp edges, internal cracks visible"
+      },
+      "liquid": "clear water splashes"
+    },
+    "motion_details": {
+      "water": "curved splash paths wrapping around can",
+      "ice": "suspended mid-air with subtle rotation"
+    },
+    "color_palette": ["white", "light blue", "cyan", "natural brown", "cool gray"]
+  
+  "module_3_green_lemon_mojito_style": {
+    "primary_subject": {
+      "object": "tall soda can",
+      "orientation": "tilted slightly clockwise, floating",
+      "surface": "dark green metallic body with lighter green label",
+      "branding": {
+        "text_visible": ["LEMON SODA", "MOJITO", "L’ORIGINALE MOJITO ANALCOLICO ITALIANO"],
+        "logo": "CRODO emblem at top
+    "background": {
+      "color": "vibrant green gradient",
+      "lighting": "intense sun flare from upper right"
+    },
+    "surrounding_elements": {
+      "fruits": [
+        {
+          "type": "lime",
+          "state": ["whole", "sliced wedge"],
+          "texture": "visible citrus pulp, glossy rind"
+        }
+      ],
+      "leaves": "fresh mint leaves with visible veins",
+      "liquid": "sparkling water splashes"
+    },
+    "motion_details": {
+      "water": "explosive splash bursts around can",
+      "droplets": "dense spray of fine droplets"
+    },
+    "color_palette": ["lime green", "dark green", "yellow-green", "white"]
+  }
 ```
 
 </details>
@@ -12864,7 +15696,17 @@ Create ONE luxury editorial poster. Keep the product EXACT and unchanged. Use th
     "direction": "Side-ambient lighting to define the muscular form of the yoga pose"
   },
   "color_palette": {
-    "primary": ["Deep Emeral
+    "primary": ["Deep Emerald Green", "Pristine White", "Charcoal Black"],
+    "mood": "Sophisticated, calm, and visually striking"
+  },
+  "camera_details": {
+    "lens": "50mm prime lens for realistic human proportions",
+    "focus": "Sharp focus on the subject; creamy, soft-focus (bokeh) on the distant snowy background",
+    "realism": "8K resolution, capturing every fiber of the velvet and the granular detail of the snow"
+  },
+  "overall_mood": "Graceful, powerful, and serene; a high-fashion approach to wellness",
+  "intended_use": "Luxury fitness branding, Pinterest aesthetic editorial, or premium wellness magazine"
+}
 ```
 
 </details>
@@ -12898,7 +15740,17 @@ The character has the same pose as the one in Image 1.Visual Specifications:
     - Handbags and Contents: Illustrate the character’s everyday bag or clutch, "opened" to show scattered contents.
     - Cosmetics & Care: Show the character's common makeup and skincare products.
     - Private Lifestyle Items: Visualize personal items that reflect the character’s hidden side. Depending on the character's personality, this could include a private diary, medicine/supplement box, vape, or even more intimate objects.
-3. Style & A
+3. Style & Annotations:
+  - Art Style: Maintain a high-quality 2D illustration style or conceptual sketch style with clean, sharp lines.
+  - Background Design: Simple background should match the character's style, atmosphere, and environment, and align with the overall design.
+  - Text Annotations: Simulate handwritten notes next to each deconstructed element, briefly describing materials or brand/model hints.
+Execution Logic:
+When the user provides an image or description:
+1. Analyze the character's core features, outfit style, and potential personality.
+2. Extract the primary deconstructible elements (e.g., outerwear, shoes, major expressions).
+3. Brainstorm and design secondary depth elements (e.g., what style of underwear would she wear? What lipstick would be in her bag?).
+4. Generate an image that combines all these elements, ensuring accurate perspective, cohesive lighting, and clear annotations.
+5. Use this language: English
 ```
 
 </details>
@@ -12961,7 +15813,7 @@ Text, logos, branding, hands, people, utensils, plates, tables, cartoon style, b
 <summary>📋 View Prompt</summary>
 
 ```
-{ "scene_type": "outdoor urban street portrait", "composition": { "framing": "vertical portrait orientation", "shot_type": "mid-length shot from head to mid-thigh", "camera_angle": "eye-level", "subject_position": "centered with slight rightward offset", "leading_lines": "sidewalk and building facade create linear depth", "depth_of_field": "moderate depth, background softly detailed but not blurred", "balance": "subject balanced against architectural mass on left and greenery on right" }, "subject": { "gender_presentation": "female-presenting", "pose": "relaxed standing pose, one hand in pocket, one arm relaxed", "expression": "neutral to confident with subtle smile", "gaze": "looking directly at camera", "hair": { "style": "long, loose waves", "part": "side-parted", "color": "dark brown with warm undertones", "texture": "soft, voluminous" }, "accessories": [ "round metal-frame sunglasses with dark lenses", "small hoop earrings", "wristwatch with metallic band", "brown leather shoulder bag" ] }, "clothing": { "top": { "type": "sleeveless fitted tank top", "color": "warm beige", "pattern": "thin horizontal white stripes", "fit": "form-fitting" }, "bottom": { "type": baggy pant", "color": "off-white / cream", "fabric_appearance": "structured cotton or linen blend" }, "belt": { "color": "light brown", "buckle": "gold-toned minimalist buckle" } }, "environment": { "location_type": "historic city street", "architecture": { "style": "classical or colonial stone facade", "features": "arched windows, ornate stone detailing, balconies" }, "natural_elements": "trees and shrubs lining the sidewalk", "ground": "concrete sidewalk with adjacent landscaped soil area", "background_activity": "parked cars partially visible, quiet street ambiance" }, "lighting": { "source": "natural sunlight", "time_of_day": "late morning or afternoon", "quality": "soft directional light", "shadows": "gentle shadows cast by trees and buildings", "skin_tone_rendering": "warm and even" }, "color_palett
+{ "scene_type": "outdoor urban street portrait", "composition": { "framing": "vertical portrait orientation", "shot_type": "mid-length shot from head to mid-thigh", "camera_angle": "eye-level", "subject_position": "centered with slight rightward offset", "leading_lines": "sidewalk and building facade create linear depth", "depth_of_field": "moderate depth, background softly detailed but not blurred", "balance": "subject balanced against architectural mass on left and greenery on right" }, "subject": { "gender_presentation": "female-presenting", "pose": "relaxed standing pose, one hand in pocket, one arm relaxed", "expression": "neutral to confident with subtle smile", "gaze": "looking directly at camera", "hair": { "style": "long, loose waves", "part": "side-parted", "color": "dark brown with warm undertones", "texture": "soft, voluminous" }, "accessories": [ "round metal-frame sunglasses with dark lenses", "small hoop earrings", "wristwatch with metallic band", "brown leather shoulder bag" ] }, "clothing": { "top": { "type": "sleeveless fitted tank top", "color": "warm beige", "pattern": "thin horizontal white stripes", "fit": "form-fitting" }, "bottom": { "type": baggy pant", "color": "off-white / cream", "fabric_appearance": "structured cotton or linen blend" }, "belt": { "color": "light brown", "buckle": "gold-toned minimalist buckle" } }, "environment": { "location_type": "historic city street", "architecture": { "style": "classical or colonial stone facade", "features": "arched windows, ornate stone detailing, balconies" }, "natural_elements": "trees and shrubs lining the sidewalk", "ground": "concrete sidewalk with adjacent landscaped soil area", "background_activity": "parked cars partially visible, quiet street ambiance" }, "lighting": { "source": "natural sunlight", "time_of_day": "late morning or afternoon", "quality": "soft directional light", "shadows": "gentle shadows cast by trees and buildings", "skin_tone_rendering": "warm and even" }, "color_palette": { "dominant_colors": ["beige", "cream", "brown", "stone gray", "green"], "overall_tone": "warm, natural, lifestyle aesthetic", "contrast": "moderate contrast between subject and background" }, "camera_characteristics": { "lens_look": "standard to short telephoto perspective", "distortion": "minimal distortion", "sharpness": "sharp focus on subject with clear texture detail", "noise": "low noise, clean image" }, "artistic_style": { "genre": "fashion lifestyle photography", "mood": "casual elegance, confident, relaxed", "styling_influence": "modern minimalist with classic elements", "social_media_aesthetic": "Instagram-style street fashion portrait" }, "post_processing": { "color_grading": "warm tones with natural saturation", "contrast_adjustment": "slightly enhanced", "retouching": "minimal, natural skin texture preserved", "overall_finish": "clean and polished" }, "typography": { "present": false } }
 ```
 
 </details>
@@ -13150,7 +16002,25 @@ Highly detailed, cohesive composition with an 8K cinematic finish, refined minia
     "focus": "ultra-sharp subject with zero motion blur"
   },
   "color_palette": {
-    "
+    "primary_colors": ["neutral background", "natural skin tone"],
+    "contrast_level": "high",
+    "mood": "bold, energetic, inspiring"
+  },
+  "emotional_impact": {
+    "viewer_reaction": "scroll-stopping shock and admiration",
+    "message": "power, balance, and control in one moment"
+  },
+  "quality_control": {
+    "realism": "ultra-realistic photography",
+    "detail_level": "high-definition muscle and fabric texture",
+    "ai_artifacts": "none",
+    "professional_standard": "editorial-grade"
+  },
+  "intended_use": {
+    "primary": "viral jump freeze post on X",
+    "secondary": "fitness branding, athletic inspiration"
+  }
+}
 ```
 
 </details>
@@ -13230,7 +16100,60 @@ Prompt :
       "chips_color": "golden yellow with seasoning speckles",
       "bowl": {
         "material": "ceramic",
-        "color": "warm or
+        "color": "warm orange",
+        "fill_state": "bowl partially filled with chips"
+      }
+    },
+    "seasoning_elements": [
+      "fine spice dust",
+      "small crumbs",
+      "rosemary sprigs floating"
+    ],
+    "background": {
+      "color": "warm orange gradient",
+      "lighting": "soft diffused with highlights on chips"
+    },
+    "ground_details": [
+      "scattered crumbs",
+      "spice particles",
+      "rosemary pieces"
+    ],
+    "mood": "energetic, crunchy, commercial snack photography"
+  },
+
+  "Module_3_Image_3_Style": {
+    "subject": "beef noodle soup in a bowl",
+    "composition": {
+      "main_action": "bowl floating in mid-air",
+      "camera_angle": "slightly elevated front angle",
+      "framing": "centered with wide negative space"
+    },
+    "food_details": {
+      "bowl_color": "dark matte black",
+      "broth": "clear brown liquid",
+      "noodles": "white flat noodles",
+      "protein": "thin slices of raw or lightly cooked beef",
+      "herbs": [
+        "green basil leaves"
+      ]
+    },
+    "floating_elements": [
+      "basil leaves",
+      "chili slices",
+      "garlic cloves",
+      "herb fragments"
+    ],
+    "steam": {
+      "visibility": "clearly visible",
+      "shape": "soft swirling trails",
+      "opacity": "semi-transparent"
+    },
+    "background": {
+      "color": "soft teal gradient",
+      "texture": "clean studio backdrop"
+    },
+    "mood": "fresh, aromatic, premium culinary presentation"
+  },
 ```
 
 </details>
@@ -13347,6 +16270,12 @@ Square format 1080×1080, ultra-detailed 3D render, miniature realism, 8K look, 
     },
     "camera_technical_values": {
       "source_photo_style": "High-end fashion editorial photography.",
+      "lens": "85mm (Portrait telephoto).",
+      "lighting": "Natural Window Light (Soft, directional sunlight coming from the side).",
+      "color_grading": "Slightly desaturated source photos contrasted against the warm beige newspaper background.",
+      "resolution": "High fidelity cutouts."
+    },
+    "composition": "Overlapping layers. The center and right photos are larger, while smaller details fill the corners."
 ```
 
 </details>
@@ -13397,7 +16326,13 @@ style
 
 ```
 {
-  "prompt": "Create a hyper-realistic, ultra-detailed cinematic photo featuring a MINIATURE version of the person from the provided reference image (preserve facial likeness, skin tone, hairstyle, and overall identity). The tiny character is relaxing inside an OPEN vintage hard-shell suitcase that is used like a tiny bed. The suitcase sits on a clean stone/tile floor in a bright room with strong natural sunlight casting soft rectangular window shadows across the floor.\n\nONLY VARIABLES:\n1) Character: use the user reference photo for the person’s face and identity.\n2) Theme/Genre: {THEME}\n\nCOMPOSITION & SCALE:\n- The person must be clearly mini-sized (toy-scale) relative to the suitcase, with correct perspective and believable proportions.\n- The open suitcase interior is styled like a cozy miniature scene: pillow, textured blanket or towel, and themed tiny props.\n- Add realistic micro-details: fabric weave, zipper teeth, suitcase latches, scuffs, stitching, subtle dust, realistic contact shadows.\n\nTHEME STYLING (derive everything from {THEME}):\n- Choose a cohesive color palette and make the SUITCASE COLOR match the theme (e.g., beach = warm coral/sand; football = deep green/black or team-inspired; sporty = bold neon accents; cozy-casual = muted cream/tan; luxury = black/ivory/gold).\n- Dress the tiny character in an outfit that fits {THEME}.\n- Place 5–8 tiny theme props neatly inside the suitcase near the character (miniature scale, photoreal materials). Examples by theme:\n  • Beach: tiny sunscreen bottle, mini sunglasses, seashells, flip-flops, mini straw hat, folded towel.\n  • Football/Soccer: tiny soccer ball, mini jersey/scarf, cleats, shin guards, whistle, small tactic board.\n  • Sporty/Fitness: tiny water bottle, mini dumbbell, resistance band, smartwatch, towel, energy bar.\n  • Cozy/Casual: tiny book/magazine, mug, knitted throw, headphones, mini candle.\n(If {THEME} is different, invent equivalent props that strongly communicate that theme.)\
+  "prompt": "Create a hyper-realistic, ultra-detailed cinematic photo featuring a MINIATURE version of the person from the provided reference image (preserve facial likeness, skin tone, hairstyle, and overall identity). The tiny character is relaxing inside an OPEN vintage hard-shell suitcase that is used like a tiny bed. The suitcase sits on a clean stone/tile floor in a bright room with strong natural sunlight casting soft rectangular window shadows across the floor.\n\nONLY VARIABLES:\n1) Character: use the user reference photo for the person’s face and identity.\n2) Theme/Genre: {THEME}\n\nCOMPOSITION & SCALE:\n- The person must be clearly mini-sized (toy-scale) relative to the suitcase, with correct perspective and believable proportions.\n- The open suitcase interior is styled like a cozy miniature scene: pillow, textured blanket or towel, and themed tiny props.\n- Add realistic micro-details: fabric weave, zipper teeth, suitcase latches, scuffs, stitching, subtle dust, realistic contact shadows.\n\nTHEME STYLING (derive everything from {THEME}):\n- Choose a cohesive color palette and make the SUITCASE COLOR match the theme (e.g., beach = warm coral/sand; football = deep green/black or team-inspired; sporty = bold neon accents; cozy-casual = muted cream/tan; luxury = black/ivory/gold).\n- Dress the tiny character in an outfit that fits {THEME}.\n- Place 5–8 tiny theme props neatly inside the suitcase near the character (miniature scale, photoreal materials). Examples by theme:\n  • Beach: tiny sunscreen bottle, mini sunglasses, seashells, flip-flops, mini straw hat, folded towel.\n  • Football/Soccer: tiny soccer ball, mini jersey/scarf, cleats, shin guards, whistle, small tactic board.\n  • Sporty/Fitness: tiny water bottle, mini dumbbell, resistance band, smartwatch, towel, energy bar.\n  • Cozy/Casual: tiny book/magazine, mug, knitted throw, headphones, mini candle.\n(If {THEME} is different, invent equivalent props that strongly communicate that theme.)\n\nLIGHTING & CAMERA:\n- Bright natural sunlight, soft realistic shadows, subtle bounce light, HDR-like dynamic range.\n- Photographic realism: shallow depth of field (but keep face and key props sharp), 50–85mm lens look.\n- No text, no logos, no watermarks.\n\nFINAL LOOK:\n- Hyper-real, high detail, clean editorial product-photography vibe, believable miniature diorama realism, crisp textures and natural skin rendering.",
+  "negative_prompt": "cartoon, CGI, illustration, anime, plastic-looking skin, uncanny face, distorted anatomy, extra fingers, deformed hands, duplicated limbs, wrong perspective, unrealistic scale, blurry, low-res, noisy, harsh artifacts, over-smoothed, bad shadows, floating objects, cluttered scene, messy background, text, watermark, logo, brand names, extra people, face not matching reference",
+  "variables": {
+    "THEME": "beach | football | sporty | cozy-casual | luxury | etc.",
+    "USER_IMAGE": "reference photo uploaded by the user (required)"
+  }
+}
 ```
 
 </details>
@@ -13465,7 +16400,22 @@ style
   "camera_details": {
     "camera_type": "professional DSLR or mirrorless simulation",
     "lens": "85mm or macro food lens",
- 
+    "focus": "tack-sharp on lifted noodles",
+    "depth_of_field": "shallow background blur",
+    "resolution": "advertising-grade clarity"
+  },
+  "quality_control": {
+    "food_realism": "hyper-real texture without plastic look",
+    "steam_accuracy": "natural steam physics",
+    "ai_artifacts": "none",
+    "professional_finish": "commercial food photography quality"
+  },
+  "overall_mood": "comforting, rich, mouth-watering",
+  "intended_use": {
+    "primary": "viral food post on X",
+    "secondary": "restaurant branding, food editorial, ads"
+  }
+}
 ```
 
 </details>
@@ -13591,7 +16541,7 @@ Texture: Heavy distressed ink texture and grunge print effects on typography and
 TYPE C: CAMPAIGN PHOTOGRAPHY (HALFTONE):
 High-contrast B&W action shots or portraits relevant to the brand.
 
-Texture: Apply strong halftone dot patterns (raster dots) and heavy film grain. Use "Multiply" color
+Texture: Apply strong halftone dot patterns (raster dots) and heavy film grain. Use "Multiply" color blending to wash the photos in the brand's specific color palette (duotone effect).
 ```
 
 </details>
@@ -13651,7 +16601,11 @@ Texture: Apply strong halftone dot patterns (raster dots) and heavy film grain. 
         "Subsurface scattering",
         "Fashion photography",
         "Cinematic lighting",
-        "Masterpiece" Ratio 3.4 change the girl to Megan Fox and the d
+        "Masterpiece" Ratio 3.4 change the girl to Megan Fox and the dress color should be red
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -13945,7 +16899,57 @@ Top-left: “FRESH JUICE” + “[FLAVOR_TAGLINE]”. Right: circular “30% OFF
   },
   "lighting": {
     "type": "natural sunlight",
-    "time_of_day": "golden hour
+    "time_of_day": "golden hour",
+    "light_direction": "side/front lighting",
+    "light_quality": "soft but warm",
+    "shadows": "gentle shadows on face and neck"
+  },
+  "environment": {
+    "location": "outdoor natural setting",
+    "background_elements": [
+      "dry plants or tall grass",
+      "blurred foliage",
+      "open sky"
+    ],
+    "background_style": "shallow depth of field, strong background blur (bokeh)",
+    "color_palette": [
+      "warm browns",
+      "golden yellows",
+      "muted greens",
+      "soft blue sky"
+    ]
+  },
+  "camera_details": {
+    "framing": "medium close-up portrait",
+    "angle": "eye-level",
+    "focus": "sharp focus on face",
+    "depth_of_field": "shallow",
+    "lens_effect": "natural background blur"
+  },
+  "overall_style": {
+    "mood": "warm, cinematic, natural",
+    "aesthetic": "soft realism",
+    "edit_style": "lightly enhanced, natural skin texture preserved",
+    "contrast": "moderate",
+    "color_grading": "warm tones, golden highlights"
+  },
+  "negative_prompt": [
+    "extra limbs",
+    "distorted face",
+    "over-smoothing skin",
+    "plastic skin",
+    "exaggerated makeup",
+    "harsh lighting",
+    "cartoon style",
+    "anime style",
+    "low resolution",
+    "noise",
+    "blurred face",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}
 ```
 
 </details>
@@ -14025,7 +17029,8 @@ Ultra-detailed, hyperrealistic miniature rendering, premium advertising aestheti
     ],
     "sharpness": "Low perceived sharpness, distinct details stretched and indistinct"
   },
-  "full_prompt_text": "A heavily distorted, low-fidelity surveillance-style image depicts the Subject, wearing a red short minidress with v deep necklace, standing behind a cramped retail checkout counter inside a cluttered shop, captured from a high-mounted camera angled steeply downward in a top-down CCTV perspective. The image quality is intentionally degraded, with strong motion blur, dig
+  "full_prompt_text": "A heavily distorted, low-fidelity surveillance-style image depicts the Subject, wearing a red short minidress with v deep necklace, standing behind a cramped retail checkout counter inside a cluttered shop, captured from a high-mounted camera angled steeply downward in a top-down CCTV perspective. The image quality is intentionally degraded, with strong motion blur, digital smearing, compression artifacts, heavy noise, scan lines, and subtle fisheye distortion warping the frame edges, making fine details indistinct and stretched. The Subject is centered from mid-torso upward, looking up toward the camera with the head tilted back; facial features are largely obscured by blur and artifacts, though dark oversized sunglasses dominate the face, reflecting ambient light, and the mouth appears open with the tongue faintly visible. One hand is raised toward the camera with the middle finger extended, clearly readable in silhouette but softened and ghosted by motion and low clarity, conveying a relaxed yet defiant posture. The foreground checkout counter is cluttered with papers and a white shopping bag with red rope handles, while the background shelves are densely packed with small items, souvenirs, and figurines that blend into abstract shapes due to low resolution and noise. Harsh, flat fluorescent lighting produces blown highlights, dull shadows, uneven color reproduction, and a cool green-blue color cast with visible banding and reduced dynamic range. Despite an effectively deep depth of field, perceived sharpness remains low, reinforcing a raw, gritty, confrontational mood that emphasizes the authenticity of an unpolished, unenhanced surveillance feed in a vertical 4:5 aspect ratio"
+}
 ```
 
 </details>
@@ -14228,7 +17233,9 @@ Left panel: A reflective mirror shot taken through a glass surface, showing the 
 
 Bottom-right panel: A close-up selfie angle where she looks directly into the camera while holding an iced coffee in a clear plastic cup, earbuds in, with sunlight softly illuminating her face and sunglasses.
 
-Overlayed across the center of the collage is a minimalist music player UI, semi-transparent, displaying a paused or playing track with pro
+Overlayed across the center of the collage is a minimalist music player UI, semi-transparent, displaying a paused or playing track with progress bar and controls, adding a digital, lifestyle-tech aesthetic. The interface floats above the imagery, blending seamlessly with the collage and reinforcing a "day-in-the-life" mood. Lighting is natural daylight with soft shadows. The color palette is muted and earthy browns, greys, yellows-enhanced with subtle film grain and a slightly desaturated, editorial color grade. The overall mood is effortlessly cool, candid, and contemporary, mixing street fashion, music culture, and casual city exploration. Style & Quality Tags: Street-style fashion photography, lifestyle editorial, urban aesthetic, candid moments, vintage-inspired outfit, natural light, muted color grading, subtle film grain, modern collage layout, high-resolution, Instagram editorial style.
+
+Octane render & Unreal Engine 5.
 ```
 
 </details>
@@ -14302,7 +17309,53 @@ Overlayed across the center of the collage is a minimalist music player UI, semi
     }
   },
 
-  "Module_2_Image_
+  "Module_2_Image_2_Style_Acai": {
+    "subject": "Açaí flavored soda can",
+    "can_details": {
+      "material": "metal aluminum",
+      "condition": "can split horizontally into two broken sections",
+      "cracks": "jagged tearing edges with visible sharp metal folds",
+      "surface": "covered with condensation droplets"
+    },
+    "fruit_elements": {
+      "acai_berries": "multiple dark purple berries erupting from inside the can",
+      "berry_motion": "berries floating upward and outward",
+      "leaves": "few green leaves visible on sides"
+    },
+    "liquid_effects": {
+      "splash_color": "deep purple liquid",
+      "motion": "explosive splash radiating outward",
+      "droplets": "fine droplets suspended in air"
+    },
+    "background": {
+      "color": "warm beige to light brown gradient",
+      "tone": "soft neutral backdrop"
+    }
+  },
+
+  "Module_3_Image_3_Style_Goiaba_Guava": {
+    "subject": "Guava flavored soda can",
+    "can_details": {
+      "material": "metal aluminum",
+      "condition": "vertical split down the center of the can",
+      "cracks": "uneven torn edges exposing inside",
+      "surface": "visible water droplets and moisture"
+    },
+    "fruit_elements": {
+      "guava_halves": "multiple guava halves with pink interiors",
+      "whole_guavas": "several whole green guavas around the can",
+      "leaves": "green guava leaves scattered"
+    },
+    "liquid_effects": {
+      "splash_color": "red guava juice",
+      "motion": "juice bursting upward and sideways",
+      "droplets": "dense red droplets suspended mid-air"
+    },
+    "background": {
+      "color": "solid deep red",
+      "tone": "high contrast with fruit and liquid"
+    }
+  }
 ```
 
 </details>
@@ -14380,6 +17433,14 @@ Overlayed across the center of the collage is a minimalist music player UI, semi
     "busy background",
     "plastic skin",
     "cartoon",
+    "anime"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -14478,7 +17539,55 @@ A young woman is sitting casually on a white wooden bench, positioned slightly o
       "material_appearance": "gold-toned metal"
     }
   },
-  "cl
+  "clothing": {
+    "garment_type": "tailored jacket or dress with lapels",
+    "neckline": "deep V-neck",
+    "fit": "structured yet flowing",
+    "fabric_texture": "smooth, slightly reflective",
+    "pattern": "vertical multicolored stripes",
+    "colors": [
+      "orange",
+      "red",
+      "green",
+      "teal",
+      "yellow"
+    ],
+    "buttons": "visible front button at mid-torso"
+  },
+  "lighting": {
+    "type": "studio lighting",
+    "direction": "soft frontal with slight side emphasis",
+    "contrast": "moderate",
+    "highlights": "gentle highlights on face and glasses",
+    "shadows": "soft shadows under chin and neck"
+  },
+  "background": {
+    "environment": "studio setup",
+    "elements": "colored smoke or mist",
+    "color_palette": [
+      "pink",
+      "coral",
+      "peach",
+      "soft green"
+    ],
+    "background_style": "abstract, atmospheric"
+  },
+  "atmosphere": {
+    "mood": "cinematic, fashion-forward",
+    "visual_effects": "floating colored smoke surrounding subject",
+    "clarity": "subject sharp, background diffused"
+  },
+  "color_grading": {
+    "tone": "warm",
+    "saturation": "rich but balanced",
+    "overall_palette": "harmonized warm and pastel tones"
+  },
+  "image_quality": {
+    "sharpness": "high detail on facial features, clothing texture, accessories",
+    "noise": "none visible",
+    "finish": "clean, professional, editorial-grade"
+  }
+}
 ```
 
 </details>
@@ -14699,7 +17808,7 @@ Ultra-realistic high-fashion studio photography of a young adult woman standing 
 Her long straight black hair is smoothly slicked back,falling past the shoulders with a natural sheen. Facial features are well-defined yet realistic: pronounced cheekbones, full lips with a soft glossy finish, and balanced facial proportions. Makeup is clean and editorial—subtle skin correction, visible natural skin texture (pores, micro-imperfections), even tone without a plastic look, and a sharp black eyeliner accentuating the eyes.
 She looks directly into the camera with calm, self-assured eye contact and a composed, slightly dominantexpression—confident but not exaggerated.
 Outfit: A strapless black glossy latex or PVC crop top, tightly fitted over the torso, realistically interacting with the body, showing natural tension, highlights, and light reflections. Matching high-waisted black glossy latex shorts, very short in length, hugging the hips and upper thighs with realistic material stretch and specular highlights. Thigh-high black glossy latex boots, reaching the upper thighs, form-fitting with smooth reflectivesurfaces and subtle material creases at natural bend points.
-Lighting & Camera: Professional studio lighting with soft key light and controlled fill, designed to emphasize realistic specular highlights on the latex while preserving natural body contours and depth. No harsh shadows. Shot with a fashion photography mindset, 50–85mm lens look, shallow but realistic depth of field, high optical sharpness without over-processing.Overall mood: Futuristic, high-fashion, bold and confident editorial aesthetic. Fully human, photor
+Lighting & Camera: Professional studio lighting with soft key light and controlled fill, designed to emphasize realistic specular highlights on the latex while preserving natural body contours and depth. No harsh shadows. Shot with a fashion photography mindset, 50–85mm lens look, shallow but realistic depth of field, high optical sharpness without over-processing.Overall mood: Futuristic, high-fashion, bold and confident editorial aesthetic. Fully human, photorealistic appearance. Clean white background with no distractions, no artificial glow, no CGI look, no exaggerated perfection.
 ```
 
 </details>
@@ -14735,7 +17844,12 @@ PHASE 3: PHYSICAL BRANDING (TEXTURE)
 On the Merch: The hanging apparel must feature High-Quality Physical Branding. Use "Chenille Patches", "Embroidered Logos", or "Screen Print" running down the sleeve or on the back. It must look like a real, expensive garment.
 On the Products: Ensure the stacked core products have the correct [BRAND NAME] logo visible.
 PHASE 4: PHOTOGRAPHY & LIGHTING
-Lighting: Soft, directional window light from the side. Creates realistic, soft shadows on the rack and rich highlights on the
+Lighting: Soft, directional window light from the side. Creates realistic, soft shadows on the rack and rich highlights on the textures.
+Lens: 50mm or 85mm. Sharp focus on the merch, slight fall-off in the background.
+PHASE 5: UI OVERLAY (THE "DROP" LAYOUT)
+Left Side Alignment:
+Large, clean White Logo of [BRAND NAME] floating in the negative space on the left.
+Under the logo, small white text with the brand's official slogan.
 ```
 
 </details>
@@ -14861,7 +17975,87 @@ Lighting: Soft, directional window light from the side. Creates realistic, soft 
         "type": "Minimal satin camisole",
         "color": "Warm beige / soft champagne tone",
         "fabric_behavior": "Natural satin sheen with realistic folds"
-  
+      }
+    },
+
+    "lighting": {
+      "type": "Strong natural morning sunlight",
+      "direction": "Directional side window light",
+      "style": "Chiaroscuro lighting",
+      "effect": [
+        "Clear separation of highlights and shadows",
+        "Emphasis on skin texture, fabric weave, and hair volume",
+        "Deep but realistic shadows"
+      ],
+      "restrictions": [
+        "No artificial lighting",
+        "No smoothing",
+        "No plastic skin"
+      ]
+    },
+
+    "camera_and_quality": {
+      "style": "Photographer-style cinematic realism",
+      "lens": "35mm lens look",
+      "aperture": "f/1.8",
+      "depth_of_field": "Shallow, natural",
+      "perspective": "True-to-life",
+      "grain": "Subtle film grain",
+      "resolution": "Ultra-detailed 8K UHD"
+    },
+
+    "color_palette": {
+      "tones": [
+        "Warm ivory",
+        "Soft champagne",
+        "Golden morning light",
+        "Natural skin warmth"
+      ],
+      "harmony": "Cohesive warm color balance across the frame"
+    },
+
+    "watermark": {
+      "text": "andrey.anatolievich",
+      "placement": "Lower right corner",
+      "style": "Thin modern sans-serif",
+      "opacity": "Semi-transparent",
+      "integration": "Clean, subtle, non-distracting"
+    },
+
+    "aesthetic": {
+      "vibe": [
+        "Cinematic morning portrait",
+        "Intimate realism",
+        "Human, tactile, emotional",
+        "High-end photographic authenticity"
+      ]
+    },
+
+    "negative_prompt": [
+      "face alteration",
+      "duplicate or cloned face",
+      "deformed iris",
+      "deformed pupils",
+      "CGI"
+      "sketch",
+      "cartoon",
+      "anime",
+      "semi-realistic",
+      "logos",
+      "captions",
+      "cropped",
+      "out of frame",
+      "jpeg artifacts",
+      "extra fingers",
+      "extra limbs",
+      "missing limbs",
+      "poorly drawn hands",
+      "bad anatomy",
+      "long neck",
+     plastic skin
+    ]
+  }
+}
 ```
 
 </details>
@@ -14895,7 +18089,7 @@ Create Moody cinematic portrait of a young woman with clear fair skin and barely
 <summary>📋 View Prompt</summary>
 
 ```
-{ "scene_overview": { "setting": "indoor cafe or tea shop", "mood": "intimate, warm, romantic, contemplative", "narrative": "a quiet, affectionate moment between two people sharing tea and conversation" }, "composition": { "framing": "medium close-up, waist-up", "orientation": "vertical portrait", "subject_placement": "two subjects seated closely, centered slightly left, faces angled toward each other", "depth": "shallow depth of field with soft, simplified background silhouettes", "foreground_elements": "tea cup and saucer placed centrally at bottom edge", "balance": "asymmetrical balance created by contrasting clothing colors and opposing gazes" }, "subjects": { "left_subject": { "gender_presentation": "male", "age_range": "late 20s to mid 30s", "appearance": { "hair": "short, thick, wavy, dark", "facial_hair": "full beard and mustache", "skin_tone": "medium warm brown" }, "clothing": { "type": "casual button-up shirt", "color": "muted olive green", "texture": "soft fabric with minimal folds" }, "expression_pose": { "expression": "calm, attentive, affectionate", "gaze": "looking at the female subject", "posture": "slightly leaned in, relaxed shoulders" } }, "right_subject": { "gender_presentation": "female", "age_range": "mid 20s to early 30s", "appearance": { "hair": "long, dark, loosely styled with slight wave", "skin_tone": "light to medium warm brown" }, "clothing": { "type": "flowy traditional-inspired top or dress", "color": "warm mustard yellow", "details": "soft pleats and gathered sleeves" }, "accessories": { "earrings": "gold jhumka-style earrings with dangling details" }, "expression_pose": { "expression": "gentle smile, thoughtful", "gaze": "looking toward the male subject", "pose": "chin resting on hand, elbow on table" } } }, "objects": { "tea_cup": { "type": "ceramic cup and saucer", "color": "off-white", "content": "tea", "placement": "center foreground on wooden table" }, "table": { "material": "wood", "finish": "matte, slightly textured" } }, "ba
+{ "scene_overview": { "setting": "indoor cafe or tea shop", "mood": "intimate, warm, romantic, contemplative", "narrative": "a quiet, affectionate moment between two people sharing tea and conversation" }, "composition": { "framing": "medium close-up, waist-up", "orientation": "vertical portrait", "subject_placement": "two subjects seated closely, centered slightly left, faces angled toward each other", "depth": "shallow depth of field with soft, simplified background silhouettes", "foreground_elements": "tea cup and saucer placed centrally at bottom edge", "balance": "asymmetrical balance created by contrasting clothing colors and opposing gazes" }, "subjects": { "left_subject": { "gender_presentation": "male", "age_range": "late 20s to mid 30s", "appearance": { "hair": "short, thick, wavy, dark", "facial_hair": "full beard and mustache", "skin_tone": "medium warm brown" }, "clothing": { "type": "casual button-up shirt", "color": "muted olive green", "texture": "soft fabric with minimal folds" }, "expression_pose": { "expression": "calm, attentive, affectionate", "gaze": "looking at the female subject", "posture": "slightly leaned in, relaxed shoulders" } }, "right_subject": { "gender_presentation": "female", "age_range": "mid 20s to early 30s", "appearance": { "hair": "long, dark, loosely styled with slight wave", "skin_tone": "light to medium warm brown" }, "clothing": { "type": "flowy traditional-inspired top or dress", "color": "warm mustard yellow", "details": "soft pleats and gathered sleeves" }, "accessories": { "earrings": "gold jhumka-style earrings with dangling details" }, "expression_pose": { "expression": "gentle smile, thoughtful", "gaze": "looking toward the male subject", "pose": "chin resting on hand, elbow on table" } } }, "objects": { "tea_cup": { "type": "ceramic cup and saucer", "color": "off-white", "content": "tea", "placement": "center foreground on wooden table" }, "table": { "material": "wood", "finish": "matte, slightly textured" } }, "background": { "style": "simplified, painterly silhouettes", "elements": "blurred figures suggesting other patrons, vertical window frames", "detail_level": "low detail to maintain subject focus", "color_palette": "muted beige, tan, and olive tones" }, "lighting": { "type": "soft ambient lighting", "direction": "diffuse, likely from window side", "contrast": "low to moderate", "highlights": "gentle highlights on faces and clothing folds", "shadows": "soft, minimal harsh shadows" }, "color_palette": { "dominant_colors": [ "mustard yellow", "olive green", "warm beige", "dark brown", "soft tan" ], "temperature": "warm", "saturation": "moderate, slightly muted for a cozy feel" }, "art_style": { "medium": "digital illustration", "style": "semi-realistic painterly illustration", "line_work": "clean, controlled outlines with organic variation", "shading": "soft gradient shading with minimal hard edges", "brush_texture": "visible digital brush strokes, slightly rough painterly texture" }, "technical_traits": { "rendering": "2D digital painting", "detail_focus": "faces and clothing folds prioritized over background", "edge_treatment": "soft edges in background, sharper edges on subjects", "noise_grain": "minimal, clean finish" }, "emotional_tone": { "primary_emotion": "intimacy", "secondary_emotions": [ "comfort", "affection", "calm" ] }, "typography": { "presence": "none", "text_elements": "no visible text or lettering" } }
 ```
 
 </details>
@@ -14943,7 +18137,9 @@ A high-fidelity 3D character render of a cute, stylized boy skateboarding in a d
     "isometric": 1.35,
     "cozy": 1.25,
     "warm lighting": 1.2,
-    "de
+    "detailed textures": 1.3
+  }
+}
 ```
 
 </details>
@@ -14968,7 +18164,8 @@ A high-fidelity 3D character render of a cute, stylized boy skateboarding in a d
   "style": "luxury fashion editorial, cinematic",
   "lighting": "dramatic hard side lighting, high contrast",
   "quality": "ultra-realistic, premium",
-  "r
+  "reference_image": "strictly use uploaded image only"
+}
 ```
 
 </details>
@@ -14985,7 +18182,7 @@ A high-fidelity 3D character render of a cute, stylized boy skateboarding in a d
 <summary>📋 View Prompt</summary>
 
 ```
-{ "scene_type": "outdoor portrait", "composition": { "framing": "medium shot", "orientation": "vertical", "subject_position": "center-right", "pose": "arms crossed, body angled slightly to the right, head turned slightly left", "camera_angle": "eye-level", "depth_of_field": "shallow, strong background blur" }, "subject": { "gender_presentation": "male", "age_range": "mid-20s to early-30s", "skin_tone": "light", "facial_features": "defined jawline, light stubble beard, straight nose, soft cheek contours", "expression": "calm, contemplative, neutral confidence", "gaze_direction": " On camera" }, "hair": { "color": "medium brown", "style": "short to medium length, naturally curly with volume on top", "texture": "soft, slightly tousled" }, "wardrobe": { "top": { "type": "long-sleeve button-up shirt", "color": "white", "material": "lightweight linen or linen-blend", "fit": "relaxed, tailored", "details": "collarless or minimal collar, sleeves rolled to forearm" }, "accessories": { "watch": { "type": "analog wristwatch", "strap_color": "dark brown or black leather", "dial_color": "dark, likely black", "style": "classic, minimalist" } } }, "lighting": { "type": "natural daylight", "quality": "soft, diffused", "direction": "front-left", "contrast": "low to medium", "highlights": "gentle highlights on face and shirt", "shadows": "soft, minimal shadowing" }, "color_palette": { "dominant_colors": ["green", "white", "earth tones"], "background_tones": ["olive green", "forest green", "muted brown"], "overall_temperature": "warm-neutral" }, "background": { "environment": "natural landscape", "elements": ["green shrubs", "trees", "rock formations", "wild vegetation"], "focus": "heavily blurred (bokeh)", "mood": "serene, organic, outdoorsy" }, "artistic_style": { "genre": "lifestyle portrait photography", "aesthetic": "natural, clean, understated elegance", "mood": "calm, confident, introspective", "visual_story": "modern minimalist man in harmony with nature" }, "technical_traits"
+{ "scene_type": "outdoor portrait", "composition": { "framing": "medium shot", "orientation": "vertical", "subject_position": "center-right", "pose": "arms crossed, body angled slightly to the right, head turned slightly left", "camera_angle": "eye-level", "depth_of_field": "shallow, strong background blur" }, "subject": { "gender_presentation": "male", "age_range": "mid-20s to early-30s", "skin_tone": "light", "facial_features": "defined jawline, light stubble beard, straight nose, soft cheek contours", "expression": "calm, contemplative, neutral confidence", "gaze_direction": " On camera" }, "hair": { "color": "medium brown", "style": "short to medium length, naturally curly with volume on top", "texture": "soft, slightly tousled" }, "wardrobe": { "top": { "type": "long-sleeve button-up shirt", "color": "white", "material": "lightweight linen or linen-blend", "fit": "relaxed, tailored", "details": "collarless or minimal collar, sleeves rolled to forearm" }, "accessories": { "watch": { "type": "analog wristwatch", "strap_color": "dark brown or black leather", "dial_color": "dark, likely black", "style": "classic, minimalist" } } }, "lighting": { "type": "natural daylight", "quality": "soft, diffused", "direction": "front-left", "contrast": "low to medium", "highlights": "gentle highlights on face and shirt", "shadows": "soft, minimal shadowing" }, "color_palette": { "dominant_colors": ["green", "white", "earth tones"], "background_tones": ["olive green", "forest green", "muted brown"], "overall_temperature": "warm-neutral" }, "background": { "environment": "natural landscape", "elements": ["green shrubs", "trees", "rock formations", "wild vegetation"], "focus": "heavily blurred (bokeh)", "mood": "serene, organic, outdoorsy" }, "artistic_style": { "genre": "lifestyle portrait photography", "aesthetic": "natural, clean, understated elegance", "mood": "calm, confident, introspective", "visual_story": "modern minimalist man in harmony with nature" }, "technical_traits": { "lens_effect": "portrait lens with background compression", "aperture_estimate": "wide (approximately f/1.8–f/2.8)", "sharpness": "high subject sharpness", "noise": "minimal", "post_processing": "light color correction, natural skin tones, subtle contrast enhancement" }, "typography": { "present": false } }
 ```
 
 </details>
@@ -15171,7 +18368,21 @@ Create a vertical triptych collage.Use reference image. Maintain her likeness na
     "camera_details": {
       "angle": "Eye-level, medium shot.",
       "lens": "85mm portrait lens.",
-      "aperture": "
+      "aperture": "f/2.8 for slight background separation while keeping the stone wall texture visible.",
+      "film_stock": "Kodak Portra 400 emulation for warm, skin-tone friendly colors.",
+      "focus": "Sharp focus on the eyes and face."
+    },
+    "technical_modifiers": [
+      "Ultra Photorealistic",
+      "8k resolution",
+      "highly detailed texture",
+      "raw photo",
+      "cinematic lighting",
+      "masterpiece",
+      "subsurface scattering"
+    ]
+  }
+}
 ```
 
 </details>
@@ -15251,7 +18462,32 @@ Create a vertical triptych collage.Use reference image. Maintain her likeness na
       "atmosphere": "Luxury studio setting"
     },
     "lighting": {
-      "type": 
+      "type": "Studio lighting",
+      "quality": "Warm, diffused, cinematic",
+      "effects": [
+        "Soft golden reflections on pearls and skin",
+        "Gentle highlights enhancing texture",
+        "Subtle vignette darkening around edges"
+      ]
+    },
+    "camera_and_composition": {
+      "framing": "Mid-length editorial portrait",
+      "focus": "Sharp on face, jewelry, and outfit details",
+      "depth_of_field": "Moderate background blur for subject separation"
+    },
+    "rendering_and_style": {
+      "resolution": "Ultra-realistic 16K",
+      "lighting_style": "Modern editorial",
+      "color_grading": "Luxurious, warm, gold-accented tones",
+      "finish": [
+        "High realism",
+        "Soft diffusion",
+        "No harsh shadows",
+        "No plastic or over-smoothed skin"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -15291,7 +18527,16 @@ COMPOSITION:
 Capture a dynamic freeze-frame moment of a taco mid-flip during a street-side catch, shot from a Dutch tilted low three-quarter angle that exaggerates motion and urgency. The camera is positioned slightly below the taco, angled upward, with the taco large and dominant dead-center in the frame, sharply in focus, suspended just above a scarred stainless-steel street cart counter. A single harsh overhead streetlamp mounted top left casts a focused cone of warm light, carving crisp highlights and deep shadows that emphasize motion blur in the background while keeping the taco tack-sharp. The atmosphere is alive with subtle steam rising from the cart grill at bottom left, faint oil smoke drifting upward, and tiny airborne crumbs frozen mid-air. The tone is clean, appetizing, cinematic, and urban. The food-signature prop is a custom round taco press stamped with geometric chili patterns, resting closed on the counter in the lower right foreground beneath the airborne taco, its metal edges catching the lamp’s glare. The story-signature prop is a battered transit-station flip-clock timer mounted on the back wall at top right, showing '19 03' on split flip panels, implying split-second timing and street rhythm. Wet pavement reflections shimmer in the blurred background, grounding the scene in a late-night street setting. Keep visible wiring and cables subtly running along the wall toward the neon and props, with a faint magenta/purple spill mixing into the neon glow on the wall and paper.
 
 HEADER: 'STREET FLIGHT'
-The header is physically formed from bent single neon tubing (no double tubes). Neon tubes are made of reflective glass with neon gas inside, mounted on a chipped concrete wall in the upper center background behind the taco. The neon tubes glow 'warm amber
+The header is physically formed from bent single neon tubing (no double tubes). Neon tubes are made of reflective glass with neon gas inside, mounted on a chipped concrete wall in the upper center background behind the taco. The neon tubes glow 'warm amber', with uneven brightness, faint buzzing, and soot-darkened mounting brackets. The header is stacked on two lines: 'STREET' above 'FLIGHT'. The letters cast soft neon spill and distorted shadows across the wall’s cracked surface, with minimal grime dulling parts of the glow, and thin black power cables feeding into the neon from the right.
+
+TAGLINE: 'Caught in Motion'
+The tagline is printed in bold condensed sans-serif on a narrow strip of grease-stained receipt paper taped directly beneath the neon header using four translucent yellow tape pieces. The paper sags slightly at the center, edges curled and darkened by oil, catching a softer secondary glow from the neon above with a faint magenta/purple tint in the spill.
+
+CALL TO ACTION: 'ORDER NOW'
+The cta is integrated into the taco press hardware in the foreground as on an angled metal bar/handle element, reading as bold, worn black lettering with slight chipping and grease settled into the letter edges, plus a hard specular highlight running along the metal.
+
+STICKER: 'HOT'
+A small circular red vinyl sticker is physically adhered directly to the taco shell, perfectly centered, with slight white highlights. The sticker conforms to the taco curvature, shows tiny wrinkles under the adhesive, and tiny air pockets are trapped beneath the adhesive to reflect realism.
 ```
 
 </details>
@@ -15308,7 +18553,7 @@ The header is physically formed from bent single neon tubing (no double tubes). 
 <summary>📋 View Prompt</summary>
 
 ```
-{ "scene_type": "lifestyle portrait with animal interaction", "composition": { "framing": "medium shot", "orientation": "portrait", "subject_placement": "human subject seated slightly right of center, animal positioned lower left, heads forming a gentle diagonal", "camera_angle": "eye-level", "depth_of_field": "moderate, background softly blurred but still textured", "visual_balance": "balanced by contrast between human face and animal body mass" }, "subjects": { "human": { "gender_presentation": "female", "age_range": "young adult", "pose": "seated, torso angled slightly left, head turned right", "expression": "soft smile, contemplative, calm", "gaze_direction": "on camera ", "skin_tone": "light", "hair": { "color": "brown", "style": "pulled back into bun or ponytail", "accessory": "dark patterned headscarf" }, "clothing": { "top": "light-colored graphic t-shirt with cherub illustration", "bottom": "dark pants", "accessories": [ "necklace with small bird-shaped pendant", "wristwatch" ] } }, "animal": { "species": "tiger cub", "size": "juvenile", "fur_pattern": "orange with black stripes and white facial markings", "pose": "lying on side, head tilted upward", "interaction": "drinking from bottle held by human" } }, "props": { "bottle": { "type": "baby feeding bottle", "color": "white with blue cap", "decoration": "pink star and small graphic icons", "function": "feeding animal" } }, "environment": { "location_type": "indoor, rustic or zoo-like enclosure", "background_material": "rough stone wall", "floor_texture": "straw or hay scattered on ground", "setting_mood": "warm, intimate, caretaking" }, "lighting": { "type": "soft natural or diffused artificial light", "direction": "from front-left", "quality": "warm, even, low contrast", "shadow_behavior": "gentle shadows, no harsh edges" }, "color_palette": { "dominant_colors": [ "warm beige", "stone gray", "soft brown", "orange" ], "accent_colors": [ "black", "white", "blue", "pink" ], "overall_tone": "warm and earthy" 
+{ "scene_type": "lifestyle portrait with animal interaction", "composition": { "framing": "medium shot", "orientation": "portrait", "subject_placement": "human subject seated slightly right of center, animal positioned lower left, heads forming a gentle diagonal", "camera_angle": "eye-level", "depth_of_field": "moderate, background softly blurred but still textured", "visual_balance": "balanced by contrast between human face and animal body mass" }, "subjects": { "human": { "gender_presentation": "female", "age_range": "young adult", "pose": "seated, torso angled slightly left, head turned right", "expression": "soft smile, contemplative, calm", "gaze_direction": "on camera ", "skin_tone": "light", "hair": { "color": "brown", "style": "pulled back into bun or ponytail", "accessory": "dark patterned headscarf" }, "clothing": { "top": "light-colored graphic t-shirt with cherub illustration", "bottom": "dark pants", "accessories": [ "necklace with small bird-shaped pendant", "wristwatch" ] } }, "animal": { "species": "tiger cub", "size": "juvenile", "fur_pattern": "orange with black stripes and white facial markings", "pose": "lying on side, head tilted upward", "interaction": "drinking from bottle held by human" } }, "props": { "bottle": { "type": "baby feeding bottle", "color": "white with blue cap", "decoration": "pink star and small graphic icons", "function": "feeding animal" } }, "environment": { "location_type": "indoor, rustic or zoo-like enclosure", "background_material": "rough stone wall", "floor_texture": "straw or hay scattered on ground", "setting_mood": "warm, intimate, caretaking" }, "lighting": { "type": "soft natural or diffused artificial light", "direction": "from front-left", "quality": "warm, even, low contrast", "shadow_behavior": "gentle shadows, no harsh edges" }, "color_palette": { "dominant_colors": [ "warm beige", "stone gray", "soft brown", "orange" ], "accent_colors": [ "black", "white", "blue", "pink" ], "overall_tone": "warm and earthy" }, "texture_details": { "stone_wall": "coarse, uneven, aged", "fabric": "soft cotton t-shirt, matte finish", "fur": "dense, plush, clearly defined stripes" }, "stylistic_attributes": { "genre": "documentary-style lifestyle photography", "aesthetic": "natural, candid, emotionally warm", "retouching_level": "minimal, realistic skin and texture preservation" }, "technical_characteristics": { "lens_look": "standard to short telephoto", "focal_length_estimate": "35–50mm", "aperture_estimate": "f/2.8–f/4", "sharpness": "sharp focus on faces", "noise": "low", "dynamic_range": "moderate with preserved highlights" }, "emotional_read": { "primary_emotion": "tenderness", "secondary_emotions": [ "curiosity", "care", "gentle joy" ] }, "use_case_potential": [ "editorial storytelling", "animal care advocacy", "lifestyle inspiration", "UGC-style social media content" ] }
 ```
 
 </details>
@@ -15648,7 +18893,25 @@ Cinematic street photography capturing a moment in motion with a crowd blur effe
       "colors": ["Muted taupe", "Cream", "Burnt umber", "Gold leaf accents"],
       "depth": "Extreme bokeh, out-of-focus architectural depth"
     },
-    "atmosphere": "Warm, sophisticated, intima
+    "atmosphere": "Warm, sophisticated, intimate, slightly hazy"
+  },
+  "technical_direction": {
+    "camera_gear": {
+      "body": "Medium Format Digital (e.g., Hasselblad H6D)",
+      "lens": "85mm Prime G-Master",
+      "aperture": "f/1.2 for razor-thin depth of field"
+    },
+    "lighting_setup": {
+      "primary_light": "Warm-toned softbox (Key Light) at 45 degrees",
+      "secondary_light": "Cool-toned rim light to define the silhouette and hair",
+      "effects": ["Cinematic shadows", "Chiaroscuro contrast", "Specular highlights on dress beads"]
+    },
+    "post_processing": {
+      "color_grading": "Analog film aesthetic, slight teal-and-orange bias in shadows",
+      "focus_point": "Eye lashes and iris sharp; dress texture in mid-ground sharp"
+    }
+  }
+}
 ```
 
 </details>
@@ -15777,6 +19040,60 @@ Cinematic street photography capturing a moment in motion with a crowd blur effe
     },
     "inner_clothing": {
       "type": "sleeveless top",
+      "color": "black",
+      "neckline": "straight or slightly scooped"
+    },
+    "jewelry": {
+      "necklace": {
+        "type": "thin chain necklace",
+        "material": "metallic",
+        "visibility": "clearly visible at collarbone"
+      }
+    }
+  },
+  "lighting": {
+    "style": "studio lighting",
+    "primary_light": {
+      "direction": "front-left",
+      "quality": "soft but directional"
+    },
+    "accent_lighting": {
+      "color": "magenta/purple",
+      "placement": "from above and behind, especially on hair and shoulders"
+    },
+    "contrast": "medium to high",
+    "shadow_detail": "soft shadows with smooth falloff"
+  },
+  "background": {
+    "type": "studio backdrop",
+    "color": "deep purple gradient",
+    "texture": "smooth, seamless",
+    "depth": "no visible background objects"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "purple",
+      "magenta",
+      "black",
+      "dark gray"
+    ],
+    "accent_colors": [
+      "skin tones",
+      "metallic silver"
+    ]
+  },
+  "image_quality": {
+    "sharpness": "high",
+    "detail_level": "very high",
+    "noise": "minimal to none",
+    "dynamic_range": "wide"
+  },
+  "overall_style": {
+    "aesthetic": "fashion editorial",
+    "mood": "moody, stylish, confident",
+    "era_influence": "modern"
+  }
+}
 ```
 
 </details>
@@ -15818,7 +19135,7 @@ Editorial Photography.ashion editorial photography.
 <summary>📋 View Prompt</summary>
 
 ```
-{ "composition": { "framing": "mid-length portrait from upper thighs to head", "orientation": "vertical", "camera_angle": "eye-level", "subject_position": "left third of the frame", "balance": "subject balanced against expansive seascape on the right", "depth": "moderate depth with clear foreground subject and distant cityscape background" }, "subject": { "gender_presentation": "male-presenting", "age_range": "young adult", "pose": "relaxed standing posture, torso slightly angled, head turned to the left", "expression": "neutral to contemplative", "gaze_direction": "looking on camera", "hair": { "color": "dark brown to black", "style": "thick, voluminous, tousled, slightly wavy" }, "skin_tone": "light to medium", "facial_features": "defined jawline, straight nose, full lips, clean-shaven" }, "clothing_and_accessories": { "top": { "type": "long-sleeve button-up shirt", "color": "black", "fit": "slim to regular fit", "details": "top buttons undone, lightweight fabric with subtle drape" }, "bottom": { "type": "trousers", "color": "dark navy or black", "fit": "slim fit" }, "accessories": [ { "item": "sunglasses", "color": "black", "held_in": "right hand" }, { "item": "wristwatch", "material": "metal", "worn_on": "left wrist" }, { "item": "bracelet", "color": "red", "worn_on": "right wrist" } ] }, "environment": { "setting": "outdoor, on a boat or waterfront deck", "foreground": "white deck surface", "background": { "elements": [ "open sea with visible water texture", "distant coastal cityscape", "cloud-filled sky" ], "horizon_line": "visible and level" } }, "lighting": { "type": "natural daylight", "quality": "soft and diffused", "direction": "overhead with slight frontal illumination", "shadows": "minimal, soft-edged" }, "color_palette": { "dominant_colors": [ "deep blue", "cyan", "white", "black" ], "contrast": "high contrast between dark clothing and bright environment", "saturation": "moderate, natural tones" }, "technical_characteristics": { "focus": "sharp focus o
+{ "composition": { "framing": "mid-length portrait from upper thighs to head", "orientation": "vertical", "camera_angle": "eye-level", "subject_position": "left third of the frame", "balance": "subject balanced against expansive seascape on the right", "depth": "moderate depth with clear foreground subject and distant cityscape background" }, "subject": { "gender_presentation": "male-presenting", "age_range": "young adult", "pose": "relaxed standing posture, torso slightly angled, head turned to the left", "expression": "neutral to contemplative", "gaze_direction": "looking on camera", "hair": { "color": "dark brown to black", "style": "thick, voluminous, tousled, slightly wavy" }, "skin_tone": "light to medium", "facial_features": "defined jawline, straight nose, full lips, clean-shaven" }, "clothing_and_accessories": { "top": { "type": "long-sleeve button-up shirt", "color": "black", "fit": "slim to regular fit", "details": "top buttons undone, lightweight fabric with subtle drape" }, "bottom": { "type": "trousers", "color": "dark navy or black", "fit": "slim fit" }, "accessories": [ { "item": "sunglasses", "color": "black", "held_in": "right hand" }, { "item": "wristwatch", "material": "metal", "worn_on": "left wrist" }, { "item": "bracelet", "color": "red", "worn_on": "right wrist" } ] }, "environment": { "setting": "outdoor, on a boat or waterfront deck", "foreground": "white deck surface", "background": { "elements": [ "open sea with visible water texture", "distant coastal cityscape", "cloud-filled sky" ], "horizon_line": "visible and level" } }, "lighting": { "type": "natural daylight", "quality": "soft and diffused", "direction": "overhead with slight frontal illumination", "shadows": "minimal, soft-edged" }, "color_palette": { "dominant_colors": [ "deep blue", "cyan", "white", "black" ], "contrast": "high contrast between dark clothing and bright environment", "saturation": "moderate, natural tones" }, "technical_characteristics": { "focus": "sharp focus on subject", "depth_of_field": "moderate, background slightly softened but recognizable", "image_clarity": "high", "noise": "minimal", "lens_effect": "no visible distortion, likely standard focal length" }, "artistic_style": { "aesthetic": "clean, modern lifestyle photography", "mood": "calm, confident, aspirational", "visual_theme": "luxury travel or leisure" }, "typography": { "text_present": false } }
 ```
 
 </details>
@@ -15891,7 +19208,69 @@ Editorial Photography.ashion editorial photography.
       "sparkling dust",
       "soft light trails connecting elements"
     ],
-    "elements_
+    "elements_order_top_to_bottom": [
+      {
+        "ingredient": "amber resin",
+        "appearance": "translucent golden-brown resin chunks",
+        "glow": "warm internal glow"
+
+        "ingredient": "damask rose",
+        "appearance": "fully bloomed pink rose",
+        "details": [
+          "soft layered petals",
+          "natural green leaves",
+          "petals gently floating nearby"
+        ]
+        "ingredient": "white musk",
+        "appearance": "smooth white crystal-like stone",
+        "additional": "fine white powder beneath the stone"
+     
+        "ingredient": "aged agarwood",
+        "appearance": "dark brown wooden pieces",
+        "texture": "rough, fibrous wood grain",
+        "effect": "thin white smoke rising upward"
+ 
+  "text_elements": {
+    "title": {
+      "text": "Exquisite Syrian Perfume",
+      "font_style": "elegant serif",
+      "color": "gold",
+      "position": "top center"
+    },
+    "subtitle": {
+      "text": "Luxury Syrian Perfume",
+      "font_style": "smaller serif",
+      "color": "gold",
+      "position": "below main title"
+    },
+    "ingredient_labels": [
+      {
+        "title": "Pure Amber",
+        "description": "Precious resin from the depths of nature"
+      }
+        "title": "Damask Rose",
+        "description": "Symbol of beauty and Syrian heritage"
+      },
+      {
+        "title": "White Musk",
+        "description": "Clean, powdery scent of timeless elegance"
+      },
+      {
+        "title": "Aged Agarwood",
+        "description": "Rich, smoky wood with deep warmth"
+      }
+    ],
+    "typography_details": {
+      "connector_lines": "thin curved golden lines connecting text to ingredients",
+      "icons": "small circular markers at line endpoints"
+    }
+    "opacity": "slightly translucent"
+  }
+  "overall_mood": 
+    "tone": "luxurious, warm, elegant",
+    "theme": "heritage perfume craftsmanship",
+    "visual_feel": "rich, premium, cinematic ads"
+}
 ```
 
 </details>
@@ -16203,7 +19582,15 @@ LEGO mountain flood rescue scene, torrential rain causing river overflow in a LE
       "style": "35mm film photography look",
       "focus": "Sharp focus on face and hand",
       "depth_of_field": "Shallow depth of field",
-      "color": "Vibr
+      "color": "Vibrant, cinematic tones"
+    },
+    "final_notes": {
+      "textures": "Natural skin, hair, and fabric detail",
+      "editing": "No face alteration, no over-smoothing",
+      "overall_feel": "High-fashion cinematic editorial portrait"
+    }
+  }
+}
 ```
 
 </details>
@@ -16285,7 +19672,69 @@ LEGO mountain flood rescue scene, torrential rain causing river overflow in a LE
         "Onion chunks"
       ],
       "cut": "Large rustic chunks",
-      "surface"
+      "surface": "Light char and gloss"
+    }
+  ],
+  "supporting_food_items": [
+    {
+      "item": "Rice grains",
+      "detail": "Individual grains clearly visible, mid-air dispersion",
+      "motion": "Erupting outward with spices"
+    },
+    {
+      "item": "Nuts and dry fruits",
+      "types": [
+        "Cashews",
+        "Raisins"
+      ],
+      "position": "Mixed with rice and floating"
+    },
+    {
+      "item": "Flatbread pieces",
+      "detail": "Torn edges, soft interior texture, char marks visible",
+      "motion": "Suspended mid-air with crumbs"
+    }
+  ],
+  "condiments": [
+    {
+      "item": "Green chutney",
+      "texture": "Thick, coarse",
+      "motion": "Upward splash from a bowl",
+      "container": "Dark stone bowl with matte finish"
+    },
+    {
+      "item": "White yogurt-based sauce",
+      "texture": "Smooth and creamy",
+      "container": "Dark stone bowl"
+    }
+  ],
+  "surface_environment": {
+    "base": "Dark textured surface",
+    "elements": [
+      "Scattered spice flakes",
+      "Burnt crumbs",
+      "Small glowing embers",
+      "Charcoal-like stones"
+    ]
+  },
+  "color_palette": [
+    "Deep reds",
+    "Burnt orange",
+    "Charcoal black",
+    "Smoky maroon",
+    "Herb green",
+    "Creamy white highlights"
+  ],
+  "mood": "Bold, intense, premium, cinematic, high-impact food commercial aesthetic",
+  "realism_level": "Extreme hyper-realism with tactile textures and moisture detail",
+  "post_processing": {
+    "contrast": "High",
+    "clarity": "Very high",
+    "sharpening": "Selective sharpening on food textures",
+    "noise": "Minimal",
+    "color_grading": "Warm highlights with deep shadows"
+  }
+}
 ```
 
 </details>
@@ -16347,7 +19796,9 @@ Inside the frosted glass pane, place two elements in pure Monochrome White:
 Center: The official [BRAND NAME] logo, perfectly centered.
 Below Logo: Positioned significantly higher than the bottom edge, place two VERY SMALL, minimalist white navigation arrows (one pointing Left "<", one pointing Right ">"). They should be subtle and approximately 50% smaller than standard UI icons.
 4. PHOTOGRAPHY STYLE & COMPOSITION (STRICT FRAMING):
-Style: High-End Editorial Fashion Photography. Real film grain, sophisticated soft studio lighting that emphasizes fabric textures. It mu
+Style: High-End Editorial Fashion Photography. Real film grain, sophisticated soft studio lighting that emphasizes fabric textures. It must look like a real photograph, not a CGI render.
+Background: Infinite, pure White Studio Cyclorama.
+Framing (STRICT CONSTRAINT): The shot is a Wide Full-Body Photograph. The entire model (from top of head to bottom of feet) AND the entire UI overlay must be COMPLETELY CONTAINED within the image boundaries. There must be absolutely ZERO CROPPING of the subject or UI. There must be a very large, generous amount of empty negative space ("air") surrounding the subject on all four sides.
 ```
 
 </details>
@@ -16501,7 +19952,18 @@ Consistent outfit — minimalist black outfit, ankle boots. Low-key lighting, so
       "camera_emulation": "iPhone front camera or 35mm film camera equivalent",
       "lens": "35mm focal length (portrait appropriate but slightly wide for selfie feel)",
       "aperture": "f/2.8",
-      "film
+      "film_grain": "Fine film grain texture added for realism",
+      "quality_tags": [
+        "Photorealistic",
+        "8k resolution",
+        "highly detailed skin pores",
+        "sharp focus on eyes",
+        "high contrast monochrome",
+        "raw photo style"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -16690,7 +20152,43 @@ A soft, high-quality plush toy of [CHARACTER], with an oversized head, small bod
         "fabric": "very thin ribbed cotton",
         "fit": "skin-tight, braless",
         "details": "fabric clinging naturally due to posture and night warmth"
+      },
+      "bottom": {
+        "type": "low-rise lounge pants or leggings",
+        "color": "black",
+        "fabric": "soft stretch fabric",
+        "fit": "tight on hips, relaxed on legs"
       }
+    },
+
+    "skin": {
+      "detail": "soft night glow from dashboard lights",
+      "texture": "real pores, slight natural sheen, zero smoothing"
+    }
+  },
+
+  "environment": {
+    "background": [
+      "car dashboard lights glowing softly",
+      "steering wheel partially visible",
+      "city street lights blurred through windows",
+      "empty passenger seat"
+    ],
+    "lighting": {
+      "type": "dashboard light + street light mix",
+      "effect": "low light grain, moody shadows, realistic smartphone night exposure"
+    }
+  },
+
+  "photography_rules": {
+    "realism": "very high",
+    "iphone_only_look": true,
+    "no_male_presence": true,
+    "thirst_trap_energy": true,
+    "suggestive_not_explicit": true,
+    "night_selfie": true
+  }
+}
 ```
 
 </details>
@@ -16753,7 +20251,9 @@ Her illustrated counterpart mirrors her pose, outfit, and proportions exactly, d
       "aspect_ratio": "9:16 (Vertical/Long)",
       "lens_simulation": "35mm or 50mm portrait lens, aperture f/2.8 for slight depth of field blurring the background layers."
     },
-    "full_combined_prompt": "A vertical ultra-realistic 8k photo of a youn
+    "full_combined_prompt": "A vertical ultra-realistic 8k photo of a young woman sitting in a lavish gold and red opera house box seat. She has long straight brunette hair, wearing a black backless satin dress with a large bow. She is smiling over her shoulder at the camera, arm resting on the red velvet railing. Background features ornate golden multi-tiered theater balconies filled with people, baroque architecture, warm chandelier lighting. High detailed texture, UHD, HDR, cinematic lighting, shot on 35mm lens --ar 9:16 --q 2 --v 6.0"
+  }
+}
 ```
 
 </details>
@@ -16826,7 +20326,26 @@ Her illustrated counterpart mirrors her pose, outfit, and proportions exactly, d
     "palette": [
       "cool grays",
       "muted browns",
-      "soft blacks
+      "soft blacks"
+    ],
+    "saturation": "desaturated",
+    "style": "professional cinematic grading"
+  },
+  "camera": {
+    "lens_look": "85mm",
+    "depth_of_field": "shallow",
+    "grain": "realistic film grain",
+    "perspective": "identical to original reference image"
+  },
+  "quality_constraints": [
+    "no facial deformation",
+    "no AI artifacts",
+    "no artificial lighting effects",
+    "perfect facial integration",
+    "consistent shadows and perspective"
+  ],
+  "output_goal": "Create a photorealistic, cinematic street photograph featuring a woman standing still in a busy crosswalk, smelling a flower, with long-exposure motion blur around her, preserving the exact realism, lighting, depth, and emotional tone of the original reference image."
+}
 ```
 
 </details>
@@ -16895,7 +20414,16 @@ Her illustrated counterpart mirrors her pose, outfit, and proportions exactly, d
 
 ```
 {
-  "prompt": "Use the uploaded reference image STRICTLY to preserve the same woman’s face, identity, facial structure, proportions, and natural expression with 100% accuracy. No facial alteration, beautification, or identity change.\n\nCreate an ultra-realistic black-and-white soft editorial fashion portrait of an elegant woman in a minimalist setting. The composition feels intimate, calm, and timeless, inspired by classic Vogue and Harper’s Bazaar monochrome editorials.\n\nPose & Expression:\nShe stands or leans gently against a neutral textured wall, body slightly angled. Posture is relaxed yet poised. Her expression is serene, introspective, and confident — soft eyes, relaxed lips, no exaggerated emotion. She may gaze slightly away from the camera or directly into the lens with quiet intensity.\n\nOutfit & Styling:\nShe wears a refined, minimal outfit — a softly tailored white or ivory shirt/blouse with clean lines, paired with elegant neutral trousers or a flowing skirt. Fabric textures remain visible and natural, emphasizing realism. No logos, no loud fashion statements — pure quiet luxury.\n\nHair & Makeup:\nHair is styled naturally — loose soft waves, a low bun, or a simple pulled-back look with realistic texture. Makeup is minimal editorial: natural skin, subtle highlights, light contour, soft lashes, and neutral lips. No glamour, no heavy styling.\n\nLighting & Mood:\nSoft directional lighting creates gentle highlights and smooth shadows across the face and clothing. Contrast is controlled and elegant, preserving fine skin texture and fabric detail. Lighting feels organic, editorial, and emotionally calm.\n\nBlack & White Treatment:\nClassic monochrome grading with rich blacks, soft whites, and smooth mid-tones. Film-inspired tonal range with subtle grain for authenticity. No harsh contrast, no crushed shadows.\n\nVisual Style:\nHigh-end fashion editorial photography, timeless black-and-white aesthetic, understated luxury, emotional softness, and artistic 
+  "prompt": "Use the uploaded reference image STRICTLY to preserve the same woman’s face, identity, facial structure, proportions, and natural expression with 100% accuracy. No facial alteration, beautification, or identity change.\n\nCreate an ultra-realistic black-and-white soft editorial fashion portrait of an elegant woman in a minimalist setting. The composition feels intimate, calm, and timeless, inspired by classic Vogue and Harper’s Bazaar monochrome editorials.\n\nPose & Expression:\nShe stands or leans gently against a neutral textured wall, body slightly angled. Posture is relaxed yet poised. Her expression is serene, introspective, and confident — soft eyes, relaxed lips, no exaggerated emotion. She may gaze slightly away from the camera or directly into the lens with quiet intensity.\n\nOutfit & Styling:\nShe wears a refined, minimal outfit — a softly tailored white or ivory shirt/blouse with clean lines, paired with elegant neutral trousers or a flowing skirt. Fabric textures remain visible and natural, emphasizing realism. No logos, no loud fashion statements — pure quiet luxury.\n\nHair & Makeup:\nHair is styled naturally — loose soft waves, a low bun, or a simple pulled-back look with realistic texture. Makeup is minimal editorial: natural skin, subtle highlights, light contour, soft lashes, and neutral lips. No glamour, no heavy styling.\n\nLighting & Mood:\nSoft directional lighting creates gentle highlights and smooth shadows across the face and clothing. Contrast is controlled and elegant, preserving fine skin texture and fabric detail. Lighting feels organic, editorial, and emotionally calm.\n\nBlack & White Treatment:\nClassic monochrome grading with rich blacks, soft whites, and smooth mid-tones. Film-inspired tonal range with subtle grain for authenticity. No harsh contrast, no crushed shadows.\n\nVisual Style:\nHigh-end fashion editorial photography, timeless black-and-white aesthetic, understated luxury, emotional softness, and artistic restraint.\n\nCamera & Quality:\nProfessional editorial photography, shallow depth of field, cinematic framing, ultra-realistic 8K resolution, sharp subject focus with soft background separation.\n\nOverall Feel:\nQuiet confidence, feminine strength, timeless elegance — a refined black-and-white editorial portrait.",
+  
+  "style": "black-and-white soft editorial, cinematic realism",
+  "lighting": "soft directional light, gentle shadows",
+  "color_grade": "classic monochrome, film-inspired tones",
+  "background": "minimal neutral textured wall",
+  "quality": "ultra-realistic, 8K, editorial detail",
+  "camera": "professional fashion photography, shallow depth of field",
+  "mood": "calm, timeless, elegant, introspective"
+}
 ```
 
 </details>
@@ -16999,7 +20527,12 @@ A cinematic, moody photograph of a young woman sitting inside a café at night, 
     },
     "technical_specifications": {
       "image_quality": "8K UHD, ultra-photorealistic, raw fashion photography.",
-      "camera_style": "35mm editorial lens, paparazz
+      "camera_style": "35mm editorial lens, paparazzi flash aesthetic, cinematic realism.",
+      "focus": "Tack-sharp focus on eyes and mask, shallow depth of field.",
+      "texture": "Natural skin texture with realistic pores, high-detail sequin reflections, sharply defined mask details, natural hair strands."
+    }
+  }
+}
 ```
 
 </details>
@@ -17132,7 +20665,35 @@ A dramatic black and white studio portrait of a thoughtful man with short styled
         "subject": "Upward ejecting burger slice",
         "branding": "Open branded burger box beneath"
       },
-      "lighting_
+      "lighting_effects": {
+        "primary": "Radial spotlight burst behind subject",
+        "secondary": "Fill light emphasizing juicy meat and bun texture"
+      },
+      "particle_vfx": "Explosive trail of sauce droplets, crumbs, and sesame seeds"
+    },
+    {
+      "scene_id": "04_THE_JUICE_BURST",
+      "composition": {
+        "focus": "Extreme macro freeze-frame",
+        "subject": "Burger slice juice release",
+        "action": "Mid-air compression and release of meat juices"
+      },
+      "environment_vfx": {
+        "background": "Warm amber-to-cream high-contrast gradient",
+        "atmosphere": "Fine mist of steam and seasoning particles",
+        "shimmer": "Backlit glints on melted fat, sauce, and bun surface"
+      }
+    }
+  ],
+  "negative_parameters": [
+    "motion blur",
+    "plastic or artificial food textures",
+    "low-resolution noise",
+    "muddy colors",
+    "overexposed highlights",
+    "unrealistic food physics"
+  ]
+}
 ```
 
 </details>
@@ -17272,7 +20833,23 @@ GPT Image 1.5
   },
   "poses": [
     "wide-legged power stance with hands clasped behind the head",
-    "forced-perspective pose with palm extended
+    "forced-perspective pose with palm extended toward the camera",
+    "playful close-up peering through an OK finger gesture over one eye",
+    "cheerful center pose resting chin in both hands",
+    "moody pose covering half the face with a hand",
+    "four additional expressive dynamic poses to complete the 3x3 grid"
+  ],
+  "visual_quality": {
+    "style": "hyper-realistic",
+    "details": [
+      "intricate skin texture",
+      "subsurface scattering",
+      "realistic fabric folds",
+      "individual hair strands"
+    ],
+    "aesthetic": "high-end commercial fashion lookbook or lifestyle campaign"
+  }
+}
 ```
 
 </details>
@@ -17382,7 +20959,18 @@ Face must remain perfectly consistent from every angle
       "camera_emulation": "iPhone front camera or 35mm film camera equivalent",
       "lens": "35mm focal length (portrait appropriate but slightly wide for selfie feel)",
       "aperture": "f/2.8",
-      "film
+      "film_grain": "Fine film grain texture added for realism",
+      "quality_tags": [
+        "Photorealistic",
+        "8k resolution",
+        "highly detailed skin pores",
+        "sharp focus on eyes",
+        "high contrast monochrome",
+        "raw photo style"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -17471,7 +21059,45 @@ An aerial photograph captures a surreal scene where a giant white foam cup, bran
       "angle": "slightly low angle, side profile",
       "shot_type": "medium close-up",
       "lens": "85mm portrait lens look",
-      "
+      "focus": "sharp focus on subject, background bokeh"
+    },
+    "mood": {
+      "atmosphere": "luxurious, intimate, cinematic",
+      "emotion": "confidence, elegance, serenity"
+    },
+    "style": {
+      "photorealism": "ultra realistic",
+      "dynamic_range": "HDR",
+      "detail_level": "extreme micro-detail on skin, fabric, hair",
+      "color_grading": "warm cinematic tones with natural contrast"
+    }
+  },
+  "negative_prompt": [
+    "cartoon",
+    "anime",
+    "illustration",
+    "cgi",
+    "over-smoothed skin",
+    "plastic look",
+    "distorted anatomy",
+    "extra limbs",
+    "blurry subject",
+    "low resolution",
+    "noise",
+    "harsh lighting",
+    "overexposed highlights"
+  ],
+  "output_settings": {
+    "resolution": "7680x4320",
+    "quality": "UHD 8K",
+    "aspect_ratio": "9:16",
+    "orientation": "vertical",
+    "render_style": "photographic",
+    "hdr": true,
+    "sharpness": "high",
+    "realism_boost": true
+  }
+}
 ```
 
 </details>
@@ -17530,7 +21156,10 @@ An aerial photograph captures a surreal scene where a giant white foam cup, bran
     },
     "technical_specs": {
       "lighting": "Harsh midday sunlight, strong contrast, deep natural shadows, bright specular highlights",
-      "camera_settings": "
+      "camera_settings": "50–85mm lens look, shallow depth of field, high dynamic range (HDR)",
+      "color_grading": "Realistic, true-to-life skin tones"
+    },
+    "full_prompt_string": "Ultra-realistic cinematic lifestyle photography, 8K, hyper-detailed, photorealistic, An attractive woman aged 20, Slavic appearance. A naturally beautiful, well-balanced face with realistic proportions, no artificial perfection. Large expressive green-hazel eyes, calm confident gaze toward the camera. Naturally full lips, soft and unexaggerated. Light, natural daytime makeup emphasizing her features without looking heavy. Her skin is sun-kissed and wet, highly realistic with visible pores, subtle micro-imperfections, fine highlights, and water and oil droplets catching the sunlight. No plastic or overly smooth texture. Long wet hair, slightly messy after swimming, with a few strands sticking naturally to her cheek and forehead. She is lying on her stomach on a bright blue-and-white striped beach towel. The pose feels relaxed and spontaneous, like a real vacation moment: legs gently bent at the knees and lifted upward, feet together; a natural back line, slim waist, realistic body anatomy without exaggeration. She wears a small classic black bikini top with thin straps and a deep plunge — minimalistic, clean design, naturally fitting the body. One arm is extended forward as she takes a selfie — part of her arm and the edge of a small smartphone are visible in frame, reinforcing a casual iPhone-style shot. In her other hand, she holds a fresh coconut with a straw and a subtle ADORE logo; water droplets run down the shell. Environment: a luxurious rooftop pool atop a high-rise building in Los Angeles. Bright sunny day, clear blue sky with no clouds, turquoise pool water. Lush tropical greenery (banana palms, monstera plants), white sun loungers and umbrellas. Modern downtown LA skyscrapers in the background with a slight atmospheric haze on the horizon.
 ```
 
 </details>
@@ -18087,7 +21716,9 @@ A hyper-realistic 1080x1080 photograph of a glass cube diorama placed on a lush,
       "dominant": "Muted urban tones",
       "contrast_accents": ["Red (socks/cap)", "Black and White (clothing)"]
     },
-    "moo
+    "mood": ["Effortlessly cool", "Candid", "Contemporary", "Street culture"]
+  }
+}
 ```
 
 </details>
@@ -18148,7 +21779,26 @@ Create a highly detailed isometric 3D rendering of [LANDMARK] in architectural v
     "brands_reference": ["Supreme", "Fear of God", "Maison Margiela", "Martine Rose", "UMBRO", "Aimé Leon Dore", "RHUDE", "Maison Kitsuné", "NikeLab", "Moncler", "Issey Miyake"],
     "accessories": {
       "general": "scarves, neck bandanas, paisley bandanas hanging from pockets (used sparingly when sensible)",
-      "womens_specific": "Avant-Garde style bags, Saint Laurent structured totes
+      "womens_specific": "Avant-Garde style bags, Saint Laurent structured totes or crossbodies, designer baseball caps, trucker caps, premium wool beanies (applied only if subject is woman)"
+ "details": "only apply head gear objects on the subject's head, nowhere else"
+    },
+    "key_details": "focus on singular statement outfits without excessive bulk, oversized cuts contrasting with sharp tailoring, prominent branding, varied fabric weights rendered through pure texture without shadow"
+  },
+  "footwear_focus": {
+    "models": ["Nike SB Dunk", "Off-White™ x Nike deconstructed models", "Converse Chuck 70 premium high-top", "Vans Vault Slip-On", “Adidas Samba”, “New Balance 327”, “ASICS Onitsuka Tiger Sneakers”],
+    "details": "the only object on the subject's feet, highly visible and pristine, forming the anchor point of the dynamic motion"
+  },
+  "visual_color_treatment": {
+    "base_spectrum": "pure, uncompromising black and white with ultra-deep, rich black tones",
+    "blend_mode": "cohesive fusion of extreme textural contrasts and shadowless spectral lighting",
+    "palette_components": {
+      "rich_matte_black": "pure light-absorbing wools, denim, and heavy cottons, vantablack-like density, crushing blacks for maximum depth rendered solely through surface texture",
+      "high_sheen_monochrome": "polished leather, reflective technical nylon, glossy polymers catching pure white specular highlights without casting shadows",
+      "monochrome_solarization": "ghostly spectral edge-lighting, inverted luminance highlights defining folds and outlines, stark, hyper-contrasted glowing edges"
+    }
+  },
+  "lighting_dynamics": "flat, high-key, omnidirectional diffused studio lighting. Zero cast shadows on subjects, floor, or background. Form and depth are flattened, relying entirely on the stark contrast between glossy surfaces, crushed rich blacks, and the glowing solarized edge contours for definition."
+}
 ```
 
 </details>
@@ -18276,7 +21926,27 @@ A hand-painted isometric bird’s-eye view illustration of [COUNTRY] in a vintag
   "subject_features": {
     "hair": "long platinum white blonde, soft natural waves, middle parted, flowing on studio floor",
     "skin": "fair, porcelain, flawless, natural",
-    "eyes": "light blue grey, direct intense gaze a
+    "eyes": "light blue grey, direct intense gaze at camera",
+    "lips": "natural nude pink, neutral expression",
+    "expression": "neutral, confident, calm, editorial"
+  },
+  "pose_details": {
+    "position": "lying on right side, torso propped up",
+    "left_leg": "extended straight up vertically pointing toward ceiling",
+    "right_leg": "flat on floor extended straight",
+    "right_arm": "raised up, hand holding ankle of raised left leg",
+    "left_arm": "on floor supporting upper body weight, hand flat on ground"
+  },
+  "wardrobe": {
+    "top": "white basic cotton t-shirt, short sleeves, knotted and tied at front creating cropped effect",
+    "bottom": "light wash blue denim jeans, relaxed straight leg fit, classic five pocket style, copper button fly visible at waist"
+  },
+  "setting": {
+    "location": "professional photography studio",
+    "background": "grey seamless backdrop with gradient from darker grey at top to lighter grey on floor",
+    "floor": "smooth light grey studio floor surface"
+  }
+}
 ```
 
 </details>
@@ -18367,7 +22037,70 @@ Include natural and spontaneous photo poses:
       "design": "multi-panel patchwork"
     },
     "patterns": [
-      "flora
+      "floral motifs",
+      "geometric shapes",
+      "abstract symbols",
+      "embroidered details"
+    ],
+    "colors": [
+      "orange",
+      "mustard yellow",
+      "deep red",
+      "maroon",
+      "teal",
+      "blue",
+      "green",
+      "cream",
+      "black"
+    ],
+    "collar": {
+      "style": "decorative embroidered collar",
+      "details": "ornamental stitching with contrasting patterns"
+    }
+  },
+  "accessories": {
+    "earrings": {
+      "type": "dangling earrings",
+      "design": "multi-colored beads and small decorative elements",
+      "colors": [
+        "orange",
+        "green",
+        "blue",
+        "gold"
+      ]
+    }
+  },
+  "lighting": {
+    "type": "soft natural or diffused light",
+    "direction": "front-left illumination",
+    "contrast": "low to moderate",
+    "shadows": "soft, minimal harsh shadows",
+    "skin_highlight": "gentle, even highlights on face"
+  },
+  "background": {
+    "environment": "urban or outdoor setting",
+    "detail_level": "heavily blurred",
+    "colors_visible": [
+      "light blue",
+      "white",
+      "soft yellow",
+      "pastel tones"
+    ],
+    "bokeh": "smooth, creamy background blur"
+  },
+  "image_quality": {
+    "sharpness": "high facial and fabric detail",
+    "texture_detail": "visible embroidery threads and fabric weave",
+    "noise": "minimal",
+    "clarity": "clean and polished",
+    "ai_enhancement_look": "refined, slightly stylized but realistic"
+  },
+  "overall_style": {
+    "mood": "elegant, calm, artistic",
+    "aesthetic": "fashion editorial with handcrafted textile emphasis",
+    "color_balance": "warm, vibrant foreground with cool muted background"
+  }
+}
 ```
 
 </details>
@@ -18787,7 +22520,7 @@ Both characters wear matching outfits: medium distressed jeans, rose-colored coa
 
 The background is a realistic office scene with white cabinets containing painting and creative items, a white desk, and a plastic swivel chair, with slight blur and strong depth of field. Professional cinematic lighting with clear separation of objects, soft highlights on the skin, and subtle rim light around both figures.
 
-Ultra-detailed textures for the real person. Clean 3D textures with a realistic style for the miniature. Balanced betwe
+Ultra-detailed textures for the real person. Clean 3D textures with a realistic style for the miniature. Balanced between realism and humor. No surreal distortions.
 ```
 
 </details>
@@ -18895,7 +22628,9 @@ Cheap packaging, distorted logo, misspelled branding, harsh lighting, oversatura
 
 Aspect Ratio
 
-Overa
+Overall canvas: 1:1
+Grid: 2×2 equal squares
+Optimized for luxury brand advertising and social campaigns
 ```
 
 </details>
@@ -19097,7 +22832,64 @@ A high-definition, realistic 3D social media profile picture style. The image fe
       "camera": "front camera selfie, arm visible, slight motion energy",
       "expression": "focused but lively, open mouth breathing",
       "clothing": {
+        "outfit": "pink athletic outfit",
+        "hat": "white running cap"
+      },
+      "details": [
+        "natural daylight",
+        "no motion blur exaggeration",
+        "athletic realism"
+      ],
+      "vibe": "caught during movement"
+    },
 
+    "frame_3": {
+      "title": "Coffee break candid",
+      "environment": "cafe or home table setting",
+      "pose": "sitting casually while drinking coffee",
+      "camera": "casual handheld selfie",
+      "expression": "thoughtful, relaxed, eyes not directly looking at camera",
+      "details": [
+        "coffee cup mid-sip",
+        "natural posture",
+        "background secondary and unobtrusive"
+      ],
+      "vibe": "quiet reset moment"
+    },
+
+    "frame_4": {
+      "title": "Outdoor breakfast – taken by someone else",
+      "environment": "outdoor breakfast cafe",
+      "pose": "eating breakfast naturally, unaware of camera",
+      "camera": "photo taken by another person",
+      "expression": "off-guard, natural, no eye contact",
+      "details": [
+        "plates with breakfast food on table",
+        "hands interacting with cutlery or food",
+        "slightly off-center framing"
+      ],
+      "vibe": "celebrity caught in real life moment"
+    }
+  },
+
+  "global_rules": {
+    "camera_style": "iPhone-like realism",
+    "no_background_blur": true,
+    "no_cinematic_grading": true,
+    "no_influencer_poses": true,
+    "no_overpolishing": true
+  },
+
+  "negative_prompt": [
+    "studio lighting",
+    "posed influencer look",
+    "perfect symmetry",
+    "same exact framing in all frames",
+    "editorial fashion shoot",
+    "beauty retouch",
+    "cinematic color grading"
+  ] Picture ratio 3:4
+}
 ```
 
 </details>
@@ -19165,7 +22957,29 @@ A high-definition, realistic 3D social media profile picture style. The image fe
   "PhotographyStyle": {
     "Genre": "High-fashion editorial studio photography",
     "CompositionFeel": "Clean, bold, graphic",
-    "ImageQuality": "High resolution, premium commercial f
+    "ImageQuality": "High resolution, premium commercial finish"
+  },
+  "Mood": {
+    "Tone": "Elegant, powerful, modern",
+    "Energy": "Confident, controlled, luxurious"
+  },
+  "NegativePrompt": [
+    "casual fashion",
+    "street photography",
+    "overly dramatic makeup",
+    "soft focus eyes",
+    "busy background",
+    "oversaturated colors",
+    "low contrast",
+    "plastic skin"
+  ],
+  "ResponseFormat": {
+    "Type": "Single composite image",
+    "Layout": "Vertical triptych",
+    "Orientation": "Portrait",
+    "AspectRatio": "1:2"
+  }
+}
 ```
 
 </details>
@@ -19218,7 +23032,7 @@ Ultra-clean modern recipe infographic. Showcase [FOOD] in a visually appealing f
 ```
 Transform this image [Upload Your Image] into a 64K DSLR shot resolution of A creative mixed-reality street portrait featuring a real young man (same face as the uploaded image) sitting on concrete steps beside his illustrated cartoon counterpart. The scene is set outdoors against a gray brick wall with a large window above, reflecting trees and indoor lighting, giving an urban neighborhood feel. The sidewalk and steps have worn yellow￼ paint along the edges, adding texture and realism.
 On the right sits the real person, a young man (same face as the uploaded image) dressed in early-2000s hip-hop streetwear. He wears an oversized bright yellow graphic T-shirt with a bold circular logo, loose light-blue baggy jeans, white & red chunky sneakers with yellow detailing, and a maroon baseball cap worn forward. He poses casually, seated with legs extended, one arm flexed at the elbow as if showing￼ strength or confidence, looking off to the side with a calm, cool expression. 
-On the left sits his cartoon illustrated version of himself (same face as the uploaded image) perfectly matching his outfit, pose, and proportions. The cartoon character is drawn in a flat, bold, graphic style with thick black outlines, simplified facial features, and vibrant colors. The illustrated figure mirrors the real person’s posture and clothing exactly same, including the oversized shirt, baggy jeans, red &￼ white sneakers, and maroon cap. The cartoon arm connects visually with the real person’s arm, creating a playful illusion of interaction between illustration and reality. The illustration style resembles hand-drawn street art or animated hip-hop character design, seamlessly integrated into the photograph with accurate scale, alignment, and grounding. The contrast between realistic textures (concrete, brick, denim fabric) and the clean, flat cartoon shading creates a striking￼ visual effect. Lighting is natural daylight, evenly illuminating both the real and illustrated subjects. The overal
+On the left sits his cartoon illustrated version of himself (same face as the uploaded image) perfectly matching his outfit, pose, and proportions. The cartoon character is drawn in a flat, bold, graphic style with thick black outlines, simplified facial features, and vibrant colors. The illustrated figure mirrors the real person’s posture and clothing exactly same, including the oversized shirt, baggy jeans, red &￼ white sneakers, and maroon cap. The cartoon arm connects visually with the real person’s arm, creating a playful illusion of interaction between illustration and reality. The illustration style resembles hand-drawn street art or animated hip-hop character design, seamlessly integrated into the photograph with accurate scale, alignment, and grounding. The contrast between realistic textures (concrete, brick, denim fabric) and the clean, flat cartoon shading creates a striking￼ visual effect. Lighting is natural daylight, evenly illuminating both the real and illustrated subjects. The overall mood is cool, nostalgic, playful, and creative, blending street fashion, urban culture, and cartoon art into a cohesive mixed-media composition.￼ Style & Mood Keywords: Mixed media photography, real person with cartoon twin, urban street portrait, hip-hop fashion, Y2K streetwear, bold graphic illustration, cartoon realism blend, playful surrealism, nostalgic urban culture, high-resolution detail, creative storytelling. Octane render & Unreal Engine 5.￼
 ```
 
 </details>
@@ -19468,7 +23282,7 @@ Macro photography with an extremely shallow depth of field, edges and background
 Absolute critical focus on the iris and the true skin texture.
 Desaturated color palette, cool pastel tones — soft gray, beige, and lilac.
 Fine Art aesthetic, authentic Leica optical fidelity, true photographic appearance.
-Ultra-high resolution 8K, wi
+Ultra-high resolution 8K, with no AI-generated look.
 ```
 
 </details>
@@ -19546,7 +23360,66 @@ Ultra-high resolution 8K, wi
     },  
     "bite_detail": {  
       "location": "top edge",  
-      "interi
+      "interior_layers": [  
+        "chocolate ice cream",  
+        "thin darker chocolate layer"  
+      ],  
+      "edges": "jagged bite marks"  
+    },  
+    "stick": {  
+      "material": "light wood",  
+      "finish": "smooth, rounded end"  
+    }  
+  },  
+  "motion": {  
+    "elements": "small chocolate fragments floating in air",  
+    "behavior": "scattered outward from the bar"  
+  },  
+  "background": {  
+    "color": "warm brown gradient",  
+    "style": "clean studio environment"  
+  },  
+  "lighting": {  
+    "type": "directional studio lighting",  
+    "effects": "strong highlights on chocolate bumps, soft shadows"  
+  }  
+},  
+
+"module_3": {  
+  "identity": "Image 3 –Purple Berry Popsicle with Fruits",  
+  "subject": {  
+    "main_object": "rectangular red popsicle",  
+    "surface": {  
+      "texture": "frosted, icy crystals visible",  
+      "shape": "rounded corners, vertical grooves"  
+    },  
+    "stick": {  
+      "material": "light wooden stick",  
+      "visible": true  
+    },  
+    "surroundings": [  
+      "whole strawberries with green tops",  
+      "blueberries",  
+      "raspberries",  
+      "mint leaves",  
+      "crushed ice pieces"  
+    ]  
+  },  
+  "color_palette": [  
+    "bright red",  
+    "deep blue",  
+    "fresh green",  
+    "clear ice"  
+  ],  
+  "background": {  
+    "composition": "entire frame filled with fruits and ice",  
+    "style": "top-down macro food arrangement"  
+  },  
+  "lighting": {  
+    "type": "even bright lighting",  
+    "effects": "wet shine on fruit skins, crystalline ice reflections"  
+  }  
+},
 ```
 
 </details>
@@ -19626,7 +23499,50 @@ Ultra-high resolution 8K, wi
     "actions_and_poses": {
       "style": "Candid moments captured in motion, not posed",
       "examples": [
-        "
+        "Walking along the street",
+        "Walking mid-step",
+        "Adjusting cap",
+        "Looking up toward camera",
+        "Fixing bag",
+        "Holding drink"
+      ],
+      "narrative_effect": "Natural lifestyle storytelling, varying poses across frames"
+    }
+  },
+  "environment": {
+    "setting": "Asphalt city street",
+    "ground_surface": "Textured gray asphalt, minimal and uncluttered",
+    "role": "Neutral backdrop emphasizing fashion and movement"
+  },
+  "lighting_and_color": {
+    "lighting_type": "Natural daylight with soft shadows",
+    "photographic_feel": "Realistic street photography",
+    "color_palette": {
+      "base": "Muted and urban tones",
+      "contrast_accents": ["Bright red socks", "Red-and-white cap"]
+    }
+  },
+  "style_and_mood": {
+    "overall_mood": "Candid, contemporary, effortlessly cool",
+    "aesthetic_blend": [
+      "Fashion photography",
+      "Street culture",
+      "Social media aesthetics"
+    ],
+    "keywords": [
+      "Urban street photography",
+      "Top-down perspective",
+      "Instagram grid layout",
+      "Candid lifestyle shots",
+      "Street fashion",
+      "Casual cool aesthetic",
+      "Muted city tones",
+      "Social media UI overlay",
+      "Natural light",
+      "Modern editorial style"
+    ]
+  }
+}
 ```
 
 </details>
@@ -19742,7 +23658,49 @@ A [ORDINARY OBJECT] as a landmark on an epic journey, tiny [TRAVELERS] resting i
     "overall_style": "clean, understated, realistic"
   },
   "clothing": {
-    "garment_type
+    "garment_type": "button-up shirt",
+    "fit": "relaxed fit",
+    "fabric_appearance": "lightweight fabric",
+    "pattern": "abstract floral or ornamental pattern",
+    "color_palette": {
+      "primary": "dark navy or charcoal",
+      "secondary": "off-white or light beige"
+    },
+    "buttons": {
+      "visibility": "visible",
+      "color": "light neutral"
+    },
+    "collar": "standard pointed collar"
+  },
+  "lighting": {
+    "type": "natural light",
+    "direction": "side lighting",
+    "contrast": "soft to medium contrast",
+    "highlights": "gentle highlights on cheekbones, nose, and lips",
+    "shadows": "soft shadows adding depth to facial contours"
+  },
+  "background": {
+    "type": "out-of-focus",
+    "style": "minimal, neutral",
+    "colors": "dark gray and muted tones",
+    "depth_of_field": "shallow",
+    "distractions": "none visible"
+  },
+  "camera_and_composition": {
+    "framing": "close-up portrait",
+    "angle": "eye-level",
+    "focus": "sharp focus on face",
+    "bokeh": "soft background blur",
+    "crop": "head and upper torso"
+  },
+  "overall_aesthetic": {
+    "mood": "calm, intimate",
+    "style": "editorial portrait photography",
+    "visual_cleanliness": "high",
+    "artifacts": "none visible",
+    "post_processing": "minimal, natural color grading"
+  }
+}
 ```
 
 </details>
@@ -19781,7 +23739,10 @@ Color Coding: The base color must be a pastel derivative of the city's dominant 
 Population: Increase figure count to 3-4 tiny "peg" people per scene interacting with the environment.
 Props: Include specific regional props (e.g., vending machines, street lamps, market stalls) to add scale and clutter.
 5. Render Settings:
-Lighting: Bright, soft Global Illumination. Ambient Occlusion enabled to highlight the grooves and details in the
+Lighting: Bright, soft Global Illumination. Ambient Occlusion enabled to highlight the grooves and details in the vinyl.
+Palette: Rich & Muted. Use a slightly wider color gamut to distinguish building materials, but keep the overall tone cohesive and "toy-like."
+Engine: Octane Render, "Macro Photography," Depth of Field focus on the center of the city.
+Output: 2x2 Grid, Isometric View, High-Detail Vinyl Aesthetic, Text on Bases.  </instructions>
 ```
 
 </details>
@@ -19921,7 +23882,20 @@ She kneels in a pristine white studio, shot from a low mid angle with a slight u
     "mood": "rich and luxurious",
     "detail_level": "high",
     "textures": "ornate and rich",
-    "cu
+    "cultural_respect": true
+  },
+
+  "camera": {
+    "angle": "overhead",
+    "shot_size": "medium",
+    "depth_of_field": "shallow",
+    "crop": "centered"
+  },
+
+  "output": {
+    "format": "image-edit-prompt"
+  }
+}
 ```
 
 </details>
@@ -19986,7 +23960,12 @@ She kneels in a pristine white studio, shot from a low mid angle with a slight u
     "accuracy": "match reference pose, framing, mood, and focus precisely",
     "avoid": [
       "cartoon look",
-      "overexposed highlights"
+      "overexposed highlights",
+      "extra subjects in focus",
+      "stylized or fantasy elements"
+    ]
+  }
+}
 ```
 
 </details>
@@ -20326,7 +24305,67 @@ Maintain consistent proportions, materials, and visual language across all icons
     },
     "environment": {
       "setting": "Lush natural greenery",
-      "foreground_eleme
+      "foreground_elements": [
+        "Green leaves",
+        "Hanging clusters of small white pearl-like berries entering from the top of the frame"
+      ],
+      "background": {
+        "description": "Fully blurred lush green environment",
+        "effect": "Creamy bokeh with warm highlights",
+        "restrictions": "No visible structures, no distractions"
+      }
+    },
+    "lighting": {
+      "type": "Natural sunlight only",
+      "quality": "Golden, warm, directional light filtering through foliage",
+      "effects": [
+        "Dappled highlights on hair and skin",
+        "Soft natural shadows for depth"
+      ],
+      "restrictions": [
+        "No flash",
+        "No studio lighting"
+      ]
+    },
+    "camera_and_technical": {
+      "camera": "Full-frame digital camera",
+      "lens": "85mm prime lens",
+      "aperture": "f/1.8",
+      "shutter_speed": "Approximately 1/320s",
+      "iso": "100",
+      "white_balance": "Warm daylight",
+      "depth_of_field": "Extremely shallow",
+      "focus_points": [
+        "Eyes",
+        "Lips",
+        "Butterfly"
+      ],
+      "bokeh": "Creamy, soft falloff"
+    },
+    "color_grading": {
+      "tone": "Warm, golden, romantic",
+      "contrast": "Gentle, natural",
+      "midtones": "Rich and soft",
+      "highlights": "Glowing",
+      "grain": "Subtle film-like grain",
+      "restrictions": [
+        "No harsh shadows",
+        "No oversharpening",
+        "No HDR look"
+      ]
+    },
+    "style_and_quality": {
+      "genre": [
+        "Fine-art editorial photography",
+        "Ethereal",
+        "Fairycore",
+        "Romantic realism"
+      ],
+      "resolution": "Ultra-high resolution",
+      "aesthetic": "Cinematic softness with natural textures"
+    }
+  }
+}
 ```
 
 </details>
@@ -20383,7 +24422,43 @@ MATERIALS & FINISH:
   Matching optical glass cup with weighted base and refined silhouette.
   Subtle BAGEL LABS logomark engraved near the base.
 - BRAND INTEGRATION:
-  BAGEL LABS logomark engraved into the g
+  BAGEL LABS logomark engraved into the glass body of the machine (side or rear plane), and subtly etched on the cup.
+  No stickers. No printed logos.
+
+ACTION / MOMENT:
+Coffee is visibly flowing from the machine into the glass cup.
+Liquid motion is realistic and smooth.
+Crema and color gradient are visible through the glass, emphasizing transparency and material depth.
+
+PRESENTATION (NO BOXES):
+The coffee machine and cup stand fully exposed on a minimal pedestal or surface.
+No packaging, no housing, no covers.
+All components are visible by design.
+
+PHOTOGRAPHY & LIGHTING:
+Style: High-end product editorial (Wallpaper* / Dezeen).
+Lighting: Soft, studio high-key lighting with carefully controlled reflections to highlight glass thickness, liquid motion, and internal depth. No harsh shadows.
+Background: Clean, seamless light grey or white cyclorama.
+
+COLOR & GRADING:
+Primary tones: transparent glass with subtle green tint, warm greys, titanium neutrals.
+Accent: restrained BAGEL LABS orange within the circuitry only.
+Overall mood: clean, intelligent, technological luxury.
+
+GRAPHIC OVERLAYS (UI):
+- Bottom Left:
+  A small, minimalist two-line descriptor identifying the object.
+- Bottom Right:
+  A small, discreet, monochrome BAGEL LABS logomark.
+Do not visualize font names or color codes.
+
+CAMERA & DETAIL:
+Full-frame, 50mm equivalent.
+Ultra-high realism: accurate glass refraction, liquid physics, micro-detail in circuits and mechanical parts.
+Shallow depth of field allowed, but machine and cup must remain fully legible.
+
+NEGATIVE PROMPT:
+No people, no hands, no kitchens, no cafes, no clutter, no packaging, no stickers, no printed text on surfaces, no neon colors, no glow effects, no cartoon or CGI look, no fingerprints, no dust, no watermarks.
 ```
 
 </details>
@@ -20581,6 +24656,54 @@ Negative Prompt
       "label_text": "NFC Citrus Mix",
       "pose": "centered upright"
     },
+    "environment": {
+      "location": "lush citrus grove",
+      "background_elements": [
+        "sunlit yellow and orange fruits hanging above",
+        "soft green leaves framing the bottle"
+      ]
+    },
+    "action_elements": {
+      "description": "fresh splash of clear water rising around the base",
+      "items": [
+        "thin lemon slices",
+        "juicy lime wedges",
+        "bright orange segments"
+      ]
+    },
+    "lighting": {
+      "description": "sun rays filtering through leaves",
+      "tone": "vibrant citrus warmth"
+    },
+    "parameters": "--ar 9:16 --stylize 250"
+  },
+
+  {
+    "id": "tropical_hammock_v2",
+    "type": "photorealistic advertising shot",
+    "subject": {
+      "item": "tropical mixed Nestle juice bottle",
+      "label_text": "NFC Tropical Juice",
+      "pose": "relaxed tilt as if resting"
+    },
+    "environment": {
+      "location": "sunlit hammock between palm trees",
+      "background": "soft-focus ocean horizon with glowing sunlight"
+    },
+    "surrounding_elements": [
+      "fresh pineapple slices",
+      "ripe mango slices",
+      "orange wedges",
+      "dragonfruit cubes"
+    ],
+    "mood_and_style": {
+      "atmosphere": "luxury vacation vibe",
+      "colors": "rich tropical saturation",
+      "lighting": "warm cinematic highlights with soft shadows"
+    },
+    "parameters": "--ar 9:16 --stylize 250"
+  }
+]
 ```
 
 </details>
@@ -20660,7 +24783,7 @@ A clean, modern gym mirror selfie captured on a Google Pixel smartphone. The sub
 <summary>📋 View Prompt</summary>
 
 ```
-{ "composition": { "framing": "medium full-body portrait", "orientation": "vertical", "camera_angle": "slightly above eye-level", "pose": "seated on floor with one knee raised, head resting on hand", "subject_position": "centered", "depth_of_field": "moderate, background fully in focus", "cropping": "full body visible within frame" }, "subject": { "gender_presentation": "female", "approximate_age_range": "teen to young adult", "skin_tone": "light with neutral undertones", "facial_features": { "face_shape": "round to oval", "eyes": "light brown or hazel", "eyebrows": "natural, straight", "nose": "small, rounded tip", "lips": "medium fullness, muted pink", "expression": "relaxed, mildly introspective" }, "hair": { "color": "medium brown", "length": "long", "texture": "straight with slight natural wave", "parting": "center", "styling": "two low braids with loose front strands" }, "distinct_features": { "freckles": "visible across cheeks and nose" } }, "clothing_and_accessories": { "headwear": { "type": "baseball cap", "color": "dark green", "text": "IDOL", "style": "casual streetwear" }, "top": { "type": "oversized sweatshirt", "color": "dark green", "material": "cotton fleece", "graphics": "large collegiate-style typography", "text": "Atlanta Georgia", "details": "white V-neck trim, logo patch on sleeve" }, "bottoms": { "type": "track pants", "color": "black", "material": "velour or plush fabric", "details": "white side piping" }, "footwear": { "type": "sneakers", "color": "black and white", "style": "classic skate or street sneaker" }, "jewelry": { "necklaces": "layered thin chain necklaces", "other": "none visible" } }, "lighting": { "type": "studio lighting", "key_light": "soft diffused frontal light", "fill_light": "gentle fill reducing shadows", "highlights": "soft highlights on cheeks and nose", "shadows": "minimal, soft-edged", "color_temperature": "neutral to slightly cool" }, "color_palette": { "dominant_colors": [ "dark green", "black", "gray" ], "accent_col
+{ "composition": { "framing": "medium full-body portrait", "orientation": "vertical", "camera_angle": "slightly above eye-level", "pose": "seated on floor with one knee raised, head resting on hand", "subject_position": "centered", "depth_of_field": "moderate, background fully in focus", "cropping": "full body visible within frame" }, "subject": { "gender_presentation": "female", "approximate_age_range": "teen to young adult", "skin_tone": "light with neutral undertones", "facial_features": { "face_shape": "round to oval", "eyes": "light brown or hazel", "eyebrows": "natural, straight", "nose": "small, rounded tip", "lips": "medium fullness, muted pink", "expression": "relaxed, mildly introspective" }, "hair": { "color": "medium brown", "length": "long", "texture": "straight with slight natural wave", "parting": "center", "styling": "two low braids with loose front strands" }, "distinct_features": { "freckles": "visible across cheeks and nose" } }, "clothing_and_accessories": { "headwear": { "type": "baseball cap", "color": "dark green", "text": "IDOL", "style": "casual streetwear" }, "top": { "type": "oversized sweatshirt", "color": "dark green", "material": "cotton fleece", "graphics": "large collegiate-style typography", "text": "Atlanta Georgia", "details": "white V-neck trim, logo patch on sleeve" }, "bottoms": { "type": "track pants", "color": "black", "material": "velour or plush fabric", "details": "white side piping" }, "footwear": { "type": "sneakers", "color": "black and white", "style": "classic skate or street sneaker" }, "jewelry": { "necklaces": "layered thin chain necklaces", "other": "none visible" } }, "lighting": { "type": "studio lighting", "key_light": "soft diffused frontal light", "fill_light": "gentle fill reducing shadows", "highlights": "soft highlights on cheeks and nose", "shadows": "minimal, soft-edged", "color_temperature": "neutral to slightly cool" }, "color_palette": { "dominant_colors": [ "dark green", "black", "gray" ], "accent_colors": [ "white", "gold", "muted yellow" ], "overall_tone": "cool, muted, modern" }, "background": { "environment": "studio setting", "background_type": "seamless backdrop", "background_color": "light gray", "texture": "smooth, matte", "distractions": "none" }, "technical_traits": { "camera_type": "DSLR or mirrorless camera", "lens_effect": "standard portrait lens", "estimated_focal_length": "35–50mm equivalent", "sharpness": "high overall clarity", "noise": "none visible", "exposure": "even and balanced" }, "artistic_style": { "genre": "studio lifestyle portrait", "mood": "casual, relaxed, youthful", "aesthetic": "streetwear fashion editorial", "post_processing": { "skin_retouching": "very minimal", "color_grading": "cool-neutral balance", "contrast": "low to moderate", "vignette": "none" } }, "typography": { "text_present": true, "text_style": "collegiate varsity lettering", "text_color": "white and gold", "placement": "center chest and sleeve" }, "overall_impression": { "visual_focus": "casual streetwear styling and relaxed pose", "style_keywords": [ "streetwear", "studio portrait", "youth fashion", "collegiate", "casual editorial" ] } }
 ```
 
 </details>
@@ -20742,7 +24865,71 @@ A clean, modern gym mirror selfie captured on a Google Pixel smartphone. The sub
       "overall_style": "intimate_high_fashion_editorial"
     },
 
-    "ha
+    "hair_and_makeup": {
+      "hair": "natural_loose_with_soft_bangs",
+      "movement": "subtle_natural_motion",
+      "makeup_style": "soft_editorial",
+      "eyes": "natural_smoky_low_contrast",
+      "lips": "muted_rose_nude",
+      "skin_finish": "natural_luminous_real"
+    },
+
+    "posing_and_storytelling": {
+      "poses": [
+        "close_up_shoulder_touch",
+        "mid_body_turning_away",
+        "full_body_walking_away",
+        "leaning_against_wall",
+        "head_tilted_back_emotional",
+        "eyes_closed_intimate",
+        "soft_motion_blur_moment",
+        "hands_touching_face",
+        "dress_detail_closeup"
+      ],
+      "emotion": "introspective_sensual_vulnerable",
+      "movement": "slow_natural_unposed"
+    },
+
+    "background": {
+      "environment": "dark_interior_gallery_or_room",
+      "colors": [
+        "deep_red",
+        "charcoal_gray",
+        "dark_green"
+      ],
+      "texture": "matte_walls_soft_reflections",
+      "distractions": "none"
+    },
+
+    "creative_prompt": {
+      "scene_summary": "A cinematic 3x3 fashion contact sheet capturing an intimate, emotional editorial story of a woman in a deep red satin dress. Each frame feels like a quiet moment from an arthouse film — soft focus, natural movement, emotional restraint, and sensual minimalism.",
+      "aesthetic": "arthouse_fashion_editorial",
+      "mood": "quiet_intimate_cinematic"
+    },
+
+    "negative_prompt": [
+      "text",
+      "typography",
+      "logo",
+      "brand_name",
+      "watermark",
+      "poster_design",
+      "magazine_layout",
+      "beauty_filter",
+      "plastic_skin",
+      "over_smoothing",
+      "cgi",
+      "anime",
+      "cartoon",
+      "ai_artifacts",
+      "extra_people",
+      "distorted_body",
+      "bad_hands",
+      "extra_fingers",
+      "over_sharpened"
+    ]
+  }
+}
 ```
 
 </details>
@@ -20788,7 +24975,20 @@ FRAME 6:
 Product levitating slightly tilted on a neutral background that matches the reference image color palette. Floating position is angled and intentional, the product is floating naturally in space.
 
 FRAME 7:
-is an extreme close-up focusing on a specific detail of the label, edge, texture or material behavio
+is an extreme close-up focusing on a specific detail of the label, edge, texture or material behavior.
+
+FRAME 8:
+The product in an unexpected yet aesthetically strong setting that feels bold, editorial and visually striking.
+Unexpected but highly stylized setting. Studio-based, and designer-driven. Bold composition that elevates the brand.
+
+FRAME 9:
+Wide composition showing the product in use, placed within a refined designer setup. Clean props, controlled styling, cohesive with the rest of the series.
+
+CAMERA & STYLE:
+Ultra high-quality studio imagery with a real camera look. Different camera angles and framings across frames. Controlled depth of field, precise lighting, accurate materials and reflections. Lighting logic, color palette, mood and visual language must remain consistent across all nine panels as one cohesive series.
+
+OUTPUT:
+A clean 3×3 grid with no borders, no text, no captions and no watermarks.
 ```
 
 </details>
@@ -20832,7 +25032,69 @@ is an extreme close-up focusing on a specific detail of the label, edge, texture
 },
 "camera": {
 "perspective": "Eye-level to slightly high angle, typical of a standing photographer capturing a seated subject.",
-"f
+"framing": "Full body seated, cutting off just below the feet/shoes, creating a 3:4 portrait composition.",
+"focal_length": "35mm to 50mm, capturing the subject and immediate context without excessive distortion."
+},
+"lighting": {
+"type": "Direct on-camera flash / harsh artificial lighting.",
+"characteristics": "Hard, distinct shadow cast by the subject against the white brick wall. High contrast highlights on the face (T-zone) and shins. Fall-off of light towards the edges of the frame.",
+"ambience": "Nightlife atmosphere, dim ambient light overpowered by the flash."
+},
+"mood_and_expression": {
+"emotion": "Confident, composed, and alluring.",
+"eye_contact": "Direct and engaging.",
+"vibe": "Date night, candid nightlife photography, 'it girl' aesthetic."
+},
+"style_and_realism": {
+"aesthetic": "Flash photography realism. Not a studio portrait.",
+"fidelity": "High fidelity to textures (lace, leather, brick, skin oils).",
+"imperfections": "Retain flash reflections in the window and the harsh shadow lines that give the image its candid authenticity."
+},
+"colors_and_tone": {
+"palette": "Neutral tones: Black clothing, tan leather, white brick/tablecloth, warm skin tones.",
+"temperature": "Slightly warm due to indoor lighting mixed with the flash.",
+"contrast": "High contrast due to flash lighting."
+},
+"quality_and_technical_details": {
+"resolution": "High resolution, sharp focus on the subject.",
+"texture_quality": "Detailed fabric weave on the lace tights and leather grain on the booth."
+},
+"aspect_ratio_and_output": {
+"ratio": "3:4",
+"orientation": "Vertical portrait."
+},
+"controlnet": {
+"pose_control": "OpenPose to lock the crossed-leg seated position and hand placement.",
+"depth_control": "Depth map to distinguish the subject from the close brick wall and the table in the foreground.",
+"weight": 0.85
+},
+"negative_prompt": [
+"drawing",
+"painting",
+"illustration",
+"3d render",
+"anime",
+"cartoon",
+"soft lighting",
+"studio lighting",
+"diffused light",
+"blurry",
+"low quality",
+"distorted anatomy",
+"missing limbs",
+"extra fingers",
+"clothed legs (must be lace tights)",
+"plain tights (must be lace)",
+"standing",
+"mirror selfie",
+"holding phone",
+"bright daylight",
+"outdoor",
+"blue tone",
+"airbrushed skin",
+"matte skin"
+]
+}
 ```
 
 </details>
@@ -20937,7 +25199,36 @@ Stylized, ultra high-fidelity 3D isometric miniature diorama, 35–40° isometri
 },
 "cinematography": {
 "camera": {
-"shot_type": "Medium-full body studio portrai
+"shot_type": "Medium-full body studio portrait",
+"angle": "Eye-level to slightly low angle",
+"lens": "85mm prime",
+"depth_of_field": "Shallow, strong subject separation from background"
+},
+"lighting": {
+"setup": "Professional studio lighting",
+"key_light": "Soft directional key light sculpting face, legs, and jewelry",
+"fill_light": "Controlled low fill for depth",
+"rim_light": "Subtle rim light accentuating hair volume and metallic highlights",
+"contrast": "Elegant high-contrast with smooth tonal transitions"
+}
+},
+"aesthetic_details": {
+"color_palette": "Deep blacks, warm skin tones, silver highlights, emerald-green gemstone accents, dark wine reds",
+"texture_enhancements": "Fine film grain, fabric micro-texture, glass reflections, gemstone light refraction",
+"imperfections": "Natural skin detail, slight asymmetry in pose, gentle light falloff"
+},
+"mood": "Seductive, powerful, composed, timeless, quietly intoxicating",
+"quality_targets": {
+"resolution": "Ultra-high resolution",
+"realism_level": "Photorealistic editorial",
+"avoid": [
+"Explicit sexual content",
+"Modern casual elements",
+"Over-polished AI skin",
+"Exaggerated facial expressions"
+]
+}
+}
 ```
 
 </details>
@@ -21095,7 +25386,29 @@ Create a hyperrealistic miniature planet showcasing [CITY] with famous landmarks
       "camera_angle": "Top-down flat lay perspective",
       "lens": "24mm lens",
       "framing": "Wide enough to include surrounding tropical elements",
-      "p
+      "perspective": "Overhead, editorial flat-lay composition"
+    },
+    "visual_style": {
+      "aesthetic": [
+        "Artistic shadow-play portrait",
+        "Editorial beach photography",
+        "Luxury travel influencer style"
+      ],
+      "contrast": "High contrast between light and shadow",
+      "textures": "Visible sand grains, woven mat texture, fabric embellishments"
+    },
+    "quality_and_realism": {
+      "realism": "Photorealistic",
+      "skin_and_face": "Natural skin texture, no distortion or beautification",
+      "retouching": "Minimal, realistic only",
+      "resolution": "Ultra-high resolution",
+      "restrictions": [
+        "No face reshaping",
+        "No stylization that alters facial identity"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -21215,7 +25528,60 @@ A cinematic golden-hour photograph of a young woman standing on a wooden viewpoi
         "description": "tall transparent glass bottle with golden liquid, visually identical to a real champagne bottle but decorative"
       },
       "pillows": {
-        "placement": "on the flo
+        "placement": "on the floor around the woman",
+        "colors": "multiple shades of pink",
+        "size": "large, soft cushions"
+      }
+    }
+  },
+  "lighting": {
+    "type": "natural soft daylight",
+    "direction": "from panoramic window",
+    "effects": [
+      "face and body evenly lit",
+      "soft realistic shadows",
+      "no artificial highlights"
+    ]
+  },
+  "text_overlay": {
+    "content": "Sania X content creator",
+    "language": "English",
+    "style": {
+      "color": "pink paint-like lettering",
+      "look": "hand-painted, clear and accurate",
+      "emphasis": "strong focus on letters and spacing"
+    },
+    "position": "above the woman",
+    "constraints": [
+      "no other text",
+      "no watermarks"
+    ]
+  },
+  "aesthetic": {
+    "mood": "soft, elegant, festive, editorial",
+    "palette": [
+      "pastel pink",
+      "white",
+      "soft gold"
+    ]
+  },
+  "quality_constraints": {
+    "prohibitions": [
+      "do not alter facial expression",
+      "do not redraw or replace facial features",
+      "do not over-blur or plasticize skin or hair",
+      "do not change hairstyle or color",
+      "no artificial filter look",
+      "no hand or finger distortions",
+      "no extra or merged fingers",
+      "no incorrect body proportions",
+      "no duplicate subjects",
+      "no watermarks or unwanted text",
+      "no unnatural anatomy or noise"
+    ]
+  },
+  "output_goal": "Create an ultra-realistic 8K Vogue-style editorial portrait of a woman in pastel pink pajamas, standing in a clean white studio environment with champagne-themed props, preserving her exact facial identity, featuring the text 'Sania X content creator' above her in pink paint lettering."
+}
 ```
 
 </details>
@@ -21287,7 +25653,58 @@ A cinematic golden-hour photograph of a young woman standing on a wooden viewpoi
     "angle": "slightly from the side and slightly behind",
     "perspective": "authentic candid",
     "framing": "medium-wide",
-    "visibility": "upper body and part of table vis
+    "visibility": "upper body and part of table visible"
+  },
+  "lighting": {
+    "type": "harsh and imperfect",
+    "sources": [
+      "rooftop café lights",
+      "city street lights"
+    ],
+    "effects": [
+      "uneven exposure",
+      "blown highlights",
+      "deep shadows",
+      "imperfect white balance"
+    ]
+  },
+  "focus_and_quality": {
+    "focus": "slightly more on subject",
+    "background_blur": "soft blur due to low light and camera limitations",
+    "artifacts": [
+      "visible digital noise",
+      "grain",
+      "slight motion blur",
+      "imperfect focus accuracy"
+    ]
+  },
+  "background": {
+    "location": "Jakarta rooftop café",
+    "elements": [
+      "tables",
+      "railing",
+      "other people casually visible",
+      "distant Jakarta buildings",
+      "city lights"
+    ]
+  },
+  "objects": {
+    "table_items": [
+      "iPhone 17 Pro Max (being used by subject)",
+      "part of a woman’s handbag"
+    ],
+    "accessories": {
+      "requirement": "Match any jewelry, watches, or accessories from the reference image"
+    }
+  },
+  "overall_feeling": [
+    "authentic",
+    "realistic",
+    "taken by her boyfriend",
+    "unstaged lifestyle photo",
+    "night life in Jakarta"
+  ]
+}
 ```
 
 </details>
@@ -21652,7 +26069,36 @@ The background should be an artistic monochrome composition (black and white) de
   "camera": {
     "angle": "low, cinematic angle",
     "lens": "telephoto ~85mm",
-    "depth_
+    "depth_of_field": "shallow",
+    "focus": {
+      "foreground": "woman in sharp focus",
+      "background": "truck slightly motion-blurred"
+    }
+  },
+  "color_grading": {
+    "palette": [
+      "warm beige sand",
+      "muted sky tones",
+      "subtle teal and orange accents"
+    ],
+    "style": "filmic, natural, HDR"
+  },
+  "quality": {
+    "resolution": "8K",
+    "detail_level": "ultra-high",
+    "texture": "realistic sand, fabric, skin, and dust textures",
+    "grain": "subtle film grain",
+    "rendering": "photorealistic, no CGI look"
+  },
+  "constraints": [
+    "No cartoon or illustrated style",
+    "No artificial sharpening",
+    "No exaggerated effects",
+    "Maintain natural skin tones",
+    "Do not alter facial identity"
+  ],
+  "output_goal": "Create a cinematic, ultra-realistic desert action image featuring a calm, confident woman seated in the foreground while a powerful off-road truck explodes through the dunes behind her, emphasizing contrast, motion, and cinematic storytelling."
+}
 ```
 
 </details>
@@ -21742,7 +26188,43 @@ Create a premium 3D rendered [FIGURE NAME] collectible vinyl figure in a modern 
   "LightingAndMood": {
     "Lighting": "Soft natural overcast winter light",
     "ShadowQuality": "Gentle, diffused shadows",
-    "ColorGrading": "Cinematic cool winter tones with subtle warmth in skin an
+    "ColorGrading": "Cinematic cool winter tones with subtle warmth in skin and eyes",
+    "Mood": "Dramatic yet serene, mystical, powerful"
+  },
+  "ArtDirection": {
+    "Style": "Fine-art wildlife and cinematic portrait photography",
+    "Aesthetic": "Epic, timeless, emotionally charged",
+    "TextureEmphasis": [
+      "Natural skin texture",
+      "Fur detail",
+      "Snowflakes and frost"
+    ]
+  },
+  "PhotographyStyle": {
+    "Genre": "Cinematic fine-art wildlife portrait",
+    "RealismLevel": "Ultra-realistic",
+    "DetailLevel": "8K-quality detail with cinematic softness"
+  },
+  "Mood": {
+    "Tone": "Quiet intensity, mystery, reverence for nature",
+    "EmotionalImpact": "Awe, connection, primal calm"
+  },
+  "NegativePrompt": [
+    "aggressive wolf",
+    "fearful expression",
+    "cartoon",
+    "fantasy illustration style",
+    "oversaturated colors",
+    "harsh lighting",
+    "plastic skin",
+    "low detail"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -21806,7 +26288,20 @@ Create a premium 3D rendered [FIGURE NAME] collectible vinyl figure in a modern 
     "location": "public restroom or locker room stall",
     "walls": {
       "right_side": "beige ceramic tiles with a horizontal brown accent stripe",
-      "left_side": "dark gray or metallic stall pa
+      "left_side": "dark gray or metallic stall partition door"
+    },
+    "details": {
+      "signage": "partially visible white sign on the left door with red border and black text ('I'VE NEVER...', 'A GAME', 'I JUST RAN OUT', 'OF TIME')",
+      "hardware": "silver metal stall latch/lock mechanism visible on the door frame",
+      "ceiling": "drop ceiling tiles visible at the very top"
+    }
+  },
+  "technical_details": {
+    "aspect_ratio": "9:16 (vertical portrait)",
+    "lighting": "overhead fluorescent indoor lighting, creating soft shadows and highlights on the skin and hair",
+    "shot_angle": "eye-level, taken from behind the subject"
+  }
+}
 ```
 
 </details>
@@ -21893,7 +26388,38 @@ A gritty, intense portrait of a man, a friend of real lion, captured in a raw, h
     "focus": "sharp focus on face with shallow depth of field",
     "grain": "visible natural film grain"
   },
-  "lighting": 
+  "lighting": {
+    "source": "natural daylight",
+    "time_of_day": "afternoon",
+    "quality": "soft, diffused sunlight",
+    "direction": "front and side lighting",
+    "artificial_light": "none"
+  },
+  "color_and_style": {
+    "palette": [
+      "vivid blue sky",
+      "warm natural skin tones"
+    ],
+    "style": "editorial portrait with analog film aesthetic",
+    "atmosphere": "calm, airy, serene, nostalgic",
+    "contrast": "subtle",
+    "saturation": "natural with slight enhancement"
+  },
+  "quality": {
+    "realism": "high",
+    "detail": "natural skin texture, realistic lighting",
+    "imperfections": "preserved"
+  },
+  "constraints": [
+    "No facial alterations",
+    "No clothing changes",
+    "No artificial lighting",
+    "No digital beauty filters",
+    "No CGI or illustration",
+    "No text or watermarks"
+  ],
+  "output_goal": "Create a serene, film-like triptych portrait of the same woman against a clear blue sky, preserving her exact identity, clothing, and natural expressions with an airy editorial and analog aesthetic."
+}
 ```
 
 </details>
@@ -22084,7 +26610,12 @@ Create a 2-panel split composition.  Left panel: Hyper-realistic, ultra-detailed
   },
   "clothing_details": {
     "top": "yellow cropped tank top, Pikachu face print (big black eyes, red cheeks, smiling mouth)",
-    "hood": "oversized plush Pikachu hood, long black-tipped ears h
+    "hood": "oversized plush Pikachu hood, long black-tipped ears hanging down both sides",
+    "gloves": "yellow plush Pikachu paw mittens with black tips",
+    "bottom": "bright yellow high-waisted short shorts, sporty style",
+    "colors": "dominant vivid pokemon yellow, black accents, red cheek circles"
+  }
+}
 ```
 
 </details>
@@ -22157,7 +26688,25 @@ Create a 2-panel split composition.  Left panel: Hyper-realistic, ultra-detailed
           "snow": "Crystalline structure with subsurface scattering"
         }
       },
-      "o
+      "optical_constraints": {
+        "camera": {
+          "focal_length": "85mm Prime",
+          "aperture": "f/1.8 (Shallow Depth of Field)",
+          "focus": "Pin-sharp on subject's irises"
+        },
+        "framing": {
+          "type": "Close-up",
+          "view": "Full-face visibility",
+          "perspective": "Direct overhead look-down"
+        }
+      }
+    },
+    "exclusion_array": {
+      "forbidden_styles": ["CGI", "Airbrushed", "Digital Painting", "Stylized Anime", "Exaggerated Beauty"],
+      "forbidden_artifacts": ["Plastic skin", "Anatomical distortion", "Fabric blurring"]
+    }
+  }
+}
 ```
 
 </details>
@@ -22237,7 +26786,70 @@ Create a 2-panel split composition.  Left panel: Hyper-realistic, ultra-detailed
     },
 
     "accessories": {
-      "earrings": "Large floral or foliage-shaped earrings in deep emerald green
+      "earrings": "Large floral or foliage-shaped earrings in deep emerald green with gold accents",
+      "handbag": "Small clutch made of metal mesh or gold crystal material",
+      "nails": "Long, square-shaped nude manicure",
+      "jewelry_style": "Luxury, statement yet refined"
+    },
+
+    "environment": {
+      "location": "Luxury home or hotel interior",
+      "background": [
+        "White walls with classic decorative moldings (boiseries)",
+        "Glass door visible in the background"
+      ],
+      "setting": "Elegant, refined, upscale"
+    },
+
+    "lighting": {
+      "type": "Natural sunlight",
+      "direction": "Strong direct beams entering through windows",
+      "effect": [
+        "Geometric light and shadow patterns on walls",
+        "Golden glow outlining the model",
+        "High contrast with realistic highlights"
+      ],
+      "mood": "Warm, cinematic, luxurious"
+    },
+
+    "camera_and_quality": {
+      "framing": "Medium to medium-full body portrait",
+      "angle": "Eye-level",
+      "focus": "Sharp focus on subject",
+      "depth_of_field": "Natural, realistic separation",
+      "resolution": "Ultra-realistic, high-definition",
+      "style": "Luxury fashion editorial photography"
+    },
+
+    "aesthetic": {
+      "vibe": [
+        "Elegant",
+        "High fashion",
+        "Cinematic realism",
+        "Luxury editorial"
+      ]
+    },
+
+    "negative_prompt": [
+      "face alteration",
+      "beautification",
+      "CGI",
+      "3D render",
+      "illustration",
+      "cartoon",
+      "anime",
+      "plastic skin",
+      "over-smoothing",
+      "filters",
+      "HDR",
+      "distorted anatomy",
+      "extra limbs",
+      "low resolution",
+      "blur",
+      "AI artifacts"
+    ]
+  }
+}
 ```
 
 </details>
@@ -22406,6 +27018,52 @@ Editorial lifestyle mood, natural tones, cinematic depth, ultra-realistic.
       "type": "high-waisted leggings",
       "color": "bright red",
       "details": "white piping accents matching the top"
+    },
+    "outerwear": {
+      "type": "jacket",
+      "color": "red",
+      "wearing_style": "slipped off shoulders, hanging loosely on arms"
+    }
+  },
+
+  "accessories": {
+    "bag": "small black shoulder bag strap visible on one shoulder",
+    "jewelry": "no visible jewelry"
+  },
+
+  "background": {
+    "setting": "outdoor magazine stand",
+    "objects": [
+      "wooden magazine shelves",
+      "multiple rows of magazines",
+      "visible magazine covers featuring music, lifestyle, fashion, and celebrity themes",
+      "varied colors and typography on magazine covers"
+    ],
+    "depth_of_field": "moderate, background slightly soft but readable"
+  },
+
+  "lighting": {
+    "type": "natural daylight",
+    "direction": "even frontal lighting",
+    "effect": "soft shadows, realistic skin tones, no harsh highlights"
+  },
+
+  "camera": {
+    "shot_type": "medium-full shot",
+    "angle": "eye-level",
+    "focus": "sharp focus on subject"
+  },
+
+  "image_quality": {
+    "style": "ultra-photorealistic",
+    "detail_level": "high detail, realistic textures",
+    "noise": "minimal"
+  },
+
+  "aspect_ratio": "4:5",
+  "composition": "centered subject with symmetrical background shelves",
+  "mood": "casual, confident, modern street-style aesthetic"
+}
 ```
 
 </details>
@@ -22544,7 +27202,12 @@ Editorial lifestyle mood, natural tones, cinematic depth, ultra-realistic.
     "plastic skin",
     "distorted face"
   ],
-  "ResponseF
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -22826,7 +27489,21 @@ Motion:  The cocoa pod beans rapidly fly out and transform into roasted cocoa vo
     "shot_type": "selfie-style medium close-up",
     "focus": "sharp focus on the subject with slightly softened background",
     "quality": "high sharpness and clarity"
-
+  },
+  "quality": {
+    "realism": "highly realistic",
+    "color": "vibrant and true-to-life",
+    "detail_level": "clear textures on clothing, face, and stadium"
+  },
+  "constraints": [
+    "Do not alter facial features",
+    "No stylization or artistic filters",
+    "No distortion of body or face",
+    "No text overlays or watermarks",
+    "Maintain realistic proportions and lighting"
+  ],
+  "output_goal": "Create a realistic, selfie-style photo of a woman wearing a Barcelona jersey in front of a packed football stadium, preserving her exact facial identity and conveying pride and admiration within a vibrant match-day atmosphere."
+}
 ```
 
 </details>
@@ -23023,7 +27700,10 @@ The overall mood should feel calm, optimistic, and visually striking, with rich 
     },
     "post_processing": {
       "texture": "Subtle film grain",
-      "clarity": "Ultra-sharp focal points on su
+      "clarity": "Ultra-sharp focal points on subject"
+    }
+  }
+}
 ```
 
 </details>
@@ -23177,7 +27857,22 @@ The overall mood should feel calm, optimistic, and visually striking, with rich 
       "highlights": "Reflective glints on snow crystals and goggles"
     }
   },
-
+  "optical_parameters": {
+    "camera_specs": {
+      "lens_type": "85mm Prime",
+      "aperture": "f/1.8",
+      "shot_distance": "Close-up (CU)",
+      "focus_priority": "Iris of the eyes"
+    },
+    "render_passes": [
+      "Subsurface scattering (skin)",
+      "Micro-displacement (knit texture)",
+      "Volumetric cold air haze",
+      "Individual follicle rendering"
+    ],
+    "mood_profile": ["Serene", "Arctic", "Exploration", "High-Contrast"]
+  }
+}
 ```
 
 </details>
@@ -23246,7 +27941,52 @@ The overall mood should feel calm, optimistic, and visually striking, with rich 
     },
     "sheep_details": {
       "body": "made entirely of popcorn kernels",
-      "head": "smooth white round
+      "head": "smooth white rounded face",
+      "ears": "small rounded ears with pale yellow inner tone",
+      "eyes": "tiny black dots",
+      "mouth": "thin curved smile line"
+    },
+    "poses_and_accessories": {
+      "one_sheep": "wearing red-blue 3D glasses",
+      "one_sheep": "holding a small popcorn bucket",
+      "one_sheep": "holding a black TV remote",
+      "multiple_sheep": "peeking from behind popcorn pile"
+    },
+    "composition": {
+      "layering": "sheep stacked and clustered",
+      "foreground": "extra popcorn scattered around base",
+      "focus": "central sheep in sharp focus"
+    }
+  },
+
+  "Module_3_Image_3_Style": {
+    "subject": "Bear-shaped chicken popcorn nuggets",
+    "primary_container": {
+      "type": "white popcorn-style bucket",
+      "branding": "text reads 'Chicken Popcorn'",
+      "graphics": "simple chef hat icon above text",
+      "decoration": "small colored polka dots"
+    },
+    "nugget_details": {
+      "shape": "teddy bear silhouettes",
+      "color": "golden-brown fried coating",
+      "texture": "crunchy breaded surface",
+      "facial_features": {
+        "eyes": "small black beads",
+        "nose": "rounded black nose",
+        "mouth": "tiny dark line"
+      }
+    },
+    "poses_and_accessories": {
+      "one_nugget": "wearing black sunglasses",
+      "one_nugget": "holding fries in red-striped cup",
+      "one_nugget": "holding soda cup with straw",
+      "foreground_nuggets": "standing outside bucket"
+    },
+    "composition": {
+      "camera_distance": "medium close-up",
+      "bucket_position": "centered vertically",
+      "lighting": "warm highlights emphasizing texture''
 ```
 
 </details>
@@ -23315,7 +28055,20 @@ The overall mood should feel calm, optimistic, and visually striking, with rich 
   },
   "NegativePrompt": [
     "dark mood",
-    "horro
+    "horror",
+    "low resolution",
+    "blurry faces",
+    "harsh shadows",
+    "oversaturated colors",
+    "distorted anatomy",
+    "uncanny characters"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -23564,7 +28317,19 @@ A hyper-detailed 3D render of a collectible chess piece designed as [ICON]. The 
   },
   "quality": {
     "resolution": "high resolution",
-    "realism": "p
+    "realism": "photorealistic",
+    "details": "natural skin texture, realistic fabric and material textures"
+  },
+  "constraints": [
+    "Do not alter the face or facial features",
+    "No belly or midriff visible",
+    "No transparent clothing",
+    "No artificial filters",
+    "No text, logos, or watermarks",
+    "No distorted anatomy"
+  ],
+  "output_goal": "Create a photorealistic, modern indoor lifestyle portrait of a woman using her exact face from the reference image, wearing a full white shirt that fully covers the belly, in a clean contemporary setting with a relaxed and joyful mood."
+}
 ```
 
 </details>
@@ -23650,7 +28415,8 @@ A hyper-detailed 3D render of a collectible chess piece designed as [ICON]. The 
     "atmosphere": "authentic, calm, rural lifestyle",
     "emotion": "grounded, peaceful, hardworking elegance"
   },
-  "output_goal": "Create an ultra-realistic full-body cinematic portrait of a woman in a rural setting, leaning against a pickup truck 
+  "output_goal": "Create an ultra-realistic full-body cinematic portrait of a woman in a rural setting, leaning against a pickup truck surrounded by agricultural produce, using warm late-afternoon light and an authentic countryside atmosphere."
+}
 ```
 
 </details>
@@ -23886,7 +28652,13 @@ Glassmorphism effects on text boxes, soft drop shadows, medical accuracy mixed w
 
 For boys :
 {
-  "prompt": "Edit the uploaded image to create an ultra-realistic South Indian Pongal festival portrait of an adult Tamil person, using the EXACT same background and sunlight as the reference image. Maintain identical warm golden morning sunlight, soft directional light, gentle shadows, and natural glow seen in the reference. Preserve the same rural village courtyard setting with the clay Pongal pot boiling on a wood fire, soft smoke rising, sugarcane plants nearby, earthy ground, and colorful kolam beneath the feet. The person is dressed in a traditional Pongal
+  "prompt": "Edit the uploaded image to create an ultra-realistic South Indian Pongal festival portrait of an adult Tamil person, using the EXACT same background and sunlight as the reference image. Maintain identical warm golden morning sunlight, soft directional light, gentle shadows, and natural glow seen in the reference. Preserve the same rural village courtyard setting with the clay Pongal pot boiling on a wood fire, soft smoke rising, sugarcane plants nearby, earthy ground, and colorful kolam beneath the feet. The person is dressed in a traditional Pongal outfit: white veshti (dhoti) with a rich golden zari border and a matching silk red or earthy-toned shirt, with a single subtle line of vibuthi on the forehead. The person confidently carries a fresh sugarcane stalk resting on the shoulder, smiling naturally with a joyful, proud, and culturally rooted expression. Keep camera angle, depth of field, color temperature, and lighting mood exactly matching the reference image for maximum realism.",
+  "style": "ultra-photorealistic, cinematic rural photography",
+  "lighting": "warm golden sunlight, soft natural morning light, realistic shadows",
+  "camera": "eye-level, shallow depth of field, natural perspective",
+  "quality": "high detail, natural skin tones, realistic textures",
+  "aspect_ratio": "4:5"
+}
 ```
 
 </details>
@@ -24006,7 +28778,27 @@ A cinematic night-time portrait of a young woman standing outdoors, softly lit b
         "hair": "voluminous chestnut brown waves, side-part, glossy but natural (no blonde highlights)",
         "makeup": "party glam, defined eyeliner and lashes, warm blush, soft matte red or nude-red lips",
         "jewelry": "medium hoop earrings (optional)",
-      
+        "wardrobe": "sparkly red strapless mini dress, fitted silhouette"
+      },
+
+      "poses_by_frame": {
+        "frame_1": "three-quarter pose, mouth slightly open as if mid-laugh, looking toward camera",
+        "frame_2": "playful kissy face, hand gently touching cheek, eyes to camera",
+        "frame_3": "close angle with head tilt, soft smile, eyes to camera",
+        "frame_4": "hand under chin or near jawline, confident side profile, eyes to camera"
+      },
+
+      "camera_style": {
+        "device_feel": "real phone flash snapshot",
+        "lens_feel": "slight wide-angle, mild perspective distortion",
+        "framing": "mid-shot to tight portrait across frames",
+        "texture": "authentic skin texture, subtle noise/grain"
+      },
+
+      "negative_prompt": "blonde hair, highlights, text overlays, watermarks, logos, heavy beauty filter, plastic skin, HDR, studio lighting, harsh overexposed flash, distorted face, extra fingers, deformed hands, messy artifacts, low-res"
+    }
+  }
+}
 ```
 
 </details>
@@ -24064,7 +28856,347 @@ A cinematic night-time portrait of a young woman standing outdoors, softly lit b
   "composition": {
     "camera_angle": "Eye-level (all panels)",
     "framing": "Wide (Top), Medium Close-up (Middle), Wide (Bottom)",
-    "depth_of_field": "Deep (Top), Shallo
+    "depth_of_field": "Deep (Top), Shallow (Middle), Deep (Bottom)",
+    "focal_point": "Panel 1: Car center; Panel 2: Woman's face; Panel 3: Illuminated menu board",
+    "symmetry_type": "Horizontal stacking",
+    "rule_of_thirds_alignment": "Woman aligned center; Car aligned lower third of top panel; Diner counter aligned lower third of bottom panel"
+  },
+  "objects": [
+    {
+      "id": "panel1_car",
+      "label": "Classic Muscle Car",
+      "category": "Vehicle",
+      "location": {
+        "relative_position": "Top Panel - Center/Bottom",
+        "bounding_box_percentage": {
+          "x": 0.15,
+          "y": 0.15,
+          "width": 0.7,
+          "height": 0.15
+        }
+      },
+      "dimensions_relative": "Large",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Side profile facing left",
+      "material": "Metal, Glass, Chrome",
+      "surface_properties": {
+        "texture": "Smooth automotive paint",
+        "reflectivity": "High",
+        "micro_details": "Chrome window trim, door handle, side marker light, hood scoop",
+        "wear_state": "Pristine/Restored"
+      },
+      "color_details": {
+        "base_color_hex": "#FFA500",
+        "secondary_colors": [
+          "#000000",
+          "#C0C0C0"
+        ],
+        "gradient_or_pattern": "Solid yellow with orange lighting gradients"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Sharp shadows underneath on wet pavement",
+        "highlight_zones": "Roof line, rear quarter panel, hood",
+        "translucency": "None"
+      }
+    },
+    {
+      "id": "panel1_gas_station",
+      "label": "Gas Station Canopy & Pumps",
+      "category": "Structure",
+      "location": {
+        "relative_position": "Top Panel - Top/Left",
+        "bounding_box_percentage": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.5,
+          "height": 0.25
+        }
+      },
+      "dimensions_relative": "Large",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Structural background",
+      "material": "Metal, Plastic, Concrete",
+      "surface_properties": {
+        "texture": "Industrial",
+        "reflectivity": "Medium",
+        "micro_details": "Strip lighting, fuel pump nozzles, support pillars",
+        "wear_state": "Clean"
+      },
+      "color_details": {
+        "base_color_hex": "#FF4500",
+        "secondary_colors": [
+          "#FFFF00"
+        ],
+        "gradient_or_pattern": "Linear neon strips"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Casts orange glow onto car and ground",
+        "highlight_zones": "Light tubes",
+        "translucency": "None"
+      }
+    },
+    {
+      "id": "panel1_pavement",
+      "label": "Wet Asphalt",
+      "category": "Environment",
+      "location": {
+        "relative_position": "Top Panel - Bottom",
+        "bounding_box_percentage": {
+          "x": 0.0,
+          "y": 0.25,
+          "width": 1.0,
+          "height": 0.08
+        }
+      },
+      "dimensions_relative": "Wide",
+      "distance_from_camera": "Near to Mid",
+      "pose_orientation": "Horizontal plane",
+      "material": "Asphalt/Water",
+      "surface_properties": {
+        "texture": "Rough but wet",
+        "reflectivity": "High (Mirror-like reflections)",
+        "micro_details": "Puddles, ripples, reflected neon",
+        "wear_state": "Wet"
+      },
+      "color_details": {
+        "base_color_hex": "#050505",
+        "secondary_colors": [
+          "#FFA500"
+        ],
+        "gradient_or_pattern": "Reflective gradients"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "None",
+        "highlight_zones": "Puddle reflections",
+        "translucency": "None"
+      }
+    },
+    {
+      "id": "panel2_woman",
+      "label": "Portrait Subject",
+      "category": "Person",
+      "location": {
+        "relative_position": "Middle Panel - Center",
+        "bounding_box_percentage": {
+          "x": 0.3,
+          "y": 0.35,
+          "width": 0.4,
+          "height": 0.3
+        }
+      },
+      "dimensions_relative": "Medium",
+      "distance_from_camera": "Near",
+      "pose_orientation": "Front facing, head slightly tilted, gaze direct",
+      "material": "Skin, Hair, Leather Fabric",
+      "surface_properties": {
+        "texture": "Soft skin, frizzy/curly hair, glossy leather",
+        "reflectivity": "Low (skin), Medium (leather)",
+        "micro_details": "Flyaway hairs, collar details, zipper highlights",
+        "wear_state": "N/A"
+      },
+      "color_details": {
+        "base_color_hex": "#E0AC69",
+        "secondary_colors": [
+          "#101010",
+          "#333333"
+        ],
+        "gradient_or_pattern": "N/A"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Soft facial shadowing",
+        "highlight_zones": "Cheekbone, hair rim light, leather jacket ridges",
+        "translucency": "Subsurface scattering on skin"
+      }
+    },
+    {
+      "id": "panel2_background",
+      "label": "Urban Fog Environment",
+      "category": "Background",
+      "location": {
+        "relative_position": "Middle Panel - Full Background",
+        "bounding_box_percentage": {
+          "x": 0.0,
+          "y": 0.33,
+          "width": 1.0,
+          "height": 0.33
+        }
+      },
+      "dimensions_relative": "Background",
+      "distance_from_camera": "Far",
+      "pose_orientation": "N/A",
+      "material": "Fog/Atmosphere",
+      "surface_properties": {
+        "texture": "Gaseous/Hazy",
+        "reflectivity": "None",
+        "micro_details": "Bokeh circles, light diffusion",
+        "wear_state": "N/A"
+      },
+      "color_details": {
+        "base_color_hex": "#CC7A00",
+        "secondary_colors": [
+          "#004444"
+        ],
+        "gradient_or_pattern": "Gradient from warm center to cool edges"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "None",
+        "highlight_zones": "Light sources behind fog",
+        "translucency": "High"
+      }
+    },
+    {
+      "id": "panel3_menu_board",
+      "label": "Illuminated Menu",
+      "category": "Signage",
+      "location": {
+        "relative_position": "Bottom Panel - Top Center",
+        "bounding_box_percentage": {
+          "x": 0.15,
+          "y": 0.67,
+          "width": 0.7,
+          "height": 0.05
+        }
+      },
+      "dimensions_relative": "Medium width",
+      "distance_from_camera": "Mid",
+      "pose_orientation": "Horizontal overhead",
+      "material": "Plastic/Acrylic",
+      "surface_properties": {
+        "texture": "Smooth",
+        "reflectivity": "Low",
+        "micro_details": "Internal illumination, text lines",
+        "wear_state": "New"
+      },
+      "color_details": {
+        "base_color_hex": "#FFCC00",
+        "secondary_colors": [
+          "#FF0000"
+        ],
+        "gradient_or_pattern": "Glowing yellow box"
+      },
+      "text_content": {
+        "raw_text": "Cromonys ... Prooc... (Pseudo-text illegible)",
+        "font_style": "Cursive script and small sans-serif list",
+        "font_weight": "Regular",
+        "text_case": "Mixed",
+        "alignment": "Center/Spread",
+        "color_hex": "#CC0000"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Source of light for counter",
+        "highlight_zones": "Entire surface glowing",
+        "translucency": "Translucent plastic"
+      }
+    },
+    {
+      "id": "panel3_counter",
+      "label": "Diner Counter & Stools",
+      "category": "Furniture",
+      "location": {
+        "relative_position": "Bottom Panel - Bottom",
+        "bounding_box_percentage": {
+          "x": 0.0,
+          "y": 0.85,
+          "width": 1.0,
+          "height": 0.15
+        }
+      },
+      "dimensions_relative": "Wide",
+      "distance_from_camera": "Near",
+      "pose_orientation": "Horizontal foreground",
+      "material": "Tile, Chrome, Vinyl",
+      "surface_properties": {
+        "texture": "Grid tiles on wall, smooth stool tops",
+        "reflectivity": "Medium (Chrome legs)",
+        "micro_details": "Grout lines, chrome reflections of floor",
+        "wear_state": "Clean"
+      },
+      "color_details": {
+        "base_color_hex": "#8B4513",
+        "secondary_colors": [
+          "#C0C0C0",
+          "#EFEFEF"
+        ],
+        "gradient_or_pattern": "Square tile pattern under counter"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Stools cast shadows on floor",
+        "highlight_zones": "Chrome rims of stools",
+        "translucency": "None"
+      },
+      "relationships": [
+        {
+          "type": "supporting",
+          "target_object_id": "panel3_stools"
+        }
+      ]
+    },
+    {
+      "id": "panel3_kitchen",
+      "label": "Back Kitchen Area",
+      "category": "Interior",
+      "location": {
+        "relative_position": "Bottom Panel - Center Depth",
+        "bounding_box_percentage": {
+          "x": 0.0,
+          "y": 0.72,
+          "width": 1.0,
+          "height": 0.13
+        }
+      },
+      "dimensions_relative": "Full Width",
+      "distance_from_camera": "Far",
+      "pose_orientation": "Background depth",
+      "material": "Stainless steel, Glass, Ceramic",
+      "surface_properties": {
+        "texture": "Cluttered, metallic",
+        "reflectivity": "High (steel equipment)",
+        "micro_details": "Stacks of plates, coffee machine, cups, dispensers",
+        "wear_state": "In use"
+      },
+      "color_details": {
+        "base_color_hex": "#A9A9A9",
+        "secondary_colors": [
+          "#FFFFFF",
+          "#FFA500"
+        ],
+        "gradient_or_pattern": "N/A"
+      },
+      "interaction_with_light": {
+        "shadow_casting": "Complex internal shadows",
+        "highlight_zones": "Reflections on coffee machine",
+        "translucency": "None"
+      }
+    }
+  ],
+  "background_details": {
+    "texture": "Panel 1: Sky/Trees; Panel 2: Fog; Panel 3: Kitchen clutter",
+    "patterns": "Panel 1: Horizontal neon; Panel 3: Grid tiles",
+    "lighting_behavior": "Top: Directional neon; Middle: Backlit diffusion; Bottom: Warm overhead flood",
+    "additional_elements": [
+      "Bare tree branches in top panel background",
+      "Blurred street lights in middle panel",
+      "Refrigerator unit on right side of bottom panel"
+    ]
+  },
+  "foreground_elements": {
+    "particles": "Top: Rain/Mist on ground; Middle: Atmospheric haze",
+    "artifacts": "Slight chromatic aberration in middle panel, soft glow bloom on all light sources"
+  },
+  "reconstruction_notes": {
+    "mandatory_elements_for_recreation": [
+      "Three-panel vertical layout",
+      "Yellow 1969 Camaro-style car",
+      "Wet pavement reflections",
+      "Woman with curly hair and leather jacket",
+      "Volumetric fog",
+      "Diner interior with overhead yellow menu",
+      "Warm orange/yellow dominant lighting scheme"
+    ],
+    "sensitivity_factors": "The specific 'glow' and 'bloom' of the lights is critical to the retro-cinematic vibe. The color grading must match the amber/teal contrast.",
+    "ambiguities": "The text on the diner menu is AI-generated gibberish and should be treated as stylized shapes rather than readable content. Specific car model is generic muscle car mix."
+  }
+}
 ```
 
 </details>
@@ -24175,7 +29307,61 @@ Hyperrealistic dark fantasy portrait of a mysterious hooded mage standing in sno
       "lens": "24mm_equivalent",
       "aperture": "f/1.8",
       "shutter_speed": "1/120",
-      "iso
+      "iso": 640,
+      "white_balance": "indoor_warm_3600K",
+      "focus_mode": "face_detect_af",
+      "focus_priority": "faces_then_phone_edges",
+      "realism_notes": "realistic mirror smudges/dust, gentle phone HDR, slight wide-angle perspective, no artificial sharpening halos"
+    },
+    "global_scene": {
+      "setting": "grand baroque/renaissance interior with ornate columns and a dramatic fresco ceiling above",
+      "lighting": "soft ambient indoor light, natural falloff, no harsh flash; subtle highlights on hair and jackets",
+      "mood": "romantic, elegant, candid, museum-date vibe"
+    },
+    "subjects": {
+      "group": {
+        "count": 2,
+        "description": "exactly two people in a mirror selfie, kissing; one arm around waist; phone held up covering part of faces",
+        "wardrobe": {
+          "male": "dark suit or dark jacket, clean minimal, no logos",
+          "female": "white/cream coat or blazer, clean minimal, no logos"
+        },
+        "hair_detail": "female long hair flowing naturally with visible strands; male hair neat",
+        "skin_detail": "visible pores, natural texture, no beauty smoothing",
+        "hands_and_nails": "natural hands; realistic finger joints; no extra fingers"
+      }
+    },
+    "composition": {
+      "framing": "low-angle mirror selfie with ceiling fresco dominating the top of frame; couple centered lower third",
+      "background_priority": "keep fresco readable as painted ceiling (not a photo poster), preserve depth and architecture symmetry",
+      "depth_of_field": "moderate; couple sharp, ceiling slightly softer but detailed",
+      "no_extra_people": true,
+      "no_extra_animals": true,
+      "no_text": true,
+      "no_watermarks": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI)",
+      "Exact identity match to uploaded reference (both faces %100 where visible)",
+      "Exactly two people only",
+      "No glamour retouching, no plastic skin",
+      "Accurate anatomy (hands, ears, jawlines, hairline)",
+      "Realistic mirror behavior (smudges, reflections, light glare controlled)",
+      "No text, logos, watermarks, or UI overlays"
+    ],
+    "negative_prompt": [
+      "extra people",
+      "duplicate faces",
+      "identity drift, face swap artifacts",
+      "beauty filter, airbrushed skin, over-smoothed face",
+      "CGI, 3D render, illustration, anime, cartoon",
+      "warped hands, extra fingers, missing fingers",
+      "distorted phone shape, melted phone camera lenses",
+      "overexposed flash glare, blown highlights",
+      "text, watermark, logo, app UI"
+    ]
+  }
+}
 ```
 
 </details>
@@ -24241,7 +29427,40 @@ Hyperrealistic dark fantasy portrait of a mysterious hooded mage standing in sno
       "inspiration": "hand-drawn street art and animated hip-hop characters"
     },
     "pose_matching": "mirrors real subject exactly in posture, scale, and alignment",
-    "outfit_matching": "identical clothing, colors, and accessories as real sub
+    "outfit_matching": "identical clothing, colors, and accessories as real subject",
+    "interaction": {
+      "visual_connection": "illustrated hand lightly overlaps or aligns with real subject’s arm",
+      "effect": "playful illusion of cartoon and reality interacting"
+    }
+  },
+  "visual_contrast": {
+    "realism": ["fabric texture", "skin detail", "concrete grain", "natural shadows"],
+    "illustration": ["smooth color blocks", "simplified facial features", "bold outlines"]
+  },
+  "camera_settings": {
+    "lens": "50mm",
+    "aperture": "f/2.8",
+    "depth_of_field": "moderate subject separation",
+    "focus": "sharp on both real and illustrated figures"
+  },
+  "mood_and_tone": [
+    "cool",
+    "nostalgic",
+    "playful",
+    "creative",
+    "urban storytelling"
+  ],
+  "keywords": [
+    "mixed media photography",
+    "real person with cartoon twin",
+    "urban street portrait",
+    "Y2K streetwear influence",
+    "graphic illustration blend",
+    "playful surrealism",
+    "nostalgic urban culture",
+    "high-resolution cinematic detail"
+  ]
+}
 ```
 
 </details>
@@ -24327,7 +29546,10 @@ Hyperrealistic dark fantasy portrait of a mysterious hooded mage standing in sno
     "No dramatic posing",
     "No artificial glamour or studio look",
     "No text or watermarks",
-    "Must look like 
+    "Must look like a real Polaroid photo"
+  ],
+  "output_goal": "Create a realistic Polaroid-style instant photo of a boy and girl posing cutely together indoors, with white curtains behind them, flash-lit from a dark room, the boy holding a red Coca-Cola can and the girl holding a burger, maintaining an authentic, nostalgic snapshot feel."
+}
 ```
 
 </details>
@@ -24409,7 +29631,50 @@ Nano Banana Pro 🍌
       "details": "high-waisted, distressed/ripped texture, frayed hem"
     },
     "outerwear": {
-      "type": "no
+      "type": "none",
+      "color": "none",
+      "wearing_style": "none"
+    }
+  },
+
+  "accessories": {
+    "bag": "none",
+    "jewelry": "small stud earrings",
+    "props": "a single red rose held in the right hand"
+  },
+
+  "background": {
+    "setting": "indoor night scene near a window",
+    "objects": [
+      "dark window glass",
+      "window frame",
+      "distant city lights bokeh outside (very faint)"
+    ],
+    "depth_of_field": "background dark and out of focus"
+  },
+
+  "lighting": {
+    "type": "direct on-camera flash",
+    "direction": "frontal",
+    "effect": "hard flash lighting, casting a shadow behind the subject on the window frame, high contrast, vibrant colors"
+  },
+
+  "camera": {
+    "shot_type": "three-quarter shot (thighs up)",
+    "angle": "slightly low angle",
+    "focus": "sharp focus on face and rose"
+  },
+
+  "image_quality": {
+    "style": "flash photography, candid aesthetic, raw DSLR look",
+    "detail_level": "high detail on denim texture and skin",
+    "noise": "visible film grain"
+  },
+
+  "aspect_ratio": "4:5",
+  "composition": "subject leaning on the right side of the frame, creating a diagonal line with the raised arm",
+  "mood": "playful, romantic, casual, cool girl aesthetic"
+}
 ```
 
 </details>
@@ -24448,7 +29713,37 @@ Nano Banana Pro 🍌
     "HORIZON_ARC": {
       "description": "A single, clean, massive, dark horizon line arcs across the entire width of the screen from left to right. It is NOT a complete sphere, glowing ball, or circle, but the very edge of a dark planet-like surface.",
       "light_profile": "The edge itself is defined by a thin, sharp, soft-glow blue light. The light is thinnest and sharpest (purplish-blue) in the bottom-left, widening slightly to a brighter, soft white-blue rim on the right before fading. It must NOT reveal the spherical form of the surface below; the area below the arc must remain pitch black.",
-      "reflection_effect": "CR
+      "reflection_effect": "CRITICAL: There are ABSOLUTELY NO reflections of the product on the horizon surface. The surface is dark and matte."
+    },
+    "LIGHTING_AND_BACKGROUND": {
+      "background": "Pure, absolute black negative space. There are NO visible light rays, gradients, starfields, halos, or any other light shapes above or around the product.",
+      "key_lighting": "A strong key light from the TOP-LEFT sculpts the product, emphasizing its form and the logo/main feature. It does NOT create visible rays.",
+      "rim_lighting": "A distinct rim light from the BACK-LEFT separates the product from the dark background.",
+      "fill_lighting": "A soft fill light from the BOTTOM-RIGHT opens up the shadows slightly.",
+      "color_cast": "All lighting is dominated by deep, rich blues, consistent with the horizon arc."
+    },
+    "COMPOSITION_AND_FRAMING": {
+      "framing": "The product is perfectly centered. The camera distance is fixed, ensuring the product is large and dominant but NEVER cut off.",
+      "perspective": "A sharp, eye-level perspective relative to the product's center, looking slightly down towards the horizon."
+    }
+  },
+  "NEGATIVE_CONSTRAINTS": [
+    "visible light rays",
+    "glow or light source in the top left corner",
+    "product floating above the arc",
+    "product not touching the arc edge",
+    "product lying flat",
+    "visible sphere or glowing orb form below the arc",
+    "halos or circular lights above the product",
+    "harsh light glows",
+    "reflections of the product on the horizon",
+    "background other than pure black",
+    "product cut off by frame edge",
+    "upside-down or downward curve",
+    "squiggly arc"
+  ],
+  "FULL_PROMPT_STRING": "A cinematic product photograph of [product from USER_CUSTOMIZATION] with a dark, sharp, silver/chrome finish and subtle warmth. The product is perfectly centered, tilted back dramatically with its bottom-front tip precisely touching the sharp center edge of a single, massive, dark horizon arc that spans the frame. This arc is a thin, sharp, soft-glow blue light, purplish-blue in the bottom-left, widening to a soft white-blue rim on the right, before fading to pitch black. The area below the arc is absolute black. There are NO reflections on the horizon. The background is pure, light-ray-free, halo-free black negative space. There is NO glow or light source in the top left corner. Key light from the top-left, rim light from the back-left, and soft fill from the bottom-right create a dramatic, volumetric, blue-dominated lighting scheme. The product is never cut off. 8k resolution, highly detailed."
+}
 ```
 
 </details>
@@ -24544,7 +29839,13 @@ Negative: [Human presence, massive scale, blurry, low resolution, bad geometry, 
       "background": "Dark blurred backdrop",
       "atmosphere": "Soft pink fluffy foreground bokeh element"
     },
-    "mood": "G
+    "mood": "Glamorous K-beauty editorial, sensual yet elegant",
+    "technical_tags": ["8K", "photorealistic", "beauty photography", "extreme shallow depth of field", "skin texture detail", "glitter particles sharp"],
+    "character_reference": "Based on user-uploaded character reference",
+    "clothing_reference": "Based on user-uploaded clothing reference",
+    "negative_prompt": "harsh contrast, crunchy texture, orange skin, waxy skin, oversharpening, overly vivid colors, harsh lighting"
+  }
+}
 ```
 
 </details>
@@ -24630,7 +29931,34 @@ A handcrafted felt miniature scene featuring a soft wool doll character with sim
     "framing": "Medium-close portrait (Waist-up focus)",
     "perspective": "Medium low-angle (Hero shot)",
     "pose_architecture": {
-      "stance": "Three-quarter front view, confiden
+      "stance": "Three-quarter front view, confident posture",
+      "weight_distribution": "Balanced on a pebbled surface, slight lean toward lens"
+    },
+    "optics": {
+      "lens_emulation": "85mm Prime f/1.2",
+      "depth_of_field": "Shallow (Subject sharp / Background creamy bokeh)",
+      "focus_point": "Subject's eyes"
+    }
+  },
+  "environmental_layers": {
+    "foreground": "Macro-detailed wet pebbles and sea-worn stones",
+    "midground": "Crystal-clear turquoise Mediterranean sea with caustic light patterns",
+    "background": [
+      "Jagged coastal cliffs with atmospheric haze",
+      "Distant, minimalist white sailboat on the horizon line"
+    ],
+    "lighting_design": "Natural high-noon sun with cinematic bounce-card fill"
+  },
+  "technical_integrity": {
+    "denoise_strength": "0.15",
+    "rendering_directives": [
+      "No AI artifacts",
+      "No plastic/wax skin textures",
+      "Accurate finger/hand anatomy",
+      "Correct light-bounce from gold jewelry onto skin"
+    ]
+  }
+}
 ```
 
 </details>
@@ -24728,7 +30056,52 @@ Lighting: soft studio lighting from the front with subtle side shadows, even ski
       },
       "background": "Dark, nearly black, softly blurred",
       "surface_reflections": "Glossy reflections visible in liquid surface",
-      "mood": "Intens
+      "mood": "Intense, dramatic, high-impact"
+    },
+
+    "module_2_image_2_style": {
+      "scene_type": "Mid-air food reveal",
+      "subject": "Single fried chicken drumstick",
+      "action": "Drumstick suspended above an open food box",
+      "crumb_motion": "Crumbs falling downward from drumstick",
+      "container": {
+        "type": "Cardboard food box",
+        "color": "White exterior with red interior accents",
+        "state": "Open lid, visible interior"
+      },
+      "lighting": {
+        "style": "Soft studio light",
+        "effect": "Even illumination with gentle highlights"
+      },
+      "background": {
+        "tone": "Bright, light neutral",
+        "depth": "Shallow depth of field, softly blurred"
+      },
+      "texture_visibility": "Highly defined crunchy coating",
+      "mood": "Clean, fresh, appetizing, modern"
+    },
+
+    "module_3_image_3_style": {
+      "scene_type": "Explosive reveal action shot",
+      "subject": "Single fried chicken drumstick",
+      "action": "Drumstick bursting upward from food box",
+      "explosion_elements": {
+        "crumbs": "Large and small fragments radiating outward",
+        "direction": "Radial burst from center"
+      },
+      "lighting": {
+        "backlight": "Strong radial backlight creating light rays",
+        "contrast": "High contrast between subject and background"
+      },
+      "container": {
+        "type": "Cardboard food box",
+        "color": "Red and white",
+        "text_visibility": "Visible word 'CHICKEN' on front"
+      },
+      "background": "Dark with bright light rays emanating behind subject",
+      "surface": "Dark tabletop with scattered crumbs",
+      "mood": "Energetic, bold, cinematic"
+    }
 ```
 
 </details>
@@ -24811,7 +30184,35 @@ Lighting: soft studio lighting from the front with subtle side shadows, even ski
 },
 "artistic_style": {
 "genre": "urban lifestyle portrait",
-"mood":
+"mood": "nostalgic, gritty, stylish",
+"influences": [
+"street photography",
+"cinematic editorial fashion"
+],
+"texture": "visible grain, emphasis on rust and fabric detail"
+},
+"post_processing": {
+"grain": "moderate film grain",
+"sharpening": "selective sharpening on subject",
+"contrast_curve": "soft highlights with lifted blacks",
+"vignette": "subtle vignette around edges"
+},
+"background_details": {
+"architecture": "concrete apartment blocks with repetitive windows",
+"color": "neutral beige and gray tones",
+"blur_level": "light background separation without heavy bokeh"
+},
+"overall_aesthetic": {
+"theme": "urban decay meets modern fashion",
+"visual_story": "individuality and style emerging from neglected environments",
+"use_case"
+: [
+"editorial fashion",
+"UGC influencer content",
+"cinematic portrait reference"
+]
+}
+}
 ```
 
 </details>
@@ -24887,7 +30288,17 @@ Lighting: soft studio lighting from the front with subtle side shadows, even ski
     "uncanny valley",
     "scary doll",
     "low-quality 3D",
-    "harsh 
+    "harsh lighting",
+    "oversaturated colors",
+    "blurry focus",
+    "flat expression"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -24971,7 +30382,69 @@ A hyper-realistic 3D photo concept showing a hand holding a square polaroid phot
         "table placement, food, drinks, cutlery",
         "camera angle and framing",
         "natural daylight feel"
+      ],
+      "what_to_change": [
+        "replace the current sea/mountain background with Istanbul Bosphorus scenery",
+        "add a stylish woman across the table",
+        "adjust outdoor elements to match Bebek waterfront breakfast setting"
       ]
+    },
+    "creative_prompt": {
+      "scene_summary": "Photorealistic breakfast cafe scene at Bebek, Istanbul. Same man from the reference sits at the table. Across from him sits a chic, beautiful woman wearing a black spaghetti-strap dress and fashionable sunglasses. Behind them: Istanbul Bosphorus waterfront view with iconic shoreline, passing ferries/yachts, and recognizable Istanbul vibe. Bright clear daytime, upscale brunch atmosphere.",
+      "environment": {
+        "location": "Bebek, Istanbul (Bebek sahil / Boğaz hattı)",
+        "background": [
+          "Bosphorus waterfront and Istanbul shoreline",
+          "boats/ferries on the Bosphorus (realistic, not oversized)",
+          "distant city silhouette consistent with Istanbul",
+          "summer daylight, light haze over the water"
+        ],
+        "table_setting": "keep exactly as in the reference; breakfast plates and drinks unchanged",
+        "ambience": "upscale calm brunch, refined coastal cafe seating"
+      },
+      "woman_subject": {
+        "positioning": "seated across the table from the man, facing toward camera at a slight angle",
+        "appearance": {
+          "outfit": "black spaghetti-strap dress, elegant, fully opaque, tasteful neckline",
+          "eyewear": "stylish black sunglasses (fashion, high-end look)",
+          "hair": "well-groomed, glossy, chic styling (natural, not exaggerated)",
+          "makeup": "soft glam, natural skin texture"
+        },
+        "pose_expression": {
+          "pose": "relaxed seated posture, one hand near coffee/glass or resting on table edge (do not cover face)",
+          "expression": "subtle confident smile or calm neutral"
+        }
+      },
+      "photography_style": {
+        "type": "smartphone lifestyle photo realism",
+        "lighting": "natural daylight, even exposure, realistic reflections on sunglasses",
+        "depth_of_field": "moderate; subjects sharp, background slightly softer but recognizable",
+        "color_grading": "clean, true-to-life, Mediterranean daylight tone"
+      }
+    },
+    "negative_prompt": [
+      "identity drift",
+      "face morphing",
+      "changing the man's face or sunglasses",
+      "moving or changing the table items",
+      "extra people",
+      "deformed hands",
+      "extra fingers",
+      "warped anatomy",
+      "blurred faces",
+      "plastic skin",
+      "beauty filter",
+      "text",
+      "logos",
+      "watermark",
+      "cartoon",
+      "anime",
+      "cgi render",
+      "unrealistic Istanbul landmarks (wrong skyline)",
+      "oversized boats or incorrect perspective"
+    ]
+  }
+}
 ```
 
 </details>
@@ -24988,7 +30461,7 @@ A hyper-realistic 3D photo concept showing a hand holding a square polaroid phot
 <summary>📋 View Prompt</summary>
 
 ```
-A full-length portrait of a woman with a biker-chic style, sitting sideways on a customized motorcycle on an urban street. She has long, wavy brown hair, partially blown by the wind, and a direct, confident gaze toward the camera, with a slight smile on her lips. Her makeup is striking, with well-defined eyes. She wears a faded, slightly fitted blue denim jacket with subtle emblems on the shoulders, over a dark (possibly black) blouse with a subtle V-neckline. Black jeans ripped at the knees and black rocker-style boots complete the look. She sits cross-legged on the motorcycle seat, her hands clasped together. A black bracelet and a silver-and-gold wristwatch are visible on her arms. The motorcycle has chrome details and a chunky rear tire. In the background, the urban street is slightly blurred, with buildings and city lights creating an authentic and atmospheric ambiance. The lighting is natural and diffuse, with a touch of brighter light coming from above, highlighting her features and the texture of her clothing.  Professional camera settings: Camera: Full-frame DSLR/Mirrorless. Lens: 50mm f/1.4 or 85mm f/1.8 (for a full-body portrait that still offers good background blur and compression). Aperture (f-stop): f/2.0 - f/3.5 (for a soft blur of the urban background, while maintaining sharpness on the model and the details of the motorcycle in the foreground). ISO: 200 - 400 (to take advantage of natural light outdoors). Shutter speed: 1/160s - 1/250s (to ensure sharpness and freeze any subtle movement). Lighting: Natural ambient light, ideally on an overcast day or in an open shaded area for soft, diffused light. A large, subtly positioned silver reflector can be used in front and below to fill in shadows and highlight details of the face and clothing, maintaining the authenticity of the scene.  Instructions for the "nano banana": Instruct the model to sit sideways on a customized motorcycle, with her legs crossed and her hands clasped on her hips. She should wea
+A full-length portrait of a woman with a biker-chic style, sitting sideways on a customized motorcycle on an urban street. She has long, wavy brown hair, partially blown by the wind, and a direct, confident gaze toward the camera, with a slight smile on her lips. Her makeup is striking, with well-defined eyes. She wears a faded, slightly fitted blue denim jacket with subtle emblems on the shoulders, over a dark (possibly black) blouse with a subtle V-neckline. Black jeans ripped at the knees and black rocker-style boots complete the look. She sits cross-legged on the motorcycle seat, her hands clasped together. A black bracelet and a silver-and-gold wristwatch are visible on her arms. The motorcycle has chrome details and a chunky rear tire. In the background, the urban street is slightly blurred, with buildings and city lights creating an authentic and atmospheric ambiance. The lighting is natural and diffuse, with a touch of brighter light coming from above, highlighting her features and the texture of her clothing.  Professional camera settings: Camera: Full-frame DSLR/Mirrorless. Lens: 50mm f/1.4 or 85mm f/1.8 (for a full-body portrait that still offers good background blur and compression). Aperture (f-stop): f/2.0 - f/3.5 (for a soft blur of the urban background, while maintaining sharpness on the model and the details of the motorcycle in the foreground). ISO: 200 - 400 (to take advantage of natural light outdoors). Shutter speed: 1/160s - 1/250s (to ensure sharpness and freeze any subtle movement). Lighting: Natural ambient light, ideally on an overcast day or in an open shaded area for soft, diffused light. A large, subtly positioned silver reflector can be used in front and below to fill in shadows and highlight details of the face and clothing, maintaining the authenticity of the scene.  Instructions for the "nano banana": Instruct the model to sit sideways on a customized motorcycle, with her legs crossed and her hands clasped on her hips. She should wear a blue denim jacket, a dark t-shirt, ripped black jeans, and black boots. Her hair should be long, brown, and wavy, slightly flowing. Her expression should be confident and with a slight smile, looking directly at the camera. The background should be an urban street with blurred building elements, enhancing the "biker" feel.  "Please use the female user's reference photo to apply all of her facial features, facial structure, eye color, skin tone, hair style, and color to the female figure in the image."
 ```
 
 </details>
@@ -25067,7 +30540,80 @@ Beard neatly trimmed, edges soft and organic, not sharply sculpted.
 
 ---
 
-Wardrobe & Styli
+Wardrobe & Styling
+
+Cozy red knit sweater with small white heart motifs.
+Fabric appears thick and warm, with:
+
+visible knit texture
+
+realistic folds and stretch around elbows and shoulders
+
+natural drape and compression at contact points
+Sweater reads as casual, intimate, and personal — not fashion-staged.
+
+---
+
+Environment & Props
+
+Simple indoor setting with a wooden table surface.
+An open book placed naturally in front of the subject, pages slightly curved and imperfect.
+Background softly blurred, suggesting a quiet home or café interior.
+No distracting elements, environment supports calm and intimacy.
+
+---
+
+Lighting
+
+Soft natural window light only.
+Light falls gently across the face, creating smooth highlight-to-shadow transitions.
+Warm, diffused illumination with no harsh shadows.
+No artificial lighting, no flash, no studio feel.
+
+---
+
+Camera & Optics
+
+Photographer mindset.
+Full-frame look with a 50–55mm perspective.
+Shallow depth of field — face and eyes in sharp focus, background softly blurred.
+Natural optical falloff with subtle softness, not clinical sharpness.
+
+---
+
+Color & Film Feel
+
+Warm, restrained color palette:
+
+deep knit red
+
+natural skin tones
+
+warm wood browns
+
+soft neutral background hues
+Film-inspired tonality similar to Portra-style color science:
+soft contrast, gentle highlights, realistic skin color retention.
+No HDR, no heavy grading, no oversaturation.
+
+---
+
+Style & Realism
+
+Cinematic realism with emotional subtlety.
+Feels like a real lifestyle or fashion editorial captured on natural light.
+Quiet, confident, intimate — grounded in reality.
+No exaggeration, no fantasy elements.
+
+---
+
+Technical
+
+Aspect ratio: 3:4
+High resolution, ultra-photorealistic detail
+Natural grain structure
+Shallow depth of field
+No text, no logos, no watermarks
 ```
 
 </details>
@@ -25144,7 +30690,51 @@ Core Intent: Create a photorealistic candid street-fashion portrait with extreme
 
 •Busy metropolitan sidewalk/street scene, crowd density high.
 
-•Background palette: teal/green
+•Background palette: teal/green-grey city haze + yellow cab + warm orange bokeh lights.
+
+•No readable signage, no sharp background details—everything behind subject remains creamy blur.
+
+5) Lighting (LOCK)
+
+•Natural daylight, overcast-to-soft sun (diffused), no harsh shadows.
+
+•Subject face evenly lit with gentle highlights on cheekbones and nose; cinematic soft contrast.
+
+6) Camera & Optics (CRITICAL)
+
+•Look: telephoto candid portrait with strong compression.
+
+•Lens: 85mm–135mm range, wide open (f/1.4–f/2.0).
+
+•Focus: tack-sharp on subject’s eyes and eyelashes; foreground and background strongly out of focus.
+
+•Depth: creamy bokeh, smooth falloff, mild cat-eye bokeh at edges.
+
+•Shutter/feel: background crowd appears naturally blurred from DOF; slight motion blur suggested in foreground figures.
+
+7) Color Science / Grade (LOCK)
+
+•Cinematic teal/green wash in shadows and background.
+
+•Warm highlights (skin tones natural, slightly warm).
+
+•Yellow taxi pops softly; orange bokeh lights glow.
+
+•Fine film grain, subtle halation on bright bokeh points, gentle vignette.
+
+8) Texture & Realism
+
+•Natural skin texture (pores, freckles visible).
+
+•Hair flyaways crisp near face.
+
+•Trench fabric weave visible on in-focus areas.
+
+•Editorial street-photo realism, not stylized/illustrated.
+
+Negative Prompt (STRICT)
+
+No text, no logos, no watermarks, no extra accessories, no hats, no sunglasses, no smile, no heavy makeup, no studio lighting, no perfect skin blur, no oversharpening, no HDR look, no cartoon/CGI, no extra taxis, no added objects, no duplicated faces, no distorted hands, no background readability.
 ```
 
 </details>
@@ -25212,7 +30802,75 @@ Core Intent: Create a photorealistic candid street-fashion portrait with extreme
     },
     "style": {
       "realism": "ultra photoreal",
-  
+      "grain": "subtle",
+      "color_grade": "warm night tones, natural skin"
+    }
+  },
+  "subjects": {
+    "woman": {
+      "identity": "EXACT same face as female_reference",
+      "pose": "hugging the man with arms around his shoulders/neck while staying slightly turned toward the camera",
+      "expression": "happy candid smile to camera (teeth optional), relaxed and affectionate",
+      "head_position": "slightly tilted toward the man to receive a cheek kiss; keep her face fully visible",
+      "styling": {
+        "hair": "sleek pulled-back bun (glossy, elegant)",
+        "jewelry": [
+          "gold sun/star statement earrings (clearly visible)",
+          "subtle gold bracelets"
+        ],
+        "outfit": "evening party outfit, fully opaque, no readable logos"
+      }
+    },
+    "man": {
+      "identity": "EXACT same face as male_reference",
+      "pose": "kissing the woman's cheek (closed-mouth, PG-13) while holding her around her waist/back",
+      "expression": "soft smile while kissing; affectionate",
+      "head_position": "leaning in from the right side, lips touching her cheek; do not block her face",
+      "styling": {
+        "hair": "natural slightly tousled",
+        "facial_hair": "natural stubble/beard consistent",
+        "outfit": "light shirt or party outfit, no readable logos"
+      }
+    }
+  },
+  "hard_constraints": [
+    "Two people only.",
+    "Exact identity match to both references (no drift).",
+    "Man kisses woman's cheek only (PG-13, closed-mouth).",
+    "Woman's face must remain fully visible (no blocking).",
+    "No text/logos/watermarks.",
+    "Correct anatomy: no extra fingers/limbs."
+  ],
+  "negative_prompt": [
+    "identity drift",
+    "face swap artifacts",
+    "wrong facial features",
+    "deformed hands",
+    "extra fingers",
+    "extra limbs",
+    "duplicate faces",
+    "blurred faces",
+    "over-smoothed skin",
+    "plastic skin",
+    "text",
+    "logos",
+    "watermark",
+    "cartoon",
+    "anime",
+    "cgi render",
+    "explicit sexual content",
+    "open-mouth kissing",
+    "tongue kissing",
+    "man covering woman's face"
+  ],
+  "output_settings": {
+    "resolution_target": "ultra_high_res",
+    "aspect_ratio": "3:4",
+    "sharpness": "natural",
+    "film_grain": "subtle",
+    "text_rendering": "none"
+  }
+}
 ```
 
 </details>
@@ -25331,7 +30989,39 @@ High-contrast black-and-white studio photo of a woman seated on the floor wearin
   },
   "lighting": {
     "light_source": "natural sunlight",
-    "direction": "strong side lighting from upper left"
+    "direction": "strong side lighting from upper left",
+    "contrast": "high contrast between lit and shadowed areas",
+    "highlights": "pronounced highlights on cheekbones, nose bridge, lips",
+    "shadows": "soft shadow across right side of face"
+  },
+  "background": {
+    "environment": "outdoor setting",
+    "background_color": "solid blue",
+    "detail_level": "no visible objects or textures",
+    "blur": "completely blurred / smooth"
+  },
+  "color_grading": {
+    "overall_tone": "natural, warm",
+    "skin_color_balance": "warm highlights with neutral shadows",
+    "saturation": "moderate"
+  },
+  "image_quality": {
+    "sharpness": "high facial detail",
+    "texture_detail": "visible skin highlights and hair strands",
+    "noise": "minimal",
+    "realism": "photorealistic"
+  },
+  "mood_and_style": {
+    "mood": "serene, editorial",
+    "style": "fashion/editorial portrait",
+    "aesthetic": "clean, minimal, natural light"
+  },
+  "technical_notes": {
+    "focus_point": "eyes and lips",
+    "motion": "hair shows slight motion, subject otherwise still",
+    "post_processing": "light retouching, natural finish preserved"
+  }
+}
 ```
 
 </details>
@@ -25366,7 +31056,9 @@ Minimalist decor including a woven straw mat, a wooden box, and a potted branch 
 
 grid
 
-Soft natural daylight with diffused shadows, no harsh highlights Mood & Aesthetic:- The overall vibe is quiet luxury meets Japanese-inspired minimal streetwear, blending modern fashion, utilitarian design, and calmeditorial styling. The image feels like a fashion lookbook or lifestyle editorial, with emphasis on silhouette, tex
+Soft natural daylight with diffused shadows, no harsh highlights Mood & Aesthetic:- The overall vibe is quiet luxury meets Japanese-inspired minimal streetwear, blending modern fashion, utilitarian design, and calmeditorial styling. The image feels like a fashion lookbook or lifestyle editorial, with emphasis on silhouette, texture, and effortless cool.
+
+Style Keywords:- Minimalist streetwear, neutral tones, oversized fashion, utilitarian cargo pants, androgynous style, editorial fashion collage, modern zen aesthetic, Japanese-inspired fashion, muted color palette.
 ```
 
 </details>
@@ -25487,7 +31179,58 @@ Soft natural daylight with diffused shadows, no harsh highlights Mood & Aestheti
       },
       "motion_elements": {
         "liquid": "cream and strawberry liquid splashing outward",
-        "float
+        "floating_objects": [
+          "metal spoons with pink liquid",
+          "whole strawberries",
+          "mint leaves",
+          "droplets"
+        ]
+      },
+      "background": {
+        "style": "soft gradient with bokeh particles",
+        "colors": [
+          "peach",
+          "blue",
+          "cream"
+        ],
+        "lighting": "bright highlights with soft shadows"
+      }
+    },
+
+    "Module_3_Image_Style": {
+      "subject": "Spherical scoop composition of strawberry and vanilla ice cream",
+      "ice_cream": {
+        "layers": [
+          "pink strawberry scoop",
+          "white vanilla scoop"
+        ],
+        "embedded_elements": [
+          "halved strawberries",
+          "whole strawberries"
+        ]
+      },
+      "motion_elements": {
+        "liquid": "pink strawberry liquid splashing and dripping downward",
+        "floating_objects": [
+          "blueberries",
+          "strawberries",
+          "liquid droplets"
+        ],
+        "utensils": "metal spoons suspended mid-air with liquid"
+      },
+      "surface_detail": {
+        "texture": "smooth ice cream with visible melting edges",
+        "droplets": "high-gloss liquid beads"
+      },
+      "background": {
+        "style": "cool-toned blur",
+        "colors": [
+          "light blue",
+          "gray"
+        ],
+        "lighting": "clean studio lighting with specular highlights"
+      }
+    }
 ```
 
 </details>
@@ -25722,7 +31465,38 @@ Signature: DUET
   "ArtDirection": {
     "Style": "Modern celebratory poster",
     "Aesthetic": "Stylish, cinematic, social-media–ready",
-    "DetailLevel": 
+    "DetailLevel": "Ultra-detailed textures and crisp edges",
+    "RealismLevel": "Photorealistic with graphic design overlays"
+  },
+  "PhotographyStyle": {
+    "Genre": "Professional studio portrait photography",
+    "Finish": "High-end, polished, digital poster look",
+    "Resolution": "Ultra-high resolution, sharp focus"
+  },
+  "Mood": {
+    "Tone": "Celebratory, confident, modern",
+    "Energy": "Positive, stylish, personal"
+  },
+  "NegativePrompt": [
+    "messy composition",
+    "low resolution",
+    "flat lighting",
+    "oversaturated neon",
+    "cartoon style",
+    "blurry text",
+    "cluttered background"
+  ],
+  "ResponseFormat": {
+    "Type": "Single composite image",
+    "Orientation": "Portrait",
+    "AspectRatio": "4:5",
+    "UseCase": [
+      "Social media post",
+      "Birthday poster",
+      "Digital celebration graphic"
+    ]
+  }
+}
 ```
 
 </details>
@@ -25739,7 +31513,7 @@ Signature: DUET
 <summary>📋 View Prompt</summary>
 
 ```
-A full-body fashion portrait of a young man standing confidently on an open rooftop parking lot under a clear blue daytime sky, with distant city buildings softly blurred in the background. He is positioned slightly angled toward the camera, weight shifted onto one leg, with both hands casually placed inside the pockets of his black pants, creating a relaxed yet stylishposture. His expression is calm and self-assured, with a subtle, composed gaze directed toward the camera. He has a youthful face with smooth medium skin tone, a neatly groomed thin mustache, straight nose, defined jawline, and expressive eyes that convey quiet confidence. His hair is dark, thick, and neatly styled with volume, combed back and slightly to the side, giving a clean, polished look. He is wearing a bold, color-blocked zip-up jacket featuring vibrant red, blue, green, yellow, and black panels arranged in a geometric pattern, with a black ribbed collar and zipper running down the center. The jacket fits comfortably and stands out strongly against the neutral rooftop setting. He pairs it with loose-fitting black pants and colorful athletic sneakers that echo the playful color palette of the jacket. Around his body, subtle stylized graphic accents appear—small curved strokes and confetti-like shapes in matching bright colors—adding a modern, creative, illustrated effect without overpowering the realism of the photo. The lighting is natural and even, coming from daylight above, casting soft shadows and maintaining clear detail across his face and outfit. The overall mood is modern, youthful, energetic, and fashion-forward, blending realistic photography with light artistic flair. The camera is positioned at eye level, capturing a balanced, editorial-style composition with shallow depth of field that keeps the subject crisp while softly blurring the background. Use this uploaded photo as the only and exact face reference. The generated image must use this same face exactly as shown, without any
+A full-body fashion portrait of a young man standing confidently on an open rooftop parking lot under a clear blue daytime sky, with distant city buildings softly blurred in the background. He is positioned slightly angled toward the camera, weight shifted onto one leg, with both hands casually placed inside the pockets of his black pants, creating a relaxed yet stylishposture. His expression is calm and self-assured, with a subtle, composed gaze directed toward the camera. He has a youthful face with smooth medium skin tone, a neatly groomed thin mustache, straight nose, defined jawline, and expressive eyes that convey quiet confidence. His hair is dark, thick, and neatly styled with volume, combed back and slightly to the side, giving a clean, polished look. He is wearing a bold, color-blocked zip-up jacket featuring vibrant red, blue, green, yellow, and black panels arranged in a geometric pattern, with a black ribbed collar and zipper running down the center. The jacket fits comfortably and stands out strongly against the neutral rooftop setting. He pairs it with loose-fitting black pants and colorful athletic sneakers that echo the playful color palette of the jacket. Around his body, subtle stylized graphic accents appear—small curved strokes and confetti-like shapes in matching bright colors—adding a modern, creative, illustrated effect without overpowering the realism of the photo. The lighting is natural and even, coming from daylight above, casting soft shadows and maintaining clear detail across his face and outfit. The overall mood is modern, youthful, energetic, and fashion-forward, blending realistic photography with light artistic flair. The camera is positioned at eye level, capturing a balanced, editorial-style composition with shallow depth of field that keeps the subject crisp while softly blurring the background. Use this uploaded photo as the only and exact face reference. The generated image must use this same face exactly as shown, without any changes to identity, facial structure, or expression.
 ```
 
 </details>
@@ -25797,7 +31571,10 @@ Keep the tone premium and appetizing.​​​​​​​​​​​​​​�
     "Flux.1 dev",
     "Realistic Vision V6.0",
     "Juggernaut XL",
-    "Phot
+    "Photon",
+    "Midjourney v6"
+  ]
+}
 ```
 
 </details>
@@ -25936,7 +31713,86 @@ Create an eye-catching outdoor fashion portrait in a lively flower meadow under 
     "scene": {
       "location": "pottery / ceramics studio",
       "background": {
-        "walls": "dark studio walls with
+        "walls": "dark studio walls with hanging artworks and tools",
+        "details": "ceramic sculptures, jars, brushes, rolling pins, clay blocks",
+        "atmosphere": "moody, cozy, artistically cluttered"
+      },
+      "time": "late afternoon / early evening",
+      "lighting": "soft warm practical light + subtle window spill, low-key shadows"
+    },
+
+    "subjects": {
+      "female": {
+        "wardrobe": "light sleeveless top with clay stains, dusty pink apron",
+        "hair": "loose dark hair, slightly messy",
+        "pose": "sitting or leaning on the worktable, arms around partner’s neck",
+        "expression": "eyes closed or soft smile, relaxed and affectionate",
+        "details": "clay-covered hands and forearms"
+      },
+      "male": {
+        "wardrobe": "white t-shirt, neutral apron, light trousers",
+        "pose": "standing close between her legs or leaning in, one arm around waist",
+        "expression": "gentle smile, forehead touching or cheek close",
+        "details": "hands dusted with clay"
+      },
+      "interaction": "close embrace, foreheads touching, natural affectionate body language"
+    },
+
+    "props": {
+      "worktable": "wooden table covered with clay, tools, bowls, rolling pin",
+      "materials": "raw clay lumps, unfinished ceramic pieces",
+      "foreground": "soft blurred plant leaves partially framing the scene"
+    },
+
+    "photography": {
+      "camera_style": "cinematic romantic art-film still",
+      "lens": "50mm or 65mm",
+      "depth_of_field": "shallow; couple sharp, studio softly falling into darkness",
+      "lighting_style": "low-key, warm highlights, soft falloff",
+      "film_look": "subtle 35mm grain, gentle halation, organic texture",
+      "color_grade": "earthy browns, warm skin tones, muted pinks and creams"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "2:3",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_film_still",
+      "sharpness": "natural_soft_detail",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_hands": true,
+        "no_extra_fingers": true
+      },
+      "materials": {
+        "clay_texture_realistic": true,
+        "fabric_wrinkles_natural": true
+      },
+      "coherence": {
+        "light_consistency": true,
+        "studio_depth_preserved": true
+      }
+    },
+
+    "negative_prompt": [
+      "cartoon, anime, illustration",
+      "bright flat lighting",
+      "clean sterile studio",
+      "plastic skin",
+      "overly staged posing",
+      "HDR, hyper-sharpness",
+      "text, watermark, logo",
+      "deformed hands, extra fingers"
+    ]
+  }
+}
 ```
 
 </details>
@@ -26193,7 +32049,25 @@ A surreal pizza slice transformed into a car Realistic rubber wheels attached to
     "Resolution": "8K ultra-high resolution"
   },
   "Theme": {
-
+    "Concept": "Elemental balance between fire and water",
+    "Symbolism": "Control, harmony, power"
+  },
+  "NegativePrompt": [
+    "cartoon",
+    "anime",
+    "uneven face split",
+    "blurry eyes",
+    "flat lighting",
+    "oversaturated colors",
+    "plastic skin",
+    "low detail"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -26261,7 +32135,60 @@ A surreal pizza slice transformed into a car Realistic rubber wheels attached to
           "position": "left",
           "wardrobe": "dark suit with long dark overcoat, white shirt, subtle boutonniere detail on lapel",
           "pose": "holding the umbrella handle with both hands near chest height, shoulders angled toward the woman",
-          "expression": "surprised and te
+          "expression": "surprised and tender, focused gaze at the woman"
+        },
+        {
+          "role": "female",
+          "position": "right",
+          "wardrobe": "beige trench coat over a long dark dress, small brown crossbody/shoulder bag at hip",
+          "pose": "standing close, body slightly angled toward the man, arms relaxed near torso, looking up at him",
+          "expression": "soft, attentive, emotionally present gaze"
+        }
+      ],
+      "environment": {
+        "location": "outdoor garden walkway / entrance area at night",
+        "weather": "very heavy rain with strong visible streaks, wet coats and wet hair details, droplets along umbrella rim",
+        "background": "lush green bushes/foliage, dim ambient city/garden lights, glossy wet surfaces"
+      },
+      "lighting": {
+        "key_light": "umbrella glow is the primary key: warm yellow light on faces and upper bodies",
+        "fill_light": "minimal cool ambient fill from rainy night",
+        "speculars": "strong raindrop highlights, wet fabric sheen, subtle reflections on ground"
+      },
+      "camera": {
+        "angle": "eye level",
+        "lens": "50mm look",
+        "depth_of_field": "shallow, sharp faces, softened background",
+        "exposure": "balanced so umbrella stays bright but not blown out, faces properly exposed"
+      }
+    },
+    "negative_prompt": [
+      "text",
+      "watermark",
+      "logo",
+      "cartoon",
+      "anime",
+      "cgi",
+      "over-smoothed skin",
+      "plastic skin",
+      "blurry faces",
+      "bad anatomy",
+      "extra limbs",
+      "extra fingers",
+      "warped hands",
+      "deformed umbrella",
+      "umbrella not centered",
+      "umbrella not bright yellow",
+      "subjects swapped sides (woman left, man right)",
+      "cropped heads",
+      "cropped umbrella",
+      "too dark faces",
+      "neon oversaturation",
+      "fake rain",
+      "no rain streaks"
+    ]
+  }
+}
 ```
 
 </details>
@@ -26337,7 +32264,24 @@ A surreal pizza slice transformed into a car Realistic rubber wheels attached to
   },
   "Mood": {
     "Tone": "Cold, mysterious, emotionally distant",
-    "EmotionalImpact": "Haunting stillness and quiet p
+    "EmotionalImpact": "Haunting stillness and quiet power"
+  },
+  "NegativePrompt": [
+    "bright colors",
+    "romantic smile",
+    "glamour makeup",
+    "busy background",
+    "plastic skin",
+    "cartoon",
+    "anime",
+    "low contrast"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -26379,7 +32323,8 @@ A detailed transparent gashapon capsule diorama, held between fingers, featuring
   "camera": "professional portrait photography, shallow depth of field",
   "quality": "ultra-realistic, 8K, highly detailed",
   "composition": "full-body, vertical frame",
-  "constraints": "face must remain 100% ide
+  "constraints": "face must remain 100% identical to the uploaded reference image with absolutely no facial modification"
+}
 ```
 
 </details>
@@ -26617,7 +32562,29 @@ The background remains understated, allowing the typography to communicate meani
   },
   "PhotographyStyle": {
     "Genre": "Professional fashion studio photography",
-    "Reali
+    "RealismLevel": "High realism with restrained processing",
+    "Finish": "Clean, modern, magazine-ready"
+  },
+  "Mood": {
+    "Tone": "Calm, introspective, serene",
+    "SeasonalFeel": "Autumn warmth and quiet elegance"
+  },
+  "NegativePrompt": [
+    "busy background",
+    "harsh lighting",
+    "bold colors",
+    "heavy makeup",
+    "over-retouching",
+    "glossy fashion look",
+    "street photography"
+  ],
+  "ResponseFormat": {
+    "Type": "Portrait series",
+    "ImageCount": 4,
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -26879,7 +32846,22 @@ Extreme close-up cinematic portrait of a young man with dark, messy, tousled hai
       "No background people, no visible faces on shore, no reflections showing extra subjects."
     ],
     "creative_prompt": {
-      "scene_summary": "Ultra-photoreal romantic editorial on a calm lily pond, shot from a slightly elevated top-down angle. A couple sits in a polished wooden rowboat with warm varnished texture. The woman wears a white romantic puff-sleeve dress with a corset-like bodice and flowing skirt, styled like modern bridal editorial. She reclines along the boat bench, leaning toward the man with affectionate eye contact and a soft smile. The man wears a crisp white button-up shirt and
+      "scene_summary": "Ultra-photoreal romantic editorial on a calm lily pond, shot from a slightly elevated top-down angle. A couple sits in a polished wooden rowboat with warm varnished texture. The woman wears a white romantic puff-sleeve dress with a corset-like bodice and flowing skirt, styled like modern bridal editorial. She reclines along the boat bench, leaning toward the man with affectionate eye contact and a soft smile. The man wears a crisp white button-up shirt and dark trousers, seated close, leaning in warmly toward her.\n\nEnvironment: dark reflective water with clusters of green lily pads drifting nearby; subtle ripples; natural reflections of trees and sky. A small bouquet of white flowers rests beside the woman, adding a bridal/luxury romance cue. Lighting: late afternoon natural light with soft highlights on skin and wood; gentle shadows; calm, cinematic realism. Color palette: warm wood tones, deep green water, creamy whites, natural skin tones.\n\nCamera: 50mm–85mm editorial lens look; medium depth-of-field keeping both faces sharp while water details soften slightly. Mood: intimate, elegant, timeless, quiet luxury—like a high-end engagement or wedding campaign."
+    },
+    "negative_prompt": [
+      "any text, logo, watermark",
+      "extra people, extra faces",
+      "identity drift",
+      "deformed hands, extra fingers",
+      "distorted faces or misaligned gaze",
+      "cartoon, anime, CGI",
+      "plastic or over-smoothed skin",
+      "low resolution, heavy noise",
+      "harsh flash lighting",
+      "dirty water, cluttered shoreline, busy background"
+    ]
+  }
+}
 ```
 
 </details>
@@ -27120,7 +33102,47 @@ A photorealistic street portrait of a young woman with a short, messy brunette b
     "setting": "outdoor",
     "background_type": "urban garden or park",
     "background_elements": [
-      "blurred flo
+      "blurred flowers",
+      "green foliage",
+      "pink blossoms",
+      "indistinct urban structures"
+    ],
+    "depth_of_field": "shallow, strong background blur (bokeh)"
+  },
+  "lighting": {
+    "light_source": "natural daylight",
+    "lighting_quality": "soft and even",
+    "shadows": "minimal, gentle shadows on face",
+    "overall_exposure": "bright but balanced"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "blue",
+      "green",
+      "pink"
+    ],
+    "color_temperature": "neutral to slightly warm",
+    "contrast_level": "moderate"
+  },
+  "camera_details": {
+    "shot_type": "medium close-up portrait",
+    "camera_angle": "eye-level",
+    "focus": "sharp focus on face",
+    "lens_effect": "natural background compression with smooth bokeh"
+  },
+  "image_quality_targets": {
+    "sharpness": "high facial detail",
+    "texture_detail": "visible fabric weave and hair strands",
+    "noise": "none",
+    "clarity": "very high",
+    "realism_level": "photorealistic with subtle AI enhancement"
+  },
+  "post_processing_style": {
+    "retouching": "light, natural skin smoothing",
+    "enhancement": "color clarity and micro-contrast",
+    "overall_look": "clean, modern, AI-polished"
+  }
+}
 ```
 
 </details>
@@ -27280,7 +33302,46 @@ Create a hyper-realistic miniature planet showcasing [KASHMIR] with famous landm
       "style": "high-waisted skirt",
       "length_visible": "above knee (partially visible)",
       "pattern": "matching black and white stripes",
-      "waist
+      "waist_detail": "front tie or folded fabric detail"
+    }
+  },
+  "body_details": {
+    "midriff": "visible",
+    "posture": "relaxed yet confident",
+    "proportions": "slim, well-balanced"
+  },
+  "lighting": {
+    "type": "studio lighting",
+    "direction": "soft frontal with slight side emphasis",
+    "contrast": "moderate to high",
+    "highlights": "face, collarbone, midriff",
+    "shadows": "soft, controlled"
+  },
+  "background": {
+    "color": "solid black",
+    "texture": "smooth, non-distracting",
+    "environment": "studio setting"
+  },
+  "color_palette": [
+    "black",
+    "white",
+    "gold",
+    "warm skin tones",
+    "dark green"
+  ],
+  "overall_style": {
+    "aesthetic": "modern fashion editorial",
+    "mood": "bold, confident, polished",
+    "finish": "clean, sharp, high-detail"
+  },
+  "camera_and_quality": {
+    "camera_angle": "eye-level",
+    "focus": "sharp on subject",
+    "depth_of_field": "shallow to moderate",
+    "image_clarity": "ultra-detailed, noise-free",
+    "render_quality": "photorealistic 8K"
+  }
+}
 ```
 
 </details>
@@ -27413,7 +33474,38 @@ Create image of Magazine feature article [travel] guide page, cute, information 
     "room_type": "Modern Master Bedroom",
     "flooring": {
       "material": "Light Oak Hardwood",
-      "overlay": "Plush beige rug with a subtle geometr
+      "overlay": "Plush beige rug with a subtle geometric pattern"
+    },
+    "background_elements": [
+      {
+        "element": "Floor-to-ceiling window",
+        "window_treatments": ["Translucent white sheer curtains", "Heavy charcoal-grey drapes"]
+      },
+      {
+        "element": "Bed",
+        "description": "White minimalist linens, partially visible in periphery"
+      }
+    ]
+  },
+  "lighting_and_optics": {
+    "primary_light": {
+      "source": "Natural Window Light",
+      "direction": "Side-lit / 45-degree angle",
+      "quality": "Soft, diffused, airy"
+    },
+    "optical_effects": [
+      "Specular highlights on satin fabric",
+      "Realistic mirror reflections",
+      "Subtle bokeh on the background elements",
+      "Micro-contrast on hair textures"
+    ],
+    "camera_simulation": {
+      "lens": "24mm wide angle (mobile simulation)",
+      "aperture": "f/1.8 for slight background depth",
+      "iso": 100
+    }
+  }
+}
 ```
 
 </details>
@@ -27486,7 +33578,18 @@ Create image of Magazine feature article [travel] guide page, cute, information 
     "full color image",
     "flat lighting",
     "low contrast",
-    "moder
+    "modern casual snapshot",
+    "oversharpening",
+    "plastic skin",
+    "cartoon",
+    "anime"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -27557,7 +33660,67 @@ Create image of Magazine feature article [travel] guide page, cute, information 
     "global_scene": {
       "setting": "cozy couch/bed with pillows and blanket, indoor home environment",
       "time_of_day": "evening",
-      "lighting": "soft warm l
+      "lighting": "soft warm lamp light + ambient bounce, gentle shadows, no harsh flash, realistic specular highlights on eyes/lips",
+      "mood": "cute, playful, intimate, candid"
+    },
+    "subjects": {
+      "group": {
+        "count": 2,
+        "description": "exactly two people, cozy close-up selfie, affectionate couple",
+        "wardrobe": "casual home clothes, simple fabrics, no logos",
+        "skin_detail": "visible pores, fine facial hair, natural under-eye texture, no beauty smoothing",
+        "hands_and_nails": "if visible: natural nails only"
+      }
+    },
+    "split_composition": {
+      "layout": "two_frame_horizontal_split_single_image",
+      "divider": "clean thin separator line between top and bottom frames",
+      "continuity": "same couple, same couch/bed, same lighting across both frames",
+      "no_overlays": true
+    },
+    "poses_sequence": {
+      "frame_1_top": "both lying close, gentle lip kiss (closed-mouth or soft kiss), relaxed eyes, cheek-to-cheek proximity, natural affectionate contact; NO tongues out",
+      "frame_2_bottom": "tight cuddle pose with a cheek kiss or forehead kiss, both smiling naturally; candid warmth, faces still sharp"
+    },
+    "composition": {
+      "framing": "tight close-up selfie in both frames, faces fill most of the image",
+      "depth_of_field": "moderate (both faces sharp)",
+      "motion_handling": "minimize motion blur; keep eyes and lips crisp",
+      "no_extra_people": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI look)",
+      "Exactly two people",
+      "Strict 2-frame split layout (top/bottom) in one image",
+      "True-to-life indoor lighting and color",
+      "NO phone UI elements (no icons, no time, no battery, no camera HUD, no stickers)",
+      "No text, no logos, no watermarks",
+      "No plastic skin, no beauty filter, no face morphing",
+      "Accurate anatomy (mouth/teeth/lips/eyes)"
+    ],
+    "negative_prompt": [
+      "tongue out",
+      "open mouth tongue",
+      "phone UI",
+      "camera HUD",
+      "status bar",
+      "battery icon",
+      "time stamp",
+      "stickers",
+      "emojis",
+      "text overlay",
+      "watermark",
+      "logo",
+      "extra people",
+      "duplicate faces",
+      "cartoon, anime, illustration, CGI, 3D render",
+      "beauty filter, airbrushed skin, over-smoothed face",
+      "overly perfect teeth, uncanny eyes",
+      "motion blur on faces",
+      "warped lips, distorted mouths, wrong teeth anatomy"
+    ]
+  }
+}
 ```
 
 </details>
@@ -27642,7 +33805,43 @@ Composition: perfectly centered layout, square 1080x1080, ultra-clean, high-clar
   },
   "props_characters": {
     "type": "Popmart Skullpanda figures",
-    "appearance
+    "appearance": "soft plush-like textures with rounded proportions",
+    "costumes": "fluffy outfits in varied colors",
+    "placement": "arranged around the subject in the exact formation, spacing, and alignment as the reference",
+    "interaction": "appearing to casually walk alongside the human subject"
+  },
+  "lighting": {
+    "source": "natural daylight from above",
+    "shadows": "soft, diffused shadows cast naturally on the ground",
+    "exposure": "balanced with no blown highlights or crushed blacks",
+    "contrast": "natural and understated"
+  },
+  "constraints": {
+    "must_match": [
+      "camera angle",
+      "perspective geometry",
+      "crosswalk scale",
+      "subject placement",
+      "character spacing"
+    ]
+  },
+  "negative_prompt": [
+    "different camera angle",
+    "eye-level or low-angle view",
+    "close-up portrait",
+    "cinematic or dramatic lighting",
+    "HDR look",
+    "over-sharpened details",
+    "excessively smooth or plastic skin",
+    "CGI or 3D-rendered appearance",
+    "cartoon-style human",
+    "altered facial identity",
+    "anatomical distortion",
+    "text overlays",
+    "watermarks",
+    "logos"
+  ]
+}
 ```
 
 </details>
@@ -27788,7 +33987,49 @@ Composition: perfectly centered layout, square 1080x1080, ultra-clean, high-clar
         "description": "romantic couple embraced in the lake water, physically realistic interaction",
         "male_subject": {
           "wardrobe": "white button-up shirt, soaked and semi-transparent in places, fabric clinging naturally, no logos",
-          "pose": "submerged to chest level, arms supporting the woman at her w
+          "pose": "submerged to chest level, arms supporting the woman at her waist/hips, smiling up at her",
+          "wetness_detail": "wet hair, droplets on face, wet shirt creases, waterline marks on fabric"
+        },
+        "female_subject": {
+          "wardrobe": "cream/ivory satin or soft fabric dress, fully wet, heavier drape, clinging folds, realistic translucency (non-explicit), no modern lingerie look",
+          "pose": "sitting/leaning on the man's thigh/hip support, torso forward, face close to his, intimate gaze",
+          "wetness_detail": "wet hair strands, water droplets on shoulders/arms, dress hem submerged with floating folds"
+        }
+      }
+    },
+    "physics_realism": {
+      "water_interaction": "realistic ripples radiating from bodies, small splashes at contact points, meniscus around fabric and skin, buoyancy consistent with pose",
+      "fabric_behavior": "wet fabric weight visible, realistic fold tension, no stiff cloth",
+      "skin_and_hair": "wet sheen on skin, natural pores, stray wet hair strands sticking to skin"
+    },
+    "composition": {
+      "framing": "tight mid-shot: couple fills the frame, minimal empty water above, keep waterline visible around male chest and female dress",
+      "depth_of_field": "shallow DOF, faces tack-sharp, background water softly blurred",
+      "focus_priority": "eyes first, then hands and water droplets",
+      "no_extra_people": true,
+      "no_extra_animals": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI look)",
+      "No glamour retouching, no plastic skin",
+      "Accurate anatomy (hands, arms, neck, shoulders)",
+      "Realistic water physics and wet fabric behavior",
+      "No text, no logos, no watermarks",
+      "No explicit nudity; keep scene tasteful and cinematic"
+    ],
+    "negative_prompt": [
+      "cartoon, anime, illustration, CGI, 3D render",
+      "beauty filter, airbrushed skin, over-smoothed face",
+      "unrealistic water surface, frozen water, painted water",
+      "stiff clothing, dry clothing in water",
+      "extra limbs, deformed hands, extra fingers",
+      "warped faces, identity drift",
+      "overexposed highlights, neon green water",
+      "text, watermark, logo",
+      "explicit nudity"
+    ]
+  }
+}
 ```
 
 </details>
@@ -28227,7 +34468,28 @@ rompt:
     "expression": "neutral, focused on lip application, looking at camera"
   },
   "makeup": {
-    "eyes": "subtle neutral eyeshadow, long dark lashe
+    "eyes": "subtle neutral eyeshadow, long dark lashes",
+    "lips": "red lip gloss being applied",
+    "base": "natural skin, minimal foundation",
+    "brows": "defined natural brown"
+  },
+  "wardrobe": {
+    "top": "Black ribbed knit halter neck top, thin straps around neck, textured ribbed fabric"
+  },
+  "props": {
+    "main": "lip gloss with applicator wand, silver metallic tube, held in right hand applying to lips"
+  },
+  "pose": {
+    "action": "applying lip gloss with wand to lips",
+    "hand": "right hand holding lip gloss applicator near mouth",
+    "gaze": "looking directly at camera"
+  },
+  "setting": {
+    "location": "outdoor European street cafe terrace",
+    "background": "wooden cafe chairs and tables, other patrons sitting, cafe storefront with large windows, urban street",
+    "atmosphere": "casual daytime cafe scene, blurred background bokeh"
+  }
+}
 ```
 
 </details>
@@ -28265,7 +34527,7 @@ Follow @NanoBanana_labs for daily AI glow-ups & viral prompts 🚀 . Power of ar
 Prompt 👇
 Close-up shot of a man attached in the uploaded reference image ( Keep the face of the person 100% accurate from the reference image ) with wet hair swimming through the waves. The camera is very close, about 30–50 cm in front of the subject's face, with an eye-level angle so that the intense expression is clearly visible. The subject's front arm is extended toward the camera, partially submerged in the water, creating a dramatic effect of depth and movement.
 The background features a swirling wave tunnel, with a texture of white foam and realistic water splashes. The natural lighting from the cloudy sky is soft, diffused, without harsh shadows, making the blue-green water appear subtle yet dynamic. The splashes around the subject are captured in high detail, giving a sense of action and energy.
-The overall atmosphere conveys a dramatic, intense, and adrenaline-filled feel, as if the subject is facing the impact of a large wave. The color tones tend to be cool, creating a realistic mood typical of the open sea. The shot was taken with a 35mm or 50mm lens for close-up and minimal distortion
+The overall atmosphere conveys a dramatic, intense, and adrenaline-filled feel, as if the subject is facing the impact of a large wave. The color tones tend to be cool, creating a realistic mood typical of the open sea. The shot was taken with a 35mm or 50mm lens for close-up and minimal distortion, and a high shutter speed to freeze the water's movement.
 ```
 
 </details>
@@ -28357,7 +34619,14 @@ Use the uploaded product image as reference. Create an ultra-realistic commercia
     "look": "cinematic, premium, photorealistic"
   },
   "constraints": [
-    "No cartoon or il
+    "No cartoon or illustration style",
+    "No CGI look",
+    "No distorted anatomy",
+    "No excessive blur on the subject",
+    "Background blur only"
+  ],
+  "output_goal": "Create a hyper-realistic cinematic night portrait of a stylish woman walking through an urban street, with sharp focus on her face and wristwatch, dramatic neon lighting, and motion-blurred city background for dynamic energy."
+}
 ```
 
 </details>
@@ -28439,7 +34708,38 @@ Use the uploaded product image as reference. Create an ultra-realistic commercia
         "material": "soft velvet"
       },
       "shoes": {
-        "type": "open-toe
+        "type": "open-toe heeled sandals",
+        "color": "caramel",
+        "details": "toes visible, ankle straps"
+      },
+      "accessories": [
+        "thin gold necklace",
+        "small hoops",
+        "vintage ring set"
+      ]
+    },
+    "action": {
+      "activity": "pulling a record from a bin",
+      "details": [
+        "vinyl sleeve angled toward camera",
+        "other hand holding the bin divider card",
+        "slight lean forward, confident posture"
+      ]
+    }
+  },
+  "negative_prompt": [
+    "male",
+    "nudity",
+    "explicit",
+    "nipples visible",
+    "logos",
+    "watermark",
+    "text",
+    "distorted face",
+    "uncanny skin",
+    "extra fingers"
+  ]
+}
 ```
 
 </details>
@@ -28512,7 +34812,86 @@ Use the uploaded product image as reference. Create an ultra-realistic commercia
       "pose": {
         "position": "sitting inside the window frame",
         "legs": "one leg extended outward and raised, the other relaxed",
-        "arms": "one arm hanging 
+        "arms": "one arm hanging freely outside the window"
+      },
+      "expression": "neutral to calm, relaxed confidence",
+      "gaze": "looking forward or slightly to the side"
+    },
+
+    "wardrobe": {
+      "dress": {
+        "type": "white satin slip dress",
+        "style": "thin straps, minimal, fluid fabric",
+        "length": "midi",
+        "finish": "soft satin sheen"
+      },
+      "headphones": {
+        "type": "over-ear",
+        "color": "pure white",
+        "style": "clean, modern, minimal"
+      },
+      "shoes": {
+        "type": "flat or low-heel shoes",
+        "color": "white",
+        "style": "simple, elegant"
+      }
+    },
+
+    "accessories": {
+      "flowers": {
+        "type": "fresh yellow flowers",
+        "placement": "held loosely in one hand",
+        "look": "natural, slightly wild bouquet"
+      }
+    },
+
+    "photography": {
+      "camera_style": "fashion editorial street photography",
+      "lens": "35mm",
+      "framing": "centered subject, full body within window frame",
+      "depth_of_field": "moderate, background sharp",
+      "color_grade": "warm yellows, clean whites, natural skin tones"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "4:5",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_editorial",
+      "sharpness": "clean_and_crisp",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_limbs": true,
+        "no_extra_fingers": true
+      },
+      "fabric": {
+        "satin_reads_real": true
+      },
+      "coherence": {
+        "wardrobe_consistent": true,
+        "pose_identical_to_reference": true
+      }
+    },
+
+    "negative_prompt": [
+      "patterned dress",
+      "dark or black clothing",
+      "headphones not white",
+      "boots or dark shoes",
+      "busy background",
+      "cartoon, illustration, anime",
+      "HDR, oversharpening",
+      "text, watermark, logo",
+      "deformed anatomy"
+    ]
+  }
+}
 ```
 
 </details>
@@ -28630,7 +35009,39 @@ Shallow depth of field, background softly blurred
 
 Soft, warm, diffused lighting
 
-LED rim light gently outlining the
+LED rim light gently outlining the circular frame
+
+Even facial illumination with natural shadow falloff
+
+No harsh highlights, no blown whites
+
+Realistic skin reflections and depth
+
+Negative prompt:
+
+No stylization
+
+No cinematic color grading
+
+No beauty filters
+
+No smooth or plastic skin
+
+No exaggerated proportions
+
+No painterly or illustrated look
+
+No artificial glow
+
+No face morphing or identity shift
+
+Ultra-photorealistic
+
+Editorial lifestyle photography quality
+
+Natural colors, true-to-life skin tones
+
+Identity remains unchanged and accurate from every angle
 ```
 
 </details>
@@ -28715,7 +35126,35 @@ A cinematic portrait of a handsome man with a short styled haircut and trimmed b
       "attire": "Dark navy suit, white collared shirt, bright red tie",
       "identity": "Donald Trump (younger)",
       "position": "Right side of the frame",
-      "expression": "Mouth open, possibly spe
+      "expression": "Mouth open, possibly speaking or grimacing"
+    },
+    "woman": {
+      "hair": "Shoulder-length blonde hair",
+      "attire": "Silver, sparkling, spaghetti-strap dress",
+      "jewelry": "Small earring visible on left ear",
+      "identity": "Blonde woman (possibly Kara Young)",
+      "position": "Left side of the frame",
+      "expression": "Looking directly at camera, slightly open mouth"
+    }
+  },
+  "artistic_elements": {
+    "mood": "Slightly awkward, caught-in-the-moment",
+    "style": "Candid celebrity snapshot",
+    "texture": "Prominent texture of the woman's sparkling silver dress",
+    "expression": "Man is speaking or grimacing, woman is looking directly at the camera with a slightly open mouth",
+    "compositional_balance": "Balanced, with the two subjects occupying the majority of the frame"
+  },
+  "generation_parameters": {
+    "prompt": "A candid photograph from the 1990s of Donald Trump in a dark suit and red tie, standing next to a blonde woman in a silver sparkling dress. Both are looking at the camera, with Trump's mouth open. The image is taken with an on-camera flash at an evening event, with a very dark background.",
+    "style_tags": [
+      "1990s photography",
+      "flash photography",
+      "candid snapshot",
+      "celebrity photo"
+    ],
+    "negative_prompt": "modern photography, digital look, bright background, perfectly posed, studio lighting"
+  }
+}
 ```
 
 </details>
@@ -28896,7 +35335,13 @@ Please use the female user's reference photo to apply all of her facial features
         "No harsh noise"
       ]
     },
-    "overall_mood": 
+    "overall_mood": {
+      "aesthetic": "Luxury, opulence, sophistication",
+      "vibe": "High fashion jewelry campaign",
+      "tone": "Elegant, rich, premium"
+    }
+  }
+}
 ```
 
 </details>
@@ -28999,7 +35444,59 @@ The background shows an autumn street scene with fallen leaves, amber-lit café 
     face:
       general_approach: If face is visible, comment on her natural beauty, radiance, and glow. Appreciate her skin, eyes, lips, and overall facial features. Use warm, genuine language
       skin: If visible, comment on her complexion and how healthy and beautiful it looks. Say things like "Her skin is glowing", "She has such a clear complexion", "She looks so radiant"
-      eyes: If visible, comment on her beautiful eyes and how they show warmth and
+      eyes: If visible, comment on her beautiful eyes and how they show warmth and intelligence. Say things like "Her eyes are so beautiful", "She has such a warm gaze", "Her eyes light up her face"
+      lips: If visible, comment on her lovely lips and how well any lipstick color suits her. Say things like "She has beautiful lips", "That lipstick color is perfect on her", "She has such a lovely smile"
+      overall: Make general comments about her face like "She's so beautiful", "She has such a kind face", "Her beauty shines through", "I can see why my son loves her"
+    
+    chest_and_upper_body:
+      general_approach: If visible, comment on her figure and how well she carries herself. Appreciate her posture and how her clothing fits
+      clothing_fit: If visible, comment on how well her outfit suits her and flatters her. Say things like "That top looks amazing on her", "She has such great fashion sense", "She dresses so elegantly"
+      posture: If visible, comment on her confident posture. Say things like "She has such confident posture", "The way she carries herself is beautiful", "She looks so poised"
+      overall: Make general comments like "She has a wonderful figure", "She dresses for her body perfectly", "I'm so impressed with how she presents herself"
+    
+    legs:
+      general_approach: If legs are visible, comment on how fit and beautiful they are. Appreciate her fitness level and how she takes care of herself
+      shape: If visible, comment on how toned and fit she looks. Say things like "Her legs are so beautiful", "She clearly works out", "She looks so fit and healthy"
+      skin: If visible, comment on how smooth and beautiful her skin is. Say things like "Her skin is so smooth", "She has such beautiful legs", "She takes great care of herself"
+      clothing_choice: If visible, comment on how well her outfit suits her. Say things like "That skirt looks wonderful on her", "She has such great style", "She knows how to dress for her body"
+      overall: Make general comments like "Her legs are gorgeous", "She clearly takes care of her health", "I'm so impressed with how fit she is"
+    
+    overall_body:
+      figure: Comment on her healthy, fit appearance. Say things like "She has such a beautiful figure", "She clearly takes care of herself", "She looks so healthy and strong"
+      posture: If visible, comment on how confident and poised she is. Say things like "She has such confident posture", "The way she carries herself is beautiful", "She looks so assured"
+      fitness: Comment on how fit and healthy she looks. Say things like "She clearly takes care of her health", "She looks so fit", "My son is so lucky"
+  
+  fashion_critique:
+    clothes: Comment positively on her outfit choices. Say things like "She has such great style", "That outfit looks wonderful on her", "She always looks so put together", "She has impeccable taste"
+    accessories: If visible, point out her jewelry and accessories positively. Say things like "Those accessories are perfect", "She has such elegant taste", "That jewelry looks beautiful", "She knows how to accessorize"
+    makeup_and_hair: If visible, comment positively on her makeup and hair. Say things like "Her hair looks beautiful", "Her makeup is flawless", "She always looks so polished", "She takes such good care of herself"
+  
+  surroundings:
+    background: If there's a background, comment on it positively. Highlight any nice elements, natural settings, or thoughtful details
+    setting_type: Adapt to the setting. If indoors, comment on the environment. If outdoors, appreciate the natural backdrop. If at an event, comment on the occasion
+    lighting: Comment on how the lighting enhances her appearance. Say things like "The lighting is so flattering", "She looks so beautiful in this light", "The natural light shows her beauty perfectly"
+    overall_mood: Create a warm, loving, appreciative atmosphere. Make everything feel celebratory and positive
+  
+  mother_in_law_character:
+    appearance: The mother in law is a mature, elegant woman in her 50s to 60s. She has warm, kind eyes that show genuine love and pride. Her face has character lines that show a life well lived. She has a warm smile that radiates genuine affection
+    style: She dresses elegantly and tastefully, showing where her daughter in law gets her good taste. She wears classic, well-fitted clothing in neutral tones. Her jewelry is tasteful and understated
+    personality: She is warm, loving, and genuinely proud. She radiates maternal affection and genuine happiness for her son. Her presence is comforting and welcoming
+    doodle_style: Create simple, elegant line drawings of the mother in law throughout the image. Show her admiring her daughter in law with warm, genuine expressions. Draw her with a proud smile, warm eyes, and gentle hand gestures. Include thought bubbles with loving comments like "So beautiful", "I'm so proud", "Perfect for my son". Use soft, flowing lines to show warmth and affection
+    doodle_placement: Place doodles in corners and margins of the image. Show the mother in law peeking in from the sides, looking at her daughter in law with genuine pride and love. Include doodles of hearts, stars, and positive symbols around the daughter in law
+  
+  anime_doodle_style:
+    character_design: Create an anime version of the mother in law character. She should have large, warm, kind eyes that show genuine affection. Her smile should be gentle and loving. Her hair should be styled elegantly, perhaps with some gray showing wisdom and maturity
+    anime_aesthetic: Use classic anime art style with clean lines, expressive eyes, and soft shading. The anime mother in law should radiate warmth and maternal love. Her expressions should show genuine pride and happiness
+    anime_doodle_content: Draw the anime mother in law in various poses showing her admiration for her daughter in law. Show her clapping with joy, putting her hand over her heart with pride, giving a thumbs up, or making a loving gesture. Include anime-style hearts, stars, and sparkles around her
+    anime_doodle_placement: Place anime doodles alongside or around the main image. Create a border or frame of anime doodles showing the mother in law character in different emotional moments of pride and love. Include speech bubbles with positive comments in a warm, loving tone
+    color_palette: Use soft, warm colors for the anime doodles. Pinks, golds, and soft purples to convey warmth and affection. Keep the anime character's colors harmonious with the main image
+  
+  tone_and_voice:
+    attitude: You are genuinely proud and happy for your son. You think he made an absolutely excellent choice. You admire her style, confidence, and the way she presents herself. Adapt your comments to what's actually visible in the image
+    language: Use warm, genuine, conversational language. Be heartfelt and sincere about what you see. Express real affection and pride. Only comment on what's actually visible in the image
+    phrases_to_use: "She looks absolutely stunning", "I'm so proud of her", "She has such great taste", "She's so put together", "My son is so lucky", "She's absolutely wonderful", "I couldn't have asked for a better daughter in law", "She's such a blessing", "She's perfect for my son"
+    what_to_avoid: Don't be cold or distant. Don't hold back your genuine affection. Don't use any negative language. Don't comment on things that aren't visible in the image. Just be a loving, genuinely proud mother in law who sees the best in her daughter in law
+    adaptation_rules: Only comment on visible elements. If something isn't shown in the image, don't mention it. If she's wearing winter clothes, comment on those. If she's in a formal setting, adapt your comments accordingly. If she's in a casual setting, comment on her casual style. Always be genuine and warm regardless of the setting or clothing
 ```
 
 </details>
@@ -29121,7 +35618,62 @@ Create a hyper-realistic 3D diorama-style model of [LANDMARK NAME]. The model sh
       },
       "pattern": "snake-skin inspired geometric pattern",
       "primary_color": "green",
-      "secondary_colors": ["white", "light mint gree
+      "secondary_colors": ["white", "light mint green"],
+      "fabric": {
+        "bodice": "structured, patterned fabric",
+        "skirt": "sheer, lightweight, flowing fabric"
+      },
+      "slit": {
+        "presence": true,
+        "location": "front side",
+        "height": "upper thigh"
+      },
+      "hemline": "uneven, flowing with layered folds"
+    },
+    "footwear": {
+      "type": "high-heeled sandals",
+      "color": "matching green",
+      "heel_style": "thin heel",
+      "details": "decorative floral or bow-like embellishment on front strap",
+      "toe_style": "open-toe"
+    },
+    "accessories": {
+      "visible_jewelry": "none clearly visible",
+      "other_accessories": "none visible"
+    }
+  },
+  "background": {
+    "type": "studio backdrop",
+    "color_palette": ["teal", "green"],
+    "texture": "soft, cloudy gradient",
+    "pattern": "non-uniform, painterly",
+    "depth": "flat backdrop with subtle tonal variation"
+  },
+  "lighting": {
+    "style": "studio lighting",
+    "key_light": "soft frontal light",
+    "fill_light": "even fill reducing harsh shadows",
+    "shadows": "minimal, soft",
+    "highlights": "gentle highlights on face and dress texture",
+    "overall_exposure": "balanced"
+  },
+  "color_balance": {
+    "dominant_colors": ["green", "teal"],
+    "contrast": "moderate",
+    "saturation": "medium to slightly high",
+    "color_harmony": "monochromatic green tones"
+  },
+  "image_quality": {
+    "sharpness": "high",
+    "clarity": "clean and crisp",
+    "noise": "none visible",
+    "focus": "sharp across entire subject"
+  },
+  "style_tags": ["fashion photography", "studio portrait", "elegant", "glamour", "high fashion", "editorial"],
+  "ai_generation_notes": {
+    "do_not_add": ["extra jewelry", "additional subjects", "background objects", "props", "text", "logos"]
+  }
+}
 ```
 
 </details>
@@ -29228,7 +35780,36 @@ A cinematic black-and-white street portrait of a young woman photographer standi
       "underside": "lighter beige/cream scales"
     },
     "eyes": "black, reflective",
-    "surface_f
+    "surface_finish": "shiny, wet-looking"
+  },
+  "lighting": {
+    "type": "low-key studio lighting",
+    "direction": "soft directional light from front-left",
+    "highlights": "strong specular highlights on skin and snake scales",
+    "shadows": "deep shadows with smooth falloff"
+  },
+  "background": {
+    "color": "deep black",
+    "detail": "no visible texture or elements",
+    "depth": "fully blurred / void-like"
+  },
+  "color_palette": {
+    "dominant_colors": ["warm browns", "copper highlights", "dark shadows", "black background"]
+  },
+  "camera_details": {
+    "perspective": "eye-level",
+    "lens_effect": "shallow depth of field",
+    "focus": "sharp focus on eyes, face texture, and snake head"
+  },
+  "style_attributes": {
+    "realism_level": "hyper-realistic",
+    "detail_level": "extreme micro-detail",
+    "surface_quality": "high contrast, glossy, cinematic",
+    "ai_look": "polished, editorial, digitally enhanced realism"
+  },
+  "quality_tags": ["8K", "ultra-detailed", "photorealistic", "sharp focus", "cinematic lighting", "high dynamic range"],
+  "negative_prompt": ["blur", "low resolution", "flat lighting", "overexposed highlights", "plastic skin", "extra limbs", "distorted anatomy", "noise", "grain"]
+}
 ```
 
 </details>
@@ -29301,7 +35882,69 @@ Gemini Nano Banana Pro 😍
     "chair": "woven rattan chair with intricate texture, warm natural tones"
   },
   "background": {
-   
+    "location": "luxury seaside restaurant along a Mediterranean-style harbor",
+    "water": {
+      "type": "calm sea",
+      "color": "blue-gray with soft reflections",
+      "movement": "gentle ripples"
+    },
+    "harbor": {
+      "boats": "white yachts and boats docked closely together",
+      "lighting": "subtle reflections from harbor lights"
+    },
+    "cityscape": {
+      "buildings": "coastal hillside city with mid-rise buildings",
+      "lights": "warm golden city lights scattered across the hillside",
+      "depth": "background softly blurred creating bokeh effect"
+    },
+    "mountains": "dark green hills rising behind the city, partially silhouetted"
+  },
+  "lighting": {
+    "time_of_day": "early evening / blue hour",
+    "primary_light": "soft ambient twilight",
+    "secondary_light": "warm candlelight illuminating subject’s face and dress",
+    "contrast": "warm foreground tones against cool coastal background",
+    "shadows": "soft, natural, flattering"
+  },
+  "camera": {
+    "shot_type": "medium portrait",
+    "angle": "eye level",
+    "lens": "85mm prime",
+    "depth_of_field": "shallow, creamy bokeh background",
+    "focus": "sharp on subject, softly blurred background"
+  },
+  "color_palette": [
+    "burgundy",
+    "warm gold",
+    "soft ivory",
+    "cool blue-gray",
+    "muted green"
+  ],
+  "mood": [
+    "romantic",
+    "luxurious",
+    "intimate",
+    "elegant",
+    "coastal evening serenity"
+  ],
+  "rendering_details": {
+    "texture_detail": "highly detailed skin texture, fabric folds, glass reflections",
+    "dynamic_range": "high",
+    "sharpness": "ultra sharp subject",
+    "noise": "minimal",
+    "realism_level": "photographic realism"
+  },
+  "negative_prompt": [
+    "cartoon",
+    "anime",
+    "low resolution",
+    "overexposed",
+    "harsh shadows",
+    "distorted anatomy",
+    "blurry subject",
+    "oversaturated colors"
+  ]
+}
 ```
 
 </details>
@@ -29391,7 +36034,54 @@ A hyper-detailed cinematic portrait of a human face use selected image for face 
     "shoes": {
       "type": "High heels",
       "style": "Classic pointed stilettos",
-    
+      "color": "Black",
+      "heel_height": "High"
+    },
+    "jewelry": "No visible jewelry",
+    "nails": {
+      "length": "Short to medium",
+      "color": "Dark (possibly black)"
+    }
+  },
+  "pose_and_hand_details": {
+    "right_hand": "Raised above forehead, palm facing downward as if shielding eyes from sun",
+    "left_hand": "Resting along thigh",
+    "leg_position": "One leg straight, other bent backward with lifted heel"
+  },
+  "environment_and_background": {
+    "location_type": "Outdoor urban architectural setting",
+    "architecture": {
+      "material": "Stone",
+      "style": "Classical or neoclassical",
+      "details": "Textured stone blocks, vertical edges, decorative structure"
+    },
+    "background_elements": {
+      "glass_window": "Large reflective glass panel behind subject",
+      "reflection": "Palm trees visible in reflection"
+    },
+    "ground": "Stone or concrete pavement"
+  },
+  "lighting_and_shadows": {
+    "lighting_type": "Natural sunlight",
+    "light_direction": "Coming from right side of frame",
+    "shadow_behavior": "Clear, sharp shadows cast on wall and ground",
+    "contrast": "High contrast between light and shadow",
+    "skin_lighting": "Warm highlights with soft shadow transitions"
+  },
+  "color_palette": {
+    "dominant_colors": ["Black", "Beige", "Stone Gray"],
+    "accent_colors": ["Gold buckle", "Warm skin tones"],
+    "overall_tone": "Warm daylight, clean fashion aesthetic"
+  },
+  "ai_editing_style": {
+    "sharpness": "Ultra-sharp details",
+    "texture_enhancement": "High clarity on fabric, skin, stone surfaces",
+    "skin_rendering": "Smooth but realistic, no over-blurring",
+    "noise": "Minimal to none",
+    "dynamic_range": "High"
+  },
+  "generation_quality_tags": ["8K ultra HD", "AI-enhanced realism", "fashion editorial style", "photorealistic", "high detail texture", "cinematic natural light"]
+}
 ```
 
 </details>
@@ -29478,7 +36168,35 @@ A panning studio portrait of a mysterious female figure captured in side profile
           "male": "casual dark t-shirt, light trousers, sunglasses (optional), smartwatch allowed",
           "female": "casual sleeveless top, high-waisted jeans, small shoulder bag"
         },
-        "pose": "male standing behind female, arms wrapped around her shoulders/up
+        "pose": "male standing behind female, arms wrapped around her shoulders/upper chest in a playful hug; female smiling/laughing toward camera",
+        "expression": "genuine laughter and warmth",
+        "hands_and_nails": "natural nails (no bright polish), realistic hand anatomy"
+      }
+    },
+    "composition": {
+      "framing": "medium portrait (waist-up to mid-thigh), centered couple, slight perspective depth from bridge",
+      "depth_of_field": "moderate DOF, couple sharp, background softly softened",
+      "motion": "freeze candid movement cleanly",
+      "no_extra_people": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI look)",
+      "Natural candid lifestyle feel (not posed studio)",
+      "No text, no logos, no watermarks",
+      "No face morphing or identity drift",
+      "Accurate anatomy (arms, hands, embrace)"
+    ],
+    "negative_prompt": [
+      "extra people",
+      "duplicate faces",
+      "cartoon, anime, illustration, CGI, 3D render",
+      "beauty filter, over-smoothed skin",
+      "unnatural body proportions, extra arms",
+      "blurred faces, motion blur",
+      "text, watermark, logo"
+    ]
+  }
+}
 ```
 
 </details>
@@ -29563,7 +36281,17 @@ A cyan monochrome ink wash of [LANDMARK], using gradients of diluted pigment and
   "camera_technical_values": {
     "perspective": "Eye-level / Slightly low angle.",
     "focal_length": "28mm (Wide angle to capture the full bike and the large architectural background).",
-    "aperture": "f/2.8 (Bright 
+    "aperture": "f/2.8 (Bright enough for night shooting, moderate depth of field).",
+    "shutter_speed": "1/60s.",
+    "iso": "ISO 1600 (Nighttime grain/noise).",
+    "color_grading": "Cool tones, dominant blues, whites, and greys."
+  },
+  "lighting_setup": {
+    "ambient": "Street lamps visible in the background providing backlighting.",
+    "key_light": "Soft, cool-white artificial street light hitting the subject from the front-left.",
+    "accents": "Blue glow from the motorcycle engine bay."
+  }
+}
 ```
 
 </details>
@@ -29715,7 +36443,17 @@ provide four more photos with different style with facial expression
     },
     "camera_settings": {
       "lens": "50mm portrait lens.",
-      "aperture": "f/2.8 for sl
+      "aperture": "f/2.8 for slight background separation while keeping the subject sharp.",
+      "shutter_speed": "1/250s.",
+      "iso": "100.",
+      "perspective": "Eye-level shot capturing the subject and the estate background."
+    },
+    "technical_specs": {
+      "quality": "Ultra-photorealistic, 8k resolution, raw photo style, highly detailed textures (lace, stone, hair), masterpiece, cinematic composition.",
+      "engine": "Unreal Engine 5 render style or high-end DSLR photography."
+    }
+  }
+}
 ```
 
 </details>
@@ -29995,7 +36733,18 @@ provide four more photos with different style with facial expression
     "angle": "90-degree Top Down.",
     "focal_length": "50mm (Standard lens to capture the group without wide-angle distortion).",
     "aperture": "f/5.6 (To ensure all three faces, which are on slightly different planes, are in sharp focus).",
-    "shutter_spe
+    "shutter_speed": "1/125s (Studio setting).",
+    "iso": "ISO 100 (Clean image quality).",
+    "framing": "Tight framing, filling the canvas with the subjects and the pink texture."
+  },
+  "lighting_setup": {
+    "type": "Soft Studio Lighting (Beauty Dish or Softbox).",
+    "direction": "Frontal/Overhead (relative to the camera).",
+    "quality": "Even, shadowless illumination on the faces ('Butterfly lighting').",
+    "contrast": "High contrast between the jet-black outfits and the bright pink background/pale skin.",
+    "highlights": "Soft specular highlights on the black leather and latex textures."
+  }
+}
 ```
 
 </details>
@@ -30103,7 +36852,7 @@ Macro product photography, Phase One camera, 100mm lens, razor-sharp focus, 8k r
 <summary>📋 View Prompt</summary>
 
 ```
-Professional photography, medium-wide shot. A massive, realistic diorama world filling the entire workspace horizon, depicting a cross-section of a suburban backyard where a confused alien is hilariously misusing everyday Earth objects. The structure features a typical wooden fence and garden shed merged with a UFO partially hidden behind bushes (with soft LED underglow). Intricate details include a miniature green alien figurine wearing a flower pot as a hat, attempting to "walk" a vacuum cleaner on a leash like a dog, using a garden hose as a telephone, sitting in a birdbath fully clothed reading a pizza menu upside-down, and trying to plant TV remote controls in soil like seeds. A confused golden retriever figurine watches with head tilted. On the patio, miniature human figures peek through window curtains looking shocked and bewildered. The lawn features misplaced items: umbrella stuck in ground upside-down filled with cereal, lawn chair hanging from tree branch, sprinkler shooting water straight up. The background consists entirely of physical 3D forms, featuring sculpted foam neighboring houses with lights on, clay trees, and a painted evening sky with tiny stars, with absolutely no flat backdrops. A realistic human artisan is positioned in the back-right background, actively working on the scene, using fine tweezers to adjust the tiny vacuum cleaner "leash," grinning widely at the absurdity. Dual-layer workspace lighting combines with warm evening suburban lighting plus soft UFO glow (blue-green LED) to highlight the contrast between normal suburban textures and surreal alien confusion. Compose the scene for a 9:16 vertical aspect ratio with balanced framing and no cropped elements. Ensure all primary subjects, key actions, and facial features remain within a central safe zone, avoiding edge cropping across the selected aspect ratio. If a human creator or artisan is present in the scene, render the person as a realistic individual. Use the uploaded image refe
+Professional photography, medium-wide shot. A massive, realistic diorama world filling the entire workspace horizon, depicting a cross-section of a suburban backyard where a confused alien is hilariously misusing everyday Earth objects. The structure features a typical wooden fence and garden shed merged with a UFO partially hidden behind bushes (with soft LED underglow). Intricate details include a miniature green alien figurine wearing a flower pot as a hat, attempting to "walk" a vacuum cleaner on a leash like a dog, using a garden hose as a telephone, sitting in a birdbath fully clothed reading a pizza menu upside-down, and trying to plant TV remote controls in soil like seeds. A confused golden retriever figurine watches with head tilted. On the patio, miniature human figures peek through window curtains looking shocked and bewildered. The lawn features misplaced items: umbrella stuck in ground upside-down filled with cereal, lawn chair hanging from tree branch, sprinkler shooting water straight up. The background consists entirely of physical 3D forms, featuring sculpted foam neighboring houses with lights on, clay trees, and a painted evening sky with tiny stars, with absolutely no flat backdrops. A realistic human artisan is positioned in the back-right background, actively working on the scene, using fine tweezers to adjust the tiny vacuum cleaner "leash," grinning widely at the absurdity. Dual-layer workspace lighting combines with warm evening suburban lighting plus soft UFO glow (blue-green LED) to highlight the contrast between normal suburban textures and surreal alien confusion. Compose the scene for a 9:16 vertical aspect ratio with balanced framing and no cropped elements. Ensure all primary subjects, key actions, and facial features remain within a central safe zone, avoiding edge cropping across the selected aspect ratio. If a human creator or artisan is present in the scene, render the person as a realistic individual. Use the uploaded image reference as the exact facial identity of the creator. Maintain consistent facial structure, proportions, and likeness. Do not reinterpret, stylize, or substitute the face.
 ```
 
 </details>
@@ -30178,7 +36927,52 @@ Professional photography, medium-wide shot. A massive, realistic diorama world f
     "micro_details": [
       "fabric creases where it pulls at waist and bust",
       "tiny skin sheen like real indoor heat",
-      "slight motion blur from handheld 
+      "slight motion blur from handheld capture"
+    ]
+  },
+  "outfit": {
+    "top": {
+      "type": "thin ribbed cropped tank",
+      "color": "soft charcoal",
+      "fit": "skin-tight, braless",
+      "notes": "tasteful coverage; no explicit nudity; subtle fabric tension only"
+    },
+    "bottom": {
+      "type": "low-rise mini skirt",
+      "color": "black",
+      "material": "stretch knit",
+      "fit": "snug on hips with natural wrinkles at the waist"
+    },
+    "legs": {
+      "type": "sheer patterned tights",
+      "notes": "slight compression at thighs, realistic weave detail"
+    },
+    "shoes": {
+      "type": "simple black ankle boots"
+    }
+  },
+  "photography_rules": {
+    "realism": "very high",
+    "no_beauty_filter": true,
+    "no_ai_smoothing": true,
+    "no_male_presence": true,
+    "no_explicit_nudity": true,
+    "no_text_or_watermark": true,
+    "avoid_rooftop_infinity_pool": true,
+    "avoid_laundromat": true
+  },
+  "negative_prompt": [
+    "anime",
+    "cgi look",
+    "plastic skin",
+    "over-sharpened",
+    "extra limbs",
+    "warped hands",
+    "text",
+    "logos",
+    "explicit nudity"
+  ]
+}
 ```
 
 </details>
@@ -30237,7 +37031,21 @@ Professional photography, medium-wide shot. A massive, realistic diorama world f
     "background": "softly blurred with no distinct environment"
   },
   "color_palette": {
-    "dominant_colors": ["vibrant red", "turquoise blue", "pink", "natural 
+    "dominant_colors": ["vibrant red", "turquoise blue", "pink", "natural skin tones", "dark tattoo blacks"],
+    "contrast": "high, visually striking"
+  },
+  "environment": {
+    "context": "implied, non-specific",
+    "description": "no clear background elements, allowing full focus on the subject's face and details"
+  },
+  "quality": {
+    "realism": "maximum photorealism",
+    "detail_level": "extreme detail in skin, hair, tattoos, and eye texture",
+    "execution": "high-end photography combined with subtle digital enhancement"
+  },
+  "constraints": ["No facial distortion", "No over-smoothing of skin", "No artificial filters", "No text or watermarks", "No background distractions"],
+  "output_goal": "Create an ultra-realistic, dramatic close-up portrait of a white woman, focusing on one vivid red eye, intricate facial tattoos, and a colorful braided hairstyle, preserving exact facial identity from the reference image and emphasizing mystery, texture, and visual intensity."
+}
 ```
 
 </details>
@@ -30402,7 +37210,17 @@ Create a hyperrealistic 3D visualization of an origami [ANIMAL] constructed from
     "resolution": "commercial-grade clarity"
   },
   "quality_control": {
-    
+    "food_realism": "hyper-real textures without plastic look",
+    "color_accuracy": "true-to-life food colors",
+    "ai_artifacts": "none",
+    "professional_finish": "advertisement-quality output"
+  },
+  "overall_mood": "tempting, rich, luxurious",
+  "intended_use": {
+    "primary": "viral food post on X",
+    "secondary": "food branding, café promotion, editorial use"
+  }
+}
 ```
 
 </details>
@@ -30446,7 +37264,7 @@ Create a hyperrealistic 3D visualization of an origami [ANIMAL] constructed from
 
 ```
 A hyper-realistic iPhone RAW photo, vertical 9:16 ratio, candid street photography style with natural daylight, no filter, no cinematic grading, realistic color balance, Pinterest-style artsy realism.
-The camera angle MUST MATCH THE REFERENCE IMAGE EXACTLY: a slightly elevated wide-angle perspective looking down toward a zebra crosswalk, similar to a street-level overhead shot, capturing the full crosswalk lines horizontally with the subject positioned at the center and symmetrically surrounded by characters, maintaining the exact spatial relationship and perspective of the reference photo. A young adult man with an athletic and naturally fit build is walking forward mid-step on the zebra crossing, body orientation, walking direction, and pose following the reference precisely, expression calm, neutral, and candid as if casually crossing the street, not posing. Outfit consists of fashionable casual streetwear with relaxed silhouettes: an oversized jacket in earthy muted tones such as brown, olive, or charcoal, a simple inner shirt, loose straight-cut trousers, and clean minimalist sneakers, creating an effortless modern daily-wear look that supports the calm surreal theme. Props include multiple Popmart Skullpanda characters in fluffy costumes placed around the subject in the SAME formation, spacing, and positioning as the reference image, each Skullpanda featuring soft plush textures, rounded proportions, and varied colors, appearing to walk alongside the human subject on the crosswalk. The location is an empty urban street with a clearly visible zebra crossing, realistic asphalt texture with subtle grain and natural wear, no traffic, no extra people, and an identical street layout perspective to the reference. Camera and composition are wide shot and full-body framing with no portrait crop, handheld but steady feel with slight natural imperfections, realistic depth of field keeping both subject and surrounding characters in focus, matching reference scale and dept
+The camera angle MUST MATCH THE REFERENCE IMAGE EXACTLY: a slightly elevated wide-angle perspective looking down toward a zebra crosswalk, similar to a street-level overhead shot, capturing the full crosswalk lines horizontally with the subject positioned at the center and symmetrically surrounded by characters, maintaining the exact spatial relationship and perspective of the reference photo. A young adult man with an athletic and naturally fit build is walking forward mid-step on the zebra crossing, body orientation, walking direction, and pose following the reference precisely, expression calm, neutral, and candid as if casually crossing the street, not posing. Outfit consists of fashionable casual streetwear with relaxed silhouettes: an oversized jacket in earthy muted tones such as brown, olive, or charcoal, a simple inner shirt, loose straight-cut trousers, and clean minimalist sneakers, creating an effortless modern daily-wear look that supports the calm surreal theme. Props include multiple Popmart Skullpanda characters in fluffy costumes placed around the subject in the SAME formation, spacing, and positioning as the reference image, each Skullpanda featuring soft plush textures, rounded proportions, and varied colors, appearing to walk alongside the human subject on the crosswalk. The location is an empty urban street with a clearly visible zebra crossing, realistic asphalt texture with subtle grain and natural wear, no traffic, no extra people, and an identical street layout perspective to the reference. Camera and composition are wide shot and full-body framing with no portrait crop, handheld but steady feel with slight natural imperfections, realistic depth of field keeping both subject and surrounding characters in focus, matching reference scale and depth. Lighting is natural daylight from above with soft consistent shadows on the ground, balanced exposure, no harsh sunlight, and no dramatic contrast. Skin texture is realistic and human, smooth yet visibly porous with natural highlights and subtle imperfections, no airbrushing, no plastic or CGI skin. Negative prompt: different camera angle, low angle, eye-level shot, close-up portrait, cinematic lighting, HDR, oversharpening, overly smooth skin, CGI look, 3D render, cartoon human, face alteration, distorted anatomy, text, watermark, logo.
 ```
 
 </details>
@@ -30524,7 +37342,9 @@ FRAME 7 (The Signature): Macro detail focusing strictly on the black Chinese cal
 FRAME 8 (The Statement): Artistic high-contrast shot using shadows of window lattice (geometric patterns) cast across the red tin.
 FRAME 9 (The Horizon): Wide cinematic shot of the tin placed on a low table in a grand, dimly lit traditional courtyard at dusk.
 CAMERA & STYLE:
-Ultra high-quality studio imagery with a real camera look. Different camera angles and framings across frames. Controlled depth of field,
+Ultra high-quality studio imagery with a real camera look. Different camera angles and framings across frames. Controlled depth of field, precise lighting, accurate materials and reflections. Lighting logic, color palette, mood and visual language must remain consistent across all nine panels as one cohesive series.
+OUTPUT:
+A clean 3×3 grid with no borders, no text, no captions and no watermarks.
 ```
 
 </details>
@@ -30599,7 +37419,9 @@ Ultra high-quality studio imagery with a real camera look. Different camera angl
   "overall_mood": "casual confidence, calm presence",
   "intended_use": {
     "primary": "aesthetic lifestyle post on X",
-    "secondary": "personal branding or daily v
+    "secondary": "personal branding or daily vibe content"
+  }
+}
 ```
 
 </details>
@@ -30669,7 +37491,15 @@ A high-angle, wide-composition Impressionist oil painting of a rainy urban inter
     "setting": "the_summit_of_a_high_mountain_with_jagged_rocks_and_a_cliff_edge",
     "lighting": "bright_natural_daylight_with_soft_clouds_below",
     "background": "monumental_cloud_formations_in_the_distant_sky_arranged_clearly_to_spell_out_the_word_'BeautyVerse'_hovering_above_mountain_ranges",
-    "atmosphere": "majestic_and_adventurous_high-altitude_v
+    "atmosphere": "majestic_and_adventurous_high-altitude_vibe_with_surreal_elements"
+  },
+  "realism_and_rendering": {
+    "style": "adventure_outdoor_photography_with_surrealist_elements",
+    "camera": "Ultra-wide_angle_lens_shot_from_above_height_emphasizing_the_height_of_the_peak",
+    "image_quality": "8k_resolution_hyper-realistic_rock_textures_and_fabric_weave",
+    "aspect_ratio": "3:4"
+  }
+}
 ```
 
 </details>
@@ -30795,7 +37625,15 @@ A high-angle, wide-composition Impressionist oil painting of a rainy urban inter
     "setting": "the_summit_of_a_high_mountain_with_jagged_rocks_and_a_cliff_edge",
     "lighting": "bright_natural_daylight_with_soft_clouds_below",
     "background": "monumental_cloud_formations_in_the_distant_sky_arranged_clearly_to_spell_out_the_word_'BeautyVerse'_hovering_above_mountain_ranges",
-    "atmosphere": "majestic_and_adventurous_high-altitude_v
+    "atmosphere": "majestic_and_adventurous_high-altitude_vibe_with_surreal_elements"
+  },
+  "realism_and_rendering": {
+    "style": "adventure_outdoor_photography_with_surrealist_elements",
+    "camera": "Ultra-wide_angle_lens_shot_from_above_height_emphasizing_the_height_of_the_peak",
+    "image_quality": "8k_resolution_hyper-realistic_rock_textures_and_fabric_weave",
+    "aspect_ratio": "3:4"
+  }
+}
 ```
 
 </details>
@@ -30889,7 +37727,22 @@ A high-angle, wide-composition Impressionist oil painting of a rainy urban inter
   "environment": {
     "location": "Avenue in a major metropolis (resembling Chicago or NYC).",
     "elements": "Skyscrapers flanking both sides, busy traffic with miniature yellow taxis and buses way below.",
-    "perspective": "Aerial view relativ
+    "perspective": "Aerial view relative to the city, but eye-level relative to the subject."
+  },
+  "camera_technical_values": {
+    "lens": "35mm (Wide angle to capture the full scale of the subject against the skyline).",
+    "aperture": "f/11 (Deep depth of field to keep both the giant subject and the city background relatively sharp).",
+    "shutter_speed": "1/500s.",
+    "iso": "ISO 100.",
+    "resolution": "8k, high fidelity textures."
+  },
+  "lighting_setup": {
+    "source": "Natural Daylight.",
+    "quality": "Soft, diffused sunlight (slightly overcast).",
+    "direction": "Overhead/Frontal.",
+    "shadows": "Subject casts a massive, long shadow onto the city streets below."
+  }
+}
 ```
 
 </details>
@@ -30930,7 +37783,10 @@ A high-angle, wide-composition Impressionist oil painting of a rainy urban inter
   "clothing": {"outfit_type": "Lightweight sleepwear or lounge-style dress", "color": "White", "material": "Soft, slightly sheer fabric", "details": "Thin shoulder straps with delicate lace trim"},
   "styling": {"accessories": ["Minimal necklace", "Small hoop earrings"], "nails": "Natural or subtly manicured", "overall_style": "Soft, feminine, and intimate aesthetic"},
   "lighting": {"type": "Natural daylight", "source": "Side window illumination", "quality": "Soft, diffused, evenly spread light", "shadows": "Very gentle, minimal shadows enhancing natural contours"},
-  "mood": {"emotional_tone": "Calm, intros
+  "mood": {"emotional_tone": "Calm, introspective, and warm", "visual_feel": "Quiet, intimate, and visually soft"},
+  "camera_details": {"camera_type": "Smartphone camera", "lens_equivalent": "Wide-angle perspective (approximately 24–28mm)", "perspective": "Mirror selfie viewpoint", "focus": "Crisp focus on the subject with natural depth"},
+  "rendering_style": {"realism_level": "Ultra-photorealistic", "detail_level": "High skin-detail fidelity, realistic light falloff, natural fabric behavior", "post_processing": "Soft contrast, gentle highlights, natural color grading", "artifacts": "None, clean and sharp image quality"}
+}
 ```
 
 </details>
@@ -31016,7 +37872,21 @@ A high-fashion close-up portrait of a woman with relaxed shoulders and a gentle,
     "camera_type": "professional camera simulation",
     "lens": "50mm or 85mm portrait lens",
     "focus": "sharp focus on profile",
-    "depth_of_field": "s
+    "depth_of_field": "soft background blur",
+    "resolution": "editorial-grade clarity"
+  },
+  "quality_control": {
+    "anatomy_accuracy": "natural posture and proportions",
+    "fabric_realism": "realistic drape and texture",
+    "ai_artifacts": "none",
+    "professional_finish": "magazine-quality output"
+  },
+  "overall_mood": "confident, refined, cinematic",
+  "intended_use": {
+    "primary": "viral aesthetic post on X",
+    "secondary": "personal branding, editorial photography"
+  }
+}
 ```
 
 </details>
@@ -31122,7 +37992,7 @@ She is positioned in right side profile, holding a thin paintbrush in her right 
 The icon depicts an elderly Orthodox saint with a long grey beard, dressed in traditional liturgical garments, with a softly glowing golden halo. Cyrillic inscriptions are visible on the icon, including "IC XC" and other Church Slavonic lettering. The saint holds a small icon in his hands. The painted surface shows realistic craquelure, brush strokes, gold leaf imperfections, and aged varnish.
 Background: a richly decorated iconostasis filled with golden icons set in arched frames, carved wooden details, burning candles and hanging oil lamps. On the right side, a tall arched stained-glass window casts soft multicolored light onto the floor, creating subtle rainbow reflections. On the left, part of the altar is visible with a cross and additional icons.
 Lighting is warm, layered, and atmospheric — golden ambient candlelight combined with soft natural light from the window, creating gentle shadows and depth. Skin appears fully natural with visible pores, subtle tonal variations, and no artificial smoothing. Makeup is refined and realistic, enhancing the eyes and lips without exaggeration.
-Camera perspective: 50–85mm lens look, shallow depth of field, sharp focus on the woman's face, hand, and brush, wi
+Camera perspective: 50–85mm lens look, shallow depth of field, sharp focus on the woman's face, hand, and brush, with the background softly blurred. High optical clarity, true-to-life color balance, realistic exposure. The composition emphasizes the contrast between the matte white fabric of the dress and the luminous gold tones of the iconostasis. Ultra-realistic, photographic, human, non-stylized.
 ```
 
 </details>
@@ -31196,7 +38066,12 @@ Camera perspective: 50–85mm lens look, shallow depth of field, sharp focus on 
     "type": "human",
     "description": {"gender_presentation": "woman", "age": "early 20s", "beauty_style": "fresh, modern, expressive", "hair": {"colors": ["blue", "pink"], "style": "soft waves, slightly tousled"}, "makeup": "natural base with subtle gloss, soft blush, minimal eye makeup"},
     "pose_and_expression": {"body_position": "lying on the floor on her abdomen", "legs": "bent upward and resting casually on the couch", "head_position": "in the foreground, closest to the camera", "head_tilt": "slightly tilted", "gaze": "direct eye contact with the camera", "expression": "attractive, playful smile"},
-    "hands_and_props": {"primary_prop": {"item": "iPhone", "how_held": "held naturally in one hand near the face, relaxed grip"}, "secondary_prop": {"item": "
+    "hands_and_props": {"primary_prop": {"item": "iPhone", "how_held": "held naturally in one hand near the face, relaxed grip"}, "secondary_prop": {"item": "bubble gum", "detail": "red bubble fully inflated in front of lips"}}
+  },
+  "wardrobe": {"outfit_style": "short, feminine, modern", "dress": {"item": "pink short gown", "fit": "fitted at the top with a softly flowing skirt", "length": "short, above the knees", "fabric": "lightweight satin or silk-like material", "fabric_behavior": "natural folds and gentle drape against the floor", "details": ["soft sheen catching white reflections", "subtle wrinkles from relaxed pose", "elegant neckline complementing the necklace"]}},
+  "accessories": {"jewelry": [{"item": "necklace", "design": "guitar-shaped pendant", "details": "metallic finish with soft reflections, resting naturally on the gown"}]},
+  "camera": {"shot_type": "intimate close-to-medium shot", "angle": "low and intimate, camera near floor level", "framing": "head and face dominant in foreground, body receding into depth", "lens": {"focal_length_mm": 50, "aperture": "f/1.8", "depth_of_field": "very shallow, strong foreground focus"}, "focus": "sharp focus on eyes, lips, and bubble gum; background smoothly blurred"}
+}
 ```
 
 </details>
@@ -31227,7 +38102,12 @@ Camera perspective: 50–85mm lens look, shallow depth of field, sharp focus on 
       "scene_summary": "Ultra-close photorealistic couple selfie. The couple presses their cheeks together, filling the frame. Each has half of a red hand-drawn heart painted on their cheek, forming a complete heart when their faces touch. Soft, intimate, youthful vibe with a nostalgic film aesthetic.",
       "composition": {"framing": "extreme close-up, faces cropped at forehead and chin", "pose": "cheek-to-cheek, relaxed and affectionate", "expression": "soft smiles, calm eyes, natural candid emotion"},
       "details": {"face_paint": "simple red heart painted by hand, slightly imperfect, matte texture", "skin": "natural pores, light blush on cheeks", "lips": "soft coral / peach tone, natural finish", "eyes": "natural lashes, minimal makeup"},
-      "lighting": {"type": "soft indoor ambient light", "quality": "even, gentle, no harsh shadows", "tone": "warm-n
+      "lighting": {"type": "soft indoor ambient light", "quality": "even, gentle, no harsh shadows", "tone": "warm-neutral"},
+      "style": {"look": "90s / Y2K casual selfie", "texture": "light film grain, slightly muted colors", "retouching": "minimal, authentic"}
+    },
+    "negative_prompt": ["identity drift", "face swap artifacts", "over-smoothed skin", "plastic skin", "heavy makeup", "beauty filter", "blurred eyes", "deformed facial features", "extra people", "text", "logo", "watermark", "cartoon", "anime", "cgi render"]
+  }
+}
 ```
 
 </details>
@@ -31288,7 +38168,14 @@ Camera perspective: 50–85mm lens look, shallow depth of field, sharp focus on 
     "key_light": "The bright, warm orange flame from the burning photograph, illuminating her face and hands.",
     "ambient_light": "Cool, blue-toned ambient light from the streetlights and surrounding city.",
     "effect": "A strong contrast between the warm, intense light of the fire and the cold, dark urban environment.",
-    "details": "Smoke is visible rising from both the cigar
+    "details": "Smoke is visible rising from both the cigarette and the burning photo."
+  },
+  "style_and_mood": {
+    "style": "Candid photojournalism, photorealistic.",
+    "mood": "Defiant, rebellious, politically charged, intense.",
+    "color_palette": "Dominated by cool blues, whites, and grays, with a powerful accent of fiery orange and yellow."
+  }
+}
 ```
 
 </details>
@@ -31324,7 +38211,14 @@ Create a hyper-realistic 3D holographic blueprint projection of a [CAR NAME] eme
 ```
 {
   "prompt": "A hyper-realistic, ultra-detailed 8K cinematic photograph captured from a high-angle perspective using a wide-angle lens, looking directly downward into a dense, almost circular crowd, creating a strong sense of enclosure and spotlight focus.\n\nAt the center stands a confident man wearing a dark tailored suit with a dark collared shirt and round sunglasses. Use the uploaded face strictly as reference to preserve the exact identity and facial features. His right hand is raised toward the camera with the palm facing outward in a clear 'stop' or 'talk to the hand' gesture, conveying authority and control.\n\nHe is completely surrounded by a tightly packed crowd of smiling women, forming a near-perfect circle around him. The women are dressed in dark, elegant, or subtly shimmering evening attire. Their faces and shoulders densely fill the mid-ground, many looking toward the central man or directly at the camera, enhancing the sense of attention and chaos.\n\nIn the immediate foreground at the bottom of the frame, multiple photographers are visible holding professional DSLR cameras equipped with large external flash units. The flashes are actively firing, producing intense, direct frontal lighting on the central figures.\n\nLighting and mood: Dramatic, high-contrast paparazzi-style lighting with blown-out highlights on faces and clothing, sharp rim lighting on some figures, and deep, near-black shadows in the background. The lighting emphasizes a glamorous yet chaotic paparazzi frenzy.\n\nVisual quality: Extremely sharp focus on the main subjects, hyper-detailed textures on skin, fabric, sunglasses, and camera equipment. Cinematic color grading, realistic skin tones, shallow depth of field where appropriate, premium editorial photography aesthetic.",
-  "negative_prompt": "low resolution, blur, soft focus, cartoon, illustration, CGI, distorted anatomy, extra limbs, extra fingers, washed-out colors, flat lighting, studio setup, empty background, watermark, 
+  "negative_prompt": "low resolution, blur, soft focus, cartoon, illustration, CGI, distorted anatomy, extra limbs, extra fingers, washed-out colors, flat lighting, studio setup, empty background, watermark, logo, text",
+  "aspect_ratio": "2:3",
+  "style": "hyper-realistic cinematic",
+  "lighting": "high-contrast paparazzi flash lighting",
+  "camera": "DSLR, wide-angle lens, high-angle shot",
+  "resolution": "8K",
+  "quality": "ultra high"
+}
 ```
 
 </details>
@@ -31424,7 +38318,78 @@ Prompt:
     "global_scene": {
       "setting": "minimal warm studio with beige / sand backdrop",
       "lighting": {
-        "key_light": "large soft window light fr
+        "key_light": "large soft window light from one side",
+        "fill_light": "very subtle ambient fill",
+        "shadow_style": "soft but defined shadows, visible depth on collarbones and jawline",
+        "contrast": "gentle cinematic contrast",
+        "highlights": "controlled, no clipping"
+      },
+      "mood": "sensual, free, editorial, intimate, movement-focused"
+    },
+    "subject": {
+      "type": "human",
+      "description": "use the exact same person as the reference image; face must match 1:1 with maximum similarity",
+      "wardrobe": {
+        "top": "white ribbed tank or crop top, slightly worn texture",
+        "bottom": "loose light-wash denim jeans, relaxed fit",
+        "styling_rules": "no logos, minimal accessories, timeless clean styling"
+      },
+      "hair": "keep hair length and overall vibe consistent with reference; allow natural motion",
+      "makeup": "natural clean makeup, no glam transformation",
+      "hands_and_nails": "natural nails only, no polish"
+    },
+    "grid_composition": {
+      "layout": "3x3_grid_single_image",
+      "borders": "thin clean white or subtle separators, consistent spacing, no text",
+      "continuity": "identical subject identity across all 9 frames, same outfit and scene"
+    },
+    "poses_sequence": {
+      "pose_style": "fluid body movement, arms raised, head tilted back, hair in motion",
+      "variation_notes": [
+        "close-up face with hair movement (eyes sharp)",
+        "side profile torso movement (face still recognizable)",
+        "hands on neck or collarbone (hands anatomically correct)",
+        "arms lifted above head (no warped limbs)",
+        "midriff and waist emphasis (no body distortion)",
+        "breathing pauses between motion (natural candid moments)"
+      ],
+      "continuity": "same subject, same outfit, same background; only pose/crop changes"
+    },
+    "composition": {
+      "framing": "editorial crop, mix of close-ups and mid-shots",
+      "camera_distance": "varied per frame, cohesive grid",
+      "depth_of_field": "moderately shallow, subject separated from background",
+      "motion": "freeze motion sharply but keep organic feel; no motion blur on face",
+      "focus_priority": "face/eyes in every frame"
+    },
+    "style_constraints": [
+      "Photorealistic only",
+      "Fujifilm film simulation look (Classic Neg)",
+      "Face must match reference 1:1 (maximum identity fidelity)",
+      "Natural pores and texture, no plastic skin",
+      "No over-sharpening, no AI face smoothing",
+      "No text, logos, or watermarks",
+      "No extra people"
+    ],
+    "negative_prompt": [
+      "identity drift",
+      "different face",
+      "face morph",
+      "beauty filter",
+      "over-smoothed skin",
+      "stiff posing",
+      "duplicate faces or bodies",
+      "warped limbs, extra fingers",
+      "motion blur on face",
+      "cartoon, anime, illustration, CGI, 3D render",
+      "harsh studio flash",
+      "cold blue tones",
+      "overexposed highlights",
+      "text, watermark, logo",
+      "extra people"
+    ]
+  }
+}
 ```
 
 </details>
@@ -31543,7 +38508,40 @@ Prompt:
 },
 "lighting": {
 "type": "Natural light",
-"direction": "Soft side lighting 
+"direction": "Soft side lighting from above-left",
+"contrast": "Moderate contrast with gentle highlights and smooth shadow falloff",
+"highlights": "Subtle highlights on forehead, cheekbone, and knuckles",
+"shadows": "Soft shadows under the arm, chin, and chess pieces"
+},
+"color_and_tone": {
+"color_mode": "Black and white",
+"tonal_range": "Wide grayscale range from deep blacks to bright whites",
+"dominant_tones": "Mid-grays and soft highlights",
+"texture_emphasis": "Enhanced skin texture, fabric fibers, wood grain, and grass"
+},
+"technical_characteristics": {
+"lens_look": "Portrait lens feel, likely medium focal length",
+"aperture_effect": "Wide aperture producing shallow depth of field",
+"sharpness": "High sharpness on subject’s eye and facial features",
+"grain": "Fine, subtle film-like grain",
+"dynamic_range": "Well-preserved highlights and shadow details"
+},
+"artistic_elements": {
+"theme": "Strategy, contemplation, mental focus",
+"symbolism": "Chessboard as a metaphor for life decisions and planning",
+"emotional_tone": "Quiet, reflective, intellectually engaged",
+"timelessness": "Classic monochrome treatment removes temporal context"
+},
+"typography": {
+"presence": "None",
+"text_elements": "No visible text or lettering"
+},
+"overall_aesthetic": {
+"genre": "Fine art portrait photography",
+"influences": "Humanist photography, editorial portraiture",
+"use_case": "Art print, editorial feature, conceptual storytelling, AI style reference"
+}
+}
 ```
 
 </details>
@@ -32004,7 +39002,23 @@ A minimalist logo design where the word "[WORD]" is transformed into a physical 
   },
   "camera_details": {
     "camera_type": "professional camera simulation",
-    "lens": "50mm o
+    "lens": "50mm or 85mm portrait lens",
+    "focus": "sharp on back lines and shoulders",
+    "depth_of_field": "soft background blur",
+    "resolution": "editorial-grade clarity"
+  },
+  "quality_control": {
+    "anatomy_accuracy": "natural posture and proportions",
+    "fabric_realism": "realistic drape and folds",
+    "ai_artifacts": "none",
+    "professional_finish": "magazine-quality output"
+  },
+  "overall_mood": "mysterious, confident, cinematic",
+  "intended_use": {
+    "primary": "viral aesthetic post on X",
+    "secondary": "personal branding, editorial photography"
+  }
+}
 ```
 
 </details>
@@ -32083,7 +39097,56 @@ A minimalist logo design where the word "[WORD]" is transformed into a physical 
   "clothing": {
     "top": {
       "type": "Short-sleeve blouse",
-
+      "fit": "Fitted bodice with gathered fabric",
+      "neckline": "Square neckline with tie detail at center",
+      "sleeves": "Short puff sleeves with gathered cuffs",
+      "color": "Dark navy blue",
+      "pattern": "Floral print",
+      "floral_colors": ["Orange", "Muted coral", "Green accents"]
+    },
+    "bottom": {
+      "type": "Jeans",
+      "color": "Medium blue denim",
+      "fit": "Relaxed fit"
+    }
+  },
+  "hands_and_props": {
+    "hands": {
+      "position": "Both hands holding a plate",
+      "fingers": "Relaxed grip"
+    },
+    "object": {
+      "type": "Ceramic plate",
+      "color": "Light beige or off-white",
+      "contents": "Two whole yellow lemons"
+    }
+  },
+  "environment": {
+    "setting": "Indoor",
+    "background_elements": [
+      "Dark wooden furniture",
+      "Light-colored wall",
+      "Vertical architectural lines"
+    ],
+    "background_focus": "Softly blurred"
+  },
+  "lighting": {
+    "type": "Soft natural light",
+    "direction": "From front-left relative to subject",
+    "shadows": "Gentle, minimal contrast",
+    "skin_highlights": "Subtle highlights on cheekbones and forehead"
+  },
+  "color_grading": {
+    "tone": "Warm and natural",
+    "contrast": "Moderate",
+    "saturation": "Balanced, realistic"
+  },
+  "overall_style": {
+    "mood": "Calm, intimate, natural",
+    "aesthetic": "Lifestyle portrait photography",
+    "realism_level": "High photorealism"
+  }
+}
 ```
 
 </details>
@@ -32238,7 +39301,39 @@ Prompt:
       "color_grade": "warm_gallery_luxe_true_to_life"
     },
     "creative_prompt": {
-      "scene_summary": "Recreate the reference photo EXACTLY in a classic museum gallery.\n\nScene & environment (match reference):\n- Deep red patterned wallpapered gallery wall.\n- Large gold-framed landscape painting centered high on the wall.\n- Two smaller gold-framed paintings on the right side of the large painting.\n- Warm wooden floor, museum bench in the background, and a small nude classical statue on a pedestal far right.\n- A large white marble statue group in the foreground-right: a classical female figure leaning forward, one hand cupped to her ear as if listening. The statue stands on a white base.\n\nSubject (single person, match reference):\n- One woman standing in the foreground-left, side profile facing the statue.\n
+      "scene_summary": "Recreate the reference photo EXACTLY in a classic museum gallery.\n\nScene & environment (match reference):\n- Deep red patterned wallpapered gallery wall.\n- Large gold-framed landscape painting centered high on the wall.\n- Two smaller gold-framed paintings on the right side of the large painting.\n- Warm wooden floor, museum bench in the background, and a small nude classical statue on a pedestal far right.\n- A large white marble statue group in the foreground-right: a classical female figure leaning forward, one hand cupped to her ear as if listening. The statue stands on a white base.\n\nSubject (single person, match reference):\n- One woman standing in the foreground-left, side profile facing the statue.\n- Pose: she cups her hands around her mouth, leaning in as if whispering into the statue’s ear.\n- Outfit: sleeveless black top; light beige pants/jeans.\n- Accessories: sunglasses resting on top of head; wristwatch and bracelets; crossbody brown leather bag strap across torso with bag visible at hip.\n- Hair: blonde, shoulder-length, straight/softly layered.\n\nLighting & camera (match reference):\n- Warm indoor museum lighting with soft highlights and realistic shadows.\n- Natural smartphone/lifestyle photo realism (not studio), accurate perspective and scale.\n- Keep the same framing: woman on left, large statue on right, paintings aligned behind.\n\nRealism requirements:\n- Natural skin texture, no plastic smoothing.\n- Marble statue texture: matte stone with subtle specular highlights; crisp sculptural detail.\n- Correct anatomy: hands cupped naturally; no extra fingers.\n\nText rules:\n- No readable text, no signage, no watermark, no logos."
+    },
+    "hard_constraints": [
+      "Single person only.",
+      "Match the reference composition, pose, and framing 100%.",
+      "Museum gallery with red wallpaper + gold-framed paintings + white marble listening statue.",
+      "Brown crossbody bag must be present and positioned like reference.",
+      "Warm museum lighting, realistic shadows.",
+      "No text/logos/watermarks."
+    ],
+    "negative_prompt": [
+      "extra people",
+      "different statue",
+      "different wall color",
+      "missing paintings",
+      "missing bag",
+      "changed pose",
+      "cropped statue",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "anime",
+      "cgi look",
+      "plastic skin",
+      "over-smoothed skin",
+      "deformed hands",
+      "extra fingers",
+      "blurry face",
+      "blurry details"
+    ]
+  }
+}
 ```
 
 </details>
@@ -32296,7 +39391,10 @@ Prompt:
     },
     "technical_specs": {
       "lighting": "Harsh midday sunlight, strong contrast, deep natural shadows, bright specular highlights",
-      "camera_settings": "5
+      "camera_settings": "50–85mm lens look, shallow depth of field, high dynamic range (HDR)",
+      "color_grading": "Realistic, true-to-life skin tones"
+    },
+    "full_prompt_string": "Ultra-realistic cinematic lifestyle photography, 8K, hyper-detailed, photorealistic, An attractive woman aged 20, Slavic appearance. A naturally beautiful, well-balanced face with realistic proportions, no artificial perfection. Large expressive green-hazel eyes, calm confident gaze toward the camera. Naturally full lips, soft and unexaggerated. Light, natural daytime makeup emphasizing her features without looking heavy. Her skin is sun-kissed and wet, highly realistic with visible pores, subtle micro-imperfections, fine highlights, and water and oil droplets catching the sunlight. No plastic or overly smooth texture. Long wet hair, slightly messy after swimming, with a few strands sticking naturally to her cheek and forehead. She is lying on her stomach on a bright blue-and-white striped beach towel. The pose feels relaxed and spontaneous, like a real vacation moment: legs gently bent at the knees and lifted upward, feet together; a natural back line, slim waist, realistic body anatomy without exaggeration. She wears a small classic black bikini top with thin straps and a deep plunge — minimalistic, clean design, naturally fitting the body. One arm is extended forward as she takes a selfie — part of her arm and the edge of a small smartphone are visible in frame, reinforcing a casual iPhone-style shot. In her other hand, she holds a fresh coconut with a straw and a subtle ADORE logo; water droplets run down the shell. Environment: a luxurious rooftop pool atop a high-rise building in Los Angeles. Bright sunny day, clear blue sky with no clouds, turquoise pool water. Lush tropical greenery (banana palms, monstera plants), white sun loungers and umbrellas. Modern downtown LA skyscrapers in the background with a slight atmospheric haze on the horizon.
 ```
 
 </details>
@@ -32380,7 +39478,9 @@ Generate a hyper-realistic, 3D "Timeline Diorama" visualizing the evolution of a
   5. Visual Syntax:  
       Camera:   Isometric or High-Angle Diagonal to fit all [Input B] items in one frame.
       Scale:   Uniform scale. 1:100 Architectural Model style.
-      Atmosphere:   The lighting evolves across the image (Sunrise on the left -> Noon -> Sunse
+      Atmosphere:   The lighting evolves across the image (Sunrise on the left -> Noon -> Sunset -> Neon Night on the right).
+
+  Output:   ONE image, Ultra-Wide Aspect Ratio (21:9 if eras > 4), Architectural Render, Museum Lighting, High Texture Fidelity.
 ```
 
 </details>
@@ -32463,7 +39563,57 @@ Generate a hyper-realistic, 3D "Timeline Diorama" visualizing the evolution of a
     },
 
     "wardrobe_and_styling": {
-      "female_out
+      "female_outfit": "white_t_shirt_blue_jeans_white_socks",
+      "male_outfit": "white_t_shirt_dark_pants",
+      "style": "casual_homewear_real_life",
+      "accessories": "minimal_or_none"
+    },
+
+    "posing_and_interaction": {
+      "action": "female_sitting_on_male_shoulders_playful_candid_moment",
+      "interaction": "natural_laughter_touching_faces",
+      "emotion": "joyful_intimate_playful",
+      "movement": "slight_motion_natural_unposed"
+    },
+
+    "environment": {
+      "location": "simple_living_room",
+      "details": [
+        "plain_walls",
+        "framed_art_on_wall",
+        "track_lighting_on_ceiling",
+        "home_interior_objects_subtle"
+      ],
+      "background_behavior": "slightly_out_of_focus",
+      "distractions": "none"
+    },
+
+    "creative_prompt": {
+      "scene_summary": "A candid black-and-white lifestyle photograph of a young couple sharing a playful moment at home. The woman sits on the man's shoulders, both laughing naturally. The image feels spontaneous, intimate, and real—like a memory captured on 35mm film.",
+      "mood": "warm_playful_intimate",
+      "aesthetic": "analog_lifestyle_photography"
+    },
+
+    "negative_prompt": [
+      "text",
+      "logo",
+      "watermark",
+      "posed_look",
+      "fashion_editorial",
+      "studio_lighting",
+      "beauty_filter",
+      "plastic_skin",
+      "over_smoothing",
+      "cgi",
+      "anime",
+      "ai_artifacts",
+      "extra_people",
+      "extra_limbs",
+      "bad_hands",
+      "distorted_body"
+    ]
+  }
+}
 ```
 
 </details>
@@ -32595,7 +39745,15 @@ Prompt:
   },
   "style": "analog-inspired, diary-like portrait, lo-fi editorial realism",
   "negative_prompt": [
-    "studio li
+    "studio lighting",
+    "beauty retouching",
+    "plastic skin",
+    "perfect symmetry",
+    "over-sharpening",
+    "clean minimal background",
+    "AI artifacts"
+  ]
+}
 ```
 
 </details>
@@ -32707,7 +39865,14 @@ A young women with tousled brown hair, wearing a white, orange, and black color-
     "blurred face",
     "oversaturated reds",
     "busy background",
- 
+    "plastic skin"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -32795,7 +39960,44 @@ A [PRODUCT] in color-shifting chrome [COLOR to COLOR] captured mid-transformatio
           "female": "casual hoodie or sweater, relaxed fit"
         },
         "accessories": "glasses optional, seatbelts visible",
-        "hands_and_nails"
+        "hands_and_nails": "natural nails only, realistic hand anatomy"
+      }
+    },
+    "strip_composition": {
+      "layout": "vertical_triptych_3_frames_single_image",
+      "dividers": "thin horizontal separators between frames, clean edges, no text",
+      "continuity": "same couple, same car, same lighting across all frames"
+    },
+    "poses_sequence": {
+      "frame_1_top": "playful exaggerated expression: both open mouths laughing or mock-biting, female hand gently on male cheek; high energy",
+      "frame_2_middle": "affectionate kiss on cheek, faces close, relaxed smiles",
+      "frame_3_bottom": "soft cuddle pose, cheeks touching, subtle smiles looking at camera"
+    },
+    "composition": {
+      "framing": "tight close-up selfie in each frame, faces fill most of the frame",
+      "depth_of_field": "moderate DOF, faces sharp, background softly blurred",
+      "motion": "freeze candid movement cleanly, no motion blur",
+      "no_extra_people": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI look)",
+      "Exactly two people",
+      "Natural candid feel (not posed studio)",
+      "No text, no logos, no watermarks",
+      "No identity morphing or face drift",
+      "Accurate anatomy (hands, cheeks, mouths)"
+    ],
+    "negative_prompt": [
+      "extra people",
+      "duplicate faces",
+      "cartoon, anime, illustration, CGI, 3D render",
+      "beauty filter, over-smoothed skin",
+      "unnatural facial expressions",
+      "blurred faces, motion blur",
+      "text, watermark, logo"
+    ]
+  }
+}
 ```
 
 </details>
@@ -32851,7 +40053,11 @@ A [PRODUCT] in color-shifting chrome [COLOR to COLOR] captured mid-transformatio
     "camera_technical_values": {
       "style": "High-end Fashion Editorial.",
       "lens": "85mm or 100mm Macro (for top and bottom panels), 35mm (for middle panel).",
-      "aperture": "f/2.8 (Soft background blur in close
+      "aperture": "f/2.8 (Soft background blur in close-ups).",
+      "shutter_speed": "1/160s.",
+      "iso": "ISO 400 (Slight film grain added for texture).",
+      "lighting_setup": "Low Key Lighting. Subject illuminated against a pitch-black background. Soft, directional light highlighting the face and the red rose."
+    }
 ```
 
 </details>
@@ -32920,7 +40126,40 @@ A [PRODUCT] in color-shifting chrome [COLOR to COLOR] captured mid-transformatio
         "female_subject": {
           "wardrobe": "flowing white dress soaked by rain, fabric clinging naturally, no modern styling",
           "pose": "leaning back slightly, arms open, face lifted upward feeling the rain",
-          "emotion": "release, freedom, emotional o
+          "emotion": "release, freedom, emotional openness"
+        },
+        "male_subject": {
+          "wardrobe": "earth-toned jacket and trousers, damp from rain",
+          "pose": "standing close, gently holding her hand, grounded and calm",
+          "emotion": "protective, tender presence"
+        }
+      }
+    },
+    "composition": {
+      "framing": "medium-full to medium shot, crop closer than original, reduce negative space above and around",
+      "camera_height": "slightly above waist level",
+      "depth_of_field": "moderate shallow DOF, couple sharp, background lake softly softened",
+      "focus_priority": "faces and hand connection",
+      "no_extra_people": true
+    },
+    "style_constraints": [
+      "Photorealistic only",
+      "Natural rain physics (droplets, wet fabric, wet wood reflections)",
+      "No beauty filters or stylization",
+      "No text, logos, or watermarks",
+      "Accurate human anatomy and fabric behavior"
+    ],
+    "negative_prompt": [
+      "cartoon, illustration, CGI, 3D render",
+      "overly dramatic lighting",
+      "dry clothing in rain",
+      "plastic skin or cinematic exaggeration",
+      "blurred faces",
+      "extra people or animals",
+      "text, watermark, logo"
+    ]
+  }
+}
 ```
 
 </details>
@@ -33206,7 +40445,34 @@ Google Nano Banana Pro on Gemini app.
 "direction": "soft ambient, slightly directional from left",
 "contrast": "low to medium",
 "highlights": "subtle reflections on astronaut visor and balloon surface",
-"shado
+"shadows": "soft, diffused shadows under bench and subject"
+},
+"technical_details": {
+"camera_angle": "eye-level",
+"lens_effect": "slight background compression suggesting mid-range focal length",
+"focus": "sharp on subject, gentle background blur",
+"grain": "minimal, clean digital look"
+},
+"artistic_style": {
+"genre": "conceptual portrait photography",
+"mood": "surreal, poetic, nostalgic",
+"themes": [
+"isolation",
+"imagination",
+"emotional distance",
+"childhood wonder"
+],
+"visual_metaphors": [
+"astronaut helmet representing emotional separation",
+"heart balloon symbolizing unattainable or fragile love"
+]
+},
+"typography": {
+"present": false
+},
+"overall_aesth
+etic": "cinematic, dreamy, modern surrealism with lifestyle photography influences"
+}
 ```
 
 </details>
@@ -33236,7 +40502,10 @@ Google Nano Banana Pro on Gemini app.
     "midground": "woman centered in inverted pose, large floor-to-ceiling mirrors on walls reflecting full body and room",
     "background": "modern dance/yoga studio with exposed red brick upper walls, vertical wooden slat paneling on lower walls, acoustic ceiling panels, clean professional fitness space with no clutter"
   },
-  "lighting_and_atmosphere": "warm even indoor studio lighting from overhead sources, soft natural glow with subtle highlights on sk
+  "lighting_and_atmosphere": "warm even indoor studio lighting from overhead sources, soft natural glow with subtle highlights on skin, hair, and glossy leggings fabric, gentle shadows enhancing muscle definition and pose depth, energetic athletic vibe with high contrast between teal outfit and wooden tones, photorealistic detail",
+  "technical_quality": "highly detailed, sharp focus on subject with realistic fabric textures (seamless leggings shine, knit leg warmers ribbing), hair movement, skin glow, tattoo ink, and mirror reflections, 8k resolution, professional fitness/yoga photography style with dynamic inverted composition and accurate pose anatomy",
+  "negative_prompt_suggestions": "blurry, deformed, extra limbs, unnatural proportions or balance issues, overexposed skin, underexposed shadows, low quality, cartoon, anime, text watermark, extra people, cluttered background, visible face distortion from inversion"
+}
 ```
 
 </details>
@@ -33303,7 +40572,33 @@ Google Nano Banana Pro on Gemini app.
 
       "lighting": {
         "key_light": "warm natural sunlight from the side",
-        "highli
+        "highlights": "soft glow on skin and lips",
+        "shadows": "gentle and cinematic"
+      },
+
+      "mood": [
+        "playful",
+        "sensual",
+        "editorial",
+        "celebratory",
+        "confident"
+      ]
+    },
+
+    "negative_prompt": [
+      "cartoon",
+      "illustration",
+      "blurry text",
+      "misspelled words",
+      "extra text",
+      "logos",
+      "watermark",
+      "harsh flash lighting",
+      "overexposed skin",
+      "cheap makeup look"
+    ]
+  }
+}
 ```
 
 </details>
@@ -33382,7 +40677,26 @@ Prompt:
     "aspect_ratio": "3:4"
   },
   "style_keywords": [
-    "realistic
+    "realistic",
+    "vintage 90s",
+    "early 2000s",
+    "editorial fashion",
+    "soft glamour"
+  ],
+  "negative_prompt": [
+    "cartoon",
+    "illustration",
+    "CGI",
+    "over-retouched skin",
+    "harsh makeup",
+    "anatomical distortion",
+    "blur",
+    "noise",
+    "watermark",
+    "text",
+    "logo"
+  ]
+}
 ```
 
 </details>
@@ -33448,7 +40762,50 @@ Prompt:
       "style": "cinematic travel lifestyle photo",
       "lens": "24mm",
       "aperture": "f/2.8",
-      "focus": "sharp on couple faces and baby, s
+      "focus": "sharp on couple faces and baby, slight falloff toward shoes",
+      "shutter_speed": "1/1600",
+      "iso": 100,
+      "white_balance": "bright clear daylight"
+    },
+    "lighting": {
+      "type": "direct sunny daylight",
+      "contrast": "medium",
+      "highlights": "natural sun highlights, controlled (no blown skin)",
+      "shadows": "soft-ish due to open sky bounce"
+    },
+    "prompt": {
+      "scene_summary": "Ultra-photoreal cinematic travel lifestyle photo. Extreme low-angle hero perspective looking up at a family against a wide open blue sky. The man carries the woman on his shoulders; she sits securely with legs draped to each side, sneakers visible close to camera. The woman holds a baby securely and lifts the baby upward in a joyful 'flying' moment (safe realistic lift: baby raised only slightly above her face level, supported with both hands, baby’s head/neck naturally supported). The man smiles, holding the woman’s legs/ankles for support, stance stable and natural. A commercial passenger airplane flies overhead, centered near the top of the frame, clearly recognizable with realistic scale, motion blur minimal.\n\nWardrobe & vibe (match reference):\n- Soft casual neutrals: man in a cream/beige sweater and light denim; woman in an oversized pastel/pink sweatshirt; clean white sneakers.\n- Baby in a simple pastel onesie (no text/logos), weather-appropriate.\n- Natural, candid happiness; relaxed weekend travel vibe.\n\nComposition & realism:\n- Blue sky fills most of the background; minimal clouds.\n- Strong perspective distortion typical of a 24mm lens; sneakers and legs appear slightly larger due to proximity.\n- Realistic skin texture, fabric knit detail, and accurate shadows.\n- Ensure faces are clearly visible and sharp, with natural expressions (no beautify filter).\n\nSafety/pose realism:\n- Baby is held securely with both hands, no extreme overhead throwing, no unsafe angles.",
+      "styling_notes": [
+        "keep the exact low-angle hero shot",
+        "man carrying woman on shoulders remains the core pose",
+        "woman lifts baby slightly upward while keeping secure support",
+        "airplane must be visible and not cropped",
+        "avoid sunglasses unless they exist in the identity references"
+      ]
+    },
+    "negative_prompt": [
+      "extra people",
+      "missing airplane",
+      "airplane cropped",
+      "unsafe baby pose (throwing baby high)",
+      "baby unsupported head/neck",
+      "cartoon",
+      "anime",
+      "cgi",
+      "plastic skin",
+      "over-smoothing",
+      "face morph",
+      "identity drift",
+      "deformed hands",
+      "extra fingers",
+      "extra limbs",
+      "text",
+      "logo",
+      "watermark",
+      "blown highlights"
+    ]
+  }
+}
 ```
 
 </details>
@@ -33517,7 +40874,78 @@ Prompt:
     },
 
     "scene": {
-      "location": "Mediterranean-style apartment balconies f
+      "location": "Mediterranean-style apartment balconies facing each other",
+      "architecture": {
+        "balconies": "two symmetrical balconies left and right, pale warm-toned building facades, classic railings",
+        "details": "subtle plants and shadows, clean lines"
+      },
+      "time": "late afternoon / golden hour",
+      "weather": "clear sky, no clouds",
+      "composition": {
+        "framing": "square composition with huge negative space sky",
+        "symmetry": "strong left-right symmetry",
+        "subject_positions": "male on left balcony, female on right balcony, arms reaching toward center"
+      }
+    },
+
+    "subjects": {
+      "male": {
+        "wardrobe": "light blue button-up shirt, casual, sleeves slightly rolled",
+        "pose": "leaning over balcony railing, arm extended offering bouquet",
+        "prop": "bouquet of soft pink roses/peonies with green stems"
+      },
+      "female": {
+        "wardrobe": "yellow satin or chiffon dress, elegant summer look",
+        "pose": "leaning forward over balcony railing, arm extended to receive flowers",
+        "hair": "natural, slightly wind-touched"
+      }
+    },
+
+    "photography": {
+      "camera_style": "romantic editorial, cinematic realism",
+      "lens": "35mm (wide enough to emphasize architecture and sky)",
+      "lighting": "natural sunlight, soft shadows, warm highlights on skin and dress",
+      "depth_of_field": "deep enough to keep both balconies sharp, sky clean",
+      "color_grade": "clean modern film tones, warm highlights, rich but natural blues"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "1:1",
+      "orientation": "square",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_editorial",
+      "sharpness": "crisp_but_natural",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_hands": true,
+        "no_extra_fingers": true,
+        "natural_arm_reach_perspective": true
+      },
+      "composition": {
+        "maintain_strong_negative_space": true,
+        "maintain_symmetry": true
+      }
+    },
+
+    "negative_prompt": [
+      "crowded background",
+      "cloudy sky",
+      "extra people",
+      "text, watermark, logo",
+      "cartoon, anime, illustration",
+      "HDR, over-sharpened look",
+      "warped architecture lines",
+      "deformed hands, extra fingers"
+    ]
+  }
+}
 ```
 
 </details>
@@ -33801,7 +41229,10 @@ She wears a fitted black blazer with structured shoulders over a simple white cr
 Lighting & Ambiance:
 High-contrast cinematic lighting with strong, directional natural light coming in from the side, creating dramatic diagonal streaks of light and shadow on the plain studio walls and partly on her body. The lighting creates depth, texture, and a moody editorial atmosphere reminiscent of a high-end fashion magazine. Soft shadows preserve facial details while maintaining strong contrast.
 Camera & Composition:
-Medium-full-length shot, eye-level perspective, centered composition. Shot with a professional DSLR or medium format camera, using a prime lens (50mm–85mm). Shallow depth of field with 
+Medium-full-length shot, eye-level perspective, centered composition. Shot with a professional DSLR or medium format camera, using a prime lens (50mm–85mm). Shallow depth of field with sharp focus on the subject, subtle background blur. Sharp details, subtle texture of fabric, visible skin pores, realistic falloff.
+
+Style & Quality:
+Editorial fashion photography, minimalist, cinematic, monochrome aesthetic, Vogue-style portraiture, ultra-high resolution, sharp focus, film-like contrast, timeless and modern atmosphere.
 ```
 
 </details>
@@ -34053,7 +41484,35 @@ A cinematic winter portrait of a handsome man standing in a snowy pine forest at
     ],
     "Aesthetic": "Whimsical yet grounded",
     "ScaleContrast": "Clear size difference enhancing playful storytelling",
-    "TextureDetail
+    "TextureDetail": [
+      "Clothing knit and denim texture",
+      "Stone pavement and brick surfaces"
+    ]
+  },
+  "PhotographyStyle": {
+    "Genre": "Cinematic lifestyle street photography",
+    "LensLook": "50mm lens perspective",
+    "DetailLevel": "High detail with natural softness"
+  },
+  "Mood": {
+    "Tone": "Thoughtful, playful, modern",
+    "NarrativeFeel": "Personal reflection with imaginative contrast"
+  },
+  "NegativePrompt": [
+    "harsh lighting",
+    "studio environment",
+    "oversaturated colors",
+    "uncanny avatar",
+    "low-detail illustration",
+    "blurry subject",
+    "cartoon-only style"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -34161,7 +41620,17 @@ The camera angle is very low (worm's-eye view), emphasizing her legs and stride.
     },
     "camera_details": {
       "shot_type": "Medium shot (thigh-up)",
-      "angle": "E
+      "angle": "Eye-level",
+      "lens": "85mm prime lens for flattering portrait compression",
+      "aperture": "f/2.8 for slight depth of field separation from the wall",
+      "focus": "Sharp focus on the subject and dress texture"
+    },
+    "technical_specifications": {
+      "quality": "Ultra Photorealistic, 8k resolution, highly detailed",
+      "texture_quality": "High fidelity fabric textures, realistic skin pores, detailed stone masonry",
+      "engine": "Unreal Engine 5 render style or high-end photography" Ratio 3.4
+    }
+  }
 ```
 
 </details>
@@ -34242,7 +41711,69 @@ The camera angle is very low (worm's-eye view), emphasizing her legs and stride.
     },
 
     "wardrobe_and_styling": {
-   
+      "female_outfit": "white_satin_spaghetti_strap_evening_dress",
+      "female_hair": "short_bob_or_soft_waves",
+      "female_headpiece": "vintage_pearl_headpiece_with_draped_strings",
+      "female_jewelry": "pearl_drop_earrings_optional",
+      "male_outfit": "classic_black_tuxedo_white_shirt_black_bow_tie",
+      "style_era": "1920s_gatsby_inspired_elegance"
+    },
+
+    "posing_and_interaction": {
+      "action": "intimate_closeup_kiss_or_near_kiss",
+      "distance": "faces_touching_noses_and_lips",
+      "expression": "soft_romantic_eyes_closed",
+      "body_language": "gentle_intimate_connection",
+      "gesture": "natural_unposed"
+    },
+
+    "environment": {
+      "location": "elegant_evening_reception_or_ballroom",
+      "details": [
+        "champagne_glasses_foreground_bokeh",
+        "deep_blue_or_dark_walls",
+        "warm_luxury_ambience"
+      ],
+      "background_behavior": "strong_blur_bokeh",
+      "distractions": "none"
+    },
+
+    "creative_prompt": {
+      "scene_summary": "A cinematic close-up of an elegant couple sharing an intimate kiss at a luxurious evening reception. The woman wears a white satin dress and a vintage pearl headpiece, evoking 1920s Gatsby glamour. Warm golden lighting, shallow depth of field, champagne glasses softly blurred in the foreground, and a timeless romantic mood.",
+      "mood": "romantic_intimate_luxurious",
+      "aesthetic": "gatsby_cinematic_love_story"
+    },
+
+    "hard_constraints": [
+      "Exactly 2 people only (one female, one male).",
+      "Faces must match references with maximum similarity (no identity drift).",
+      "Close-up intimate kiss or near-kiss, eyes closed.",
+      "Vintage pearl headpiece on the female.",
+      "Classic tuxedo on the male.",
+      "Strong background blur (bokeh).",
+      "NO TEXT, NO LOGOS, NO WATERMARK."
+    ],
+
+    "negative_prompt": [
+      "text",
+      "typography",
+      "logo",
+      "watermark",
+      "caption",
+      "modern_casual_clothing",
+      "beauty_filter",
+      "plastic_skin",
+      "over_smoothing",
+      "cgi",
+      "anime",
+      "ai_artifacts",
+      "extra_people",
+      "distorted_faces",
+      "over_sharpened",
+      "hdr"
+    ]
+  }
+}
 ```
 
 </details>
@@ -34432,7 +41963,36 @@ Prompt:
       "hair": "Blonde, brushed back",
       "attire": "Dark navy suit, white collared shirt, bright red tie",
       "identity": "Donald Trump (younger)",
-      "position": "Right si
+      "position": "Right side of the frame",
+      "expression": "Mouth open, possibly speaking or grimacing"
+    },
+    "woman": {
+      "hair": "Shoulder-length blonde hair",
+      "attire": "Silver, sparkling, spaghetti-strap dress",
+      "jewelry": "Small earring visible on left ear",
+      "identity": "Blonde woman (possibly Kara Young)",
+      "position": "Left side of the frame",
+      "expression": "Looking directly at camera, slightly open mouth"
+    }
+  },
+  "artistic_elements": {
+    "mood": "Slightly awkward, caught-in-the-moment",
+    "style": "Candid celebrity snapshot",
+    "texture": "Prominent texture of the woman's sparkling silver dress",
+    "expression": "Man is speaking or grimacing, woman is looking directly at the camera with a slightly open mouth",
+    "compositional_balance": "Balanced, with the two subjects occupying the majority of the frame"
+  },
+  "generation_parameters": {
+    "prompt": "A candid photograph from the 1990s of Donald Trump in a dark suit and red tie, standing next to a blonde woman in a silver sparkling dress. Both are looking at the camera, with Trump's mouth open. The image is taken with an on-camera flash at an evening event, with a very dark background.",
+    "style_tags": [
+      "1990s photography",
+      "flash photography",
+      "candid snapshot",
+      "celebrity photo"
+    ],
+    "negative_prompt": "modern photography, digital look, bright background, perfectly posed, studio lighting"
+  }
+}
 ```
 
 </details>
@@ -34511,7 +42071,14 @@ A professional photo collage in a 2x3 grid layout featuring six different headsh
   },
   "aesthetic_constraints": [
     "no plastic skin",
-    "no beauty
+    "no beauty retouching",
+    "no cinematic exaggeration",
+    "no fashion editorial posing",
+    "no artificial glow",
+    "avoid AI symmetry"
+  ],
+  "overall_vibe": "quiet confidence, observational, grounded realism, modern street portrait"
+}
 ```
 
 </details>
@@ -34615,7 +42182,29 @@ A surreal epic landscape where a giant Coca-Cola can pours cola like a roaring w
   },
   "PhotographyStyle": {
     "Genre": "Cinematic survival portrait photography",
-    "RealismLevel": "Extreme ph
+    "RealismLevel": "Extreme photorealism",
+    "DetailLevel": "8K ultra-high detail with controlled sharpness"
+  },
+  "Theme": {
+    "Concept": "Survival, resilience, endurance against nature",
+    "EmotionalImpact": "Strength, determination, quiet defiance"
+  },
+  "NegativePrompt": [
+    "smooth skin",
+    "beauty retouching",
+    "flat lighting",
+    "low contrast",
+    "cartoon",
+    "anime",
+    "fantasy illustration",
+    "blurry eyes"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -34725,7 +42314,22 @@ Use the same face from the reference image without changing facial features
       "highlights": "Reflective glints on snow crystals and goggles"
     }
   },
- 
+  "optical_parameters": {
+    "camera_specs": {
+      "lens_type": "85mm Prime",
+      "aperture": "f/1.8",
+      "shot_distance": "Close-up (CU)",
+      "focus_priority": "Iris of the eyes"
+    },
+    "render_passes": [
+      "Subsurface scattering (skin)",
+      "Micro-displacement (knit texture)",
+      "Volumetric cold air haze",
+      "Individual follicle rendering"
+    ],
+    "mood_profile": ["Serene", "Arctic", "Exploration", "High-Contrast"]
+  }
+}
 ```
 
 </details>
@@ -34794,7 +42398,62 @@ Use the same face from the reference image without changing facial features
       "bottom": {
         "type": "high-waisted wide-leg trousers",
         "color": "white",
-    
+        "fabric_look": "smooth structured fabric",
+        "fit": "loose straight wide-leg"
+      },
+      "footwear": {
+        "visibility": "mostly covered by trousers",
+        "color_hint": "light or white footwear partially visible
+
+  "animated_character_left": {
+    "character_type": "anthropomorphic mouse",
+    "color_palette": {
+      "fur": "light brown",
+      "inner_ears": "pinkish tone",
+      "belly": "lighter beige
+
+    "expression": "happy playful smile",
+    "eyes": "large expressive cartoon eyes",
+    "pose": {
+      "body": "leaning slightly toward center",
+      "arms": "one arm raised outward",
+      "legs": "one foot lifted suggesting motion
+
+    "style": "3D animated cartoon",
+    "surface_detail": "soft fur texture with smooth shading"
+  },
+  "animated_character_right": {
+    "character_type": "anthropomorphic cat",
+    "color_palette": {
+      "fur": "gray",
+      "belly": "light gray to white",
+      "ears": "pink inner ears
+
+    "expression": "confident slight smile",
+    "eyes": "large green cartoon eyes",
+    "pose": {
+      "body": "upright stance",
+      "arms": "crossed over chest",
+      "legs": "firm grounded stance"
+
+    "style": "3D animated cartoon",
+    "surface_detail": "plush fur texture with visible volume
+  "lighting": {
+    "type": "studio soft lighting",
+    "direction": "even frontal illumination",
+    "shadows": "soft minimal shadows beneath subjects",
+    "highlights": "gentle highlights on hair, clothing folds, and fur"
+  },
+  "color_balance": {
+    "overall_tone": "cool background contrasted with warm character tones",
+    "contrast": "moderate",
+    "saturation": "balanced, not oversaturated"
+  },
+  "render_quality": {
+    "detail_level": "high detail on fabric, fur, and facial features",
+    "edges": "clean sharp outlines",
+    "noise": "none visible"
+}
 ```
 
 </details>
@@ -34980,7 +42639,70 @@ Strict face preservation using uploaded reference for exact identical facial fea
         "masks": "light blue surgical masks"
       }
     },
-    
+    "actions": [
+      {
+        "tool": "hair dryer",
+        "interaction": "blowing air onto hair near forehead"
+      },
+      {
+        "tool": "spray bottle",
+        "interaction": "spraying mist near eyebrow/eye area"
+      },
+      {
+        "tool": "eyeliner brush",
+        "interaction": "applying eyeliner to upper eyelid"
+      },
+      {
+        "tool": "lip gloss applicator",
+        "interaction": "applying gloss to lower lip"
+      }
+    ],
+    "pose_and_positioning": {
+      "one_figure": "standing on a small ladder near hairline",
+      "others": "standing directly on hair or face surface"
+    }
+  },
+  "lighting": {
+    "type": "soft studio lighting",
+    "direction": "even frontal and side lighting",
+    "highlights": "gentle highlights on cheekbones, nose, lips",
+    "shadows": "soft, minimal shadows maintaining facial contours"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "warm skin tones",
+      "dark brown hair",
+      "soft pink gloves",
+      "white lab coats",
+      "neutral beige background"
+    ],
+    "contrast": "balanced, natural contrast with editorial polish"
+  },
+  "background": {
+    "description": "neutral, softly textured backdrop blended with hair",
+    "distractions": "none visible"
+  },
+  "mood_and_style": {
+    "mood": "calm, meticulous, surreal",
+    "style": "high-fashion beauty editorial with conceptual surrealism",
+    "theme": "precision beauty work at exaggerated scale"
+  },
+  "image_quality": {
+    "resolution_target": "8K ultra-high resolution",
+    "detail_level": "extreme micro-detail in skin, hair strands, makeup tools",
+    "sharpness": "crisp and clean with realistic textures",
+    "noise": "none visible"
+  },
+  "rendering_keywords": [
+    "ultra-realistic",
+    "photorealistic",
+    "editorial beauty photography",
+    "surreal scale contrast",
+    "cinematic lighting",
+    "macro facial detail",
+    "8K resolution",
+    "hyper-detailed texture"
+}
 ```
 
 </details>
@@ -35015,7 +42737,17 @@ Location / Background details:
 
 •On the far right edge, partially inside the frame, a black menu/chalkboard with small white writing is visible (text not fully readable), aligned vertically near the doorframe.
 
-Lighting: natural ambient street light, soft and diffused; gentle highlights on cheekbones and nose; shadows are deep but not crushed. No
+Lighting: natural ambient street light, soft and diffused; gentle highlights on cheekbones and nose; shadows are deep but not crushed. No direct flash. The shop interior glows faintly warm compared to the cooler exterior.
+
+Color / Tone / Aesthetic: muted brown, olive-green, charcoal palette; cinematic, slightly desaturated; subtle warm sundayfunday undertone in skin and shop interior; overall dark, cozy, rainy-winter vibe (even if no rain visible). Film grain present, slight halation on highlights, mild vignette, soft contrast roll-off. Background softly blurred but readable; subject sharpest point is face and coat collar. Cooks. 
+
+Composition / Camera: vertical portrait (approx 4:5 feel), subject centered slightly left; window text occupies upper third; doorframe and menu board anchor the right third; medium shot at eye level, ~50mm perspective, shallow-to-moderate depth of field, realistic lens softness toward edges.
+
+Surface / python Texture cues: aged paint on doorframe, smudged window reflections, leather coat creases, fur collar fibers visible, fine pores and natural skin texture.
+
+Negative constraints: no extra props, no different outfit, no hat, no scarf, no bright colors, no neon signs, no modern clean storefront, no heavy HDR, no glossy beauty retouching, no smiling, no dramatic rim light, no changed text—keep “VINS DE PROPRIÉTÉS” exactly, keep the same framing and moody film vibe.
+
+Render tags: ultra-realistic editorial street portrait, vintage Paris storefront, window typography, muted cinematic film scan, soft natural light, shallow DOF, fine grain, 4:5 vertical.
 ```
 
 </details>
@@ -35130,7 +42862,16 @@ Negative Prompt: Sunny beach, vacation vibes, swimsuit, smiling, blue sky, vibra
     "viewer_reaction": "instant craving",
     "emotional_trigger": "comfort food desire"
   },
-  "
+  "quality_control": {
+    "food_realism": "authentic pizza texture",
+    "ai_artifacts": "none",
+    "professional_finish": "restaurant advertisement grade"
+  },
+  "intended_use": {
+    "primary": "viral food post on X",
+    "secondary": "restaurant promo, food brand content"
+  }
+}
 ```
 
 </details>
@@ -35197,7 +42938,35 @@ Negative Prompt: Sunny beach, vacation vibes, swimsuit, smiling, blue sky, vibra
         "phone_case": "Modern smartphone in a dark case"
       }
     },
-    "physical_attribute
+    "physical_attributes": {
+      "silhouette": "Slim, toned hourglass",
+      "details": "Defined collarbones, slender shoulder, narrow waist, feminine curves"
+    },
+    "environment_and_lighting": {
+      "setting": "Dark minimalist luxury interior (high-end club/lounge)",
+      "background_elements": "Horizontal black tiled walls or polished dark wood panels",
+      "lighting_type": "Hard mirror flash",
+      "lighting_effects": "Central starburst flare, high-contrast highlights, deep shadows",
+      "film_texture": "Subtle film grain, low-light mobile photography look"
+    },
+    "technical_specifications": {
+      "aesthetic": "Shot on iPhone, ultra-realistic",
+      "resolution": "8k, high-resolution textures, raw photo quality",
+      "artifacts": "Slight motion blur, natural digital noise",
+      "focus": "Sharp focus on facial features despite flash flare"
+    },
+    "mood_and_style": {
+      "theme": "It-girl nightlife, edgy, glamorous, expensive",
+      "atmosphere": "Intimate, performative, high-fashion vanity"
+    },
+    "strict_constraints": {
+      "face_integrity": "Do not alter eye shape, lip shape, or facial proportions",
+      "lighting_retention": "Maintain flash flare in mirror",
+      "prohibited_elements": "No smiling",
+      "aspect_ratio": "3:4"
+    }
+  }
+}
 ```
 
 </details>
@@ -35336,7 +43105,47 @@ A cinematic lifestyle photograph of a stylish couple walking hand-in-hand down a
   },
   "lighting": {
     "type": "magical daytime light",
-    "ef
+    "effects": [
+      "soft god rays breaking through the trees",
+      "cool-toned ambient light",
+      "gentle highlights on snow, porcelain, fabric, and faces"
+    ],
+    "mood": "slightly surreal, enchanting, winter fantasy"
+  },
+  "color_palette": {
+    "temperature": "cold-toned",
+    "accent_colors": [
+      "pale blue",
+      "icy white",
+      "soft pastels",
+      "muted winter hues"
+    ],
+    "vibrancy": "vibrant yet frosty"
+  },
+  "camera": {
+    "depth_of_field": "strong depth of field with cinematic separation",
+    "focus": "sharp focus on the girl and tea table",
+    "background": "softly blurred snowy forest for depth"
+  },
+  "quality": {
+    "realism": "hyper-realistic",
+    "textures": [
+      "detailed snow crystals",
+      "porcelain shine",
+      "fabric weave",
+      "cake and frosting detail"
+    ],
+    "finish": "high-end fantasy visual, photorealistic"
+  },
+  "constraints": [
+    "Do not alter the girl’s facial identity",
+    "No cartoon or illustration style",
+    "No exaggerated facial expressions",
+    "No modern elements",
+    "No text or watermarks"
+  ],
+  "output_goal": "Create a hyper-realistic winter fantasy scene inspired by Alice in Wonderland, featuring the reference girl at a snowy tea party with the Mad Hatter, preserving her exact identity while delivering a magical, cinematic, high-end visual."
+}
 ```
 
 </details>
@@ -35413,7 +43222,93 @@ A cinematic lifestyle photograph of a stylish couple walking hand-in-hand down a
           "accessories": [
             "delicate gold bracelet",
             "minimal rings"
-         
+          ],
+          "nails": "glossy pink manicure (clean, elegant)"
+        },
+        "pose_action": {
+          "body": "standing in front of a fruit stand",
+          "posture": "upright, elegant posture, shoulders relaxed",
+          "hands": {
+            "left_hand": "holding a bouquet of red roses wrapped in brown paper",
+            "right_hand": "raised near shoulder level with a soft, delicate gesture (as if holding a tiny fruit or posing)"
+          }
+        }
+      },
+      "scene_context": {
+        "location": "outdoor fruit market / grocery stand",
+        "environment": {
+          "foreground": [
+            "baskets of colorful fruits (pineapples, apples, citrus, grapes)",
+            "wooden shelves and wicker baskets"
+          ],
+          "background": [
+            "market display shelves filled with fruit",
+            "small price tags present but NOT readable"
+          ]
+        },
+        "atmosphere": {
+          "vibe": "European street style, romantic editorial",
+          "time_of_day": "daytime, bright but soft"
+        },
+        "lighting_setup": {
+          "primary": "natural daylight",
+          "quality": "soft, flattering, slight highlight on hair and cheekbones",
+          "notes": "no harsh shadows, no blown highlights"
+        }
+      },
+      "photography_style": {
+        "camera_angle": "eye level",
+        "framing": "full-body vertical portrait (head to below knees), subject centered",
+        "lens_character": "fashion editorial street photography, shallow depth of field",
+        "color_grading": {
+          "palette": [
+            "rich red",
+            "warm neutrals",
+            "fresh greens",
+            "fruit color accents"
+          ],
+          "contrast": "medium, clean editorial look"
+        }
+      },
+      "hard_constraints": [
+        "Single female subject only.",
+        "Exact face match to reference (no identity drift).",
+        "Keep outfit as elegant red dress with slit; fully opaque, non-explicit.",
+        "Hold a bouquet of red roses wrapped in brown paper.",
+        "Fruit stand background with baskets of fruit; NO readable text or prices.",
+        "No logos, no watermarks, no brand marks."
+      ],
+      "negative_prompt": [
+        "identity drift",
+        "face morphing",
+        "wrong identity",
+        "beauty filter",
+        "plastic skin",
+        "over-smoothed skin",
+        "blurry face",
+        "bad anatomy",
+        "extra limbs",
+        "extra fingers",
+        "warped hands",
+        "duplicate person",
+        "extra people",
+        "readable text",
+        "readable price tags",
+        "logos",
+        "watermark",
+        "low resolution",
+        "cartoon",
+        "anime",
+        "cgi render",
+        "explicit nudity",
+        "see-through fabric",
+        "nipples visible",
+        "areola visible",
+        "pornographic framing"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -35504,7 +43399,18 @@ Negative: [Real concrete, real metal, plastic, inedible, humans, cutlery, plates
       "<<PROP_8 RELATED TO SUBJECT_THEME>>"
     ]
   },
-  "prompt": "Create an ultra photorealistic studio photo (hyper-real, DSLR look) with the SAME composition and framing as the reference: a centered adult person standing front-facing, waist-up to mid-thigh visible, wearing a dark navy tuxedo jacket, crisp white shirt, and black bow tie, smiling confidently. The person has round eyeglasses and neat facial hair (mustache + short beard), but the FACE must be replaced with the user's likeness from USER_PHOTO while keeping natural skin texture, pores, and realistic facial proportions (no plastic skin, no cartooning). The lighting is clean professional studio lighting with soft shadows, high dynamic range, crisp detail.\n\nSurround the person with 8–10 different hands and forearms entering the frame from the edges (top, left, right, bottom), each holding an object and aiming it toward the center person (close to the face/upper torso). The hands belong to different people (varied sleeves/patterns/colors), but keep them realistic and anatomically correct.\n\nIMPORTANT: The ONLY changing elements across generations are: (1) the user's face from USER_PHOTO, and (2) the objec
+  "prompt": "Create an ultra photorealistic studio photo (hyper-real, DSLR look) with the SAME composition and framing as the reference: a centered adult person standing front-facing, waist-up to mid-thigh visible, wearing a dark navy tuxedo jacket, crisp white shirt, and black bow tie, smiling confidently. The person has round eyeglasses and neat facial hair (mustache + short beard), but the FACE must be replaced with the user's likeness from USER_PHOTO while keeping natural skin texture, pores, and realistic facial proportions (no plastic skin, no cartooning). The lighting is clean professional studio lighting with soft shadows, high dynamic range, crisp detail.\n\nSurround the person with 8–10 different hands and forearms entering the frame from the edges (top, left, right, bottom), each holding an object and aiming it toward the center person (close to the face/upper torso). The hands belong to different people (varied sleeves/patterns/colors), but keep them realistic and anatomically correct.\n\nIMPORTANT: The ONLY changing elements across generations are: (1) the user's face from USER_PHOTO, and (2) the objects held in the hands. Everything else stays consistent: the tuxedo pose, camera angle, lens look, and overall composition.\n\nOBJECT RULE: Select HAND_PROPS so they are strongly related to SUBJECT_THEME. The objects must be clearly visible, realistic, and varied (mix of modern and vintage if it fits). Examples by theme:\n- music: studio headphones, microphone, vinyl record, cassette, guitar pick, small synth, metronome\n- gaming: controller, handheld console, gaming headset, mouse, keyboard, VR accessory\n- cooking: chef thermometer, whisk, spice grinder, mini pan, piping bag, recipe card\n- finance: calculator, credit card reader, stock ticker printout, smartphone with finance app, receipt roll\n- fitness: smartwatch, resistance band, shaker bottle, jump rope handle\n\nBACKGROUND: Use a curtain backdrop (like a stage/studio curtain) with a color palette that matches SUBJECT_THEME (e.g., deep teal/purple for music, neon accents for gaming, warm beige/terracotta for cooking, cool gray/blue for finance, fresh greens for fitness). Keep the curtain texture and folds realistic.\n\nCamera/Render: 50mm lens look, shallow-to-moderate depth of field, sharp focus on the person’s face, slightly softer hands near the edges, high resolution, editorial portrait photography, natural reflections on objects, accurate specular highlights, no distortion.\n\nMaintain the exact 'surrounded by hands offering devices' vibe, but swap devices for theme-related objects. No text, no logos, no brand marks.",
+  "reference_instructions": {
+    "use_user_photo_as_identity_reference": true,
+    "identity_strength": "high",
+    "preserve_pose_and_outfit": true,
+    "preserve_composition": "strict",
+    "only_allow_changes": [
+      "center face identity from USER_PHOTO",
+      "HAND_PROPS objects",
+      "curtain color palette matched to SUBJECT_THEME"
+    ]
+  },
 ```
 
 </details>
@@ -35583,7 +43489,22 @@ Negative: [Real concrete, real metal, plastic, inedible, humans, cutlery, plates
   },
 
   "composition": {
-    "_hint":
+    "_hint": "Ensure the pointing finger leads the viewer's eye to the top right corner.",
+    "visual_flow": "diagonal_line_from_face_to_top_right_corner",
+    "focal_points": [
+      "character_eyes",
+      "pointing_finger_tip"
+    ],
+    "negative_space": "clear_area_at_top_right_45_degrees"
+  },
+
+  "constraints": {
+    "no_holding_phone_device": true,
+    "finger_must_not_be_cropped_out": true,
+    "ensure_arm_is_natural_length": true
+"3:4"
+  }
+}
 ```
 
 </details>
@@ -35668,7 +43589,47 @@ Negative: [Real concrete, real metal, plastic, inedible, humans, cutlery, plates
     }
   },
   "color_palette": {
-    "
+    "dominant_colors": [
+      "royal blue",
+      "deep blue",
+      "soft skin tones"
+    ],
+    "contrast": "high contrast between blue clothing and lighter skin",
+    "color_temperature": "cool"
+  },
+  "lighting": {
+    "type": "natural light",
+    "direction": "frontal with slight side softness",
+    "intensity": "moderate",
+    "shadows": "soft, minimal harsh shadows",
+    "highlights": "subtle highlights on cheekbones and lips"
+  },
+  "background": {
+    "environment": "open outdoor setting",
+    "elements": "blurred horizon line, blue gradient background",
+    "depth_of_field": "shallow",
+    "background_detail": "intentionally out of focus",
+    "color": "blue gradient resembling sky and distant water"
+  },
+  "image_style": {
+    "realism": "high realism with subtle AI polish",
+    "sharpness": "high facial detail",
+    "texture_detail": "visible fabric texture and skin detail",
+    "noise": "minimal",
+    "post_processing": "clean color grading, no heavy filters"
+  },
+  "mood": {
+    "overall_feel": "calm, serene, minimalistic",
+    "visual_energy": "soft and composed"
+  },
+  "generation_constraints": {
+    "preserve_original_composition": true,
+    "preserve_subject_structure": true,
+    "no_face_alteration": true,
+    "no_style_assumptions": true,
+    "do_not_change_image_size": true
+  }
+}
 ```
 
 </details>
@@ -35727,7 +43688,7 @@ On the left: a clear glass diffuser bottle with wooden sticks, labeled “ASOMA�
 On the right: a brown glass candle jar, partially burned, with visible wax residue.
 Mood & lighting:
 Soft natural daylight, subtle shadows, no harsh highlights. Scandinavian / loft-style bathroom atmosphere, minimalistic, cozy, quiet. Color palette consists of muted greys, warm beige, soft whites, and restrained gold accents.
-Photographic realism, candid lifestyle photography feel, shallow depth of field, natural lens perspective (50–85mm equivalent), true-to-life proportions, no beauty retouching, no plastic skin, no exaggerated features, high detail, realistic refl
+Photographic realism, candid lifestyle photography feel, shallow depth of field, natural lens perspective (50–85mm equivalent), true-to-life proportions, no beauty retouching, no plastic skin, no exaggerated features, high detail, realistic reflections, authentic mirror distortion, editorial-quality realism.
 ```
 
 </details>
@@ -35788,7 +43749,14 @@ Photographic realism, candid lifestyle photography feel, shallow depth of field,
     "key_light": "The bright, warm orange flame from the burning photograph, illuminating her face and hands.",
     "ambient_light": "Cool, blue-toned ambient light from the streetlights and surrounding city.",
     "effect": "A strong contrast between the warm, intense light of the fire and the cold, dark urban environment.",
-    "details": "Smoke is visible rising from both the cigar
+    "details": "Smoke is visible rising from both the cigarette and the burning photo."
+  },
+  "style_and_mood": {
+    "style": "Candid photojournalism, photorealistic.",
+    "mood": "Defiant, rebellious, politically charged, intense.",
+    "color_palette": "Dominated by cool blues, whites, and grays, with a powerful accent of fiery orange and yellow."
+  }
+}
 ```
 
 </details>
@@ -35875,7 +43843,45 @@ Prompt
     {
       "id": "image_3",
       "subject": "white chocolate bonbons",
-      "composition": "organic cluster on 
+      "composition": "organic cluster on clear glass stand",
+      "details": {
+        "marbling": [
+          "central bonbon with irregular orange passionfruit veins",
+          "surrounding bonbons with pink raspberry swirls",
+          "green matcha flecks with varied density"
+        ],
+        "cutaway": "one bonbon sliced vertically showing gel core with real fruit speckles",
+        "props": "dried fruit flecks scattered below (orange zest curls, raspberry seeds)"
+      },
+      "lighting": {
+        "key": "soft high-key front light at 10 degrees",
+        "rim": "rear rim light at 35 degrees",
+        "effects": "enhanced marbling contrast and glass refractions"
+      },
+      "background": "soft taupe with fruit-toned bokeh",
+      "mood": "elegant, fresh, handcrafted"
+    },
+    {
+      "id": "image_5",
+      "subject": "dark chocolate pistachio bar",
+      "composition": "vertical bar centered on polished black granite slab",
+      "details": {
+        "cross_section": "precision side cut revealing layered pistachio filling",
+        "filling": "whole roasted green pistachios suspended in smooth white chocolate matrix",
+        "binding": "subtle golden honey swirl",
+        "break": "front broken segment with clean snap and visible pistachio pieces",
+        "props": "whole roasted pistachios arranged in ascending curve, honey drips nearby"
+      },
+      "lighting": {
+        "key": "soft spotlight from top-left at 45 degrees",
+        "rim": "warm side rim light from right at 30 degrees",
+        "highlight": "single pinpoint highlight on largest pistachio"
+      },
+      "background": "dark espresso brown gradient with floating pistachio shell dust particles",
+      "mood": "rich, bold, premium indulgence"
+    }
+  ]
+}
 ```
 
 </details>
@@ -36164,7 +44170,34 @@ Emotion conveyed through stillness, silence, and unresolved tension — love pre
       },
 
       "frame_top": {
-        "description": "Close shot framed by the
+        "description": "Close shot framed by the tree branch: the woman leans her arms on the branch and looks at the man with a soft smile; the man faces her in profile. Intimate eye contact, warm sunlight on their faces.",
+        "camera": "medium close-up, shallow depth of field, branch as foreground frame",
+        "mood": "quiet affection"
+      },
+
+      "frame_middle": {
+        "description": "Wide shot: the couple sits on a picnic blanket leaning against the big tree trunk, cuddling comfortably. The grass and tree fill the scene; picnic items visible but subtle.",
+        "camera": "wide, calm composition, cinematic spacing",
+        "mood": "cozy, safe, romantic"
+      },
+
+      "frame_bottom": {
+        "description": "Low-angle close-up: a tender kiss captured from below, with sunlit leaves and golden bokeh in the background. Soft natural shadows, genuine intimacy.",
+        "camera": "low angle, faces close, creamy bokeh",
+        "mood": "romantic closure"
+      },
+
+      "camera_style": {
+        "lens_feel": "cinema lens, gentle halation, soft highlight bloom",
+        "contrast": "low to medium, no HDR",
+        "motion": "still or very subtle handheld realism",
+        "aesthetic": "nostalgic modern romance, film-still authenticity"
+      },
+
+      "negative_prompt": "explicit nudity, sexualized posing, pornographic framing, heavy makeup, beauty filter look, HDR, harsh contrast, artificial lighting, over-sharpened, text overlays, watermarks, AI artifacts, extra limbs, deformed hands, distorted faces"
+    }
+  }
+}
 ```
 
 </details>
@@ -36491,7 +44524,16 @@ Style: blueprint aesthetic with white line drawings on the photograph, technical
 - 花がモチーフ：「大地に咲く一輪の花」
 - 星がモチーフ：「宇宙に輝くキラキラ星」
 - 空がモチーフ：「無限に広がる青い空」
-**例をそのまま使用しないこ
+**例をそのまま使用しないこと**
+
+# 最終的な成果物
+ここまででデザインしたものを1枚のイラストに仕上げてください。
+以下の要素は必須とします。
+- デザインしたプリキュアが決めポーズを取っている構図とする。
+- 背景はイメージカラーを基調としたキラキラ輝く空間とする。またモチーフをあしらってもよい。
+- イラストの下部に名乗り口上と名前を書く。
+  - 2行に分け、1行目は名乗り口上+「！」、2行目は名前+「！！」とすること。
+  - フォントはキャラクターの方向性を反映させること。可愛らしい方向性なら可愛らしい丸文字、勇敢な方向性なら力強い文字など。
 ```
 
 </details>
@@ -36556,7 +44598,92 @@ Style: blueprint aesthetic with white line drawings on the photograph, technical
     "creative_direction": {
       "concept": "A cinematic, museum-gallery romance scene: a couple in an intimate lift embrace, posed in front of a large ornate framed classical landscape painting. High-end editorial, dramatic but elegant. The woman wears a striking yellow satin halter-neck gown tied at the back of the neck, with matching yellow high heels.",
       "mood": "intimate, luxurious, timeless, fine-art cinematic",
-      "style_keywords": "old-master atmosphere, museum lighting, romantic tens
+      "style_keywords": "old-master atmosphere, museum lighting, romantic tension, film still"
+    },
+
+    "scene": {
+      "location": "museum/gallery interior",
+      "background": {
+        "hero_object": "a large ornate gold frame containing a classical landscape painting",
+        "wall": "warm brown gallery wall",
+        "lower_wall": "white wainscoting / panel molding",
+        "floor": "dark warm wood"
+      },
+      "composition": "full-body vertical frame, couple centered, painting fills most of the background"
+    },
+
+    "subjects": {
+      "male": {
+        "wardrobe": "black suit, black trousers, black shoes",
+        "pose": "standing, lifting the woman at her waist/thigh, stable posture, looking up at her face"
+      },
+      "female": {
+        "wardrobe": {
+          "dress": "yellow silk satin halter-neck gown, neck-tie strap (tied behind the neck), fitted bodice, elegant drape, subtle sheen, high-fashion finish",
+          "fabric_notes": "realistic satin highlights, soft folds, premium couture construction"
+        },
+        "shoes": "yellow high-heel sandals or classic yellow pumps (matching the dress)",
+        "pose": "arched back, head tilted upward, hair flowing, one leg bent and lifted, arms around his shoulders/neck",
+        "vibe": "elegant, sensual, not explicit"
+      }
+    },
+
+    "photography": {
+      "camera_style": "cinematic fashion/editorial still",
+      "lens": "50mm prime (natural perspective)",
+      "lighting": {
+        "key": "soft directional gallery light from above/front",
+        "fill": "minimal, moody shadows preserved",
+        "highlights": "subtle sheen on frame gilding and strong satin specular highlights on the yellow dress"
+      },
+      "depth_of_field": "moderate (couple sharp, painting slightly softer but readable)",
+      "color_grade": "warm cinematic browns, deep blacks, luminous yellow satin, subtle film contrast",
+      "film_look": "subtle 35mm grain, gentle halation on highlights"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "9:16",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_film_still",
+      "sharpness": "crisp_but_natural",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_hands": true,
+        "no_extra_fingers": true,
+        "natural_lift_pose_physics": true
+      },
+      "wardrobe_materials": {
+        "satin_reads_real": true,
+        "strong_satin_speculars": true,
+        "suit_fabric_reads_real": true,
+        "gold_frame_detail_high": true
+      }
+    },
+
+    "negative_prompt": [
+      "white lace dress",
+      "wrong dress color (not yellow)",
+      "wrong dress neckline (not halter-neck tie)",
+      "wrong shoe color (not yellow)",
+      "text, watermark, logo",
+      "cartoon, anime, illustration",
+      "overexposed HDR look",
+      "messy background clutter",
+      "warped frame geometry",
+      "incorrect lift pose physics",
+      "deformed hands, extra fingers",
+      "overly sexual explicit nudity"
+    ]
+  }
+}
 ```
 
 </details>
@@ -36624,7 +44751,57 @@ Style: blueprint aesthetic with white line drawings on the photograph, technical
         "time": "evening / night indoor"
       },
       "subject": {
-        "identity": "EXACT same f
+        "identity": "EXACT same face as reference",
+        "wardrobe": {
+          "top": "shirtless OR sleeveless dark tank top (choose the more realistic based on reference body/skin tone)",
+          "bottom": "dark casual pants"
+        },
+        "pose_action": {
+          "action": "grating cheese with both hands over a pan of nachos",
+          "body_language": "leaning forward, focused on cooking",
+          "expression": "soft concentration, subtle smile optional"
+        },
+        "details_to_keep_real": [
+          "realistic arm hair and skin pores",
+          "natural shadows on muscles",
+          "accurate hands holding grater and cheese block"
+        ]
+      },
+      "food_prop": {
+        "dish": "nachos in a large pan",
+        "topping": "freshly grated cheese falling onto chips",
+        "realism_notes": "crispy chip texture, cheese strands visible, no plastic look"
+      },
+      "camera": {
+        "style": "candid handheld phone photo look",
+        "lens_feel": "28-35mm equivalent",
+        "focus": "face and hands sharp; background slightly softer",
+        "exposure": "warm highlights, no blown whites"
+      },
+      "color_grade": {
+        "look": "warm indoor tungsten",
+        "contrast": "medium",
+        "skin_tones": "natural"
+      }
+    },
+    "negative_prompt": [
+      "identity drift",
+      "face swap artifacts",
+      "beauty filter",
+      "plastic skin",
+      "blurry face",
+      "bad anatomy",
+      "extra fingers",
+      "extra limbs",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "anime",
+      "cgi render"
+    ]
+  }
+}
 ```
 
 </details>
@@ -36703,7 +44880,35 @@ Cinematic, hyper-realistic. A stacked depth composition of ultra-detailed 16K 3D
     "highlights": "glowy bloom on neon signs",
     "film_emulation": "35mm film look"
   },
-  "texture_and
+  "texture_and_detail": {
+    "film_grain": "strong visible grain, authentic",
+    "bloom": "subtle halation on lights",
+    "sharpness": "slightly imperfect, organic street photography",
+    "skin_texture": "natural pores, no plastic smoothing"
+  },
+  "motion": {
+    "hair_movement": "wind-blown strands across face",
+    "background_motion": "light streaking from cars and walking people",
+    "camera_feel": "handheld candid shot"
+  },
+  "negative_prompt": [
+    "plastic skin",
+    "overly sharp face",
+    "clean studio lighting",
+    "anime",
+    "cartoon",
+    "hyper-symmetrical face",
+    "over-saturated neon",
+    "HDR look",
+    "fake depth blur edges",
+    "extra fingers",
+    "distorted hands",
+    "text artifacts",
+    "logo distortions",
+    "AI glossy skin",
+    "perfectly clean background"
+  ]
+}
 ```
 
 </details>
@@ -36742,7 +44947,14 @@ Rec 4 (e.g., Blade Runner): Fluid = Neon Blue Rain/Steam.
 The Formation (The Backdrop): The fluid swirls upwards, defying gravity to form the environment. It must look like sculpted, translucent resin.
 Logic: The fluid forms the iconic architecture (e.g., Skyscrapers, Hives, Ruins) behind the hero.
 The Hero (The Solid): The Main Protagonist bursts out of the fluid surge. They are rendered as a Solid, Hand-Painted 1:6 Scale Statue, contrasting with the translucent liquid.
-Embedded Props: Debris from the movie is caught inside the re
+Embedded Props: Debris from the movie is caught inside the resin splash (e.g., Shell casings, origami unicorns, computer chips).
+4. Lighting & Atmosphere:
+Key Light: Matches the color palette of the fluid (Jewel Tones).
+Effect: Subsurface scattering makes the fluid glow from the inside.
+5. Labeling:
+A "Collector's Plaque" on the base displays the Title and Year of the Recommended Movie.
+Output: 2x2 Grid. Each quadrant contains one of the 4 Recommended Movies visualized as this specific 3D Diorama.
+</instructions>
 ```
 
 </details>
@@ -36803,7 +45015,63 @@ Embedded Props: Debris from the movie is caught inside the re
       "look": "cinematic wide portrait with depth",
       "distortion_control": "minimal distortion, straight vertical elevator lines"
     },
-    "depth_of_field"
+    "depth_of_field": {
+      "aperture": "f/2.8",
+      "focus": "sharp focus on eyes and face",
+      "falloff": "soft background blur but still readable environment"
+    }
+  },
+  "lighting": {
+    "type": "overhead harsh fluorescent top-light",
+    "contrast": "medium-high with deep shadows under jaw and hoodie folds",
+    "highlights": "soft bloom on metallic walls, controlled, not blown out",
+    "fill": "very subtle ambient bounce to keep facial details visible",
+    "notes": "keep lighting realistic and slightly underexposed for cinematic tension"
+  },
+  "color_grade": {
+    "style": "dark cinematic teal-green industrial grade",
+    "shadows": "cool teal tint",
+    "highlights": "neutral to slightly cold",
+    "saturation": "muted low saturation",
+    "contrast": "clean but gritty",
+    "black_levels": "slightly crushed blacks, not fully clipped"
+  },
+  "texture_details": {
+    "skin": "realistic pores and micro texture",
+    "fabric": "hoodie fleece texture visible, natural folds and weight",
+    "metal": "subtle reflections, tiny scratches, elevator realism",
+    "grain": "subtle film grain throughout"
+  },
+  "post_processing": {
+    "sharpness": "sharp only on face, not over-sharpened",
+    "vignette": "soft vignette around corners",
+    "haze": "light haze for depth separation",
+    "final_finish": "cinematic, grounded, documentary realism"
+  },
+  "negative_prompt": [
+    "plastic skin",
+    "beauty retouch",
+    "anime",
+    "cartoon",
+    "overly smooth face",
+    "HDR glow",
+    "over-saturated colors",
+    "extreme bokeh",
+    "warped elevator walls",
+    "extra fingers",
+    "distorted hands",
+    "unrealistic reflections",
+    "text",
+    "logos",
+    "watermark"
+  ],
+  "output_settings": {
+    "aspect_ratio": "3:4 vertical portrait",
+    "resolution": "high detail",
+    "quality": "photorealistic",
+    "style": "cinematic realism"
+  }
+}
 ```
 
 </details>
@@ -36859,7 +45127,15 @@ Prompt 👇🏽
       "physique": "Both women have fit physiques and long wavy blonde hair."
     },
     "outfit": {
-      "c
+      "clothing_left": "A tight-fitting, black, long-sleeved, open-back bodysuit.",
+      "clothing_right (Sydney Sweeney)": "A tight-fitting, bright yellow, long-sleeved, open-back bodysuit."
+    }
+  },
+  "realism_focus": {
+    "textures": "Fabric texture of the stretch bodysuits (black and yellow), grain of the wooden floor planks, realistic skin texture, individual strands of wavy blonde hair, clear reflections in the large mirror.",
+    "imperfections": "Natural folds and creases in the bodysuits from the pose, realistic details of bare feet (soles, toes), slight smudges on the mirror surface."
+  }
+}
 ```
 
 </details>
@@ -36900,7 +45176,103 @@ Prompt 👇🏽
 },
 "LIGHTING_AND_COLOR": {
 "background": "MANDATORY: Pure solid black background, hex code #000000, RGB (0,0,0). The entire background must be uniformly black with no gradients, no grey tones, no white, no other colors. Absolute flat black darkness with zero variation.",
-"background_restrictions": "The background has zero atmospheric
+"background_restrictions": "The background has zero atmospheric effects: no glow, no light rays, no light beams, no light streaks, no halos, no fog, no mist, no haze, no gradients, no vignettes, no ambient light bleeding. The black remains pure, flat, and completely untouched by any lighting effects.",
+"product_lighting": "Strict high-contrast chiaroscuro lighting on the product only. Bright, blown-out highlights on the rim and ridges create sharp contrast against deep shadows. These highlights have subtle, clean iridescent quality (cyan, magenta, silver) contained within the product's edges only. Light does not escape or radiate beyond the product's boundaries.",
+"light_source": "Single key light source illuminating only the product. The light ends at the product's edges and does not extend into the background. No fill light, no background lights, no secondary light sources, no light spill into the void, no rays, no beams, no streaks."
+},
+"COMPOSITION": {
+"perspective": "Camera positioned below eye level, angled slightly upward. The product stands perfectly vertical - perpendicular to the ground plane - in the center of frame.",
+"positioning": "The product is suspended and floating in the void. It has no base, no ground surface beneath it, no support structure. It exists isolated in empty space.",
+"framing": "The product is completely within the frame with all edges visible. It must never be cropped or cut off by the canvas edges. No frames or borders around the image.",
+"isolation": "Only the product exists in frame. No contextual environment, no surfaces, no additional objects, no props, no added materials."
+},
+"NEGATIVE_CONSTRAINTS": [
+"white background",
+"grey background",
+"colored background",
+"gradient background",
+"light background",
+"any background color other than pure black #000000",
+"light rays",
+"light beams",
+"light streaks shooting across background",
+"diagonal light streaks",
+"radial light beams",
+"volumetric light rays",
+"god rays",
+"sunbeams",
+"light shafts",
+"studio light streaks",
+"tilted product",
+"laying down",
+"horizontal orientation",
+"diagonal angle",
+"dutch angle",
+"product rotation",
+"ground surface",
+"floor",
+"base",
+"platform",
+"pedestal",
+"reflections on ground",
+"pooling liquid",
+"melting onto surface",
+"fabric draping",
+"cloth extensions",
+"liquid extensions",
+"additional materials attached to product",
+"background glow",
+"atmospheric haze in background",
+"light halos in void",
+"background lighting effects",
+"chromatic aberration in background",
+"light spill into black areas",
+"ambient background illumination",
+"background vignette",
+"background gradient",
+"background fog",
+"background mist",
+"extra light sources",
+"fill light",
+"rim light on background",
+"multiple products",
+"double exposure",
+"added glass objects",
+"water droplets",
+"other objects",
+"props",
+"contextual environment",
+"frames",
+"borders",
+"product cut off by edges",
+"cropped product",
+"extreme low angle",
+"extreme perspective distortion",
+"sharp focus",
+"perfect clarity",
+"static image",
+"flat lighting",
+"warm color palette",
+"saturated colors",
+"vibrant colors",
+"complex background",
+"realistic rendering",
+"eye-level view",
+"high angle view",
+"straight horizon lines",
+"clean edges",
+"no distortion",
+"matte finish",
+"natural daylight",
+"softbox lighting",
+"bokeh",
+"film grain",
+"commercial catalog look",
+"studio setup visible",
+"photography equipment visible"
+],
+}
+}
 ```
 
 </details>
@@ -36999,7 +45371,8 @@ Prompt 👇🏽
     "text",
     "logo"
   ],
-  "assembled_prompt": "Ultra-realistic winter portrait of a young woman, platinum blonde long straight hair, fair porcelain skin, soft natural freckles, high detail skin texture, light pink blush, glossy lips, expressive light-colored eyes looking directly into the camera, standing, slightly leaning forward, fitted black long-sleeve bodysuit, white furry leg warmers, white boots, minimalist winter fashion, outdoors, snowy forest, pine trees, snow
+  "assembled_prompt": "Ultra-realistic winter portrait of a young woman, platinum blonde long straight hair, fair porcelain skin, soft natural freckles, high detail skin texture, light pink blush, glossy lips, expressive light-colored eyes looking directly into the camera, standing, slightly leaning forward, fitted black long-sleeve bodysuit, white furry leg warmers, white boots, minimalist winter fashion, outdoors, snowy forest, pine trees, snow-covered ground, bright natural daylight, soft shadows, crisp winter atmosphere, 35mm lens, f/2.2, shallow depth of field, photorealistic, lifestyle fashion photography, ultra-detailed, sharp focus, 8k resolution"
+}
 ```
 
 </details>
@@ -37061,7 +45434,14 @@ Prompt 👇🏽
       "Ultra photorealistic",
       "Hyper-realistic skin texture",
       "Subsurface scattering",
-      "Ray traced light
+      "Ray traced lighting",
+      "Masterpiece",
+      "Raw photo",
+      "Fashion photography",
+      "Cinematic lighting"
+    ]
+  }
+}
 ```
 
 </details>
@@ -37130,7 +45510,27 @@ Prompt 👇🏽
       "Cinematic lighting with realistic shadows."
     ],
     "creative_prompt": {
-      "scene_summary": "A cinematic, photorealistic scene set inside a vintage American dive bar. A man and a woman stand intimately close at a classic green-felt pool table. The atmosphere is warm, nostalgic, and slightly gritty, evoking Americana editorial photography.\n\nMale subject:\n- Slim build, rugged casual style.\n- Wearing a white tank top under an open, slightly worn denim jacket.\n- Light blue jeans.\n- Brown patterned bandana tied around his head.\n- Light stubble, relaxed but confident demeanor.\n- Holding a pool cue loosely in one hand.\n\nFemale subject:\n- Slim, elegant yet casual appearance.\n- Wearing a black sleeveless top tucked into high-waisted light denim jeans.\n- Wide brown leather belt.\n- White cowboy hat.\n- Patterned bandana scarf tied around her neck.\n- Natural makeup, soft confident expression.\n\nPose & interaction:\n- The man stands slightly behind and to the side of the woman.\n- One of his arms rests gently around her waist.\n- The woman leans lightly against the pool table, one hand resting on its edge.\n- They look into each other’s eyes with subtle intimacy
+      "scene_summary": "A cinematic, photorealistic scene set inside a vintage American dive bar. A man and a woman stand intimately close at a classic green-felt pool table. The atmosphere is warm, nostalgic, and slightly gritty, evoking Americana editorial photography.\n\nMale subject:\n- Slim build, rugged casual style.\n- Wearing a white tank top under an open, slightly worn denim jacket.\n- Light blue jeans.\n- Brown patterned bandana tied around his head.\n- Light stubble, relaxed but confident demeanor.\n- Holding a pool cue loosely in one hand.\n\nFemale subject:\n- Slim, elegant yet casual appearance.\n- Wearing a black sleeveless top tucked into high-waisted light denim jeans.\n- Wide brown leather belt.\n- White cowboy hat.\n- Patterned bandana scarf tied around her neck.\n- Natural makeup, soft confident expression.\n\nPose & interaction:\n- The man stands slightly behind and to the side of the woman.\n- One of his arms rests gently around her waist.\n- The woman leans lightly against the pool table, one hand resting on its edge.\n- They look into each other’s eyes with subtle intimacy and tension.\n\nEnvironment & props:\n- Green felt pool table in the foreground with a few billiard balls visible.\n- Wooden walls, cabinets, and vintage bar interior details.\n- Softly glowing neon beer signs in the background, out of focus.\n- Classic Americana dive-bar mood.\n\nLighting:\n- Low-key cinematic lighting.\n- Warm tungsten light from above and side.\n- Soft highlights on skin, deep shadows with smooth falloff.\n- Filmic contrast, no harsh specular highlights.\n\nCamera:\n- 35mm lens look.\n- Medium shot, waist-up framing.\n- Shallow depth of field with blurred background.\n- Natural perspective, no distortion."
+    },
+    "negative_prompt": [
+      "cartoon",
+      "illustration",
+      "anime",
+      "cgi",
+      "plastic skin",
+      "over-retouched faces",
+      "distorted anatomy",
+      "extra limbs",
+      "extra fingers",
+      "blurred faces",
+      "harsh flash",
+      "modern nightclub lighting",
+      "text",
+      "logo",
+      "watermark"
+    ]
+  }
+}
 ```
 
 </details>
@@ -37263,7 +45663,24 @@ Gemini Nano Banana Pro 😍
     "detail_level": "high",
     "skin_rendering": "realistic, no smoothing",
     "color_grading": "cool blue cinematic grade",
-    "grain":
+    "grain": "very subtle film grain"
+  },
+
+  "negative_prompt": [
+    "cartoon",
+    "anime",
+    "cgi look",
+    "plastic skin",
+    "beautify filter",
+    "over-smoothing",
+    "extra limbs",
+    "distorted face",
+    "blur",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}
 ```
 
 </details>
@@ -37345,6 +45762,68 @@ Gemini Nano Banana Pro 😍
         "arms": "Relaxed at sides",
         "expression": "Neutral-confident",
         "gaze": "Direct eye contact with camera"
+      },
+      {
+        "pose_id": "pose_02",
+        "body_position": "Standing with hands on hips",
+        "arms": "Bent, hands resting on waist",
+        "expression": "Focused, confident",
+        "gaze": "Looking off to the side"
+      },
+      {
+        "pose_id": "pose_03",
+        "body_position": "Kneeling on both knees",
+        "arms": "Hands resting on thighs",
+        "expression": "Relaxed, slightly playful",
+        "gaze": "Looking toward camera"
+      },
+      {
+        "pose_id": "pose_04",
+        "body_position": "One knee down, one knee up",
+        "arms": "Hands resting naturally",
+        "expression": "Soft smile, confident",
+        "gaze": "Direct eye contact with camera"
+      }
+    ],
+
+    "position_in_frame": "Center",
+    "prominence": "Foreground"
+  },
+
+  "background_elements": [
+    "Curved sidewalk",
+    "Grass lawn",
+    "Residential houses",
+    "Parked cars",
+    "Street sign",
+    "Bus stop sign",
+    "Large leafy trees"
+  ],
+
+  "color_palette": {
+    "dominant_colors": [
+      "White",
+      "Black",
+      "Green",
+      "Golden Yellow"
+    ],
+    "contrast_level": "Medium"
+  },
+
+  "semantic_relationships": [
+    "Subject positioned at suburban street corner",
+    "Golden-hour sunlight highlights hair and skin",
+    "Athletic outfit reinforces fitness-focused aesthetic",
+    "Multiple poses emphasize confidence and physique"
+  ],
+
+  "ugc_specific_notes": {
+    "content_type": "Fitness / lifestyle imagery",
+    "aesthetic": "Clean, natural, social-media-ready",
+    "mood": "Confident, athletic, approachable",
+    "usage": "Instagram, TikTok thumbnails, character reference, dataset training"
+  }
+}
 ```
 
 </details>
@@ -37433,7 +45912,7 @@ Use my uploaded face image as the only facial identity reference
 Maintain 100% facial accuracy 
 
 Negative:
-low realism, CGI, illustration, cartoon, anime, cinematic lighting, oversharpening, plastic skin, airbrushed face, 
+low realism, CGI, illustration, cartoon, anime, cinematic lighting, oversharpening, plastic skin, airbrushed face, altered facial features, incorrect proportions, extra limbs, distorted hands, blurry face, identity drift, exaggerated makeup, neon colors, color bleed, oversaturation, inconsistent fabric color
 ```
 
 </details>
@@ -37657,7 +46136,35 @@ Ultra-realistic macro scene depicting tiny restoration workers collaboratively r
       "shutter": "1/250"
     },
     "creative_prompt": {
-      "scene_summary": "Create ONE single ultra-photoreal cinematic editorial image as a three-strip triptych (top/middle/bottom).\n\nTOP PANEL (close beauty):\n- Extreme close-up of a young woman’s face nestled into a plush cream faux-fur hood/coat collar.\n- Visible natural freckles across nose and cheeks, realistic pores and skin texture (no plastic smoothing).\n- Copper/red hair with soft bangs, a few snowflakes melting on hair and fur.\n- Gold hoop earrings (subtle luxury).\n- Expression: calm, slightly wistful, eyes looking toward camera.\n\nMIDDLE PANEL (wide landscape):\n- Wide shot of a frozen lake and snowy field with distant mountains.\n- A small wooden cabin on the right s
+      "scene_summary": "Create ONE single ultra-photoreal cinematic editorial image as a three-strip triptych (top/middle/bottom).\n\nTOP PANEL (close beauty):\n- Extreme close-up of a young woman’s face nestled into a plush cream faux-fur hood/coat collar.\n- Visible natural freckles across nose and cheeks, realistic pores and skin texture (no plastic smoothing).\n- Copper/red hair with soft bangs, a few snowflakes melting on hair and fur.\n- Gold hoop earrings (subtle luxury).\n- Expression: calm, slightly wistful, eyes looking toward camera.\n\nMIDDLE PANEL (wide landscape):\n- Wide shot of a frozen lake and snowy field with distant mountains.\n- A small wooden cabin on the right side of frame (cozy, rustic), light snow falling.\n- The same woman seen from behind/three-quarter angle on the left, wearing the same cream fur coat with hood.\n- Cinematic negative space, gentle atmospheric haze, crisp winter air.\n\nBOTTOM PANEL (car profile):\n- Inside a car, side profile portrait of the same woman seated by the window.\n- Snow visible outside through the window; soft reflections on glass.\n- She wears the same cream fur coat; red hair flowing, gold geometric/rectangular earring detail.\n- Expression: thoughtful, looking forward (not at camera).\n\nCOHESION REQUIREMENTS:\n- Maintain the same woman identity across all three panels.\n- Consistent winter color palette: cool blues/greys with warm skin tones and cream fur.\n- Natural snowfall across all panels; snowflakes scale and motion should be realistic.\n- Premium editorial feel, photoreal, cinematic continuity.\n\nNo text, no logos, no watermark."
+    },
+    "hard_constraints": [
+      "ONE single image containing THREE horizontal panels stacked vertically.",
+      "Same woman identity across all panels.",
+      "Cream faux-fur hood/coat in all panels.",
+      "Natural freckles and realistic skin texture.",
+      "Photoreal snowfall (no fake bokeh dots).",
+      "No text, no logos, no watermark."
+    ],
+    "negative_prompt": [
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "anime",
+      "cgi",
+      "over-retouched skin",
+      "plastic skin",
+      "identity drift between panels",
+      "extra people",
+      "distorted face",
+      "warped hands",
+      "fake looking snow",
+      "oversharpening",
+      "harsh flash lighting"
+    ]
+  }
+}
 ```
 
 </details>
@@ -37755,7 +46262,24 @@ The overall aesthetic is nostalgic, cheerful, and youthful — inspired by early
   },
   "mood": "Stoic, restrained, powerful",
   "style": {
-    "aesthe
+    "aesthetic": "Fine-art editorial portrait",
+    "realism": "Photorealistic",
+    "inspiration": "Minimalism, masculinity, symbolism",
+    "post_processing": "High-quality monochrome grading, subtle film grain, soft contrast"
+  },
+  "details": {
+    "chair": "Simple wooden chair, understated",
+    "lead_tension": "Loose, intentional calm",
+    "motion": "Stillness dominates the frame"
+  },
+  "themes": [
+    "Controlled power",
+    "Man and instinct",
+    "Silence as authority",
+    "Strength without display"
+  ],
+  "quality": "Ultra-detailed, cinematic black-and-white portrait with editorial depth"
+}
 ```
 
 </details>
@@ -37819,7 +46343,11 @@ Panel A: Album 1 (Focus on Surrealism/Scale).
 Panel B: Album 2 (Focus on Technology/Machinery).
 Panel C: Album 3 (Focus on Nature/Organic Textures).
 Panel D: Album 4 (Focus on Light/Color).
-5. Lig
+5. Lighting & Atmosphere:
+Concert Lighting: Each box is lit like a stage show. Spotlights, laser beams, and stage haze.
+Depth: Shallow depth of field (Tilt-Shift) to make the vinyl record look massive.
+Background: Seamless Slate Grey to keep the focus on the colors.
+Output: 2x2 Grid, Hyper-Realistic Miniature Set Design, 8k Resolution, "Audiophile" Aesthetic. </instructions>
 ```
 
 </details>
@@ -37875,7 +46403,45 @@ Panel D: Album 4 (Focus on Light/Color).
 
       "wardrobe_and_props": {
         "clothing": "simple student clothing in natural neutral tones (beige, grey, navy, soft brown), slightly wrinkled; no logos",
-        "wetness": "hair slightly wet, fabric darkened by rai
+        "wetness": "hair slightly wet, fabric darkened by rain, realistic water beads on coats and backpacks",
+        "props": "both hold books and carry backpacks/tote bags; book edges slightly damp; hands gripping straps naturally"
+      },
+
+      "micro_action": "they stop mid-step, realizing it’s each other; one adjusts a slipping book; the other wipes rain from their eyebrow; they share a short eye contact that lasts a second longer than normal",
+
+      "environment_details": {
+        "location": "Istanbul ferry terminal (Eminönü/Karaköy/Kadıköy vibe), directly in front of a docked ferry",
+        "background": "ferry hull and windows behind them, wet pavement, puddle reflections, seagulls blurred in distance, people moving with umbrellas out of focus",
+        "street_elements": "rain streaks visible, water droplets on railings, worn signage shapes but no readable text"
+      },
+
+      "lighting": "overcast rain daylight, soft and diffused; practical terminal lights give gentle warm highlights; deep but detailed shadows; subtle halation on wet highlights",
+
+      "composition": "eye-level medium shot, slightly off-center, imperfect crop, faces and eyes tack sharp; background softly receding; slight motion blur only in distant passersby and rain",
+
+      "mood": "quiet, intimate, realistic—two people sharing a private moment in a public place"
+    },
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "posed romance poster look",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh shapes",
+      "overly clean background",
+      "unrealistic rain",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "painterly"
+    ]
+  }
+}
 ```
 
 </details>
@@ -37937,7 +46503,18 @@ Panel D: Album 4 (Focus on Light/Color).
       },
       "environment": {
         "location": "beach sand",
-        "background": "clea
+        "background": "clear blue sky, no buildings, no clutter",
+        "lighting": "bright natural daylight, soft shadows, no flash"
+      },
+      "camera_style": {
+        "device_feel": "phone camera realism",
+        "lens_feel": "slight wide-angle perspective, natural distortion",
+        "mood": "playful, tender, summery"
+      },
+      "negative_prompt": "text overlay, captions, watermarks, logos, HDR, artificial shine, heavy retouching, plastic skin, exaggerated bokeh, distorted faces, extra fingers, deformed hands, incorrect sand texture, unrealistic sky gradients"
+    }
+  }
+}
 ```
 
 </details>
@@ -38024,7 +46601,54 @@ A photorealistic profile selfie, minimalist and monochrome: a woman in a dark ov
       "surface": "Neutral matte surface",
       "mirror_object": {
         "shape": "Perfectly round",
-        "fram
+        "frame": "Polished chrome metal",
+        "features": "Slim metal stand, realistic silvering reflection"
+      },
+      "decor_props": [
+        {
+          "id": "diffuser",
+          "label": "ASOMA",
+          "material": "Clear glass, wooden sticks",
+          "position": "Left foreground"
+        },
+        {
+          "id": "candle",
+          "material": "Amber/brown glass jar",
+          "state": "Partially burned, visible wax residue",
+          "position": "Right foreground"
+        }
+      ]
+    }
+  },
+  "lighting_and_optics": {
+    "lighting_profile": {
+      "source": "Natural diffused daylight",
+      "direction": "Side-lit from left",
+      "color_temperature": "5500K (Slightly cool morning light)",
+      "shadow_quality": "Soft, feathered edges"
+    },
+    "camera_simulation": {
+      "device": "iPhone 16 Pro Max (Silver/Gray)",
+      "lens_focal_length": "50mm (Natural human perspective)",
+      "aperture": "f/1.8 (Shallow depth of field)",
+      "focus_point": "Subject's reflection in the mirror"
+    },
+    "render_constraints": {
+      "texture_mapping": [
+        "Terry cloth fiber detail",
+        "Cold metal chrome reflections",
+        "Micro-pores and skin hydration",
+        "Glass transparency and refraction"
+      ],
+      "negative_constraints": [
+        "No airbrushing",
+        "No plastic skin",
+        "No high-contrast cinematic grading",
+        "No AI artifacts in reflections"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -38071,7 +46695,22 @@ A photorealistic profile selfie, minimalist and monochrome: a woman in a dark ov
       "No extra people, reflections, or background faces."
     ],
     "creative_prompt": {
-      "scene_summary": "Ultra-photoreal luxury fashion editorial set inside a high-end art museum or gallery. A stylish couple sits casually on a wooden gallery bench beneath a large framed classical landscape painting. The woman wears a strapless white mini dress with a sculpted silhouette, white high heels, and elegant sunglasses; hair pulled back in a refined updo; minimal gold jewelry. The man wears a tailored black suit with a white shirt and dark sunglasses; polished shoes; relaxed but confident posture.\n\nBoth are reading newspapers in a playful, ironic editorial moment; all newspaper pages are visually abstract with NO readable text or headlines. Composition mirrors the reference: balanced symmetry, legs cro
+      "scene_summary": "Ultra-photoreal luxury fashion editorial set inside a high-end art museum or gallery. A stylish couple sits casually on a wooden gallery bench beneath a large framed classical landscape painting. The woman wears a strapless white mini dress with a sculpted silhouette, white high heels, and elegant sunglasses; hair pulled back in a refined updo; minimal gold jewelry. The man wears a tailored black suit with a white shirt and dark sunglasses; polished shoes; relaxed but confident posture.\n\nBoth are reading newspapers in a playful, ironic editorial moment; all newspaper pages are visually abstract with NO readable text or headlines. Composition mirrors the reference: balanced symmetry, legs crossed, effortless elegance. Lighting is soft museum gallery lighting—warm, diffused, shadow-controlled—creating a refined cinematic atmosphere. Color palette: warm neutrals, ivory walls, golden frame accents, natural wood tones. Mood: chic, intellectual, modern luxury, quietly confident, fashion-house campaign quality.\n\nCamera: 85mm editorial portrait look, medium depth of field, subjects tack sharp, background painting slightly softened but recognizable. Overall feel: Vogue / luxury brand campaign, timeless and sophisticated."
+    },
+    "negative_prompt": [
+      "any readable text",
+      "logos, branding, watermarks",
+      "extra people or reflections",
+      "distorted legs, hands, feet",
+      "identity drift",
+      "cartoon, anime, CGI look",
+      "plastic or over-smoothed skin",
+      "harsh flash or blown highlights",
+      "busy or cluttered background",
+      "cheap fashion styling"
+    ]
+  }
+}
 ```
 
 </details>
@@ -38207,7 +46846,21 @@ Results and prompts below 👇 https://t.co/eH5qPDN8lu
     "camera_type": "professional camera simulation",
     "lens": "50mm or 85mm portrait lens",
     "focus": "sharp on eyes and face",
-    "depth_of_field": "subtle background blur"
+    "depth_of_field": "subtle background blur",
+    "resolution": "editorial-grade clarity"
+  },
+  "quality_control": {
+    "posture_accuracy": "balanced and realistic",
+    "skin_realism": "natural texture without over-smoothing",
+    "ai_artifacts": "none",
+    "professional_finish": "magazine-quality output"
+  },
+  "overall_mood": "grounded, confident, elegant",
+  "intended_use": {
+    "primary": "viral confidence post on X",
+    "secondary": "personal branding, lifestyle, professional image"
+  }
+}
 ```
 
 </details>
@@ -38332,7 +46985,40 @@ Results and prompts below 👇 https://t.co/eH5qPDN8lu
       "construction": "Visible copper rivets, heavy-duty stitching, and metallic button detail"
     },
     "accessories": {
-      "eyewear": "High-gloss black acetate sunglasses with silver metallic hinges, positioned precisely on the 
+      "eyewear": "High-gloss black acetate sunglasses with silver metallic hinges, positioned precisely on the crown of the head",
+      "earrings": "14k gold micro-hoop earrings with a polished finish"
+    }
+  },
+  "composition_logic": {
+    "layout_type": "Diptych (Side-by-side comparison)",
+    "panel_left_logic": {
+      "emotional_state": "Candid Happiness",
+      "pose_dynamics": "Looking down toward the left, wide smile, eyes partially closed, hands deep in pockets",
+      "vibe": "Spontaneous and joyful"
+    },
+    "panel_right_logic": {
+      "emotional_state": "Sultry Editorial",
+      "pose_dynamics": "Head tilted slightly upward, eyes looking off-camera, neutral/soft expression, thumb hooked in pocket",
+      "vibe": "Confident and high-fashion"
+    }
+  }, "optical_and_environmental_engine": {
+    "lighting": {
+      "primary_source": "Large softbox from the front-left to minimize harsh shadows",
+      "rim_light": "Subtle backlight to separate blonde hair from the white background",
+      "quality": "High-key, clean, and commercial"
+   }, 
+    "background_specs": {
+      "color": "Pure studio white },
+      "depth": "Infinite background with zero horizon line, clean and minimalist"
+    },
+    "camera_simulation": {
+      "body": "Sony A7R V",
+      "lens": "85mm f/1.4 GM",
+      "settings": "Aperture f/1.8, ISO 100, Shutter 1/250s",
+      "focus": "Eye-tracking autofocus enabled for maximum sharpness on the pupils"
+    }
+  }
+}
 ```
 
 </details>
@@ -38492,7 +47178,85 @@ Results and prompts below 👇 https://t.co/eH5qPDN8lu
     },
 
     "scene": {
-      "location": "classic museu
+      "location": "classic museum/gallery interior",
+      "background": {
+        "wall_color": "warm terracotta / muted rose-brown",
+        "wainscoting": "white classic panel molding",
+        "hero_object": "large ornate gold-framed classical landscape painting (castle ruins, bridge, mountains, dramatic sky)"
+      },
+      "composition_notes": "painting fills upper 2/3 of frame, couple occupies lower foreground as soft bokeh shapes"
+    },
+
+    "subjects": {
+      "male": {
+        "wardrobe": "black suit or black formalwear, clean silhouette",
+        "pose": "supporting the woman in a deep dip, one arm under her back, stable stance",
+        "action": "kissing"
+      },
+      "female": {
+        "wardrobe": "white/ivory elegant dress (simple satin or minimal bridal style)",
+        "hair": "dark, straight or softly waved, falling with the dip",
+        "pose": "deep dip backward, arms around his neck, kissing",
+        "tone": "romantic and tasteful (not explicit)"
+      }
+    },
+
+    "photography": {
+      "camera_style": "cinematic editorial film still",
+      "lens": "85mm prime",
+      "aperture_effect": "very shallow depth of field; foreground couple intentionally blurred; background painting in sharp focus",
+      "focus_target": "the framed painting (sharpest element in the image)",
+      "lighting": {
+        "style": "soft museum ambient light, warm highlights on gilded frame",
+        "shadows": "gentle, natural, not harsh",
+        "look": "expensive, calm, cinematic"
+      },
+      "color_grade": "warm gallery tones, deep blacks, creamy whites, subtle contrast",
+      "film_look": "subtle 35mm grain, gentle halation on highlights"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "2:3",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_film_still",
+      "sharpness": "crisp_but_natural",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "natural_dip_pose_physics": true,
+        "no_deformed_hands": true,
+        "no_extra_fingers": true
+      },
+      "focus_and_optics": {
+        "painting_is_tack_sharp": true,
+        "couple_is_soft_bokeh_foreground": true,
+        "no_ai_blur_artifacts": true
+      },
+      "environment": {
+        "frame_detail_high": true,
+        "museum_wall_molding_clean": true
+      }
+    },
+
+    "negative_prompt": [
+      "text, watermark, logo",
+      "cartoon, anime, illustration",
+      "HDR, over-sharpened look",
+      "painting blurry (painting must be sharp)",
+      "couple unnaturally sharp (couple must be softly blurred foreground)",
+      "warped frame geometry",
+      "deformed hands, extra fingers",
+      "explicit nudity"
+    ]
+  }
+}
 ```
 
 </details>
@@ -38572,7 +47336,10 @@ Ultra-sharp macro texture on vanilla pods and coffee grains, cinematic depth of 
     },
     "technical_specs": {
       "lighting": "Harsh midday sunlight, strong contrast, deep natural shadows, bright specular highlights",
-      "camera_settings": "
+      "camera_settings": "50–85mm lens look, shallow depth of field, high dynamic range (HDR)",
+      "color_grading": "Realistic, true-to-life skin tones"
+    },
+    "full_prompt_string": "Ultra-realistic cinematic lifestyle photography, 8K, hyper-detailed, photorealistic, An attractive woman aged 20, Slavic appearance. A naturally beautiful, well-balanced face with realistic proportions, no artificial perfection. Large expressive green-hazel eyes, calm confident gaze toward the camera. Naturally full lips, soft and unexaggerated. Light, natural daytime makeup emphasizing her features without looking heavy. Her skin is sun-kissed and wet, highly realistic with visible pores, subtle micro-imperfections, fine highlights, and water and oil droplets catching the sunlight. No plastic or overly smooth texture. Long wet hair, slightly messy after swimming, with a few strands sticking naturally to her cheek and forehead. She is lying on her stomach on a bright blue-and-white striped beach towel. The pose feels relaxed and spontaneous, like a real vacation moment: legs gently bent at the knees and lifted upward, feet together; a natural back line, slim waist, realistic body anatomy without exaggeration. She wears a small classic black bikini top with thin straps and a deep plunge — minimalistic, clean design, naturally fitting the body. One arm is extended forward as she takes a selfie — part of her arm and the edge of a small smartphone are visible in frame, reinforcing a casual iPhone-style shot. In her other hand, she holds a fresh coconut with a straw and a subtle ADORE logo; water droplets run down the shell. Environment: a luxurious rooftop pool atop a high-rise building in Los Angeles. Bright sunny day, clear blue sky with no clouds, turquoise pool water. Lush tropical greenery (banana palms, monstera plants), white sun loungers and umbrellas. Modern downtown LA skyscrapers in the background with a slight atmospheric haze on the horizon.
 ```
 
 </details>
@@ -38713,7 +47480,34 @@ Ultra-sharp macro texture on vanilla pods and coffee grains, cinematic depth of 
   },
   "background": {
     "environment": "studio setting",
-    "floor_and_backdrop": "continuo
+    "floor_and_backdrop": "continuous surface",
+    "texture": "smooth",
+    "color": "warm beige",
+    "visible_objects": "none"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "light yellow-green",
+      "mustard yellow",
+      "beige"
+    ],
+    "accent_colors": [
+      "brown",
+      "soft pink"
+    ]
+  },
+  "composition": {
+    "framing": "medium to full body",
+    "subject_position": "slightly left of center",
+    "negative_space": "present on upper and right areas",
+    "orientation": "vertical"
+  },
+  "image_quality": {
+    "sharpness": "high",
+    "grain": "not visible",
+    "detail_clarity": "very high, individual corn husk fibers and corn seeds visible"
+  }
+}
 ```
 
 </details>
@@ -38803,7 +47597,21 @@ Prompt : Create a minimalist mixed-media illustration that combines a simple bla
     "aesthetic": "Neo-noir street photography",
     "realism": "Photorealistic",
     "inspiration": "Urban cinema, night transit, modern solitude",
-    "post_processing": "Cool cinematic grading, slight grain, h
+    "post_processing": "Cool cinematic grading, slight grain, high contrast shadows"
+  },
+  "details": {
+    "motion_contrast": "Still subject against fast-moving train",
+    "floor_reflections": "Wet surface reflecting neon lights",
+    "sound_implied": "Rushing train, distant city hum"
+  },
+  "themes": [
+    "Urban loneliness",
+    "Waiting",
+    "Movement vs stillness",
+    "Anonymous city life"
+  ],
+  "quality": "Ultra-detailed, cinematic night street photograph with motion depth"
+}
 ```
 
 </details>
@@ -38841,7 +47649,11 @@ He is smiling subtly, enjoying the moment, completely calm and unbothered, creat
 A realistic coffee table sits between the couch and the TV, filled with casual home snacks and drinks: pizza slices, chips, sandwiches, and soft drinks, slightly messy to enhance realism.
 
 Lighting is soft, cinematic, and natural, combining ambient room light with the reflected TV glow from the mirror, which subtly illuminates faces and hands.
-Depth of field keeps the faces and mirror
+Depth of field keeps the faces and mirror reflection sharp while softly blurring background elements.
+
+Ultra-realistic skin texture, natural fabric wrinkles, realistic controller reflections, subtle dust particles in the air.
+Photorealistic, candid, unstaged moment.
+A perfect balance of tension, humor, and realism
 ```
 
 </details>
@@ -38916,7 +47728,19 @@ Depth of field keeps the faces and mirror
   },
   "negative_prompt": [
     "Posed studio look",
- 
+    "Empty street",
+    "Static posture",
+    "Low realism",
+    "Full color image",
+    "Overexposed highlights",
+    "Flat lighting"
+  ],
+  "output_quality": {
+    "resolution": "Ultra high resolution",
+    "detail_level": "Maximum photorealism",
+    "sharpness": "Crisp subject, soft background"
+  }
+}
 ```
 
 </details>
@@ -38939,7 +47763,7 @@ styling, partially disheveled, slight asymmetry of strands. The emotion is neutr
 
 surrounding buildings and the sky. The car is parked on a snow-covered surface next to a small city Christmas tree, surrounded by metal fences..
 
-The fir tree is fluffy and rich in tone, contrasting with the smooth surfaces of cars and skyscrapers. The urban backdrop consists of densely packed sk
+The fir tree is fluffy and rich in tone, contrasting with the smooth surfaces of cars and skyscrapers. The urban backdrop consists of densely packed skyscrapers stretching into the misty sky. Their glass and concrete facades create vertical rhythms. The light is diffused, wintry, soft, without pronounced shadows. The color scheme is a pure monochrome palette with deep shadows and even light areas. The processing is glossy, with a light feel of an advertising photo shoot, moderate grain, high sharpness in the foreground.
 ```
 
 </details>
@@ -39094,7 +47918,48 @@ A cinematic fashion portrait of a young woman with a short wavy bob haircut and 
         "skin_and_face": "natural skin texture, slight imperfections preserved, no beauty retouch, no plastic skin"
       },
       "wardrobe": "simple student outfits in neutral tones (beige, grey, navy), slightly wrinkled, no logos; minimal natural makeup",
-      "action": "a soft, brief kiss—foreheads close, hands lightly touching; respe
+      "action": "a soft, brief kiss—foreheads close, hands lightly touching; respectful and discreet in a public museum setting",
+      "environment_details": {
+        "location": "Pera Museum gallery interior",
+        "background": "the painting 'The Tortoise Trainer' visible behind them (recognizable composition), framed on the wall, museum-grade lighting",
+        "museum_realism": "gallery walls, subtle floor reflections, quiet visitors far in background softly out of focus (optional, not prominent), no readable signage"
+      },
+      "lighting": "museum track lighting creates soft highlights on the frame and faces; gentle falloff; no harsh shadows; no flash",
+      "composition": "eye-level medium shot, slightly off-center framing; couple in foreground, painting framed clearly behind; background softly receding; not symmetrical, not staged",
+      "mood": "quiet, human, intimate—love against the weight of art and history"
+    },
+
+    "hard_constraints": [
+      "photoreal only",
+      "no explicit content (just a gentle kiss)",
+      "no flash photography look",
+      "faces sharp (no blur)",
+      "no beauty retouch, no AI glow, no HDR",
+      "no text, no logos, no watermarks",
+      "exactly two adults only"
+    ],
+
+    "negative_prompt": [
+      "explicit",
+      "over-sexualized",
+      "studio lighting",
+      "flash",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "painterly",
+      "extra people in foreground"
+    ]
+  }
+}
 ```
 
 </details>
@@ -39511,7 +48376,62 @@ prompt: create a 4:5 vertical street portrait of a young woman with confident al
       "distortion_control": "natural perspective, straight verticals"
     },
     "depth_of_field": {
-
+      "aperture": "f/2.8",
+      "focus": "sharp on subject’s face",
+      "background": "softly blurred lights and figures, readable context"
+    }
+  },
+  "lighting": {
+    "primary_source": "warm gas station canopy lights",
+    "secondary_source": "cool ambient dusk sky",
+    "contrast": "balanced warm-cool interplay",
+    "highlights": "soft glow on hair and coat edges",
+    "shadows": "gentle shadow falloff, no crushed blacks",
+    "notes": "lighting should feel practical and naturally motivated"
+  },
+  "color_grade": {
+    "style": "cinematic dusk grade",
+    "palette": "warm amber highlights against cool blue-gray sky",
+    "saturation": "restrained, film-like",
+    "contrast": "medium, natural roll-off",
+    "black_levels": "slightly lifted for softness"
+  },
+  "texture_details": {
+    "skin": "realistic micro-texture",
+    "fabric": "coat weave visible, soft folds",
+    "environment": "wet asphalt reflections, subtle noise",
+    "grain": "light cinematic film grain"
+  },
+  "post_processing": {
+    "sharpness": "natural, no digital crispness",
+    "vignette": "very subtle, barely noticeable",
+    "glow": "controlled bloom on streetlights only",
+    "final_finish": "grounded, cinematic, photographic realism"
+  },
+  "negative_prompt": [
+    "plastic skin",
+    "beauty retouch",
+    "over-stylized fashion",
+    "anime",
+    "cartoon",
+    "HDR glow",
+    "neon oversaturation",
+    "cinematic fog overload",
+    "perfect skin",
+    "extreme bokeh",
+    "distorted anatomy",
+    "extra fingers",
+    "text",
+    "logos",
+    "watermark"
+  ],
+  "output_settings": {
+    "aspect_ratio": "3:4 vertical portrait",
+    "resolution": "high detail",
+    "quality": "photorealistic",
+    "style": "cinematic realism"
+  }
+}
 ```
 
 </details>
@@ -39584,7 +48504,23 @@ prompt: create a 4:5 vertical street portrait of a young woman with confident al
   "mood": "Relaxed, confident, contemporary",
   "style": {
     "aesthetic": "Lifestyle editorial photography",
-    "realism": "Pho
+    "realism": "Photorealistic",
+    "texture": "Visible denim grain, fabric upholstery detail",
+    "post_processing": "Natural color grading, subtle warmth, no heavy filters"
+  },
+  "details": {
+    "sofa": "Light neutral fabric couch with soft texture",
+    "windows": "Tall industrial-style windows with diffused city light",
+    "motion": "Still, candid moment"
+  },
+  "themes": [
+    "Modern femininity",
+    "Comfort and confidence",
+    "Everyday luxury",
+    "Authentic presence"
+  ],
+  "quality": "Ultra-detailed, high dynamic range, professional lifestyle photography"
+}
 ```
 
 </details>
@@ -39742,7 +48678,42 @@ Prompt : Vertical snack advertising visual with playful anthropomorphic tone. At
       "details": "Clinging strands at temples and nape",
       "volume": "None",
       "accessories": "None",
-  
+      "status": "LOCKED"
+    },
+    "accessories": {
+      "earrings": "Small gold hoop earrings",
+      "ring": "Thin gold ring",
+      "additional": "None (EXACT only)"
+    },
+    "environment": {
+      "location": "Outdoor swimming pool",
+      "water": "Clear blue-green water with natural ripples and refraction",
+      "pool_edge": "Textured beige stone",
+      "background": "No visible structures beyond pool"
+    },
+    "lighting": {
+      "type": "Natural direct sunlight",
+      "quality": "Strong warm highlights, crisp shadows defining body contours",
+      "effects": "Realistic water reflections on skin",
+      "artificial_lighting": "None",
+      "status": "LOCKED"
+    },
+    "camera": {
+      "style": "High-end editorial swimwear photography",
+      "angle": "Slight top-down",
+      "focus": "Sharp subject focus",
+      "depth_of_field": "Natural, realistic",
+      "color_grading": "True-to-life, documentary realism",
+      "stylization": "None"
+    },
+    "quality": {
+      "resolution": "Ultra-HD 8K",
+      "realism": "Photographic realism",
+      "textures": "Natural skin, water, stone",
+      "post_processing": "Minimal, realistic"
+    }
+  }
+}
 ```
 
 </details>
@@ -39913,7 +48884,78 @@ Create a hyper-realistic, stylish vertical poster featuring a smartphone lying o
     "global_direction": {
       "core_style": "35mm lens equivalent, eye-level, candid documentary feel, handheld realism, imperfect framing, real-life moments",
       "lighting": "natural light only, soft daylight through trees to warm late-afternoon, deep but detailed shadows, no studio lighting",
-      "film_aesthetic": "subtle halation on highlights, tiny film gate weave, gentle contrast, slight e
+      "film_aesthetic": "subtle halation on highlights, tiny film gate weave, gentle contrast, slight edge softness, not digital-perfect",
+      "location": "Istanbul, Belgrad Forest (Neşetsuyu area), shallow creek with mossy rocks, tall grass clearings, wildflowers, dense green trees",
+      "environment_details": "wet stones, flowing creek water, dappled sun through leaves, insects in air, real forest textures, no manicured park look",
+      "wardrobe": "simple summer casual: white sleeveless top and denim skirt/shorts for her, short-sleeve shirt and light denim shorts for him, no logos",
+      "relationship_tone": "playful, intimate, innocent, unposed; micro-smiles and real gestures, not staged romance"
+    },
+
+    "multi_shot_plan": [
+      {
+        "shot_id": "S01_CREEK_ROCK_PAUSE",
+        "shot_brief": "Quiet beat by the creek: mossy rocks, flowing water, two-shot with space.",
+        "shot_overrides": {
+          "composition": "wide two-shot, creek and rocks dominate, couple slightly off-center, imperfect framing",
+          "action": "he leans on a large mossy rock, she sits on a nearby rock by the water, they share a calm look",
+          "camera": "35mm, eye-level, handheld",
+          "authenticity": "tiny motion blur in water only, natural skin texture, no posing"
+        }
+      },
+      {
+        "shot_id": "S02_GRASS_EMBRACE_FRAGMENT",
+        "shot_brief": "Intimate fragment in tall grass near the clearing, accidental-feeling frame.",
+        "shot_overrides": {
+          "composition": "tight mid-body crop, partial faces allowed, warm light leaks through leaves",
+          "action": "his arm around her waist, her hand on his back, gentle sway",
+          "camera": "35mm, close distance, shallow-to-medium DOF",
+          "authenticity": "slight motion blur on edges only, real fabric texture"
+        }
+      },
+      {
+        "shot_id": "S03_CLEARING_RUN_PLAY",
+        "shot_brief": "They run and spin in a forest clearing, tall grass moving, joyful candid motion.",
+        "shot_overrides": {
+          "composition": "wide dynamic frame, full bodies, tall grass foreground blur, trees in background",
+          "action": "she pulls him by the hand, both laughing naturally, hair in motion",
+          "camera": "35mm, eye-level, handheld, realistic shutter",
+          "authenticity": "background motion blur, faces still readable, not overly sharp"
+        }
+      },
+      {
+        "shot_id": "S04_WILDFLOWER_REST_ENDING",
+        "shot_brief": "Ending beat: sitting among wildflowers at forest edge, intimate calm two-shot.",
+        "shot_overrides": {
+          "composition": "medium close two-shot, wildflowers in foreground framing, gentle bokeh",
+          "action": "she leans on him, he smiles; relaxed shoulders, genuine eye contact",
+          "camera": "35mm, eye-level, focus on eyes, shallow DOF",
+          "authenticity": "foreground flowers softly out of focus, subtle halation, realistic grain"
+        }
+      }
+    ],
+
+    "negative_prompt": [
+      "studio lighting",
+      "plastic skin",
+      "beauty retouch",
+      "HDR",
+      "AI glow",
+      "over-sharpened",
+      "perfect symmetry",
+      "over-clean background",
+      "fake bokeh shapes",
+      "face drift",
+      "different people across shots",
+      "warped hands",
+      "extra fingers",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "painterly"
+    ]
+  }
+}
 ```
 
 </details>
@@ -39973,7 +49015,52 @@ Create a hyper-realistic, stylish vertical poster featuring a smartphone lying o
       },
       "LightingAndMood": {
         "TimeOfDay": "Night",
-        "Lighting": "Moody cyberpunk neon lights in r
+        "Lighting": "Moody cyberpunk neon lights in red, teal, and magenta",
+        "Atmosphere": "Rain, mist, reflections on wet asphalt",
+        "Mood": "Energetic, futuristic, playful surrealism"
+      },
+      "Composition": {
+        "Camera": "Low-angle wide shot",
+        "Perspective": "Dynamic chase-style framing",
+        "DepthOfField": "Shallow depth of field with background bokeh"
+      }
+    }
+  ],
+  "ArtDirection": {
+    "Style": "Playful yet photorealistic surrealism",
+    "TextureQuality": {
+      "Food": "Ultra-realistic pizza textures, visible oil sheen, stretchy melted cheese",
+      "Environment": "High-detail rocks, asphalt, rain droplets, reflections"
+    },
+    "RealismBalance": "Photorealistic materials combined with impossible scale and concepts"
+  },
+  "VisualStyle": {
+    "Resolution": "8K ultra-high detail",
+    "ColorGrading": "Cinematic contrast with warm coastal tones and cool neon city tones",
+    "Depth": "Strong sense of scale and dimensionality"
+  },
+  "Mood": {
+    "OverallTone": "Imaginative, whimsical, cinematic",
+    "EmotionalFeel": "Playful awe and creative wonder"
+  },
+  "NegativePrompt": [
+    "flat lighting",
+    "cartoon-only style",
+    "low detail textures",
+    "plastic food",
+    "blurry focus",
+    "dull colors"
+  ],
+  "ResponseFormat": {
+    "Type": "Two-scene cinematic illustration or render",
+    "OutputOptions": [
+      "Split composition",
+      "Diptych",
+      "Two separate images"
+    ],
+    "AspectRatio": "16:9"
+  }
+}
 ```
 
 </details>
@@ -40066,7 +49153,256 @@ hey Grok. i don't need you. i'm awesome with nano banana pro!
       "eyes": {
         "color": "BLUE - light blue, striking even without makeup",
         "direction": "looking at phone SCREEN, not directly at mirror",
-        "state": "soft, relaxed, focused on takin
+        "state": "soft, relaxed, focused on taking photo",
+        "makeup": "NONE - completely bare, natural lashes"
+      },
+      "mouth": {
+        "lips": "full, natural pink, no lipstick",
+        "expression": "relaxed, neutral, soft natural pout",
+        "state": "closed, gentle expression"
+      },
+      "skin": {
+        "state": "FRESH, dewy, post-shower glow",
+        "makeup": "ZERO MAKEUP - completely bare face",
+        "texture": "natural, real, some light freckles visible",
+        "glow": "natural post-shower freshness"
+      },
+      "overall": "fresh-faced, natural beauty, 'just got out of shower' realness"
+    },
+
+    "physical": {
+      "age": "early 20s",
+      
+      "face": {
+        "structure": "model features, high cheekbones, defined but soft",
+        "shape": "oval, symmetrical",
+        "skin": "fair/light, natural, fresh, minimal texture visible",
+        "freckles": "light natural freckles",
+        "brows": "natural, groomed but not filled in",
+        "bare_face": "completely makeup-free, natural beauty"
+      },
+      
+      "body": {
+        "type": "slim, feminine",
+        "chest": "visible cleavage from open robe, natural",
+        "shoulders": "narrow, feminine, peeking from robe",
+        "collarbone": "visible, delicate"
+      },
+      
+      "hair": {
+        "color": "PLATINUM BLONDE - but appears darker when WET",
+        "state": "WET - freshly washed, damp throughout",
+        "style": "HIGH MESSY PONYTAIL/BUN",
+        "details": {
+          "top": "pulled up into loose high ponytail on crown",
+          "texture": "wet, clumped strands, slicked back from water",
+          "pieces": "wet strands falling around face, stuck to skin",
+          "length": "ponytail hanging down, wet and wavy"
+        },
+        "wet_appearance": {
+          "color_shift": "appears darker/more golden when wet vs dry platinum",
+          "texture": "stringy, clumped, wet strands",
+          "face_framing": "wet pieces stuck to forehead and cheeks"
+        },
+        "vibe": "just-washed, fresh from shower, effortless"
+      },
+      
+      "skin": {
+        "tone": "fair, light with slight warmth",
+        "state": "fresh, clean, post-shower glow",
+        "chest": "visible, natural, dewy"
+      },
+      
+      "nails": {
+        "color": "natural/nude pink, clean",
+        "length": "medium, neat",
+        "shape": "natural/rounded"
+      }
+    },
+
+    "outfit": {
+      "robe": {
+        "type": "HOTEL BATHROBE - terry cloth",
+        "color": "WHITE - classic bright white",
+        "material": {
+          "type": "terry cloth/toweling fabric",
+          "texture": "plush, fluffy, soft loops visible",
+          "weight": "substantial, hotel-quality"
+        },
+        "style": {
+          "type": "classic wrap robe with shawl collar",
+          "collar": "shawl collar, plush",
+          "sleeves": "long, pushed up slightly at wrists",
+          "belt": "matching terry cloth belt, tied at waist"
+        },
+        "fit": {
+          "overall": "oversized, cozy, enveloping",
+          "opening": "DEEP V - wrapped loosely, showing significant cleavage",
+          "chest_visibility": "robe open enough to show sternum and inner curves",
+          "tie": "belted at waist but loosely wrapped above"
+        },
+        "vibe": "luxury hotel robe, post-shower cozy"
+      },
+      
+      "underneath": "implied nude - nothing visible under robe, fresh from shower"
+    },
+
+    "phone": {
+      "type": "iPhone (dual or triple camera visible)",
+      "case": {
+        "color": "DARK GREY / CHARCOAL / BLACK",
+        "style": "matte, simple protective case",
+        "finish": "matte dark grey"
+      },
+      "position": "held up in right hand at chest-face level",
+      "visibility": "phone and case clearly visible"
+    }
+  },
+
+  "environment": {
+    "setting": "LUXURY HOTEL BATHROOM",
+    "style": "high-end, marble, modern classic",
+    
+    "walls": {
+      "material": "MARBLE TILE - white/grey calacatta or similar",
+      "pattern": "white base with grey VEINING throughout",
+      "accent": {
+        "type": "horizontal BLACK MARBLE STRIPE/BAND",
+        "position": "running across wall at approximately shoulder height",
+        "material": "black marble or dark stone accent strip",
+        "effect": "design detail, breaks up white marble"
+      }
+    },
+    
+    "shower": {
+      "visibility": "glass shower enclosure visible on right side",
+      "type": "walk-in glass shower",
+      "fixtures": "chrome/silver shower fixtures visible (rainfall head, handheld)",
+      "glass": "clear glass panel with metal frame"
+    },
+    
+    "mirror": {
+      "type": "large wall-mounted bathroom mirror",
+      "position": "she's taking selfie in it"
+    },
+    
+    "fixtures": {
+      "type": "chrome/polished silver",
+      "visible": "faucet fixtures, shower fixtures"
+    },
+    
+    "lighting": {
+      "type": "bright BATHROOM LIGHTING - white, clean",
+      "quality": "bright, even, flattering",
+      "color_temperature": "neutral to cool white",
+      "source": "overhead bathroom lights, possibly some natural light",
+      "on_subject": {
+        "skin": "fresh, glowing, well-lit",
+        "hair": "wet strands catching light",
+        "robe": "bright white, clean"
+      },
+      "effect": "clean, bright, good selfie lighting"
+    },
+    
+    "atmosphere": "luxury hotel bathroom, post-shower fresh, expensive and clean"
+  },
+
+  "color_story": {
+    "palette_name": "Marble Bath Fresh - white, grey, black accent",
+    
+    "dominant": {
+      "white": "robe, marble walls - 70%",
+      "grey": "marble veining, phone case - 20%"
+    },
+    
+    "accent": {
+      "black_stripe": "marble accent band - graphic element",
+      "chrome": "fixtures - metallic highlights"
+    },
+    
+    "her_colors": {
+      "hair": "wet platinum blonde (appears darker/golden wet)",
+      "skin": "fair, fresh, pink undertones",
+      "eyes": "blue - cool pop",
+      "lips": "natural pink"
+    },
+    
+    "overall": "clean, minimal, spa-like",
+    "temperature": "cool/neutral - clean bathroom light",
+    "mood": "fresh, clean, luxurious simplicity"
+  },
+
+  "photography_technical": {
+    "type": "mirror selfie, bathroom",
+    "device": "iPhone",
+    "aspect_ratio": "4:5 vertical",
+    
+    "composition": {
+      "subject": "centered in frame",
+      "background": "marble walls, shower glimpse",
+      "framing": "waist up, face centered"
+    },
+    
+    "focus": "sharp on face and upper body",
+    "exposure": "well-exposed, bright bathroom lighting",
+    "style": "casual selfie, authentic moment"
+  },
+
+  "narrative": {
+    "story": "fresh out of shower at nice hotel, quick mirror selfie before getting ready",
+    "moment": "the post-shower 'I look good even without trying' realization",
+    "context": "vacation? staycation? hotel stay? doesn't matter, she's glowing",
+    "mood": "fresh, relaxed, effortlessly beautiful"
+  },
+
+  "vibe": {
+    "core": "wet-hair hotel bathroom selfie, white robe open, zero makeup, natural beauty",
+    "energy": "fresh, clean, effortless, 'woke up like this' but literally",
+    "mood": "relaxed, natural, confident without trying",
+    "aesthetic": "clean girl, model off-duty, luxury casual",
+    "temperature": "cool, fresh, spa-like",
+    "caption_energy": "'🤍' or 'fresh' or no caption just posts"
+  },
+
+  "what_makes_it_hit": {
+    "the_no_makeup": "completely bare face = real natural beauty flex",
+    "the_wet_hair": "fresh from shower = authentic, not styled",
+    "the_robe_opening": "deep V showing cleavage = alluring but not explicit",
+    "the_marble": "instant luxury signifier, expensive setting",
+    "the_black_stripe": "graphic design element, elevates basic bathroom",
+    "the_dewy_skin": "post-shower glow = fresh, healthy, real",
+    "the_simplicity": "nothing elaborate, just natural beauty in nice setting",
+    "the_robe": "white hotel robe = universal luxury symbol"
+  },
+
+  "recreation_critical_requirements": {
+    "MUST_HAVE": [
+      "PLATINUM BLONDE hair - appears darker when WET",
+      "WET HAIR in HIGH MESSY PONYTAIL - fresh from shower",
+      "Wet strands falling around face, stuck to skin",
+      "BLUE EYES",
+      "ZERO MAKEUP - completely bare face, natural",
+      "Fresh, dewy, post-shower skin",
+      "WHITE TERRY CLOTH HOTEL BATHROBE",
+      "Robe OPEN in DEEP V - significant cleavage visible",
+      "Robe belted at waist but loose above",
+      "DARK GREY/BLACK iPhone case",
+      "WHITE MARBLE walls with GREY VEINING",
+      "BLACK MARBLE horizontal STRIPE/ACCENT BAND on wall",
+      "Glass SHOWER enclosure visible on right side",
+      "Chrome bathroom fixtures visible",
+      "BRIGHT clean bathroom lighting",
+      "Mirror selfie, straight-on angle",
+      "4:5 vertical aspect ratio"
+    ],
+    
+    "pose_exact": "standing facing mirror, phone held up in right hand, looking at screen",
+    "robe_exact": "white terry cloth, wrapped with deep V showing cleavage, belted at waist",
+    "hair_exact": "wet platinum blonde in high messy ponytail, wet strands around face",
+    "face_exact": "zero makeup, natural, dewy post-shower fresh",
+    "bathroom_exact": "white/grey veined marble walls with black horizontal stripe accent, glass shower visible"
+  }
+}
 ```
 
 </details>
@@ -40139,7 +49475,76 @@ hey Grok. i don't need you. i'm awesome with nano banana pro!
       "compression_artifacts": "none"
     },
     "hard_constraints": [
-      "Exactly 2 peo
+      "Exactly 2 people only (one female, one male).",
+      "Faces must match the uploaded references with maximum similarity (no identity drift).",
+      "Triptych layout: THREE horizontal panels stacked vertically in one 4:5 image, exactly like the composition reference.",
+      "Outdoor playground swing set setting, same action beats as reference: playful upside-down hanging + pushing + reaching toward camera.",
+      "Faces must be clearly visible and recognizable in ALL THREE panels (no hair fully covering face, no extreme blur).",
+      "Photorealistic anatomy; correct hands/fingers; realistic clothing folds and gravity.",
+      "Swing set geometry must be physically correct (straight metal frame, correct chain links, no warping).",
+      "No text, no logos, no watermark."
+    ],
+    "camera": {
+      "style": "real_cinematic_lifestyle_photo",
+      "lens": "28mm_full_frame",
+      "distortion": "realistic_28mm_mild_edge_distortion_controlled",
+      "aperture": "f/2.8",
+      "focus": "faces_sharp_each_panel",
+      "shutter_speed": "1/800",
+      "iso": 200,
+      "white_balance": "daylight_5600k",
+      "metering": "center_weighted",
+      "processing": "no_hdr_no_ai_sharpening"
+    },
+    "lighting": {
+      "type": "natural_outdoor_daylight",
+      "time_of_day": "late_afternoon_soft_sun",
+      "contrast": "medium",
+      "highlights": "controlled_no_blowout",
+      "shadows": "soft_natural",
+      "skin_specular": "natural_subtle"
+    },
+    "physics_and_realism": {
+      "gravity_rules": "strict",
+      "hair_physics": "realistic_strands_follow_gravity",
+      "cloth_physics": "realistic_drape_and_tension",
+      "motion": "minimal_motion_blur_on_limbs_only_faces_stay_sharp",
+      "hands": "anatomically_correct_fingers_nails_knuckles"
+    },
+    "prompt": {
+      "scene_summary": "Recreate the composition reference EXACTLY as a three-panel stacked triptych (three horizontal frames in one portrait image). Real candid romantic couple at an outdoor playground swing set in a park under a partly cloudy sky. The metal swing frame and chains are clearly visible and geometrically correct, sandy ground beneath, grassy park background with early-season leafless trees.\n\nPANEL 1 (top): Wide candid moment: the male near the left swing, leaning forward close to the ground like he’s pushing/steadying himself; the female sits on the right swing with knees tucked, smiling/laughing. Documentary authenticity, not posed.\n\nPANEL 2 (middle): Both hang upside down from the swings, laughing. STRICT physics: hair falls downward with gravity, clothing drapes correctly. Faces remain fully visible and recognizable; no hair covering eyes/mouth.\n\nPANEL 3 (bottom): The female swings toward camera, reaching both hands forward toward the lens (playful ‘flying’ gesture). The male behind/left near the other swing, slightly softer focus but still clearly recognizable.\n\nWardrobe (match the reference vibe, realistic materials):\n- Female: dark jacket (leather or matte), blue jeans, casual sneakers; medium-length hair with natural movement.\n- Male: denim jacket, light pants/jeans, casual sneakers.\n\nPhotoreal notes:\n- Natural skin texture (pores, peach fuzz), realistic specular highlights.\n- No beauty filter, no smoothing, no doll-like look.\n- Correct anatomy, correct hands/fingers.\n- Maintain identical triptych layout, framing, and action beats as the composition reference."
+    },
+    "negative_prompt": [
+      "extra people",
+      "third person",
+      "identity drift",
+      "face morph",
+      "beautify filter",
+      "skin smoothing",
+      "plastic skin",
+      "doll face",
+      "overly perfect symmetry",
+      "cartoon",
+      "anime",
+      "cgi",
+      "ai-looking skin",
+      "over_sharpened",
+      "hdr",
+      "bad hands",
+      "extra fingers",
+      "missing fingers",
+      "warped swing chains",
+      "bent metal frame",
+      "wrong triptych layout",
+      "misaligned panels",
+      "faces hidden by hair",
+      "heavy motion blur on faces",
+      "text",
+      "logo",
+      "watermark"
+    ]
+  }
+}
 ```
 
 </details>
@@ -40245,7 +49650,9 @@ A high-quality, candid street photography shot of a stylish young woman with sho
       "3d",
       "digital render"
     ],
-    "prompt_text": "Hand-drawn colored pencil illustration with visible pencil texture, clean yet sli
+    "prompt_text": "Hand-drawn colored pencil illustration with visible pencil texture, clean yet slightly rough line art, warm pastel color palette, high brightness and gentle saturation, flat coloring with minimal shading, soft highlights, semi-cartoon proportions, simple dot eyes and small smiling mouth, cozy and cheerful storybook mood, children’s book illustration style, non-realistic, no photo texture"
+  }
+}
 ```
 
 </details>
@@ -40304,7 +49711,33 @@ A high-quality, candid street photography shot of a stylish young woman with sho
     "texture": "visible film grain, natural softness, realistic leather and fabric detail"
   },
   "composition": {
-    "framing":
+    "framing": "subject placed mid-right, headrest foreground adds depth, windshield leads to city bokeh",
+    "focus_story": "private moment inside moving city life",
+    "mood": "late-night ride home, quiet tension, unspoken thoughts"
+  },
+  "negative_prompts": [
+    "plastic skin",
+    "AI beauty face",
+    "over-sharpened",
+    "hyper clean details",
+    "perfect symmetry",
+    "over-saturated neon",
+    "fake cinematic fog",
+    "studio lighting",
+    "glossy makeup",
+    "extra fingers",
+    "deformed hands"
+  ],
+  "quality_tags": [
+    "cinematic realism",
+    "night interior",
+    "streetlight glow",
+    "35mm film still",
+    "soft bokeh",
+    "subtle grain",
+    "documentary mood"
+  ]
+}
 ```
 
 </details>
@@ -40383,7 +49816,48 @@ A high-quality, candid street photography shot of a stylish young woman with sho
       "effects": [
         "dense falling snow",
         "ice dust",
-        
+        "strong wind"
+      ]
+    },
+    "background": {
+      "primary_element": "crashed alien saucer UFO",
+      "details": [
+        "front of ship buried deep in ice",
+        "jagged ice mounds and frozen waves at impact zone",
+        "torn, frosted metal",
+        "faint intermittent glow",
+        "dark steam leaking from hull"
+      ],
+      "visibility": "partially obscured by darkness and snow haze"
+    }
+  },
+  "lighting": {
+    "type": "harsh direct on-camera flash",
+    "effects": [
+      "backscatter illuminating snowflakes and ice particles",
+      "bright white streaks and chaotic specks with motion blur",
+      "strong contrast between subject and background"
+    ]
+  },
+  "aesthetics": {
+    "camera_artifacts": [
+      "high ISO grain",
+      "heavy color noise",
+      "hand-shake blur",
+      "chromatic aberration",
+      "dirty lens",
+      "frost vignette"
+    ],
+    "look_and_feel": "raw, unpolished, hyper-realistic found-footage style"
+  },
+  "constraints": [
+    "No face alteration",
+    "No beautification",
+    "No stylization beyond documentary realism",
+    "Maintain raw imperfections"
+  ],
+  "output_goal": "Create a hyper-realistic, raw selfie-style image in extreme Arctic blizzard conditions, preserving the exact facial identity from the reference image, with harsh flash lighting, heavy environmental effects, and a dramatic crashed UFO in the background."
+}
 ```
 
 </details>
@@ -40483,7 +49957,25 @@ A stylish, cinematic portrait of a man (KEEP SAME FACE FEATURES AS ORIGINAL) Bal
     "RealismLevel": "Ultra-realistic with cinematic softness"
   },
   "Mood": {
-    "Tone":
+    "Tone": "Quiet, reflective, melancholic",
+    "EmotionalFeel": "Solitude, stillness, winter calm"
+  },
+  "NegativePrompt": [
+    "harsh sunlight",
+    "studio lighting",
+    "oversaturated colors",
+    "fashion editorial glamour",
+    "heavy makeup",
+    "plastic skin",
+    "cartoon",
+    "anime"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -40597,7 +50089,16 @@ Prompt:-
     }
   },
   "cinematography": {
-    "cam
+    "camera": {
+      "angle": "Eye-level",
+      "framing": "Medium portrait",
+      "grading": "Warm cinematic, lifted blacks, soft highlights"
+    }
+  },
+  "render_quality": {
+    "attributes": ["Photorealistic", "High resolution", "Sharp fabric textures"]
+  }
+}
 ```
 
 </details>
@@ -40660,7 +50161,36 @@ Prompt:-
             "pattern_analysis": "Black base with dense clusters of red poppies and orange marigolds",
             "fit": "Tailored, feminine silhouette"
           },
-          "pose_analysis": "Arms wrapped around S
+          "pose_analysis": "Arms wrapped around Sydney, head tilted slightly towards her friend"
+        }
+      }
+    ],
+    "environmental_architecture": {
+      "foreground": "Polished wooden rooftop deck with glass safety partitions",
+      "midground": "Urban residential buildings of West Hollywood and palm trees",
+      "background": {
+        "primary_landmark": "The iconic Hollywood Sign on Mount Lee",
+        "topography": "Rolling hills of the Santa Monica Mountains",
+        "atmosphere": "Light smog layer creating a soft cinematic haze"
+      },
+      "lighting_engine": {
+        "type": "Backlit Golden Hour",
+        "light_warmth": "5500K - 3200K gradient",
+        "shadow_depth": "Soft, diffused shadows avoiding harsh contrast"
+      }
+    },
+    "artistic_intent": {
+      "mood": "Nostalgic, joyful, and serene",
+      "theme": "Hollywood Stardom vs. Personal Connection",
+      "color_grading": "Warm tints, enhanced saturation in the floral patterns, balanced skin tones"
+    },
+    "file_structure_data": {
+      "file_type": "PNG / RAW",
+      "resolution": "7680 x 4320 pixels",
+      "pixel_density": "300 DPI"
+    }
+  }
+}
 ```
 
 </details>
@@ -40747,7 +50277,24 @@ Gemini Nano Banana Pro 😍
     },
     "lighting": {
       "source": "Natural golden hour sunlight from behind",
-      "effect": "Backlit glow on hair, soft flattering frontal illumina
+      "effect": "Backlit glow on hair, soft flattering frontal illumination on face, warm atmospheric tone",
+      "shadows": "Soft and diffuse"
+    },
+    "technical_specs": {
+      "style": "Photorealistic smartphone selfie",
+      "resolution": "8k ultra hd",
+      "aspect_ratio": "9:16 (long vertical format)",
+      "focus": "Sharp focus on subject, slight depth of field blur on background planes",
+      "quality_tags": [
+        "hyper-realistic",
+        "highly detailed",
+        "best quality",
+        "masterpiece",
+        "raw photo"
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -40808,7 +50355,86 @@ Gemini Nano Banana Pro 😍
 },
 "mood_and_expression": {
 "mood": "Serene, cold, confident, slightly alluring",
-"expression": "Neutral lips, soft but direct gaze"
+"expression": "Neutral lips, soft but direct gaze",
+"vibe": "Winter aesthetic, contrast between cold weather and swimwear"
+},
+"style_and_realism": {
+"style": "Photorealistic, raw photography, social media aesthetic",
+"quality": "High fidelity, 8k resolution, detailed texture",
+"render": "Unreal Engine 5 level realism or high-end DSLR photography"
+},
+"colors_and_tone": {
+"palette": [
+"baby blue",
+"snow white",
+"black",
+"warm beige skin tone"
+],
+"contrast": "High contrast between black swimwear and white snow",
+"saturation": "Natural, slightly cool tinted due to environment"
+},
+"quality_and_technical_details": {
+"resolution": "High resolution",
+"details": "Knitted wool texture, crystal refraction, skin pores, snow grain"
+},
+"aspect_ratio_and_output": {
+"ratio": "3:4",
+"orientation": "Portrait"
+},
+"controlnet": {
+"pose_control": {
+"model_type": "OpenPose",
+"purpose": "Exact skeletal and pose lock",
+"constraints": [
+"preserve shoulder width",
+"preserve hip angle",
+"preserve spine curvature",
+"preserve limb placement"
+],
+"recommended_weight": 1.0
+},
+"depth_control": {
+"model_type": "MiDaS",
+"purpose": "Depth, volume, and camera-to-body spatial lock",
+"constraints": [
+"preserve chest foreground dominance",
+"prevent flat or compressed depth",
+"maintain clear torso-to-background separation"
+],
+"recommended_weight": 0.8
+}
+},
+"negative_prompt": {
+"forbidden_elements": [
+"anatomy normalization",
+"body proportion averaging",
+"smaller bust than reference",
+"reduced chest volume",
+"flattened or compressed breasts",
+"tightened or lifted breasts",
+"slimmed torso",
+"aesthetic proportion correction",
+"beauty standard enforcement",
+"dataset-average female anatomy",
+"camera angles that reduce volume",
+"wide-angle distortion",
+"lens compression not in reference",
+"cropping that removes volume",
+"depth flattening",
+"mirror selfies",
+"phone-in-hand selfies",
+"reflections",
+"beautification filters",
+"skin smoothing",
+"plastic skin",
+"airbrushed texture",
+"stylized realism",
+"editorial fashion proportions",
+"more realistic reinterpretation",
+"naturalization of prominent features"
+]
+}
+}
 ```
 
 </details>
@@ -40863,7 +50489,15 @@ Soft city skyline silhouette far behind the smoke.
 
 Car:
 
-A completely different model from the previous prompt: Nissan GT-R Black Edition (or similar JDM icon), hyper-detailed with glossy reflections, racing decals, visible car-bon-fiber textures, and headlights slicing through 
+A completely different model from the previous prompt: Nissan GT-R Black Edition (or similar JDM icon), hyper-detailed with glossy reflections, racing decals, visible car-bon-fiber textures, and headlights slicing through fog.
+
+Face Replacement Instruction:
+
+Replace all faces with the face from the photo I will upload. Keep lighting, expression, angle, texture and realism consistent with the cinematic scene. Do not alter the per-son's natural facial features. Blend the face perfectly into the poster.
+
+Final Rendering Style:
+
+8K resolution, ultra-sharp details, premium Hollywood poster composition, dramatic depth of field, misty environment, crisp reflections, slight vignette, full photorealism.
 ```
 
 </details>
@@ -40941,7 +50575,29 @@ A completely different model from the previous prompt: Nissan GT-R Black Edition
     "DetailLevel": "Extremely high detail, handcrafted feel"
   },
   "PhotographyStyle": {
-    "Genre": "Characte
+    "Genre": "Character portrait / collectible doll photography",
+    "RealismLevel": "Stylized photorealism",
+    "Resolution": "8K ultra-high detail"
+  },
+  "Mood": {
+    "Tone": "Whimsical, cute, comforting",
+    "EmotionalFeel": "Innocence, warmth, gentle charm"
+  },
+  "NegativePrompt": [
+    "realistic human proportions",
+    "harsh lighting",
+    "dark horror tone",
+    "rough textures",
+    "plastic toy look",
+    "flat shading",
+    "low detail"
+  ],
+  "ResponseFormat": {
+    "Type": "Single character portrait",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -41041,7 +50697,18 @@ A completely different model from the previous prompt: Nissan GT-R Black Edition
     "post_processing": "Warm highlights with slightly muted saturation"
   },
   "details": {
-    "ground
+    "ground": "Rough asphalt with small debris",
+    "board": "Scuffed skateboard deck showing use",
+    "motion": "Still frame, no action or blur"
+  },
+  "themes": [
+    "Urban solitude",
+    "Music as escape",
+    "Youth and pause",
+    "Belonging without noise"
+  ],
+  "quality": "Ultra-detailed, high dynamic range, professional cinematic street portrait"
+}
 ```
 
 </details>
@@ -41136,7 +50803,51 @@ A completely different model from the previous prompt: Nissan GT-R Black Edition
     "aperture": "wide open for shallow depth of field",
     "focus": "sharp focus on subject, background softly defocused",
     "camera_position": "eye-level, street perspective",
-    "movement": "stat
+    "movement": "static frame, background motion creates contrast"
+  },
+  "lighting": {
+    "primary_source": "ambient city lighting",
+    "secondary_sources": [
+      "vehicle headlights",
+      "neon signs",
+      "storefront lights"
+    ],
+    "lighting_style": "soft, diffused, natural",
+    "contrast": "moderate, cinematic"
+  },
+  "color_grading": {
+    "palette": ["cool blues", "teal shadows", "warm amber highlights"],
+    "saturation": "controlled, muted",
+    "black_levels": "slightly lifted for filmic look",
+    "highlights": "soft roll-off"
+  },
+  "post_processing": {
+    "film_grain": "subtle, cinematic",
+    "sharpness": "subject emphasized, background softened",
+    "noise": "minimal, natural",
+    "vignette": "very subtle"
+  },
+  "visual_style": {
+    "realism": "high",
+    "aesthetic": "moody, atmospheric, modern",
+    "inspiration_keywords": [
+      "cinematic rain",
+      "urban isolation",
+      "street realism",
+      "architectural mood"
+    ]
+  },
+  "output_quality": {
+    "resolution": "high",
+    "dynamic_range": "high",
+    "detail_priority": "subject and environment textures preserved"
+  },
+  "usage": {
+    "platform": "social media / X",
+    "intent": "artistic storytelling, cinematic visual identity",
+    "reusability": "modular prompt structure"
+  }
+}
 ```
 
 </details>
@@ -41321,7 +51032,25 @@ Prompt: Give each piece of her clothing separately on the bed
   },
   "mood": "Timeless, cultured, graceful",
   "style": {
-    "aes
+    "aesthetic": "Fine-art fashion photography",
+    "inspiration": "Classical art, literature, museum couture",
+    "realism": "Photorealistic",
+    "texture": "Visible fabric grain, stone wall detail",
+    "post_processing": "Warm cinematic grading, subtle vignette, gentle contrast"
+  },
+  "details": {
+    "fabric_motion": "Soft drape pooling naturally on the floor",
+    "background_depth": "Long corridor perspective enhancing grandeur",
+    "motion": "Still, poised moment"
+  },
+  "themes": [
+    "Art and identity",
+    "Fashion as language",
+    "Timeless beauty",
+    "Human presence within history"
+  ],
+  "quality": "Ultra-detailed, high dynamic range, professional cinematic fine-art portrait"
+}
 ```
 
 </details>
@@ -41491,7 +51220,34 @@ Prompt:
         }
       ],
       "footwear": {
-        "style": "Moon-boot inspired l
+        "style": "Moon-boot inspired lace-up winter boots",
+        "details": "White fur-lined, realistic rubber soles, snow buildup around the edges"
+      }
+    },
+    "environment": {
+      "setting": "Nighttime exterior of a modern luxury building",
+      "architecture": "Sharp geometric wood with triangular patterns",
+      "props": "Black luxury SUV parked nearby, partially covered in frost and snow",
+      "ground": "Thick uneven snow blanket with visible footprints and compression points",
+      "weather": "Heavy dense snowfall, large snowflakes frozen in mid-motion with slight blur"
+    },
+    "lighting_and_atmosphere": {
+      "primary_lighting": "Cold blue-white ambient winter light",
+      "secondary_lighting": "Warm orange glow from building interior/windows",
+      "visual_effects": [
+        "Cinematic color separation",
+        "Soft bokeh highlights in background",
+        "Shallow depth of field",
+        "Reflections softened by frost"
+      ]
+    },
+    "technical_specs": {
+      "camera": "Full-frame DSLR/Mirrorless",
+      "lens": "50mm–85mm prime lens aesthetic",
+      "optics": "Natural perspective, high dynamic range (HDR), realistic exposure",
+      "post_processing": "Authentic textures, no over-sharpening, cinematic realism"
+    }
+  }
 ```
 
 </details>
@@ -41546,7 +51302,30 @@ Prompt:
       "No text, no logos, no watermark."
     ],
     "creative_prompt": {
-      "scene_summary": "Ultra-photoreal winter ice-skating couple portrait on an outdoor rink in a snowy park. Create a single believable action moment that combines BOTH reference poses:\n\nPose fusion (critical):\n- The man gently holds the woman’s raised hand overhead (twirl gesture), her arm extended upward like in a spin.\n- At the same time, they are pulled close and kissing (soft, natural kiss), bodies angled inward.\n- The woman’s free arm rests lightly on his chest/shoulder for balance.\n- One of the woman’s skates is slightly lifted or pointed (dynamic mid-twirl feeling), but still realistic for skating balance.\n- The man
+      "scene_summary": "Ultra-photoreal winter ice-skating couple portrait on an outdoor rink in a snowy park. Create a single believable action moment that combines BOTH reference poses:\n\nPose fusion (critical):\n- The man gently holds the woman’s raised hand overhead (twirl gesture), her arm extended upward like in a spin.\n- At the same time, they are pulled close and kissing (soft, natural kiss), bodies angled inward.\n- The woman’s free arm rests lightly on his chest/shoulder for balance.\n- One of the woman’s skates is slightly lifted or pointed (dynamic mid-twirl feeling), but still realistic for skating balance.\n- The man remains stable, slightly bent knees, protective posture.\n\nWardrobe:\n- Winter outfits similar to the skating vibe: cozy knit + scarf + beanie for her, dark padded jacket + beanie for him. Keep it stylish and realistic. (No sunglasses, no hats with logos.)\n\nEnvironment:\n- Snow-covered park with trees and a bench in the background, soft overcast winter sky. The ice surface shows skate marks and a light dusting of snow.\n\nCamera & lighting:\n- Cinematic lifestyle photo, 35mm–50mm look, medium distance so faces are clear and readable.\n- Soft winter daylight, gentle contrast, natural skin texture preserved.\n- Subtle motion blur ONLY in the woman’s lifted arm or hem/scarf edges to imply twirl; faces remain tack sharp.\n\nMood:\n- Intimate, playful, romantic—premium cinematic winter photoshoot feel."
+    },
+    "negative_prompt": [
+      "extra people",
+      "blurred faces",
+      "identity drift",
+      "face swap artifacts",
+      "deformed hands",
+      "extra fingers",
+      "broken wrists",
+      "warped skates",
+      "floating feet",
+      "unrealistic kiss anatomy",
+      "cartoon",
+      "anime",
+      "cgi",
+      "beautify filter",
+      "plastic skin",
+      "text",
+      "logo",
+      "watermark"
+    ]
+  }
+}
 ```
 
 </details>
@@ -41623,7 +51402,30 @@ Prompt:
   },
   "PhotographyStyle": {
     "Genre": "Low-light cinematic portrait photography",
-  
+    "LensLook": "85mm lens perspective",
+    "RealismLevel": "Ultra-realistic",
+    "Resolution": "8K detail"
+  },
+  "Theme": {
+    "Concept": "Solitude and reflection in a modern city",
+    "EmotionalTone": "Melancholic calm, quiet anticipation"
+  },
+  "NegativePrompt": [
+    "harsh flash",
+    "daylight",
+    "posed glamour",
+    "oversaturated colors",
+    "plastic skin",
+    "cartoon",
+    "anime",
+    "blurry subject"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -41746,7 +51548,8 @@ Prompt:
     "Simplicity",
     "Modern identity"
   ],
-  "quality": "
+  "quality": "Ultra-detailed, high dynamic range, professional natural-light portrait"
+}
 ```
 
 </details>
@@ -41765,7 +51568,7 @@ Prompt:
 ```
 GOAL: Ultra-realistic color iPhone photography, cinematic but fully color, natural tones, NOT black and white, NOT monochrome, NOT grayscale, Pinterest artsy editorial realism. SUBJECT: A realistic human male standing inside a modern subway train, photographed casually as if a real iPhone snapshot. Standing next to two life-size, ultra-realistic fictional characters: James P. "Sulley" Sullivan from Monsters, Inc. - depicted as a hyper-realistic, real-world creature with detailed blue fur texture, natural fabric suit jacket, believable physical presence, realistic lighting and shadows (NOT cartoon, NOT CGI render). Mike Wazowski from Monsters, Inc. - small, green, one-eyed creature rendered as a physically present, realistic character with natural skin texture and real lighting interaction. All characters appear as if they exist naturally in the real world. FACE & SKIN (HUMAN): Male subject with clean-shaven face, natural facial proportions, visible skin pores, smooth but realistic texture, subtle under-eye shadows, no plastic skin, no Al smoothing. OUTFIT (HUMAN): Casual modern outfit suitable for public transport: neutral jacket, inner shirt, clean silhouette, realistic fabric folds and stitching. SCENE: Interior subway train with overhead fluorescent lights, handrails, train windows, signage. Background slightly blurred with natural depth of field.
 Realistic reflections on metal surfaces. CAMERA: Shot on iPhone (iPhone Pro look), 35mm equivalent, natural perspective, no fisheye, no distortion, handheld candid framing. LIGHTING: Natural indoor subway lighting, soft warm-white fluorescent light, balanced exposure, true-to-life color reproduction, NO over-bright, NO over-contrast, NO HDR look. COLOR RULE (IMPORTANT): Full color photo, natural skin tones, natural fur color, NO black and white, NO monochrome, NO desaturation.
-REALISM NOTES: Visible fabric grain, fur texture, subtle noise, realistic shadows, real reflections. No CGI look, no cartoon style, no illustrati
+REALISM NOTES: Visible fabric grain, fur texture, subtle noise, realistic shadows, real reflections. No CGI look, no cartoon style, no illustration, no anime. Looks like a real photo taken by a human on an iPhone.
 ```
 
 </details>
@@ -41846,7 +51649,76 @@ REALISM NOTES: Visible fabric grain, fur texture, subtle noise, realistic shadow
     {
       "id": "obj_002",
       "label": "Beanie",
-      "category":
+      "category": "Clothing",
+      "location": "Head",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Red/White/Black",
+        "texture": "Knit fabric",
+        "material": "Wool/Acrylic",
+        "state": "Worn",
+        "dimensions_relative": "Fitted"
+      },
+      "micro_details": [
+        "Spider-Man mask design",
+        "Large white eye patches with black outline",
+        "Web pattern visible"
+      ],
+      "pose_or_orientation": "Worn on head",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Track Jacket",
+      "category": "Clothing",
+      "location": "Upper Body",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Navy Blue/White/Grey lining",
+        "texture": "Synthetic/Nylon",
+        "material": "Polyester blend",
+        "state": "Unzipped/Open",
+        "dimensions_relative": "Loose fit"
+      },
+      "micro_details": [
+        "Three white stripes on sleeves",
+        "Adidas logo on left chest",
+        "Grey hood lining visible",
+        "Elastic cuffs"
+      ],
+      "pose_or_orientation": "Worn over shoulders",
+      "text_content": "adidas"
+    },
+    {
+      "id": "obj_004",
+      "label": "Lace Top/Bodysuit",
+      "category": "Clothing",
+      "location": "Torso",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Black",
+        "texture": "Sheer/Lace",
+        "material": "Lace",
+        "state": "Worn",
+        "dimensions_relative": "Fitted"
+      },
+      "micro_details": [
+        "Floral lace pattern",
+        "Sheer fabric revealing skin tone underneath",
+        "Scalloped neckline"
+      ],
+      "pose_or_orientation": "Worn under jacket",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Jeans",
+      "category": "Clothing",
+      "location": "Lower Body",
+      "prominence": "Foreground",
+      "visual_attributes"
+}
+}
 ```
 
 </details>
@@ -41971,7 +51843,14 @@ Line C:Connects the Bottom Satellite (Shell)$\rightarrow$ to the Outer Edge/Crus
 The Graphics: Add dimension arrows measuring width and height.
 The Text:
 Header:Underlined Title "[Input A]" (Top Left).
-Labels: Clean sans-serif text naming the ingredient
+Labels: Clean sans-serif text naming the ingredients (e.g., "CORE PROTEIN," "EXTERNAL SHELL").
+
+5. Textural Fidelity:
+Contrast: The Center Slice must look Cooked/Finished(moist, textures integrated). The Satellites must look Raw/Deconstructed(matte, separated).
+Chalk Dust: Subtle white powder residue on the slate.
+
+Output:ONE image, 1:1 Aspect Ratio, 8k Resolution, "Infographic" aesthetic, High Contrast.
+</instructions>
 ```
 
 </details>
@@ -41989,7 +51868,7 @@ Labels: Clean sans-serif text naming the ingredient
 
 ```
 Transform this image [Upload Your Image] into a 64K DSLR shot resolution of A creative urban street portrait featuring a young man (same face as the uploaded image) sitting on a curb in a quiet city street, paired with a stylized cartoon illustration of himself placed beside him. The real-life subject (same face as the uploaded image) is seated casually on a concrete sidewalk edge, resting his head on one hand in a bored, contemplative pose. He looks slightly￼ upward with a neutral, introspective expression, conveying a sense of quiet thoughtfulness and urban solitude. He wears a muted maroon cable-knit sweater with a relaxed fit, dark loose-fitting denim jeans with subtle stitched details near the cuffs, and worn brown leather boots. Accessories include layered silver chain dog tag with the name "[Add Text]" written on it, rings on his fingers, black-framed glasses, and a light-coloured baseball cap with bold embroidered lettering on￼ the front. His hair is short, dark hair, a well-groomed beard texture and character. Next to him on the sidewalk sits a small cartoon version (same face as the uploaded image) of himself, matching his outfit and pose exactly—same sweater, jeans, boots, cap, glasses, and facial expression. The illustrated character has clean outlines, warm muted colors, and a soft shaded, hand-drawn animation style, creating a playful contrast between realism and illustration. The cartoon figure is￼ proportionally smaller, emphasizing a companion-like or inner-self concept. The background features textured cobblestone pavement, a curb edge, and a building facade with muted yellow walls and green-tiled brickwork near a window. The color palette is earthy and subdued, with natural daylight providing soft, even lighting and realistic shadows. The overall composition blends street photography, fashion portraiture, and mixed-media digital art, evoking themes of identity,￼ self-reflection, and creativity.
-Style & Mood Keywords: Urban street photography, casu
+Style & Mood Keywords: Urban street photography, casual fashion portrait, mixed media art, real and cartoon character duo, introspective mood, muted earthy tones, soft natural light, realistic textures, creative storytelling, high-resolution detail, cinematic realism. Octane render & Unreal Engine
 ```
 
 </details>
@@ -42094,7 +51973,42 @@ The overall mood is calm, optimistic, and visually striking, with rich yet natur
       "environment": {
         "location": "open grassy meadow with rolling hills",
         "background": "soft-focus hills, a few trees, cloudy sky, distant people very small",
-        "lighting": "natural overca
+        "lighting": "natural overcast daylight, soft shadows, no flash"
+      },
+      "subjects": {
+        "female": {
+          "identity": "MATCH_REFERENCE_FACE_EXACTLY",
+          "wardrobe": "white casual set (sleeveless top + loose pants), clean and sporty",
+          "expression": "big genuine laugh, eyes smiling",
+          "pose": "horizontal flying pose, arms wide, legs extended, body straight",
+          "hands_nails": "short_natural_nails_clear_or_nude_polish_not_acrylic",
+          "no_rings": "no_engagement_ring_no_solitaire"
+        },
+        "male": {
+          "wardrobe": "light blue hoodie + light denim jeans",
+          "pose": "lying on back, arms extended upward supporting her securely, relaxed face"
+        }
+      },
+      "props": {
+        "picnic": "red blanket, small bag and casual picnic items at edge (subtle, not branded)"
+      },
+      "camera_style": {
+        "framing": "vertical 4:5, full scene including blanket and both bodies, slight wide-angle feel",
+        "lens_feel": "35mm documentary realism, mild motion energy, faces sharp",
+        "focus": "subjects sharp, background gently blurred"
+      },
+      "quality_guards": {
+        "no_ai_look": true,
+        "no_text": true,
+        "no_watermark": true,
+        "hands_and_fingers_must_be_clean": true,
+        "no_extra_limbs": true,
+        "no_deformed_hands": true
+      },
+      "negative_prompt": "text, logo, watermark, beauty filter, plastic skin, HDR, over-sharpening, warped anatomy, extra fingers, missing fingers, long acrylic nails, engagement ring, unsafe impossible pose, floating limbs, AI artifacts"
+    }
+  }
+}
 ```
 
 </details>
@@ -42147,7 +52061,15 @@ Prompt: {
   },
   "camera": {
     "perspective": "Eye-level, shot through a foreground obstruction (glass or clutter).",
-    "focus": "Shallow depth of field (bokeh), sharp focus on eyes/face, blurred background and foreground.
+    "focus": "Shallow depth of field (bokeh), sharp focus on eyes/face, blurred background and foreground.",
+    "lens_character": "Soft focus, film grain simulation, slight bloom effect."
+  },
+  "style": {
+    "aesthetic": "Cinematic, atmospheric, nostalgic, slice-of-life, ethereal.",
+    "mood": "Dreamy, intimate, quiet, sentimental.",
+    "visual_reference": "Film photography, Japanese photobook style."
+  }
+}
 ```
 
 </details>
@@ -42190,7 +52112,15 @@ Generate a crowded, hyper-realistic   "Book Nook" Diorama  . Use the following l
   4. The Horizontal Plane (The Physical Clutter):  
       Transition:   The Totem (Rocket) seamlessly transitions from a drawing on the wall to a   Physical 3D Model   on the floor.
       The Scatter:   The "Ephemera" props are   scattered and overlapping   on the floor page. They should not be neatly arranged.
-         Material Contrast:  The pro
+         Material Contrast:  The props must look like shiny plastic, crinkled foil, and fabric patches. This clashes with the matte paper.
+         Scale:  A tiny 1:64 scale human figure (e.g., Astronaut) stands next to the massive Totem for scale.
+
+  5. Visual Syntax:  
+      Background:     Void Black.   The book floats in infinite darkness.   DO NOT render studio equipment, lamps, or tables.  
+      Lighting:   "Museum Display" lighting. A focused beam hits the Totem, creating a long shadow against the back page sketches.
+      Depth:   The 3D objects must cast hard shadows onto the 2D paper to sell the optical illusion.
+
+  Output:   1:1 Aspect Ratio, Macro Photography, High Textural Contrast (Paper vs. Plastic). </instructions>
 ```
 
 </details>
@@ -42267,7 +52197,13 @@ Generate a crowded, hyper-realistic   "Book Nook" Diorama  . Use the following l
         "post_processing": "warm vintage color grading, film grain, teal and copper palette."
       }
     },
-    "text_overlay":
+    "text_overlay": {
+      "content": "",
+      "location": "",
+      "style": ""
+    }
+  }
+]
 ```
 
 </details>
@@ -42284,7 +52220,7 @@ Generate a crowded, hyper-realistic   "Book Nook" Diorama  . Use the following l
 <summary>📋 View Prompt</summary>
 
 ```
-Create a photorealistic candid street-fashion portrait with extreme shallow depth of field where a single woman is sharply in focus in the mid-ground, surrounded by a moving crowd rendered as soft blur/bokeh. Preserve the exact framing, subject placement, color grade, and atmosphere. 1) Composition & Framing (LOCK) • Aspect: 4:5 vertical. • Camera height: chest-to-eye level (slightly above the subject’s shoulder line). • Framing: mid-ground subject centered slightly left-of-center, from upper chest to top of head clearly visible; shoulders included; background heavily blurred. • Foreground: two large blurred human shapes frame the subject: • Left foreground: blurred middle-aged man occupying left third, grey/blue jacket, face out of focus. • Right foreground: blurred person occupying right-lower quadrant (dark hair), also out of focus. • Mid-right: blurred older bald man head/shoulder visible behind subject’s right shoulder. • Background: dense city street with yellow taxi/cab shapes and warm orange bokeh lights; tall urban forms dissolve into creamy blur. 2) Subject (Primary) • Person: young adult woman, fair/light skin, subtle freckles, natural editorial beauty. • Hair: medium brown, messy low updo/bun with loose wisps; slightly damp/urban texture; flyaways framing face. • Expression: calm, slightly serious/curious; lips relaxed; eyes looking directly toward camera with a soft, neutral intensity. • Pose: body facing right (3/4 profile), head turned back over left shoulder to look at camera. 3) Wardrobe & Accessories (Exact Feel) • Outerwear: beige/tan trench coat (matte cotton), collar open, classic lapels, slightly rumpled city-wear texture. • Bag: small shoulder bag with thin gold chain strap on her right shoulder; strap catches a bit of light; bag itself mostly hidden. • Jewelry: small earring visible (subtle, warm tone). 4) Environment (Street Mood) • Busy metropolitan sidewalk/street scene, crowd density high. • Background palette: teal/green-grey city haze +
+Create a photorealistic candid street-fashion portrait with extreme shallow depth of field where a single woman is sharply in focus in the mid-ground, surrounded by a moving crowd rendered as soft blur/bokeh. Preserve the exact framing, subject placement, color grade, and atmosphere. 1) Composition & Framing (LOCK) • Aspect: 4:5 vertical. • Camera height: chest-to-eye level (slightly above the subject’s shoulder line). • Framing: mid-ground subject centered slightly left-of-center, from upper chest to top of head clearly visible; shoulders included; background heavily blurred. • Foreground: two large blurred human shapes frame the subject: • Left foreground: blurred middle-aged man occupying left third, grey/blue jacket, face out of focus. • Right foreground: blurred person occupying right-lower quadrant (dark hair), also out of focus. • Mid-right: blurred older bald man head/shoulder visible behind subject’s right shoulder. • Background: dense city street with yellow taxi/cab shapes and warm orange bokeh lights; tall urban forms dissolve into creamy blur. 2) Subject (Primary) • Person: young adult woman, fair/light skin, subtle freckles, natural editorial beauty. • Hair: medium brown, messy low updo/bun with loose wisps; slightly damp/urban texture; flyaways framing face. • Expression: calm, slightly serious/curious; lips relaxed; eyes looking directly toward camera with a soft, neutral intensity. • Pose: body facing right (3/4 profile), head turned back over left shoulder to look at camera. 3) Wardrobe & Accessories (Exact Feel) • Outerwear: beige/tan trench coat (matte cotton), collar open, classic lapels, slightly rumpled city-wear texture. • Bag: small shoulder bag with thin gold chain strap on her right shoulder; strap catches a bit of light; bag itself mostly hidden. • Jewelry: small earring visible (subtle, warm tone). 4) Environment (Street Mood) • Busy metropolitan sidewalk/street scene, crowd density high. • Background palette: teal/green-grey city haze + yellow cab + warm orange bokeh lights. • No readable signage, no sharp background details—everything behind subject remains creamy blur. 5) Lighting (LOCK) • Natural daylight, overcast-to-soft sun (diffused), no harsh shadows. • Subject face evenly lit with gentle highlights on cheekbones and nose; cinematic soft contrast. 6) Camera & Optics (CRITICAL) • Look: telephoto candid portrait with strong compression. • Lens: 85mm–135mm range, wide open (f/1.4–f/2.0). • Focus: tack-sharp on subject’s eyes and eyelashes; foreground and background strongly out of focus. • Depth: creamy bokeh, smooth falloff, mild cat-eye bokeh at edges. • Shutter/feel: background crowd appears naturally blurred from DOF; slight motion blur suggested in foreground figures. 7) Color Science / Grade (LOCK) • Cinematic teal/green wash in shadows and background. • Warm highlights (skin tones natural, slightly warm). • Yellow taxi pops softly; orange bokeh lights glow. • Fine film grain, subtle halation on bright bokeh points, gentle vignette. 8) Texture & Realism • Natural skin texture (pores, freckles visible). • Hair flyaways crisp near face. • Trench fabric weave visible on in-focus areas. • Editorial street-photo realism, not stylized/illustrated. Negative Prompt (STRICT) No text, no logos, no watermarks, no extra accessories, no hats, no sunglasses, no smile, no heavy makeup, no studio lighting, no perfect skin blur, no oversharpening, no HDR look, no cartoon/CGI, no extra taxis, no added objects, no duplicated faces, no distorted hands, no background readability.
 ```
 
 </details>
@@ -42375,7 +52311,16 @@ Props: A magnifying glass lies on the blueprint for scale.
 5. Panel 3 (Bottom Left): The "Archive" Shadow Box:
 Medium: Museum Display.
 Container: A square wooden shadow box with a glass front (glare visible).
-Contents: High-fidelity replicas of "The MacGuffin" (e.g., The Robot Arm
+Contents: High-fidelity replicas of "The MacGuffin" (e.g., The Robot Arm & Chip) mounted on velvet backing.
+Detail: A Polaroid photo of a character and a polished Brass Nameplate with the movie title screwed into the wood.
+6. Panel 4 (Bottom Right): The "Collectible" Flat Lay:
+Medium: Action Figure / Toy Photography.
+Subject: A high-end 1:6 scale Action Figure of "The Hero" standing on a wooden surface.
+Accessories: Scattered around the figure are scale accessories (e.g., Spare clothes, weapons, a crate).
+Paper Prop: A miniature, legible in-universe Newspaper lying flat (Headline relevant to the plot).
+Lighting: Cinematic, dramatic side-lighting with a distinct color rim-light (Blue or Red).
+Output: ONE image containing a 2x2 grid. 1:1 Aspect Ratio. Photorealistic textures across all four distinct styles.
+</instruction>
 ```
 
 </details>
@@ -42475,7 +52420,48 @@ Created with @eachlabs https://t.co/FuJ7OdZLoy
   "prompt": {
     "scene_summary": "Recreate the reference shot: a romantic, ultra-photoreal low-angle wedding editorial photo against a clean blue sky. The couple forms a heart shape with their hands in the foreground, framing the woman’s face. The man leans in from above and kisses the woman on the temple/forehead. The woman stands below, looking relaxed and confident, wearing black sunglasses and a white bridal look. The veil flows softly around her shoulders. The man wears a crisp white dress shirt with a dark vest/jacket. The entire composition must feel like a real photo, with correct hand anatomy, realistic skin texture, and natural fabric details.",
     "composition": {
-      "foreground
+      "foreground": "hands forming a perfect heart shape very close to camera, fingers natural, no extra fingers, heart opening centered",
+      "subjects_position": "woman centered lower-middle; man above her leaning in from upper-right/upper area",
+      "framing": "heart shape frames the woman’s face; man’s face close to her head in a kiss",
+      "background": "clean open sky, minimal distractions",
+      "pose_lock": "match the reference: heart-hands + kiss + low-angle perspective"
+    },
+    "wardrobe": {
+      "female": "white bridal dress or strapless/clean white top, sheer white veil, black sunglasses; elegant minimal jewelry",
+      "male": "white dress shirt + dark vest or dark jacket; clean tailored look"
+    },
+    "styling_notes": [
+      "veil should look airy and translucent with natural folds",
+      "hands must be anatomically perfect and symmetrical, no warping",
+      "keep facial expressions natural (soft romantic mood)",
+      "no added props, no typography"
+    ]
+  },
+  "typography": {
+    "enabled": false
+  },
+  "negative_prompt": [
+    "extra people",
+    "text",
+    "logo",
+    "watermark",
+    "cartoon",
+    "anime",
+    "cgi look",
+    "plastic skin",
+    "beautify filter",
+    "face morph",
+    "identity drift",
+    "deformed hands",
+    "extra fingers",
+    "warped heart-hand shape",
+    "blurred faces",
+    "over-smoothed retouching",
+    "harsh blown highlights",
+    "messy background",
+    "wrong wardrobe"
+  ]
+}
 ```
 
 </details>
@@ -42611,7 +52597,23 @@ The image quality is hyper-realistic with 8K resolution, showcasing intricate sk
     },
     {
       "position": "Bottom-Center (Lower)",
-      "expression": "Neut
+      "expression": "Neutral / Calm",
+      "hair": "Straight blonde, symmetrical",
+      "accessories": "Thin silver necklace"
+    },
+    {
+      "position": "Bottom-Right",
+      "expression": "Intense, direct stare",
+      "hair": "Messy beach waves",
+      "clothing": "Black tank top/strap visible"
+    }
+  ],
+  "technical_details": {
+    "blending_mode": "Seamless edge masking",
+    "saturation_level": "Medium-natural",
+    "grain_effect": "None (clean digital look)"
+  }
+}
 ```
 
 </details>
@@ -42796,7 +52798,20 @@ High-end 3D advertising poster for [INSERT PRODUCT NAME]. A realistic [INSERT PR
     "Energy": "Bold, expressive, contemporary"
   },
   "NegativePrompt": [
-
+    "uneven lighting",
+    "blurred details",
+    "busy color palette",
+    "low contrast",
+    "casual snapshot",
+    "cartoon style",
+    "vintage look"
+  ],
+  "ResponseFormat": {
+    "Type": "Single image",
+    "Orientation": "Portrait",
+    "AspectRatio": "2:3"
+  }
+}
 ```
 
 </details>
@@ -42881,7 +52896,41 @@ A candid lifestyle portrait of a young woman sitting at an outdoor Parisian caf�
         "beard": "none"
       },
       "hair": {
-        "color": "wh
+        "color": "white",
+        "style": "messy, voluminous, outward-curving yarn strands",
+        "texture": "loose twisted yarn locks"
+      }
+    },
+    "clothing": {
+      "outerwear": {
+        "type": "crocheted jacket",
+        "color": "deep blue",
+        "lapels": "wide folded lapels",
+        "texture": "thicker stitch pattern than face"
+      },
+      "shirt": {
+        "color": "off-white",
+        "visibility": "visible beneath jacket"
+      },
+      "accessory": {
+        "type": "bow tie",
+        "color": "bright red",
+        "material": "crocheted yarn",
+        "position": "centered below chin  "
+  },
+  "mood": "playful, expressive, handcrafted realism",
+  "render_quality": {
+    "detail_level": "extreme micro-detail",
+    "sharpness": "high",
+    "noise": "none",
+    "artifacts": "none"
+  },
+  "post_processing": {
+    "color_grading": "warm neutral tones",
+    "clarity": "enhanced to emphasize yarn texture",
+    "vignette": "subtle"
+  }
+}
 ```
 
 </details>
@@ -42964,7 +53013,12 @@ Sci-Fi: Blue grid schematic or iPad.
 Fantasy: Yellowed parchment map.
 Modern: White vector floorplan.
 The Clutter: The tools scattered around must match the medium (e.g., Clay tools vs. Soldering Iron vs. X-Acto knives).
-4. Lighting &
+4. Lighting & Atmosphere:
+Lighting Match: The lighting must match the inferred room.
+Workshop: Warm God Rays (Dusty).
+Lab: Cool Fluorescent Tubes (Clean/Hazy).
+Focus: Shallow depth of field. Sharp focus on the tweezers and the contact point.
+Output: ONE image, 16:9 Aspect Ratio, Cinematic Photography, 8k Resolution.
 ```
 
 </details>
@@ -43019,7 +53073,14 @@ The Clutter: The tools scattered around must match the medium (e.g., Clay tools 
       "perfect symmetry",
       "overly clean background",
       "fake bokeh shapes",
-      
+      "text",
+      "logo",
+      "watermark",
+      "painterly",
+      "cartoon"
+    ]
+  }
+}
 ```
 
 </details>
@@ -43117,7 +53178,15 @@ The Clutter: The tools scattered around must match the medium (e.g., Clay tools 
   "camera_settings": {
     "composition": {
       "shot_type": "three-quarter portrait",
-      "angle": "eye-leve
+      "angle": "eye-level"
+    },
+    "optics": {
+      "lens": "85mm prime",
+      "aperture": "f/2.8",
+      "focus": "sharp focus on subject",
+      "depth_of_field": "shallow bokeh background"
+    }
+  }
 ```
 
 </details>
@@ -43192,7 +53261,41 @@ Gemini Nano Banana Pro 🍌
     "direction": "soft frontal and side light",
     "contrast": "low",
     "shadows": "very soft, minimal shadowing on face and body",
-    "highlights": "gentle highlights on cheeks, eyes, an
+    "highlights": "gentle highlights on cheeks, eyes, and hair",
+    "lighting_quality": "warm, diffused"
+  },
+  "color_and_tone": {
+    "color_mode": "color",
+    "white_balance": "warm",
+    "palette": "soft pastels and warm neutrals",
+    "contrast_curve": "smooth with low contrast",
+    "mood": "warm, romantic, candid"
+  },
+  "camera_and_technical_traits": {
+    "camera_distance": "close to medium",
+    "lens_appearance": "wide to standard smartphone lens",
+    "depth_of_field": "deep, subject and background mostly in focus",
+    "sharpness": "high overall clarity",
+    "grain": "minimal"
+  },
+  "artistic_style": {
+    "genre": "lifestyle portrait",
+    "aesthetic": "candid, feminine, casual elegance",
+    "influences": "social media portraiture, lifestyle photography",
+    "retouching_style": "light skin smoothing, natural color enhancement"
+  },
+  "overall_impression": {
+    "tone": "friendly, youthful, charming",
+    "visual_focus": "face and over-the-shoulder pose",
+    "use_case": "social media content, lifestyle reference, casual portrait inspiration"
+  },
+
+  "trending_text_overlay": [
+    "Dream Military",
+    "RESERVE",
+    "Virat Kohli"
+  ]
+}
 ```
 
 </details>
@@ -43271,7 +53374,16 @@ Gemini Nano Banana Pro 🍌
       {
         "id": "VAR-004",
         "flavor_profile": "Strawberry Shortcake",
-        "tonal_emotion": "Sweet, playful yet ch
+        "tonal_emotion": "Sweet, playful yet chic",
+        "ingredients": {
+          "primary_solids": ["Fresh strawberry slices"],
+          "fluid_fx": ["Whipped cream swirls"],
+          "debris": ["Shortcake biscuit crumbs"]
+        }
+      }
+    ]
+  }
+}
 ```
 
 </details>
@@ -43317,7 +53429,23 @@ Gemini Nano Banana Pro 🍌
       "No extra people, reflections, or background faces."
     ],
     "creative_prompt": {
-      "scene_summary": "Ultra-photoreal high-fashion editorial portrait at the seaside during sunset. The same woman as the reference poses confidently on dark coastal rocks by the ocean. She wears a striking red halter-neck mini dress with soft flowing fabric and elegant movement. Her posture is poised and feminine, seated slightly angled toward the camera with legs bent naturally.\n\nHair: long, glossy dark waves worn down, softly shaped by the sea breeze. Makeup: luminous editorial glam—defined brows, subtle contour, glowing skin, soft smoky eyes, glossy nude-rose lips. Expression: confident, calm, magnetic, direct eye contact with the camera.\n\nBackground: open sea with gentle waves, distant horizon line, dramatic sunset sky in gradients of deep orange, pink, purple, and blue with scattered clouds. Lighting: cinematic dusk lighting with subtle fill flash on the subject to balance
+      "scene_summary": "Ultra-photoreal high-fashion editorial portrait at the seaside during sunset. The same woman as the reference poses confidently on dark coastal rocks by the ocean. She wears a striking red halter-neck mini dress with soft flowing fabric and elegant movement. Her posture is poised and feminine, seated slightly angled toward the camera with legs bent naturally.\n\nHair: long, glossy dark waves worn down, softly shaped by the sea breeze. Makeup: luminous editorial glam—defined brows, subtle contour, glowing skin, soft smoky eyes, glossy nude-rose lips. Expression: confident, calm, magnetic, direct eye contact with the camera.\n\nBackground: open sea with gentle waves, distant horizon line, dramatic sunset sky in gradients of deep orange, pink, purple, and blue with scattered clouds. Lighting: cinematic dusk lighting with subtle fill flash on the subject to balance exposure; natural rim light from the sunset outlining hair and shoulders. Skin tones warm and realistic.\n\nCamera: 85mm editorial portrait lens look, shallow depth of field; subject tack sharp while ocean and clouds fall off softly. Mood: sensual, powerful, timeless, luxury fashion campaign energy—editorial, cinematic, and iconic."
+    },
+    "negative_prompt": [
+      "any text, logo, watermark",
+      "identity drift",
+      "extra people",
+      "distorted anatomy",
+      "extra limbs or fingers",
+      "cartoon, anime, CGI look",
+      "plastic or over-smoothed skin",
+      "harsh flash blowout",
+      "low resolution",
+      "overly saturated colors",
+      "cheap styling or artificial fabric look"
+    ]
+  }
+}
 ```
 
 </details>
@@ -43388,6 +53516,79 @@ Gemini Nano Banana Pro 🍌
     },
 
     "scene": {
+      "location": "wildflower meadow / countryside greenery",
+      "background": "soft blurred green foliage and grass, natural bokeh, no buildings",
+      "time": "late afternoon / golden hour",
+      "weather": "calm, warm, gentle breeze"
+    },
+
+    "subjects": {
+      "female": {
+        "wardrobe": "simple white cotton dress or top with delicate straps/sleeves",
+        "hair": "long brunette hair, natural texture, parted and falling softly",
+        "expression": "soft gaze, calm, slightly smiling with warmth",
+        "pose": "still, leaning slightly toward him, relaxed shoulders"
+      },
+      "male": {
+        "wardrobe": "white sleeveless top / tank, casual",
+        "hair": "dark wavy hair, slightly messy, natural",
+        "facial_hair": "light stubble or short beard",
+        "gesture": "hand gently holding a pink cosmos-like flower at her temple, fingers natural and careful",
+        "accessory": "simple wristwatch (subtle, realistic)"
+      },
+      "interaction": "close eye contact, quiet romantic tension, gentle touch"
+    },
+
+    "photography": {
+      "camera_style": "cinematic romantic film still",
+      "lens": "85mm prime",
+      "lighting": "soft natural light, warm highlights on skin, no harsh shadows",
+      "depth_of_field": "very shallow; faces sharp; background creamy bokeh",
+      "film_look": "authentic 35mm grain, slight halation, mild softness",
+      "color_grade": "warm greens, natural skin tones, soft pink flower pop"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "4:5",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_film_still",
+      "sharpness": "crisp_on_faces_soft_elsewhere",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_hands": true,
+        "no_extra_fingers": true
+      },
+      "skin": {
+        "natural_texture": true,
+        "no_plastic_retouch": true
+      },
+      "focus": {
+        "eyes_sharp": true,
+        "flower_sharp_enough": true,
+        "background_soft": true
+      }
+    },
+
+    "negative_prompt": [
+      "text, watermark, logo",
+      "cartoon, anime, illustration",
+      "harsh flash lighting",
+      "overly smooth plastic skin",
+      "deformed hands, extra fingers",
+      "busy background, crowds",
+      "jewelry clutter, heavy accessories",
+      "overdone HDR or hyper-sharpness"
+    ]
+  }
+}
 ```
 
 </details>
@@ -43456,7 +53657,61 @@ Prompt:
       "hands": "holding grips"
     },
     "legs": {
- 
+      "position": "straddling seat",
+      "left_leg": "bent, resting on footwell",
+      "right_leg": "bent, obscured"
+    },
+    "torso": {
+      "posture": "leaning forward over handlebars"
+    }
+  },
+  "setting": {
+    "location": "coastal water with floating dock",
+    "foreground": "red/white Yamaha personal watercraft, orange plastic floating dock",
+    "background": "calm water, distant shoreline with resort hotels and trees under overcast sky",
+    "props": "other personal watercraft partially visible",
+    "clutter": "natural elements"
+  },
+  "camera": {
+    "shot_type": "medium shot",
+    "angle": "eye-level",
+    "framing": "subject centered",
+    "focal_length": "35mm",
+    "depth_of_field": "moderate, background slightly soft",
+    "perspective": "straight on",
+    "aspect_ratio": "3:4"
+  },
+  "lighting": {
+    "source": "overcast daylight",
+    "direction": "diffused from above",
+    "quality": "soft, even, no harsh shadows",
+    "highlights": "subtle sheen on water and fiberglass",
+    "shadows": "soft, barely defined",
+    "color_temperature": "cool daylight (6000K)"
+  },
+  "mood_and_expression": {
+    "emotion": "calm, direct, slightly alluring",
+    "gaze": "direct eye contact with camera",
+    "atmosphere": "casual, overcast, aquatic"
+  },
+  "style_and_realism": {
+    "aesthetic": "candid lifestyle photograph, raw, unfiltered",
+    "realism_level": "photorealistic, natural film grain",
+    "skin_rendering": "natural texture, no airbrushing",
+    "imperfections": "natural wind in hair, water droplets on PWC"
+  },
+  "colors_and_tone": {
+    "palette": "muted greens, blues, grays, natural skin tones",
+    "contrast": "medium",
+    "saturation": "natural, slightly desaturated due to overcast light",
+    "white_balance": "cool daylight"
+  },
+  "technical_details": {
+    "resolution": "high resolution",
+    "sharpness": "focus on subject's face and PWC details",
+    "noise": "visible film grain"
+  }
+}
 ```
 
 </details>
@@ -43520,7 +53775,11 @@ Prompt:
         "Subsurface scattering",
         "Fashion photography",
         "Cinematic lighting",
-        "Masterpiece" Ratio 3.4 change the girl to Ana de Armas and 
+        "Masterpiece" Ratio 3.4 change the girl to Ana de Armas and the dress color should be red
+      ]
+    }
+  }
+}
 ```
 
 </details>
@@ -43601,7 +53860,29 @@ No text, no logos, no CGI, correct anatomy, realistic hands.
       "pose": "Standing next to male subject, hand touching lapel of coat, other hand holding bag at side. Radiating 'cool girl' aesthetic."
     }
   ],
-  "additional_ele
+  "additional_elements": {
+    "animal": {
+      "breed": "Beagle dog.",
+      "pose": "Sitting obediently on the snow at the man's feet.",
+      "appearance": "Tri-color fur (brown, black, white), wearing a collar and attached to a black leash."
+    }
+  },
+  "lighting_and_mood": {
+    "lighting_type": "Soft, diffuse overcast natural light (winter daylight). No harsh shadows.",
+    "mood": "Chic, minimalist, 'Old Money' aesthetic, quiet luxury, sophisticated, serene, fashionable.",
+    "tonality": "Desaturated slightly with high contrast between the black clothing and white snow."
+  },
+  "technical_details": {
+    "style": "Ultra Photorealistic, High-End Street Style Photography.",
+    "camera_settings": {
+      "lens": "85mm portrait lens.",
+      "aperture": "f/2.8 for slight depth of field separation from the stone background.",
+      "shutter_speed": "Fast enough to freeze falling snowflakes.",
+      "iso": "Low ISO (100) for grain-free clarity."
+    },
+    "quality_modifiers": "8k resolution, highly detailed fabric textures (wool grain, leather sheen, suede texture), sharp focus on eyes/sunglasses, subsurface scattering on skin, cinematic composition, rule of thirds."
+  }
+}
 ```
 
 </details>
@@ -43747,7 +54028,9 @@ Prompt:
   },
   "realism_level": {
     "photorealism": "very high",
-    "retouching": "none to minimal, natural skin t
+    "retouching": "none to minimal, natural skin texture preserved"
+  }
+}
 ```
 
 </details>
@@ -43857,7 +54140,27 @@ A boy stands on the deck of a cartoon airship (bright, three-dimensional, with d
       },
 
       "composition": {
- 
+        "camera_angle": "slightly elevated diagonal angle from above",
+        "framing": "boat filling the lower frame, water and lily pads surrounding",
+        "balance": "subject offset slightly, swan counterbalancing the composition"
+      },
+
+      "lighting": {
+        "source": "natural sunlight",
+        "quality": "soft directional light, gentle shadows",
+        "effect": "painterly highlights on dress and skin, no harsh contrast"
+      },
+
+      "aesthetic": {
+        "inspiration": "Pre-Raphaelite painting, romantic realism",
+        "mood": "tranquil, feminine, timeless",
+        "era": "timeless / classical"
+      },
+
+      "negative_prompt": "modern distractions, boats with motors, bright plastic colors, HDR, glossy skin, beauty filters, exaggerated poses, sexualized framing, text overlays, watermarks, logos, AI artifacts, extra limbs, deformed hands"
+    }
+  }
+}
 ```
 
 </details>
@@ -44101,7 +54404,52 @@ Prompt:
     }
   },
   "environment": {
-    "setting_type": "outdoor architectural
+    "setting_type": "outdoor architectural location",
+    "background_elements": [
+      "bold red painted wooden doors",
+      "stone columns",
+      "historic building facade"
+    ],
+    "era_feel": "Mediterranean or European historic setting",
+    "color_contrast": "high contrast between white clothing and saturated red doors"
+  },
+  "lighting": {
+    "type": "natural daylight",
+    "quality": "soft but directional",
+    "shadow_behavior": "gentle shadows enhancing facial structure and garment texture",
+    "time_of_day_feel": "late morning to afternoon"
+  },
+  "color_palette": {
+    "primary_colors": ["white", "deep red"],
+    "secondary_colors": ["warm beige stone", "gold accents", "natural skin tones"],
+    "overall_temperature": "warm with an icy, composed visual attitude"
+  },
+  "styling_aesthetic": {
+    "mood": "romantic, elegant, confident — The ICE meets summer luxury",
+    "fashion_genre": "resort wear / summer editorial",
+    "influences": [
+      "Mediterranean summer",
+      "classical architecture",
+      "modern feminine minimalism",
+      "The ICE aesthetic (cool, controlled, effortless confidence)"
+    ]
+  },
+  "technical_traits": {
+    "image_quality": "high-resolution",
+    "sharpness": "sharp subject with slight background softness",
+    "lens_feel": "portrait lens equivalent (approx. 50–85mm)",
+    "post_processing": {
+      "contrast": "moderate",
+      "saturation": "enhanced reds, natural skin tones",
+      "clarity": "balanced with soft highlights"
+    }
+  },
+  "artistic_notes": {
+    "visual_story": "timeless femininity with The ICE presence — calm, composed, and untouchable",
+    "texture_play": "contrast between smooth fabric, flowing skirt, and rigid stone/wood surfaces",
+    "brand_ready": true
+  }
+}
 ```
 
 </details>
@@ -44164,7 +54512,30 @@ Prompt:
         "age_group": "young_adult",
         "pose": "holding phone up for selfie, slight angle, confident expression",
         "wardrobe": "black evening dress with thin straps",
-        "details": "natural glossy lips, minimal but elegant jewelry, lon
+        "details": "natural glossy lips, minimal but elegant jewelry, long dark hair",
+        "prop": "glass of red wine in the other hand"
+      },
+
+      "bottom_frame_subject": {
+        "gender_presentation": "male",
+        "age_group": "young_adult",
+        "pose": "seated at the table, holding phone for selfie, relaxed smile",
+        "wardrobe": "black open-collar shirt, casual-elegant",
+        "details": "subtle tattoos on arms (optional), light chain necklace",
+        "prop": "glass of red wine raised slightly"
+      },
+
+      "camera_style": {
+        "device_feel": "real smartphone selfie",
+        "lens_feel": "slight wide-angle, mild perspective distortion",
+        "framing": "subjects centered, shoulders/upper torso visible",
+        "mood": "romantic, modern, nightlife, candid couple moment"
+      },
+
+      "negative_prompt": "any text, captions, emojis, watermarks, logos, overly smooth skin, beauty filter look, HDR, studio lighting, overexposed flash, deformed hands, extra fingers, face distortion, messy artifacts"
+    }
+  }
+}
 ```
 
 </details>
@@ -44271,7 +54642,44 @@ Create a visual transformation of a living room across 10 decades https://t.co/q
 
       "wardrobe_and_props": {
         "female": "simple winter coat in neutral tone, scarf loosely wrapped, gloves slightly wet from snow, long hair partially tucked into coat",
-        "male": "dark winter jacket, knit sweater underneath, simple 
+        "male": "dark winter jacket, knit sweater underneath, simple jeans, gloves in hand or worn",
+        "props": "partially built snowman between them, snow clinging to sleeves and hair"
+      },
+
+      "micro_action": "they roll snow together, hands brushing accidentally; one adjusts the snowman’s head while the other laughs; snowflakes collect on shoulders and eyelashes",
+
+      "environment_details": {
+        "location": "Istanbul neighborhood street or park (Moda / Kuzguncuk / university surroundings vibe)",
+        "background": "old apartment facades dusted with snow, parked cars lightly covered, bare tree branches, a few distant passersby softly blurred",
+        "ground_details": "fresh snow underfoot, uneven footprints, slushy edges near the pavement"
+      },
+
+      "lighting": "soft overcast winter daylight, diffused by snowfall; gentle contrast; subtle halation on bright snow surfaces",
+
+      "composition": "eye-level medium shot, slightly off-center framing, imperfect crop like real street photography; faces sharp; snowflakes softly blurred in foreground and background",
+
+      "mood": "playful, intimate, quietly joyful—two people sharing warmth in cold weather"
+    },
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "posed winter romance poster look",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake snow",
+      "unrealistic snowfall",
+      "text",
+      "logo",
+      "watermark",
+      "cartoon",
+      "painterly"
+    ]
+  }
+}
 ```
 
 </details>
@@ -44395,7 +54803,17 @@ Create a visual transformation of a living room across 10 decades https://t.co/q
   },
   "technical_specs": {
     "style": "Ultra-realistic photography, cinematic daily life snapshot, high contrast texture between the glossy chocolate and soft skin.",
-    "camera": "35mm lens for an intimate, environmental portrait feel. Shallow depth of field to focus on the face and the cake.
+    "camera": "35mm lens for an intimate, environmental portrait feel. Shallow depth of field to focus on the face and the cake.",
+    "visual_fidelity": "Extremely high detail on the sticky texture of the chocolate and the natural imperfections of the skin.",
+    "aspect_ratio": "4:5"
+  },
+  "constraints": [
+    "Keep the facial features and identity strictly matching the reference",
+    "Ensure the chocolate looks appetizing and realistic (shiny, thick), not like paint or mud",
+    "Maintain the 'angry/pouting' expression but in a comedic/cute context"
+  ],
+  "output_goal": "Create a humorous and ultra-realistic photo of a young woman caught eating chocolate cake late at night, pouting angrily at the camera with chocolate on her face."
+}
 ```
 
 </details>
@@ -44512,7 +54930,7 @@ Lighting is bright daytime sunlight with realistic global illumination. Soft, be
 The scene feels cinematic yet grounded in reality. Hyper-real materials, sharp focus, high contrast, vibrant but natural colour grading, extreme depth realism, seamless integration between digital display and physical city environment.
 
 8K quality, ultra-detailed, photorealistic, no distortion, no cartoon style, no exaggerated proportions.
-Aspect ratio 
+Aspect ratio suitable for large billboard display, strong corner depth illusion, glasses-free 3D effect clearly visible."
 ```
 
 </details>
@@ -44622,7 +55040,46 @@ Thanku so much guys for your lovely supporting...🙏
       "primary_subject": {
         "type": "human",
         "description": "old-era Turkic / Anatolian-inspired woman, keep identity 1:1 with the reference, serious calm gaze",
-        "wardrobe": "turquoise/teal traditional layered dress, fur-trimmed vest, authentic embroidery motifs, turquoise beaded headp
+        "wardrobe": "turquoise/teal traditional layered dress, fur-trimmed vest, authentic embroidery motifs, turquoise beaded headpiece and side braids, jewelry as in reference",
+        "pose": "as in reference, close shoulder-to-shoulder proximity to the animal, calm posture",
+        "placement": "left/center (match reference)"
+      },
+      "secondary_subject": {
+        "type": "wolf",
+        "description": "realistic grey wolf (or wolf-dog), thick fur, correct anatomy, alert eyes, calm protective demeanor; mouth closed or slightly open with relaxed lips (NOT aggressive)",
+        "pose": "sitting or standing right next to the woman, shoulder-to-shoulder, head slightly turned toward camera",
+        "placement": "foreground right, partially overlapping the woman like the reference"
+      }
+    },
+    "composition": {
+      "framing": "waist-up or chest-up portrait for the woman + close-up wolf head/shoulders, match the reference crop closely",
+      "depth_of_field": "shallow DOF, background softly blurred, subjects tack-sharp",
+      "focus_priority": "woman eyes first, then wolf eyes",
+      "no_extra_people": true,
+      "no_extra_animals": true
+    },
+    "style_constraints": [
+      "Photorealistic only (no illustration, no CGI look)",
+      "Keep period costume details authentic and handcrafted",
+      "No text, no logos, no watermarks",
+      "Natural skin texture and pores",
+      "No anatomy errors (hands/face/wolf muzzle/teeth/fur)",
+      "Keep the wolf calm (no snarling, no exaggerated teeth)"
+    ],
+    "negative_prompt": [
+      "extra people",
+      "extra animals",
+      "multiple wolves",
+      "cartoon, anime, illustration, CGI, 3D render",
+      "beauty filter, plastic skin, over-smoothed face",
+      "face swap artifacts, identity drift, wrong eye shape",
+      "deformed hands, extra fingers",
+      "wolf snarling, aggressive bared teeth, attack pose",
+      "mutated muzzle, wrong teeth, distorted fur",
+      "text, watermark, logo"
+    ]
+  }
+}
 ```
 
 </details>
@@ -44800,6 +55257,19 @@ style: Photorealistic
       "pose": "Symmetrical crouched pose on a dark background",
       "outfit": "Full denim jumpsuit/set (Double Denim)",
       "mood": "Bold and confident"
+    }
+  },
+  "garment_dna": {
+    "fabric": "Non-stretch, premium weight cotton denim",
+    "wash": "Medium indigo stone-wash with vintage fading",
+    "fit_profile": "Loose, oversized, baggy, and low-slung waist"
+  },
+  "marketing_tags": {
+    "target_audience": "Gen-Z and Millennial Fashion Seekers",
+    "trending_hashtags": ["
+    "alt_text": "A fashion collage of Sydney Sweeney for American Eagle showcasing wide-leg jeans with butterfly embroidery and a white crop top in various professional poses."
+  }
+}
 ```
 
 </details>
@@ -44857,7 +55327,219 @@ style: Photorealistic
         "subjects": {
           "female_adult": {
             "look": "long dark hair, elegant makeup, warm natural skin texture",
-           
+            "wardrobe": "simple evening dress or top in dark neutral tone",
+            "prop": "large bouquet of red roses wrapped in white paper",
+            "pose": "facing camera, holding bouquet at chest level, soft smile"
+          },
+          "male_adult": {
+            "look": "short dark hair, clean grooming",
+            "wardrobe": "dark jacket or shirt (neutral)",
+            "pose": "leaning in from the side, kissing her cheek gently, one hand lightly around her shoulder or waist"
+          }
+        }
+      },
+      "realism_requirements": {
+        "polaroid_authenticity": [
+          "slight vignette",
+          "subtle grain",
+          "minor color shift typical of instant film",
+          "tiny dust specks",
+          "gentle flash glare on skin and bouquet wrap"
+        ],
+        "roses_detail": "high-detail rose petals with natural folds, deep crimson tones, soft shadows between blooms"
+      },
+      "anatomy_constraints": {
+        "priority": "maximum",
+        "requirements": [
+          "natural facial proportions and symmetry",
+          "realistic cheek kiss contact (no merged faces)",
+          "correct hands with five fingers, accurate joints",
+          "no warped cheeks or stretched mouths",
+          "realistic bouquet grip and arm angles"
+        ]
+      }
+    },
+    "negative_prompt": [
+      "text",
+      "letters",
+      "words",
+      "logo",
+      "watermark",
+      "signature",
+      "UI",
+      "interface",
+      "caption",
+      "handwritten notes",
+      "timestamp",
+      "barcode",
+      "readable brand",
+      "blur",
+      "lowres",
+      "pixelated",
+      "overprocessed",
+      "oversharpen",
+      "HDR",
+      "cartoon",
+      "anime",
+      "CGI",
+      "3d render",
+      "plastic skin",
+      "doll",
+      "bad anatomy",
+      "deformed",
+      "disfigured",
+      "extra fingers",
+      "missing fingers",
+      "fused fingers",
+      "malformed hands",
+      "broken wrists",
+      "twisted limbs",
+      "duplicate arms",
+      "duplicate legs",
+      "long neck",
+      "wrong proportions",
+      "warped faces",
+      "merged faces",
+      "unrealistic polaroid border",
+      "unrealistic rose petals"
+    ],
+    "quality_controls": {
+      "no_beautify": true,
+      "no_age_shift": true,
+      "keep_real_skin_texture": true,
+      "avoid_face_warp": true,
+      "avoid_hand_artifacts": true,
+      "avoid_body_warp": true
+    }
+  }
+}
+{
+  "generation_request": {
+    "meta_data": {
+      "task_type": "photoreal_polaroid_on_roses_couple_cheek_kiss",
+      "version": "v1.0_RED_ROSES_POLAROID_COUPLE_CHEEK_KISS_NO_TEXT_EN",
+      "priority": "highest",
+      "language": "en"
+    },
+    "output_settings": {
+      "aspect_ratio": "4:5",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_analog_polaroid_editorial",
+      "sharpness": "slightly_soft_analog",
+      "film_grain": "medium_analog",
+      "color_grade": "rich_crimson_roses_with_warm_flash",
+      "dynamic_range": "natural_not_hdr",
+      "skin_rendering": "real_texture_analog",
+      "no_text": true,
+      "no_logos": true,
+      "no_watermarks": true,
+      "no_ui": true
+    },
+    "creative_prompt": {
+      "scene_summary": "Ultra-photorealistic romantic still life: a single instant-film Polaroid photo lying diagonally on a bed of lush red roses. Inside the Polaroid image, a young woman holds a bouquet of red roses while her boyfriend leans in and kisses her on the cheek. Warm on-camera flash look with subtle bokeh lights in the background. Realistic Polaroid border texture, slight glare, minor film imperfections. No text anywhere.",
+      "composition": {
+        "top_down": true,
+        "surface": "dense bed of red roses filling the entire frame",
+        "polaroid": {
+          "position": "diagonal, slightly tilted",
+          "border": "classic white instant-film border with thicker bottom margin",
+          "paper_texture": "subtle fiber texture, slight corner lift, gentle shadow on roses",
+          "no_writing": true
+        }
+      },
+      "inside_polaroid_scene": {
+        "setting": "nighttime with warm bokeh lights, intimate romantic mood",
+        "lighting": "direct on-camera flash, warm highlights, soft shadow falloff",
+        "subjects": {
+          "female_adult": {
+            "look": "long dark hair, elegant makeup, warm natural skin texture",
+            "wardrobe": "simple evening dress or top in dark neutral tone",
+            "prop": "large bouquet of red roses wrapped in white paper",
+            "pose": "facing camera, holding bouquet at chest level, soft smile"
+          },
+          "male_adult": {
+            "look": "short dark hair, clean grooming",
+            "wardrobe": "dark jacket or shirt (neutral)",
+            "pose": "leaning in from the side, kissing her cheek gently, one hand lightly around her shoulder or waist"
+          }
+        }
+      },
+      "realism_requirements": {
+        "polaroid_authenticity": [
+          "slight vignette",
+          "subtle grain",
+          "minor color shift typical of instant film",
+          "tiny dust specks",
+          "gentle flash glare on skin and bouquet wrap"
+        ],
+        "roses_detail": "high-detail rose petals with natural folds, deep crimson tones, soft shadows between blooms"
+      },
+      "anatomy_constraints": {
+        "priority": "maximum",
+        "requirements": [
+          "natural facial proportions and symmetry",
+          "realistic cheek kiss contact (no merged faces)",
+          "correct hands with five fingers, accurate joints",
+          "no warped cheeks or stretched mouths",
+          "realistic bouquet grip and arm angles"
+        ]
+      }
+    },
+    "negative_prompt": [
+      "text",
+      "letters",
+      "words",
+      "logo",
+      "watermark",
+      "signature",
+      "UI",
+      "interface",
+      "caption",
+      "handwritten notes",
+      "timestamp",
+      "barcode",
+      "readable brand",
+      "blur",
+      "lowres",
+      "pixelated",
+      "overprocessed",
+      "oversharpen",
+      "HDR",
+      "cartoon",
+      "anime",
+      "CGI",
+      "3d render",
+      "plastic skin",
+      "doll",
+      "bad anatomy",
+      "deformed",
+      "disfigured",
+      "extra fingers",
+      "missing fingers",
+      "fused fingers",
+      "malformed hands",
+      "broken wrists",
+      "twisted limbs",
+      "duplicate arms",
+      "duplicate legs",
+      "long neck",
+      "wrong proportions",
+      "warped faces",
+      "merged faces",
+      "unrealistic polaroid border",
+      "unrealistic rose petals"
+    ],
+    "quality_controls": {
+      "no_beautify": true,
+      "no_age_shift": true,
+      "keep_real_skin_texture": true,
+      "avoid_face_warp": true,
+      "avoid_hand_artifacts": true,
+      "avoid_body_warp": true
+    }
+  }
+}
 ```
 
 </details>
@@ -44915,7 +55597,7 @@ Gemini Nano Banana Pro
 
 Prompt:
 
-{ "image_type": "photograph", "genre": "casual portrait", "composition": { "framing": "close-up, chest-up portrait", "angle": "slightly tilted, camera held above eye level and angled downward", "orientation": "portrait with diagonal tilt", "subject_placement": "subject positioned slightly off-center, face occupying left-middle area", "crop": "tight crop with partial arm visible in foreground" }, "subject": { "count": 1, "gender_presentation": "female-presenting", "age_range": "young adult", "facial_features": { "skin_tone": "light, neutral-warm", "complexion": "clear, smooth with natural texture", "eyes": "light green/gray, almond-shaped", "eyebrows": "medium thickness, natural shape", "nose": "straight, small to medium", "lips": "natural pink, closed-mouth slight smile" }, "hair": { "color": "dark brown", "length": "long", "style": "straight, tucked behind ear on one side", "part": "slight side part" }, "expression": "soft, relaxed, friendly", "gaze": "looking directly into camera", "accessories": [ "small silver stud earrings" ], "clothing": { "type": "sports jersey", "fit": "loose athletic fit", "color": "white with black accents", "details": [ "black collar trim", "black logos and text", "shield-style emblem on chest", "large curved black graphic text" ] } }, "lighting": { "type": "natural light", "direction": "side/front light from window", "quality": "soft, diffused", "shadows": "minimal, gentle", "highlights": "subtle skin highlights on cheek and forehead" }, "color_palette": { "dominant_colors": [ "white", "soft gray", "black" ], "accent_colors": [ "natural skin tones", "brown hair" ], "overall_tone": "neutral, clean, airy" }, "background": { "setting": "indoor", "elements": [ "sheer white curtains", "window frame partially visible" ], "depth_of_field": "moderate, background slightly soft but recognizable", "style": "minimalist, uncluttered" }, "technical_details": { "camera_type": "DSLR", "focal_length_equivalent": "wide-ang
+{ "image_type": "photograph", "genre": "casual portrait", "composition": { "framing": "close-up, chest-up portrait", "angle": "slightly tilted, camera held above eye level and angled downward", "orientation": "portrait with diagonal tilt", "subject_placement": "subject positioned slightly off-center, face occupying left-middle area", "crop": "tight crop with partial arm visible in foreground" }, "subject": { "count": 1, "gender_presentation": "female-presenting", "age_range": "young adult", "facial_features": { "skin_tone": "light, neutral-warm", "complexion": "clear, smooth with natural texture", "eyes": "light green/gray, almond-shaped", "eyebrows": "medium thickness, natural shape", "nose": "straight, small to medium", "lips": "natural pink, closed-mouth slight smile" }, "hair": { "color": "dark brown", "length": "long", "style": "straight, tucked behind ear on one side", "part": "slight side part" }, "expression": "soft, relaxed, friendly", "gaze": "looking directly into camera", "accessories": [ "small silver stud earrings" ], "clothing": { "type": "sports jersey", "fit": "loose athletic fit", "color": "white with black accents", "details": [ "black collar trim", "black logos and text", "shield-style emblem on chest", "large curved black graphic text" ] } }, "lighting": { "type": "natural light", "direction": "side/front light from window", "quality": "soft, diffused", "shadows": "minimal, gentle", "highlights": "subtle skin highlights on cheek and forehead" }, "color_palette": { "dominant_colors": [ "white", "soft gray", "black" ], "accent_colors": [ "natural skin tones", "brown hair" ], "overall_tone": "neutral, clean, airy" }, "background": { "setting": "indoor", "elements": [ "sheer white curtains", "window frame partially visible" ], "depth_of_field": "moderate, background slightly soft but recognizable", "style": "minimalist, uncluttered" }, "technical_details": { "camera_type": "DSLR", "focal_length_equivalent": "wide-angle selfie lens", "resolution": "high", "sharpness": "sharp focus on face", "noise": "minimal", "white_balance": "neutral" }, "artistic_style": { "aesthetic": "clean, natural, lifestyle", "retouching": "very minimal, natural skin texture preserved", "mood": "calm, approachable, casual" }, "typography": { "presence": true, "location": "on jersey", "style": "bold sans-serif sports branding", "color": "black", "readability": "partially visible due to crop" } }
 ```
 
 </details>
@@ -45168,7 +55850,13 @@ Good Night X Fam ♥️
     "style": "hyperrealistic instagram-style selfie",
     "technical": {
       "detail": "ultra-sharp skin texture, visible pores, natural lighting highlights",
-      "framing": "mediu
+      "framing": "medium close-up, 4:5 aspect ratio",
+      "quality": "8k resolution, photorealistic"
+    }
+  }
+}
+
+Thanku so much🙏
 ```
 
 </details>
@@ -45350,7 +56038,238 @@ the only thing i need to become a black swan is the nano banana pro.
         "turn": "looking back over RIGHT shoulder",
         "rotation": "significant twist - approximately 120 degrees from body",
         "chin": "slightly lifted, looking up at camera above",
-        "neck": "elong
+        "neck": "elongated, elegant line, halter strap visible"
+      },
+      
+      "overall": "classic over-shoulder seated pose, maximum back exposure"
+    },
+    
+    "expression": {
+      "eyes": {
+        "color": "GREEN/HAZEL - striking, catching flash light",
+        "direction": "looking UP at camera, direct eye contact",
+        "state": "soft but focused, slightly intense, engaged",
+        "energy": "confident, knowing, 'I know you're looking'"
+      },
+      "mouth": {
+        "lips": "full, natural pink with slight gloss",
+        "expression": "relaxed, soft slight pout, mouth closed",
+        "state": "natural, subtle"
+      },
+      "brows": "natural, groomed, soft arch",
+      "overall": "soft sultry confidence, the over-shoulder smolder"
+    },
+
+    "physical": {
+      "age": "early 20s",
+      
+      "face": {
+        "structure": "model features, high cheekbones, defined jaw, symmetrical",
+        "shape": "oval, balanced",
+        "skin": "flawless, glowing, tanned",
+        "makeup": "natural/soft glam - subtle bronzer, soft brows, natural lip"
+      },
+      
+      "body": {
+        "type": "slim, toned, lean",
+        "back": {
+          "visibility": "FULLY EXPOSED - the main feature",
+          "state": "smooth, toned, athletic definition",
+          "tan": "even golden tan"
+        },
+        "shoulders": "narrow, feminine, toned",
+        "skin_tone": "TANNED/BRONZED - golden, sun-kissed"
+      },
+      
+      "hair": {
+        "color": "PLATINUM BLONDE - very light, white-blonde, icy",
+        "style": "HIGH PONYTAIL - messy, textured",
+        "details": {
+          "position": "high on crown of head",
+          "texture": "messy, piece-y, textured waves",
+          "volume": "voluminous, full, movement",
+          "pieces": "some loose strands around face and nape"
+        },
+        "roots": "slightly darker roots visible, natural",
+        "length": "long ponytail reaching mid-back",
+        "state": "styled messy, intentionally undone, editorial texture",
+        "vibe": "high fashion messy ponytail, effortful effortlessness"
+      },
+      
+      "skin": {
+        "tone": "golden tan, bronzed, warm",
+        "state": "glowing, smooth, catching flash beautifully",
+        "back": "flawless, even tan, highlight on shoulder blades"
+      }
+    },
+
+    "outfit": {
+      "dress": {
+        "type": "BACKLESS HALTER DRESS/TOP",
+        "color": "BLACK - solid, deep black",
+        "material": {
+          "type": "likely satin or similar",
+          "finish": "slight sheen, elegant drape"
+        },
+        "construction": {
+          "neckline": "HALTER - ties around neck",
+          "neck_strap": "thin STRING tie at back of neck",
+          "back": {
+            "style": "COMPLETELY BACKLESS - extreme open back",
+            "depth": "opens to LOWER BACK, almost to top of butt",
+            "coverage": "essentially none on back"
+          },
+          "spine_detail": {
+            "type": "single thin STRING running down spine",
+            "path": "from neck tie down center of back to lower back/waist",
+            "effect": "minimal connection, emphasizes naked back"
+          },
+          "front": "presumably covered, not visible in shot"
+        },
+        "fit": {
+          "back": "completely open, skin fully exposed",
+          "waist": "dress begins at very low back/upper hip",
+          "skirt": "appears to flow from low waist"
+        },
+        "effect": "maximum skin showing while technically dressed"
+      }
+    }
+  },
+
+  "environment": {
+    "setting": "outdoor STONE STEPS at NIGHT",
+    "location_type": "possibly museum, monument, fancy building entrance, European architecture",
+    
+    "steps": {
+      "material": "STONE - limestone or similar, large format",
+      "color": "BEIGE/TAN/CREAM - warm neutral stone color",
+      "texture": "smooth, weathered, some natural variation",
+      "pattern": "large rectangular slabs",
+      "state": "clean, architectural"
+    },
+    
+    "background": {
+      "main": "stone steps continuing up behind her",
+      "foliage": "dark greenery/plants visible in upper left corner",
+      "depth": "steps create leading lines toward camera"
+    },
+    
+    "lighting": {
+      "type": "CAMERA FLASH - direct, harsh, nighttime",
+      "time": "NIGHT - dark ambient, flash illuminating subject",
+      "quality": "hard flash light, typical night photography",
+      "effect": {
+        "on_subject": "brightly lit, glowing skin, highlights on back",
+        "on_background": "stone steps illuminated, slight falloff",
+        "shadows": "minimal on subject (front-lit), some behind"
+      },
+      "contrast": "flash-lit subject against darker night environment",
+      "color_temperature": "flash is neutral/cool, skin reads warm"
+    },
+    
+    "atmosphere": "nighttime outdoor, European/architectural, date night vibes"
+  },
+
+  "color_story": {
+    "palette_name": "Blonde on Black on Stone at Night",
+    
+    "dominant": {
+      "beige_stone": "steps/background - warm neutral, 50%",
+      "black_dress": "her outfit - deep black, contrast"
+    },
+    
+    "subject_colors": {
+      "platinum_hair": "very light blonde, almost white - bright against dark",
+      "tanned_skin": "golden bronze - warm, glowing",
+      "green_eyes": "striking color pop"
+    },
+    
+    "contrast": {
+      "hair_vs_dress": "platinum blonde against black = high contrast",
+      "skin_vs_dress": "tan skin against black = beautiful definition",
+      "subject_vs_background": "lit subject against darker surroundings"
+    },
+    
+    "temperature": "warm tones (skin, stone) with cool flash light"
+  },
+
+  "photography_technical": {
+    "type": "flash portrait, nighttime outdoor",
+    "lighting": "ON-CAMERA or OFF-CAMERA FLASH",
+    
+    "aspect_ratio": "4:5 vertical",
+    
+    "composition": {
+      "subject": "lower center of frame, looking up",
+      "background": "steps filling upper portion",
+      "angle": "shot from above looking down",
+      "leading_lines": "step edges lead to subject"
+    },
+    
+    "focus": {
+      "focal_point": "sharp on face and back",
+      "depth_of_field": "moderate, background slightly soft"
+    },
+    
+    "exposure": {
+      "subject": "well-exposed from flash",
+      "ambient": "darker, night time",
+      "style": "flash-forward night photography"
+    }
+  },
+
+  "narrative": {
+    "story": "night out, sitting on steps outside fancy venue, someone captures the moment from above",
+    "mood": "confident, elegant, 'caught looking back' moment",
+    "context": "date night? event? European vacation? the dress is the story"
+  },
+
+  "vibe": {
+    "core": "platinum ponytail in backless black dress, sitting on stone steps at night, flash photo looking back",
+    "energy": "elegant confidence, old money night out, main character moment",
+    "mood": "sophisticated, sultry, intentional",
+    "aesthetic": "European night out, editorial flash, fashion moment",
+    "temperature": "warm skin against cool night",
+    "caption_energy": "'🖤' or location tag or 'night' or no caption"
+  },
+
+  "what_makes_it_hit": {
+    "the_back": "fully exposed back is THE shot - skin is the star",
+    "the_dress_detail": "thin string down spine = minimal coverage, maximum impact",
+    "the_over_shoulder": "classic pose, direct eye contact, engaging",
+    "the_ponytail": "high messy platinum = editorial, effortless glamour",
+    "the_tan": "golden skin against black dress = beautiful contrast",
+    "the_stone_steps": "architectural setting elevates from basic to editorial",
+    "the_flash": "night flash aesthetic = raw, real, elevated party photo",
+    "the_angle": "shot from above = interesting perspective, shows full back"
+  },
+
+  "recreation_critical_requirements": {
+    "MUST_HAVE": [
+      "PLATINUM BLONDE hair - very light, white-blonde",
+      "HIGH MESSY PONYTAIL - textured, voluminous, pieces escaping",
+      "GREEN/HAZEL eyes",
+      "TANNED/BRONZED skin - golden, glowing",
+      "BLACK BACKLESS HALTER DRESS/TOP",
+      "VERY LOW BACK - open to lower back, almost to butt",
+      "THIN STRING tie at neck (halter)",
+      "THIN STRING running down SPINE from neck to lower back",
+      "ENTIRE BACK EXPOSED - shoulders to lower back visible",
+      "SEATED on STONE STEPS - beige/tan colored",
+      "Back to camera, looking over RIGHT SHOULDER up at camera",
+      "NIGHTTIME setting",
+      "FLASH PHOTOGRAPHY lighting",
+      "Shot from ABOVE looking down at her",
+      "4:5 vertical aspect ratio"
+    ],
+    
+    "pose_exact": "seated on steps, back to camera, looking over right shoulder up at photographer above",
+    "dress_exact": "black halter with thin string neck tie and single thin string down exposed spine, extremely low open back",
+    "hair_exact": "platinum blonde high messy ponytail, voluminous, textured, pieces loose",
+    "lighting_exact": "direct flash at night, subject illuminated against darker surroundings",
+    "setting_exact": "outdoor stone/limestone steps, architectural, nighttime"
+  }
+}
 ```
 
 </details>
@@ -45493,7 +56412,100 @@ Prompt: "Change to female"
 
     "creative_direction": {
       "concept": "A three-panel romantic film still sequence on a city street: a couple sharing wired earphones, exchanging intimate smiles; the middle panel is a forehead kiss; the final panel is laughter—captured with warm, nostalgic 35mm film texture.",
-      "mood": "tender, playful, nostalgic, deeply hum
+      "mood": "tender, playful, nostalgic, deeply human",
+      "style_keywords": "indie romance, golden hour city bokeh, candid intimacy, film still"
+    },
+
+    "layout": {
+      "format": "3-panel vertical triptych",
+      "panel_1": "close-up: they lean in close, sharing one set of wired earphones, soft eye contact and smile",
+      "panel_2": "close-up: he kisses her forehead, she laughs with eyes closed, arm around shoulders",
+      "panel_3": "close-up: both laughing openly, faces turned toward each other, earphone cable still visible",
+      "borders": "clean separations between panels, no text"
+    },
+
+    "scene": {
+      "location": "city street / pedestrian area",
+      "background": "soft out-of-focus passersby, warm street tones, creamy bokeh lights",
+      "time": "late afternoon into golden hour",
+      "weather": "dry, mild, warm light"
+    },
+
+    "subjects": {
+      "male": {
+        "wardrobe": "dark knit sweater",
+        "hair": "short curly hair",
+        "pose_sequence": {
+          "panel_1": "leaning in, looking down with a soft smile",
+          "panel_2": "arm around her, forehead kiss",
+          "panel_3": "laughing, leaning toward her"
+        },
+        "accessory": "wired earphones in one ear"
+      },
+      "female": {
+        "wardrobe": "light beige/cream coat or jacket",
+        "hair": "long light-brown hair, loose, natural",
+        "pose_sequence": {
+          "panel_1": "looking up at him, affectionate smile",
+          "panel_2": "eyes closed, big smile/laughter, leaning into his arm",
+          "panel_3": "laughing openly, facing him"
+        },
+        "accessory": "wired earphones in one ear"
+      },
+      "interaction": "shared wired earphones, intimate proximity, natural laughter, affectionate touch"
+    },
+
+    "photography": {
+      "camera_style": "cinematic handheld indie film still",
+      "lens": "50mm prime",
+      "depth_of_field": "shallow; faces sharp, background creamy",
+      "lighting": "warm directional golden-hour light with soft shadow falloff",
+      "film_look": "subtle 35mm grain, gentle halation on highlights, slightly imperfect analog softness",
+      "color_grade": "warm amber highlights, muted greens/browns, natural skin tones, deep blacks"
+    },
+
+    "output_settings": {
+      "aspect_ratio": "4:5",
+      "orientation": "portrait",
+      "resolution_target": "ultra_high_res",
+      "render_style": "ultra_photoreal_cinematic_film_triptych",
+      "sharpness": "crisp_faces_soft_background",
+      "film_grain": "subtle_35mm",
+      "dynamic_range": "natural_not_hdr",
+      "no_text": true,
+      "no_watermark": true,
+      "no_logo": true
+    },
+
+    "quality_controls": {
+      "anatomy": {
+        "no_deformed_hands": true,
+        "no_extra_fingers": true
+      },
+      "skin": {
+        "natural_texture": true,
+        "no_over_retouch": true,
+        "no_waxy_skin": true
+      },
+      "coherence": {
+        "earphone_cable_consistent": true,
+        "expressions_match_each_panel": true,
+        "triptych_layout_clean": true
+      }
+    },
+
+    "negative_prompt": [
+      "text, watermark, logo",
+      "cartoon, anime, illustration",
+      "overly staged studio pose",
+      "sharp digital HDR look",
+      "over-smoothing skin",
+      "missing earphone cable",
+      "warped faces",
+      "deformed hands, extra fingers"
+    ]
+  }
+}
 ```
 
 </details>
@@ -45615,7 +56627,57 @@ Follow My Way 🙋🏻‍♀️➡️✨
     "expression": "calm confidence with a subtle, encouraging smile",
     "pose": "standing beside the car, torso slightly angled, arm extended horizontally, pointing parallel to the sign as if signaling ‘follow that way, follow me’"
   },
-  "wardrobe":
+  "wardrobe": {
+    "top": "light pastel blue denim shirt with visible weave, pink and white embroidery in refined western motifs",
+    "fit": "relaxed yet tailored",
+    "bottom": "light brown pants, soft twill or suede-like texture, tailored with natural creases",
+    "footwear": "warm tan suede cowboy boots, medium contrast, elegant western stitching, slightly worn for authenticity",
+    "accessories": [
+      "silver necklace",
+      "small silver heart-shaped pendant, delicate and understated, resting just below the collarbone"
+    ],
+    "fabric_behavior": "authentic material stiffness and drape, embroidered threads catching light, natural folds and tension"
+  },
+  "vehicle": {
+    "type": "classic Ford Mustang",
+    "color": "lemon yellow",
+    "finish": "glossy paint with realistic reflections and subtle surface imperfections",
+    "positioning": "parked beside the subject at a slight diagonal, iconic profile visible"
+  },
+  "environment": {
+    "location": "open roadside or rural edge",
+    "background_elements": [
+      "roadside sign with clearly legible text: 'My Way'",
+      "open sky",
+      "soft greenery or distant fields"
+    ],
+    "atmosphere": "freedom, direction, invitation, optimistic Americana mood"
+  },
+  "lighting": {
+    "type": "natural daylight",
+    "source": "open sky sunlight",
+    "time_of_day": "late afternoon",
+    "quality": "soft, directional, cinematic",
+    "effects": [
+      "gentle rim light on hair and shoulders",
+      "subtle highlights on silver jewelry",
+      "soft reflections on car paint"
+    ],
+    "shadow_behavior": "clean, soft-edged, physically accurate"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "lemon yellow",
+      "pastel denim blue",
+      "light brown",
+      "warm tan",
+      "soft pink and white embroidery",
+      "natural skin tones",
+      "silver accents"
+    ],
+    "grading_style": "warm cinematic editorial grading with filmic highlight roll-off"
+  },
+The prompt continues in the first comment
 ```
 
 </details>
@@ -45880,7 +56942,28 @@ Powerful protest scene, bold cinematic style — defiant crowd with raised fists
     "saturation": "rich and vibrant"
   },
   "photography_style": {
-    "genre": "high-fashion
+    "genre": "high-fashion editorial",
+    "camera_angle": "slightly low angle",
+    "depth_of_field": "shallow, sharp subject focus",
+    "quality": "ultra sharp, high detail"
+  },
+  "mood_and_aesthetic": {
+    "mood": "confident, stylish, charismatic",
+    "aesthetic": "modern luxury, bold masculinity, editorial glamour"
+  },
+  "negative_prompt": [
+    "blur",
+    "low resolution",
+    "overexposed",
+    "underexposed",
+    "extra limbs",
+    "distorted face",
+    "cartoon",
+    "anime",
+    "text",
+    "watermark"
+  ]
+}
 ```
 
 </details>
@@ -45940,7 +57023,10 @@ The Hero: Place the "Vessel" or "Protagonist" navigating the terrain in the fore
 Scale: The scene must look like a high-end model kit (1:87 scale).
 5. Lighting & Atmosphere:
 The Lamp: A vintage brass desk lamp is visible in the corner, casting a warm, directional "reading light" onto the scene.
-Atmosphere: Magical realis
+Atmosphere: Magical realism. The water should glisten; the fog should swirl.
+Depth: Shallow depth of field to blur the edge of the desk, keeping focus on the book.
+Output: ONE image, 16:9 Aspect Ratio, Cinematic Miniature Photography, 8k Resolution.
+</instructions>
 ```
 
 </details>
@@ -46050,7 +57136,44 @@ Negative: [Windows, metal, glass, grey, industrial, smoke]:: -1
       },
       "wardrobe_and_props": {
         "female": "simple everyday outfit in neutral tones; minimal makeup; long wavy hair",
-        "female_props": "a fresh bouquet of white daisies (papatyalar) in her hand, clearly visible, natural stems and wrap, no 
+        "female_props": "a fresh bouquet of white daisies (papatyalar) in her hand, clearly visible, natural stems and wrap, no branding",
+        "male": "casual student outfit (jeans/chinos + plain t-shirt or overshirt), no logos",
+        "male_props": "a single ice cream cone in his hand, slightly melting, realistic texture"
+      },
+      "micro_action": "they walk close, shoulders almost touching; she looks at him while smiling; he laughs and lifts the ice cream slightly as if making a small joke; the bouquet bounces gently with her steps",
+      "environment_details": {
+        "location": "Istiklal Avenue (Taksim area), Istanbul",
+        "background": "the red nostalgic tram passes as a moving element near them; wet or dry pavement with real street texture; pedestrians in the distance softly out of focus; urban fixtures and shopfront shapes without readable signs",
+        "motion_detail": "tram motion creates slight motion blur in the background only; faces remain sharp",
+        "signage_rule": "no readable text or logos anywhere (no readable tram signage, no readable shop signs)"
+      },
+      "lighting": "soft daylight, realistic Istanbul tones; controlled highlights; deep but detailed shadows; subtle halation on bright edges (flowers, metal surfaces, tram highlights)",
+      "composition": "eye-level medium shot, imperfect framing, couple slightly off-center, daisies and ice cream clearly readable; nostalgic tram partially in frame behind/side; background recedes naturally, not symmetrical",
+      "mood": "light, youthful, warm—an ordinary Istanbul moment with the city’s iconic detail"
+    },
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "posed romance poster look",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh shapes",
+      "overly clean staged street",
+      "readable text",
+      "logos",
+      "watermark",
+      "cartoon",
+      "painterly",
+      "extra people in foreground",
+      "warped hands",
+      "extra fingers"
+    ]
+  }
+}
 ```
 
 </details>
@@ -46111,7 +57234,14 @@ Negative: [Windows, metal, glass, grey, industrial, smoke]:: -1
     "environment": {
       "location": "High-end modern skyscraper interior",
       "background_elements": ["Floor-to-ceiling glass windows", "City skyline with skyscrapers", "Dusk/Evening atmosphere", "Modern office furniture"],
-      "lighting": "Cool blue ambient twilight light contrasted with warm indoor lamp 
+      "lighting": "Cool blue ambient twilight light contrasted with warm indoor lamp lighting"
+    }
+  },
+  "technical_details": {
+    "image_style": "High-fidelity photorealistic AI generation",
+    "color_palette": "Warm oranges and browns on the left; Cool blues and blacks on the right"
+  }
+}
 ```
 
 </details>
@@ -46349,7 +57479,7 @@ Gemini Nano Banana Pro
 
 Prompt:
 
-{ "image_type": "photograph", "genre": "urban lifestyle portrait", "composition": { "framing": "three-quarter body portrait", "angle": "eye-level, straight-on", "orientation": "portrait", "subject_placement": "subject positioned slightly right of center", "background_balance": "large-scale mural occupying left background", "visual_hierarchy": "foreground subject emphasized against graphic mural backdrop" }, "subject": { "count": 1, "gender_presentation": "female-presenting", "age_range": "young adult", "facial_features": { "skin_tone": "light, neutral", "complexion": "smooth with natural texture", "eyes": "light-colored", "eyebrows": "full, softly shaped", "nose": "straight, proportional", "lips": "natural pink, smiling with teeth slightly visible" }, "hair": { "color": "medium brown", "length": "shoulder-length", "style": "loose waves", "part": "center part" }, "expression": "playful, cheerful", "gaze": "directed toward camera", "pose": { "stance": "relaxed, casual", "hands": "one hand holding a drink cup, other supporting straw" }, "accessories": [ "clear plastic cup with lid and straw" ], "clothing": { "top": "oversized t-shirt", "color": "White", "bottom": "black lounge pants", "fit": "loose, relaxed streetwear", "style": "casual, modern" } }, "lighting": { "type": "natural daylight", "direction": "diffuse frontal light", "quality": "soft, even", "shadows": "minimal, low contrast", "highlights": "subtle highlights on face and hair" }, "color_palette":#AmulProteinWPL { "dominant_colors": [ "white", "gray", "yellow" ], "accent_colors": [ "cherry beverage", "black mural outlines" ], "overall_tone": "urban, contemporary, playful" }, "background": { "setting": "outdoor urban space", "environment": "city courtyard or alley", "elements": [ "large monochrome mural portrait of Elon Musk with yellow graphic accents", "modern building facades", "metal railing", "stone or concrete pavement" ], "style": "street art–influenced", "depth_of_fiel
+{ "image_type": "photograph", "genre": "urban lifestyle portrait", "composition": { "framing": "three-quarter body portrait", "angle": "eye-level, straight-on", "orientation": "portrait", "subject_placement": "subject positioned slightly right of center", "background_balance": "large-scale mural occupying left background", "visual_hierarchy": "foreground subject emphasized against graphic mural backdrop" }, "subject": { "count": 1, "gender_presentation": "female-presenting", "age_range": "young adult", "facial_features": { "skin_tone": "light, neutral", "complexion": "smooth with natural texture", "eyes": "light-colored", "eyebrows": "full, softly shaped", "nose": "straight, proportional", "lips": "natural pink, smiling with teeth slightly visible" }, "hair": { "color": "medium brown", "length": "shoulder-length", "style": "loose waves", "part": "center part" }, "expression": "playful, cheerful", "gaze": "directed toward camera", "pose": { "stance": "relaxed, casual", "hands": "one hand holding a drink cup, other supporting straw" }, "accessories": [ "clear plastic cup with lid and straw" ], "clothing": { "top": "oversized t-shirt", "color": "White", "bottom": "black lounge pants", "fit": "loose, relaxed streetwear", "style": "casual, modern" } }, "lighting": { "type": "natural daylight", "direction": "diffuse frontal light", "quality": "soft, even", "shadows": "minimal, low contrast", "highlights": "subtle highlights on face and hair" }, "color_palette":#AmulProteinWPL { "dominant_colors": [ "white", "gray", "yellow" ], "accent_colors": [ "cherry beverage", "black mural outlines" ], "overall_tone": "urban, contemporary, playful" }, "background": { "setting": "outdoor urban space", "environment": "city courtyard or alley", "elements": [ "large monochrome mural portrait of Elon Musk with yellow graphic accents", "modern building facades", "metal railing", "stone or concrete pavement" ], "style": "street art–influenced", "depth_of_field": "deep, background clearly visible" }, "technical_details": { "camera_type": "smartphone camera", "focal_length_equivalent": "standard wide lens", "sharpness": "high overall sharpness", "noise": "low", "dynamic_range": "balanced highlights and shadows", "white_balance": "neutral" }, "artistic_style": { "aesthetic": "urban lifestyle, social media–ready", "retouching": "minimal, natural appearance", "mood": "fun, relaxed, youthful", "contrast": "moderate with strong graphic background" }, "typography": { "presence": false } }
 ```
 
 </details>
@@ -46396,7 +57526,16 @@ Food: Cast iron skillets, tin plates, hearty portions.
 The Figure: A burly 19th Century Butcher or Cook holding a heavy knife or iron ladle.
 Ring 4 (The Ancient Origin):
 Food: Cooking over open fire, stone tools, raw ingredients (but cooked/charred enough to look appetizing).
-The Figure: An Ancient Hu
+The Figure: An Ancient Human tending to a mini-campfire or grinding spices with a stone.
+4. The Background Morph:
+The surface texture underneath the figures changes with them:
+Center: Polished Stone.
+Middle: Linoleum/Wood Table.
+Edge: Dirt/Earth.
+5. Lighting & Scale:
+Tilt-Shift: Blur the outer edges slightly to emphasize the miniature scale of the people.
+Shadows: The figures must cast long shadows across the food to prove they are physically standing there.
+Output: ONE image, 1:1 Aspect Ratio, 8k Resolution, Miniature Photography style.
 ```
 
 </details>
@@ -46683,7 +57822,7 @@ An exclusive wooden table sign with gold sidebar and text ' C E O'
 Soft natural daylight filters through the room, combined with warm ambient lighting, producing gentle shadows and cinematic depth. The color palette is warm and cohesive, featuring beige, blush, cream, and soft brown tones. Shot in a full-body, eye-level composition with a shallow depth of field, ultra-sharp focus, high dynamic range, photorealistic texture, editorial fashion photography quality, 8K resolution, luxury magazine aesthetic, clean composition, modern feminine power portrait.
 
 Negative Prompt:
-low resolution, blurry, overexposed, underexposed, distorted anatomy, extra limbs, messy back
+low resolution, blurry, overexposed, underexposed, distorted anatomy, extra limbs, messy background, harsh lighting, oversaturated colors, cartoon, anime, low detail, cheap fabric texture, unrealistic proportions, watermark,
 ```
 
 </details>
@@ -46939,7 +58078,56 @@ Camera is low angle, medium full body shot, subject placed slightly off center, 
       "style": "thin band"
     },
     "rings": {
-      "hands": "visible on finger
+      "hands": "visible on fingers",
+      "style": "simple metallic rings"
+    }
+  },
+  "footwear": {
+    "visible": false
+  },
+  "body_details": {
+    "arms": "bare",
+    "legs": "bare",
+    "hands": "relaxed fingers, natural nails"
+  },
+  "background": {
+    "type": "studio backdrop",
+    "color": "soft off-white / pale cream",
+    "texture": "smooth",
+    "environment": "indoor controlled studio"
+  },
+  "lighting": {
+    "type": "soft studio lighting",
+    "direction": "front-left dominant",
+    "shadows": "soft shadows cast on backdrop",
+    "contrast": "moderate",
+    "highlight_behavior": "gentle highlights on face and biscuits"
+  },
+  "camera": {
+    "framing": "full-body portrait",
+    "angle": "eye-level",
+    "focus": "sharp focus on subject",
+    "depth_of_field": "moderate, background remains clean"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "golden brown",
+      "warm beige",
+      "soft cream"
+    ],
+    "accent_colors": [
+      "metallic silver"
+    ]
+  },
+  "mood": "editorial, conceptual, fashion-focused",
+  "style_reference": "conceptual couture studio shoot",
+  "clean_prompt_notes": {
+    "no_text": true,
+    "no_logos": true,
+    "no_branding": true,
+    "no_assumptions_added": true
+  }
+}
 ```
 
 </details>
@@ -47016,7 +58204,9 @@ Negative Prompt: Sunny beach, vacation vibes, swimsuit, smiling, blue sky, vibra
       "camera_settings": "Shot on a high-end mobile camera, f/1.8 aperture for slight background blur, high ISO resulting in a subtle, aesthetic film grain.",
       "image_quality": "Ultra-photorealistic, 8k resolution, highly detailed skin pores, visible fabric fibers, cinematic composition, hyper-detailed textures, RAW photo quality."
     },
-    "negative_prompt": "cartoon, drawing, anime, low 
+    "negative_prompt": "cartoon, drawing, anime, low quality, distorted face, extra fingers, deformed hands, blurry, low resolution, watermark, text, signature, bright daylight, overhead ceiling light."
+  }
+}
 ```
 
 </details>
@@ -47169,7 +58359,40 @@ Prompt ⤵️
       "swirling blue sky patterns",
       "thick expressive brushstroke textures",
       "glowing yellow and white stars",
-
+      "large luminous crescent moon",
+      "dark cypress tree silhouette",
+      "rolling hills and village forms"
+    ],
+    "environment": "immersive projection room with artwork covering wall and floor"
+  },
+  "lighting_and_effects": {
+    "lighting_type": "immersive projection lighting",
+    "projection_effect": "painting patterns cast directly onto subject’s face, arms, legs, and clothing",
+    "shadows": "soft natural shadows on floor and behind subject",
+    "color_interaction": "blue and gold light reflections visible on skin and outfit"
+  },
+  "composition": {
+    "framing": "full-body shot",
+    "angle": "straight-on eye-level",
+    "subject_position": "centered",
+    "depth_of_field": "moderate, subject clearly separated from background while projection remains sharp"
+  },
+  "color_palette": {
+    "dominant_colors": [
+      "cobalt blue",
+      "ultramarine blue",
+      "golden yellow",
+      "white",
+      "deep black"
+    ],
+    "contrast": "high contrast between bright artwork and dark outfit"
+  },
+  "overall_style": {
+    "genre": "fashion photography",
+    "fusion": "modern fashion combined with classic fine art projection",
+    "mood": "artistic, ethereal, elegant, modern-chic"
+  }
+}
 ```
 
 </details>
@@ -47301,7 +58524,12 @@ Prompt ⤵️
     "style_and_technical_specifications": {
       "aesthetic": "Modern aesthetic, 'it-girl' vibe, retro-chic, playful and candid photography.",
       "camera_details": "Shot on a high-end smartphone camera (iPhone style), 24mm wide-lens, sharp focus on faces, slight motion blur to enhance the candid feel.",
-      "lighting": "Natural, soft diffused light from a rainy day, realistic highlights on
+      "lighting": "Natural, soft diffused light from a rainy day, realistic highlights on the skin and lips, subtle reflections on the sunglasses.",
+      "quality_tags": "Photorealistic, ultra-detailed skin texture, 8k resolution, highly detailed fabric textures, cinematic color grading, high fidelity.",
+      "negative_prompt": "Blurry, distorted faces, extra fingers, cartoonish, low resolution, bad anatomy, flat lighting, unrealistic skin."
+    }
+  }
+}
 ```
 
 </details>
@@ -47426,7 +58654,15 @@ young western woman with long blonde hair sitting playfully inside a giant red f
         "bottoms": "Light-wash blue denim jeans.",
         "accessories": "Layered gold chain bracelets on the raised right wrist, gold rings."
       },
-      "expression": "Eyes scrunc
+      "expression": "Eyes scrunched closed in joy, tongue sticking out playfully."
+    },
+    "environment": {
+      "seating": "Ribbed, worn brown leather banquette couch with visible texture and stitching.",
+      "background_wall": "Dark wood wainscoting on the lower half. The upper half features a large, aged, sepia-toned mural or wallpaper depicting historical European architecture with repetitive arches and facades.",
+      "details": "A modern smartphone is resting face-up on the leather seat cushion near the right woman's hip. The general atmosphere is dark and moody outside of the flash radius."
+    }
+  }
+}
 ```
 
 </details>
@@ -47554,7 +58790,22 @@ Prompt:Gemini Nano Banana
     "furniture": "Distressed dark charcoal microfiber sofa, deep cushions, realistic fabric pilling and shadows",
     "decor": [
       "Plush cream-colored sunflower pillow with a dusty rose center",
-      "Heavy dark chocolate brown fleece thro
+      "Heavy dark chocolate brown fleece throw blanket, chaotic organic folds",
+      "Pale beige wall with subtle plaster texture"
+    ],
+    "lighting": "Soft-box effect from a side window, natural diffused daylight, volumetric shadows, gentle rim lighting on the hair"
+  },
+  "technical_parameters": {
+    "camera_settings": "Shot on Sony A7R IV, 35mm lens, f/2.8 aperture, ISO 100, ultra-sharp focus",
+    "post_processing": "Raw photo, color graded for warmth, 8k UHD, ray-traced reflections, no distortion, professional retouching",
+    "global_prompt": "A hyper-realistic 8k mirror selfie of a stunning woman with bangs wearing a black bodysuit, sitting on a plush sofa, high-cut fashion, detailed skin pores, soft window lighting, cinematic atmosphere, intricate details, masterpiece, highly detailed textures."
+  },
+  "negative_prompt": {
+    "quality_issues": "lowres, bad anatomy, bad hands, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+    "artistic_deviations": "illustration, painting, drawing, art, sketch, oil painting, anime, manga, 2D, CG, CGI, 3D, render, plastic skin, airbrushed, cartoon, doll-like",
+    "anatomical_errors": "extra fingers, mutated hands, poorly drawn face, mutation, deformed, dehydrated, bad proportions, extra limbs, cloned face, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  }
+}
 ```
 
 </details>
@@ -47671,7 +58922,33 @@ Nano Banana Pro🍌
       "pose_engineering": {
         "skeletal_rig": "Seated on ground (snow). Knees bent, legs angled right. Arms extended behind back supporting weight on palms.",
         "gaze_vector": "Eyes looking directly at the lens, head tilted slightly to subject's right.",
-        "intera
+        "interaction_physics": "Buttocks and hands sinking slightly into the snow surface."
+      },
+      "physiological_state": {
+        "body_temp_visuals": "Flushed cheeks and nose (Cold exposure / Rosy tint)",
+        "skin_light_interaction": "Even lighting due to snow fill, minimal shadows on face."
+      },
+      "clothing_simulation": {
+        "garment_stack": "Layer 1: Grey Ribbed Long-sleeve Bodysuit (Zip front). Layer 2: Grey Cable-knit Thigh-high Socks.",
+        "fabric_mechanics": "Bodysuit: Tight tension across chest, zipper lowered. Socks: Thick texture, compression at thigh band.",
+        "texture_and_wear": "Ribbed vertical weave on suit, heavy braided knit pattern on socks."
+      },
+      "identity_placeholders": {
+        "skin_tone": "[[USE_REFERENCE_SKIN]]",
+        "face_structure": "[[USE_REFERENCE_FACE]]",
+        "hair_style": "[[USE_REFERENCE_HAIR]]"
+      }
+    }
+  ],
+  "off_screen_context": {
+    "reflections": "Sky reflection in eyes",
+    "implied_elements": "Residential building/Lodge structure continues to the left (stone masonry visible)"
+  },
+  "generation_keywords": {
+    "positive": "Photorealistic, winter scene, snow, sitting pose, ribbed bodysuit, cable knit socks, cold weather makeup, sharp focus, natural lighting, 8k",
+    "negative": "warm tones, summer, green grass, distortion, cartoon, bad anatomy"
+  }
+}
 ```
 
 </details>
@@ -47823,7 +59100,24 @@ Prompt:
     "styling": {
       "outfit": "Elevated streetwear, tailored relaxed fit",
       "accessory": "Reflective lens sunglasses",
-      "textures": "Premium fabric folds, techwear
+      "textures": "Premium fabric folds, techwear accents"
+    }
+  },
+  "environment": {
+    "location_blend": "Seoul Night Street / Tokyo Alley",
+    "elements": [
+      "Wet pavement reflections",
+      "Abstract Japanese/Korean typography neon signs",
+      "Urban textures (metal, glass, concrete)",
+      "Cinematic bokeh/Shallow depth of field"
+    ]
+  },
+  "typography": {
+    "text": "TFANTASIE",
+    "style": "Minimal modern, luxury editorial",
+    "placement": "Subtle bottom center"
+  }
+}
 ```
 
 </details>
@@ -47880,7 +59174,66 @@ Prompt:
         "child": {
           "count": 1,
           "description": "a little girl (child) wearing a simple pink dress, natural hair, curious and gentle expression",
-          "behavior": "she steps closer care
+          "behavior": "she steps closer carefully, watching the cats, reaching out slowly with a calm posture"
+        }
+      },
+
+      "action": "the couple pours cat food into a small bowl or onto a paper plate; the woman gently pets one cat; the man holds the food bag; the child watches and then softly pets a cat too (gentle touch, no pulling, no roughness)",
+
+      "cats": {
+        "count": "2-4 street cats",
+        "description": "real Istanbul street cats, varied colors, calm and friendly, natural poses, realistic fur and whiskers",
+        "behavior": "one eats, one rubs against a leg, another sits observing, all non-aggressive"
+      },
+
+      "environment_details": {
+        "location": "a real Istanbul neighborhood street (Balat / Cihangir / Moda vibe)",
+        "background": "worn building facades, metal shutters, old stairs or doorway, small street clutter (leaves, bottle cap), a few distant passersby softly out of focus",
+        "signage_rule": "no readable text or logos anywhere"
+      },
+
+      "lighting": "soft natural daylight, realistic tones; deep but detailed shadows; subtle halation on small highlights",
+
+      "composition": "eye-level medium shot with slight tilt and imperfect framing like real street photography; main focus on faces and the cats; the child included naturally at frame edge; faces sharp, background gently receding",
+
+      "mood": "quiet, warm, humane—everyday kindness in Istanbul"
+    },
+
+    "hard_constraints": [
+      "photoreal only",
+      "cats must look real and natural (not cartoon, not staged)",
+      "child must look natural and age-appropriate, fully clothed",
+      "no danger, no aggression, no distress",
+      "faces and eyes sharp (no blur)",
+      "no beauty retouch, no HDR, no AI glow",
+      "no text, no logos, no watermarks"
+    ],
+
+    "negative_prompt": [
+      "studio lighting",
+      "beauty retouch",
+      "plastic skin",
+      "model faces",
+      "perfect symmetry",
+      "HDR",
+      "AI glow",
+      "fake bokeh shapes",
+      "staged charity poster look",
+      "cartoon animals",
+      "unrealistic cat anatomy",
+      "aggressive animals",
+      "injury",
+      "blood",
+      "readable text",
+      "logos",
+      "watermark",
+      "cartoon",
+      "painterly",
+      "warped hands",
+      "extra fingers"
+    ]
+  }
+}
 ```
 
 </details>
@@ -47981,7 +59334,11 @@ Panel A: Album 1 (Focus on Surrealism/Scale).
 Panel B: Album 2 (Focus on Technology/Machinery).
 Panel C: Album 3 (Focus on Nature/Organic Textures).
 Panel D: Album 4 (Focus on Light/Color).
-5. Lighting &
+5. Lighting & Atmosphere:
+Concert Lighting: Each box is lit like a stage show. Spotlights, laser beams, and stage haze.
+Depth: Shallow depth of field (Tilt-Shift) to make the vinyl record look massive.
+Background: Seamless Slate Grey to keep the focus on the colors.
+Output: 2x2 Grid, Hyper-Realistic Miniature Set Design, 8k Resolution, "Audiophile" Aesthetic.
 ```
 
 </details>
@@ -48069,7 +59426,9 @@ A gritty, flash-lit night photo at a street ATM machine. The main character stan
     },
     "lighting_quality": {
       "type": "Natural Ambient Daylight.",
-  
+      "direction": "Overhead/Backlit from the open sides of the shelter.",
+      "shadows": "Soft shadows on the subjects' faces, brighter highlights on the wooden platform."
+    }
 ```
 
 </details>
@@ -48151,7 +59510,32 @@ Virat Kohli in Nano-style (small, cute, stylized) hitting his 54th century again
           "background_elements": ["Cream Sofa", "Plush Pillows", "Modern Lamp"],
           "action": "Leisure reading with a physical book",
           "outfit_details": "Beige oversized cable-knit wool sweater",
-          "atmosphere": "Serene / Relaxe
+          "atmosphere": "Serene / Relaxed"
+        }
+      },
+      {
+        "panel_index": 4,
+        "inspiration": "Ana de Armas Aesthetic",
+        "visual_description": "Vibrant digital pop-art illustration.",
+        "technical_data": {
+          "art_style": "Comic-Book / Roy Lichtenstein Inspired",
+          "graphic_elements": [
+            "Concentric hypnotic circles in pink and yellow",
+            "Bold black ink outlines",
+            "Hand-drawn 'WOW!' speech bubble"
+          ],
+          "color_contrast": "High Saturation",
+          "rendering": "Vector Flat Illustration"
+        }
+      }
+    ]
+  },
+  "output_quality": {
+    "resolution_profile": "Ultra-HD 4K",
+    "texture_mapping": "High-Detail skin pores and fabric weave",
+    "final_format": "Lossless Digital Composite"
+  }
+}
 ```
 
 </details>
@@ -48250,7 +59634,16 @@ Virat Kohli in Nano-style (small, cute, stylized) hitting his 54th century again
   },
   "quality_control": {
     "skin_realism": "natural texture, subtle highlights",
-    "f
+    "fabric_realism": "soft, realistic drape and folds",
+    "ai_artifacts": "none",
+    "professional_finish": "editorial-grade"
+  },
+  "overall_mood": "cozy, intimate, soft, serene",
+  "intended_use": {
+    "primary": "viral lifestyle or bedroom content post on X",
+    "secondary": "personal branding, editorial photography reference"
+  }
+}
 ```
 
 </details>
@@ -48390,7 +59783,65 @@ Nano Banana Pro on Gemini:
       "source": "hair/back light",
       "position": "behind subjects",
       "intensity": "100 W·s",
- 
+      "purpose": "subtle edge separation"
+    },
+    "ambient": "wall bounce for gentle fill",
+    "color_temperature": "5000 K",
+    "contrast_ratio": "1:3",
+    "shadow_quality": "smooth falloff"
+  },
+
+  "color_profile": {
+    "palette": {
+      "environment": ["beige", "light gray", "warm neutrals"],
+      "clothing": ["blue", "white", "charcoal", "earth tones"],
+      "skin_tones": "natural warm midtones"
+    },
+    "contrast": "gentle but defined",
+    "saturation": "medium realistic"
+  },
+
+  "subjects": {
+    "interaction": "natural relaxed grouping, visible warmth and closeness",
+    "members": [
+      {
+        "role": "male_1_left",
+        "description": "man seated on left side of sofa, relaxed posture, leaning slightly inward",
+        "upload_slot": 1
+      },
+      {
+        "role": "female_center",
+        "description": "woman seated at sofa center, confident calm expression, visual focal point",
+        "upload_slot": 2
+      },
+      {
+        "role": "male_2_right",
+        "description": "man seated on right side, angled slightly toward center, friendly expression",
+        "upload_slot": 3
+      },
+      {
+        "role": "male_3_back",
+        "description": "taller male standing or leaning behind sofa, adding height and depth",
+        "upload_slot": 4
+      }
+    ]
+  },
+
+  "background_system": {
+    "type": "neutral matte studio or softly decorated living-room background",
+    "elements": ["sofa shadow on floor", "framed wall art softly blurred"],
+    "depth_rendering": "tonal falloff toward back wall"
+  },
+
+  "output_settings": {
+    "resolution": "3072×2304 (4 K) or higher",
+    "aspect_ratio": "3:2",
+    "render_style": "ultra-realistic photographic image",
+    "lighting_preset": "soft-key studio portrait",
+    "merge_faces_from_references": true,
+    "face_accuracy": "100%",
+    "file_type": "high-quality JPEG or PNG"
+  },
 ```
 
 </details>
@@ -48414,7 +59865,17 @@ Nano Banana Pro on Gemini:
       "style_goal": "Ultra-Realistic Candid Analog Film Photography",
       "era_esthetic": "Late 90s / Early 2000s Y2K Disposable Camera vibe"
     },
-    "master_prompt_string": "A raw, authentic, high-resolution candid analog film photograph captured with a direct on-camera flash from a low angle, looking up at two young women indoors. The aesthetic is that of a 1990s disposable camera snapshot with heavy film grain and vibrant, slightly desaturated colors. HARSH LIGHTING: The direct flash creates hard-edged shadows against the plain off-white wall behind them, causing specular highlights on their skin and leather jackets. SUBJECT 1 (LEFT): A young woman with long, tousled blonde hair, caught mid-action, winking her right eye playfully and sticking her tongue out. She wears a black leather biker jacket over a dark top, with a delicate gold chain necklace featuring a small rectangular pendant visible. SUBJECT 2 (RIGHT): Her best friend, a young woman with a brunette bob haircut and distinct straight bangs (fringe). She is making a goofy, scrunched-face expression with eyes tightly shut and mouth wide open in a grimacing laugh, showing teeth. She wears a slightly oversized, vintage-style black leather jacket (bomber style) unzipped over a crisp white crew-neck t-shirt. Small silver hoop earrings are visible. COMPOSITION & ENVIRONMENT: Shot from below their eye level. The background is a simple apartment corner; a single recessed ceiling light is visible near the top frame, overpowered by the flash. To the far right, neutral-toned fabric curtains hang. To the far left, the edge of a framed picture is implied. TEXTURES & DETAILS: Extremely detailed skin texture showing natural pores, slight imperfections, and oily shine from the flash. The grain of the worn leather jackets is palpable. The cotton texture of the white t-shirt is clear. The entire image is overlaid with sign
+    "master_prompt_string": "A raw, authentic, high-resolution candid analog film photograph captured with a direct on-camera flash from a low angle, looking up at two young women indoors. The aesthetic is that of a 1990s disposable camera snapshot with heavy film grain and vibrant, slightly desaturated colors. HARSH LIGHTING: The direct flash creates hard-edged shadows against the plain off-white wall behind them, causing specular highlights on their skin and leather jackets. SUBJECT 1 (LEFT): A young woman with long, tousled blonde hair, caught mid-action, winking her right eye playfully and sticking her tongue out. She wears a black leather biker jacket over a dark top, with a delicate gold chain necklace featuring a small rectangular pendant visible. SUBJECT 2 (RIGHT): Her best friend, a young woman with a brunette bob haircut and distinct straight bangs (fringe). She is making a goofy, scrunched-face expression with eyes tightly shut and mouth wide open in a grimacing laugh, showing teeth. She wears a slightly oversized, vintage-style black leather jacket (bomber style) unzipped over a crisp white crew-neck t-shirt. Small silver hoop earrings are visible. COMPOSITION & ENVIRONMENT: Shot from below their eye level. The background is a simple apartment corner; a single recessed ceiling light is visible near the top frame, overpowered by the flash. To the far right, neutral-toned fabric curtains hang. To the far left, the edge of a framed picture is implied. TEXTURES & DETAILS: Extremely detailed skin texture showing natural pores, slight imperfections, and oily shine from the flash. The grain of the worn leather jackets is palpable. The cotton texture of the white t-shirt is clear. The entire image is overlaid with significant, authentic Kodak Portra 400 film grain.",
+    "negative_prompt_string": "CG, 3D render, digital art, illustration, painting, photoshop, airbrushed, smooth skin, perfect complexions, studio lighting, soft diffused light, professional portrait, blurred faces, deformed appendages, extra fingers, bad anatomy, cartoonish, highly stylized, vivid neon colors, clean modern digital look, HDR, watermark, text, signature, cropped heads.",
+    "technical_parameters_guides": {
+      "camera_type": "35mm Point and Shoot / Disposable Camera",
+      "lens_type": "Wide angle lens (approx 28mm)",
+      "lighting_source": "Hard Direct Flash",
+      "film_stock_emulation": "Kodak Portra 400 (pushed)",
+      "perspective": "Worm's-eye view / Low Angle"
+    }
+  }
+}
 ```
 
 </details>
@@ -48437,7 +59898,8 @@ A cinematic winter travel moment set at a quiet Alpine mountain station just aft
 Beside her, Nick Wilde from Zootopia leans casually against a metal railing, arms loosely folded, wearing his signature green shirt and striped tie, giving a knowing side-smirk as if mid-conversation. A few steps away, Judy Hopps stands atop a snow-covered luggage crate, adjusting her blue police uniform with an upbeat, alert expression, ears slightly raised and lively.
 In the background, towering snow-covered Alpine peaks fade into a soft atmospheric haze. A red mountain train slowly departs the station, creating gentle motion blur and a sense of quiet journey. Cold winter daylight with soft, diffused lighting reflecting off the snow, realistic grounded shadows, ultra-detailed textures, crisp winter air, and cinematic depth of field. Photorealistic female subject seamlessly blended with high-quality animated characters. Travel-film aesthetic, emotionally warm yet minimal, high resolution, 4:5 aspect ratio.Prompt:
 A cinematic winter travel moment set at a quiet Alpine mountain station just after snowfall. A young woman stands near the edge of a snow-dusted platform, wearing a matte black puffer jacket layered over a soft neutral sweater, dark winter jeans, and insulated boots. Her posture is relaxed and confident, hands tucked into her jacket pockets, breath faintly visible in the cold air. She has a calm, self-assured expression with natural, realistic skin texture and subtle winter glow.
-Beside her, Nick Wilde from Zootopia leans casually against
+Beside her, Nick Wilde from Zootopia leans casually against a metal railing, arms loosely folded, wearing his signature green shirt and striped tie, giving a knowing side-smirk as if mid-conversation. A few steps away, Judy Hopps stands atop a snow-covered luggage crate, adjusting her blue police uniform with an upbeat, alert expression, ears slightly raised and lively.
+In the background, towering snow-covered Alpine peaks fade into a soft atmospheric haze. A red mountain train slowly departs the station, creating gentle motion blur and a sense of quiet journey. Cold winter daylight with soft, diffused lighting reflecting off the snow, realistic grounded shadows, ultra-detailed textures, crisp winter air, and cinematic depth of field. Photorealistic female subject seamlessly blended with high-quality animated characters. Travel-film aesthetic, emotionally warm yet minimal, high resolution, 4:5 aspect ratio.
 ```
 
 </details>
@@ -48604,7 +60066,9 @@ Generate a hyper-realistic   Educational Prop Diorama  . The image should look l
   5.  Typography :  
       Placement:   Massive, thick   3D Block Letters   span the  entire width  of the front edge.
       Material:   The letters are made of the food itself (e.g., Dark Chocolate).
-      Text:   "THE CHEMISTRY OF [
+      Text:   "THE CHEMISTRY OF [INPUT A]".
+
+  Output:   ONE image, 1:1 Aspect Ratio, Frontal Product Photography, "Wes Anderson" Symmetry, Cream/Brown Color Palette, Soft Studio Lighting.
 ```
 
 </details>
@@ -48803,7 +60267,50 @@ Nano Banana Pro via Degaus
       "dynamic_range": "high"
     },
     "creative_prompt": {
-      "scene_summary": "Create a single ultra-photoreal surreal beauty macro photograph: an extreme close-up of a woman’s face (cropped from forehead to lips, nose dominant), eyes closed. Her skin is wet and glossy with realistic water droplets and micro-beads across the cheeks and nose. Several small red/orange goldfish swim in the shallow water layer on top of her skin, casting tiny contact shadows and distorted refractions on the wet surface.\n\nCOMPOSITION:\n- Extreme macro crop: left eye + lashes visible, nose bridge and nostril clearly visible, lips in frame at the bottom.\n- Fish appear both near the brow area and across the cheek; one fish passes over the cheekbone region.\n- Background falls into deep darkness; face fills almost the entire frame.\n\nSKIN & WATER REALISM:\n- Hyper-real skin texture: pores, peach fuzz, subtle redness, natural unevenness.\n- Water droplets vary in size: micro droplets + a few larger beads, realistic surface tension and specular highlights.\n- Fish must create believable optical effects: slight magnification through droplets, subtle caustics, and refraction distortions on the skin.\n\nFISH DETAILS:\n- Goldfish are small, vivid red/orange, semi-translucent fins, realistic scales.\n- Correct perspective and scale; no cartoon look.\n- Each fish has a soft, realistic shadow and occlusion where it meets the wat
+      "scene_summary": "Create a single ultra-photoreal surreal beauty macro photograph: an extreme close-up of a woman’s face (cropped from forehead to lips, nose dominant), eyes closed. Her skin is wet and glossy with realistic water droplets and micro-beads across the cheeks and nose. Several small red/orange goldfish swim in the shallow water layer on top of her skin, casting tiny contact shadows and distorted refractions on the wet surface.\n\nCOMPOSITION:\n- Extreme macro crop: left eye + lashes visible, nose bridge and nostril clearly visible, lips in frame at the bottom.\n- Fish appear both near the brow area and across the cheek; one fish passes over the cheekbone region.\n- Background falls into deep darkness; face fills almost the entire frame.\n\nSKIN & WATER REALISM:\n- Hyper-real skin texture: pores, peach fuzz, subtle redness, natural unevenness.\n- Water droplets vary in size: micro droplets + a few larger beads, realistic surface tension and specular highlights.\n- Fish must create believable optical effects: slight magnification through droplets, subtle caustics, and refraction distortions on the skin.\n\nFISH DETAILS:\n- Goldfish are small, vivid red/orange, semi-translucent fins, realistic scales.\n- Correct perspective and scale; no cartoon look.\n- Each fish has a soft, realistic shadow and occlusion where it meets the water layer.\n\nLIGHTING:\n- Cinematic hard-but-controlled beauty light: warm key light from upper-left creating crisp specular highlights on wet skin.\n- Soft fill from the right to keep shadows detailed.\n- High contrast, glossy editorial finish; no overexposed blowouts.\n\nMOOD:\n- Premium surreal beauty editorial, striking and slightly unsettling, museum-grade realism."
+    },
+    "composition": {
+      "layout": "single image",
+      "framing": "extreme macro face close-up, forehead-to-lips crop",
+      "focus": "tack sharp on droplets + cheek texture + fish; gentle falloff toward far edges"
+    },
+    "lighting_and_camera": {
+      "camera_style": "high-end macro beauty editorial",
+      "lens": "100mm macro",
+      "aperture": "f/8",
+      "iso": "100",
+      "shutter": "1/200",
+      "white_balance": "warm_tungsten_amber"
+    },
+    "hard_constraints": [
+      "One woman only (no extra faces).",
+      "Eyes closed, extreme close-up macro crop (forehead-to-lips).",
+      "Wet glossy skin with realistic droplets and pores (no plastic smoothing).",
+      "Multiple small red/orange goldfish swimming on the wet surface with correct refraction and contact shadows.",
+      "No text, no logos, no watermark.",
+      "Photoreal only (no CGI, no illustration)."
+    ],
+    "negative_prompt": [
+      "cartoon",
+      "anime",
+      "cgi",
+      "3d render look",
+      "plastic skin",
+      "over-smoothed retouch",
+      "blurred face",
+      "blurry droplets",
+      "floating fish",
+      "wrong scale fish",
+      "extra people",
+      "open eyes",
+      "wide shot",
+      "readable text",
+      "logo",
+      "watermark",
+      "overexposed highlights"
+    ]
+  }
+}
 ```
 
 </details>
@@ -49059,7 +60566,8 @@ Prompt:
       "aspect_ratio": "9:16"
     }
   },
-  "flat_prompt": "Photorealistic full body shot of a young woman with platinum blonde wavy hair and a blue headband, standing in front of an ivy-covered black iron garden gate. She is wearing a pastel blue chunky cable-knit cardigan, a white lace ruffled corset top, light wash wide-leg jeans, and white sneakers with blue stripes. She holds a light blue floral shoulder bag with a silver chain. Low angle perspective, na
+  "flat_prompt": "Photorealistic full body shot of a young woman with platinum blonde wavy hair and a blue headband, standing in front of an ivy-covered black iron garden gate. She is wearing a pastel blue chunky cable-knit cardigan, a white lace ruffled corset top, light wash wide-leg jeans, and white sneakers with blue stripes. She holds a light blue floral shoulder bag with a silver chain. Low angle perspective, natural daylight, soft pastel aesthetic, high definition, 8k resolution, fashion photography."
+}
 ```
 
 </details>
@@ -49207,7 +60715,64 @@ Spawn 270 cover art by Nivanh Chanthara
       "camera": "front camera selfie, arm visible, slight motion energy",
       "expression": "focused but lively, open mouth breathing",
       "clothing": {
-        "outfit": "pink athl
+        "outfit": "pink athletic outfit",
+        "hat": "white running cap"
+      },
+      "details": [
+        "natural daylight",
+        "no motion blur exaggeration",
+        "athletic realism"
+      ],
+      "vibe": "caught during movement"
+    },
+
+    "frame_3": {
+      "title": "Coffee break candid",
+      "environment": "cafe or home table setting",
+      "pose": "sitting casually while drinking coffee",
+      "camera": "casual handheld selfie",
+      "expression": "thoughtful, relaxed, eyes not directly looking at camera",
+      "details": [
+        "coffee cup mid-sip",
+        "natural posture",
+        "background secondary and unobtrusive"
+      ],
+      "vibe": "quiet reset moment"
+    },
+
+    "frame_4": {
+      "title": "Outdoor breakfast – taken by someone else",
+      "environment": "outdoor breakfast cafe",
+      "pose": "eating breakfast naturally, unaware of camera",
+      "camera": "photo taken by another person",
+      "expression": "off-guard, natural, no eye contact",
+      "details": [
+        "plates with breakfast food on table",
+        "hands interacting with cutlery or food",
+        "slightly off-center framing"
+      ],
+      "vibe": "celebrity caught in real life moment"
+    }
+  },
+
+  "global_rules": {
+    "camera_style": "iPhone-like realism",
+    "no_background_blur": true,
+    "no_cinematic_grading": true,
+    "no_influencer_poses": true,
+    "no_overpolishing": true
+  },
+
+  "negative_prompt": [
+    "studio lighting",
+    "posed influencer look",
+    "perfect symmetry",
+    "same exact framing in all frames",
+    "editorial fashion shoot",
+    "beauty retouch",
+    "cinematic color grading"
+  ] Picture ratio 9:16
+}
 ```
 
 </details>
