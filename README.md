@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  NanoBanana Trending Prompts <a href="https://github.com/promptslab/Awesome-Prompt-Engineering"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Prompt Engineering"></a>
+  Trending AI Image Prompts <a href="https://github.com/promptslab/Awesome-Prompt-Engineering"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Prompt Engineering"></a>
 </h1>
 
 <p align="center">
