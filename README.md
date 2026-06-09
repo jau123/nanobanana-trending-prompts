@@ -12,6 +12,22 @@
 </p>
 
 <p align="center">
+  <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=nanobanana-trending-prompts">
+    <img src="./assets/atlas-cloud-logo.png" alt="Atlas Cloud logo" width="220">
+  </a>
+</p>
+
+<p align="center">
+  Run any prompt in this library through one OpenAI-compatible API, then compare image generations across model families without rebuilding your workflow.
+</p>
+
+<p align="center">
+  <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=nanobanana-trending-prompts">Atlas Cloud</a>
+  ·
+  <a href="https://www.atlascloud.ai/console/coding-plan?utm_source=github&utm_medium=link&utm_campaign=nanobanana-trending-prompts">Coding Plan</a>
+</p>
+
+<p align="center">
   <a href="https://www.meigen.ai"><img src="https://img.shields.io/badge/Website-www.meigen.ai-blue?style=flat-square" alt="Website"></a>
   <a href="prompts/prompts.json"><img src="https://img.shields.io/badge/Prompts-1,446-green?style=flat-square" alt="1446 Prompts"></a>
   <a href="#data-formats"><img src="https://img.shields.io/badge/Format-JSON-orange?style=flat-square" alt="JSON"></a>
@@ -28,6 +44,16 @@
 <p align="center">
   <strong>English</strong> | <a href="README.zh-CN.md">中文</a>
 </p>
+
+---
+
+## Use with Atlas Cloud
+
+Atlas Cloud is a good fit for this prompt library if you want to run the same visual ideas across multiple image models through one endpoint:
+
+- test NanoBanana-style prompts against other image backends without changing your app structure
+- connect trending prompt experiments to scripts, coding agents, or lightweight prompt workflows
+- compare outputs for product shots, posters, UI concepts, and brand visuals with one OpenAI-compatible setup
 
 ---
 
@@ -56042,4 +56068,3 @@ Goal: "Subliminal Advertising" Landscape Photography.
 </details>
 
 ---
-
